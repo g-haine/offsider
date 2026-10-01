@@ -27,7 +27,7 @@ A query that is too broad is undesirable: the newest-first 4,000-result window
 could crowd older foundational FSI works out of the frozen initialization
 universe.
 
-## Active OpenAlex query v1
+## Historical OpenAlex query v1
 
 ~~~text
 ("fluid structure" AND (interaction OR system OR model OR coupling OR coupled))
@@ -249,6 +249,92 @@ bibreview --dry-run init --batch-size 10 --json
 
 Only after measuring the new candidate count and first batch should the Boolean
 query itself be narrowed further.
+
+## Pilot result after pre-freeze DOI exclusion fix
+
+After BibReview PR #142 was merged and the local environment was forced to the
+exact commit `9c9c69b167a3575dfec4c2eafff4b5d791de96b5`, the same non-mutating
+initialization preview returned:
+
+~~~text
+total candidates: 3360
+batch size: 10
+first batch DOI values:
+  10.1002/appl.70197
+  10.1007/s12034-026-03767-5
+  10.3390/axioms15100726
+  10.1016/j.fuel.2026.141529
+  10.1016/j.anucene.2026.112880
+  10.3390/math14193536
+  10.1017/s0263574726103993
+  10.1007/978-3-032-34016-0_33
+  10.1201/9781042043149-39
+  10.1016/j.ymssp.2026.115010
+~~~
+
+The DOI-artifact correction is therefore validated:
+
+- candidate count dropped from 3859 to 3360;
+- no Zenodo DOI appears in the first batch;
+- the excluded DOI records no longer consume campaign slots.
+
+However, 3360 candidates remain too broad for the intended precision-first
+corpus. The first batch also contains application-heavy work. For example,
+`10.1017/S0263574726103993` is a robotic-fish design/prototype paper using FSI
+to model flexible pectoral fins and validating the design experimentally. This
+is a legitimate use of FSI terminology, but it is outside of.FSI.der's intended
+mathematical/methodological core.
+
+This shows that query v1 is semantically too permissive rather than merely noisy
+because of repository DOI artifacts.
+
+## Active OpenAlex query v2
+
+Query v2 replaces broad Boolean combinations such as:
+
+~~~text
+"fluid structure" AND (interaction OR system OR model OR coupling OR coupled)
+~~~
+
+with a finite set of explicit FSI phrase families:
+
+~~~text
+"fluid structure interaction"
+OR "fluid structure system"
+OR "fluid structure model"
+OR "fluid structure coupling"
+OR "fluid solid interaction"
+OR "fluid solid coupling"
+OR "fluid rigid body interaction"
+OR "fluid rigid body coupling"
+OR "fluid beam interaction"
+OR "fluid beam coupling"
+OR "fluid plate interaction"
+OR "fluid plate coupling"
+OR "fluid shell interaction"
+OR "fluid shell coupling"
+OR "fluid elastic structure interaction"
+OR "fluid elastic structure coupling"
+OR "interaction fluide structure"
+OR ("piston problem" AND fluid)
+~~~
+
+The goal is not exhaustive FSI recall at discovery time. It is to build a
+high-quality mathematical starting corpus while preserving all of the supplied
+positive benchmark families:
+
+- *fluid-structure interaction*;
+- *fluid-structure system*;
+- *fluid-structure model*;
+- *piston problem*.
+
+Papers missed because they use more specialized terminology can be added later
+through ordinary discovery or reviewed manual import. This is preferable to
+freezing several thousand weakly related candidates into the first
+initialization campaign.
+
+The relevance patterns are intentionally unchanged for this experiment. The
+next dry-run therefore measures the effect of the **query alone**.
 
 ## Validation protocol before freezing the campaign
 
