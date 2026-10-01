@@ -342,6 +342,44 @@ bibreview --dry-run init --batch-size 10 --json
 No real campaign should be created until the dry-run size and positive benchmark
 recall have been inspected.
 
+### Observed first dry-run attempt before configuration activation
+
+After merging the scientific-scope/discovery-design PR, the local repository was
+updated successfully:
+
+~~~text
+(offsider) g.haine@port-haine:~/Documents/Recherche/offsider$ git pull
+...
+c3291d8..267bcb2  main -> origin/main
+...
+docs/discovery.md
+docs/scope.md
+~~~
+
+The first attempted initialization preview was then:
+
+~~~text
+(offsider) g.haine@port-haine:~/Documents/Recherche/offsider$ bibreview --dry-run init --batch-size 10 --json
+bibreview init: discovery.query must not be empty
+~~~
+
+This was **not** a BibReview runtime failure. It exposed that the previous PR
+documented query v1 but deliberately had not activated it in `bibreview.yml`.
+The distinction was correct in the repository history, but the operational next
+step was communicated too early.
+
+Correction:
+
+- activate the documented query v1 in `bibreview.yml`;
+- activate the documented relevance patterns;
+- add `dissertation` to accepted DOI-backed types;
+- add an integration-CI guard that fails if `bibreview status` reports
+  `(no query)`.
+
+This incident is retained because it is useful onboarding evidence: a valid
+BibReview configuration may intentionally have no discovery query, but
+`bibreview init` requires one when starting a new campaign.
+
 The first real pilot batch will remain intentionally small. We will inspect the
 frozen candidate universe and screening behavior before increasing the batch
 size.
