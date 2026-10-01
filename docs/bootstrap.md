@@ -561,6 +561,41 @@ bibreview --dry-run init --batch-size 10 --json
 
 No real initialization campaign has yet been persisted.
 
+### Observed query-v2 dry-run
+
+After activating query v2, the non-mutating preview returned:
+
+~~~text
+total: 3495
+pending: 3485
+active: 10
+~~~
+
+This is **higher** than the 3360 candidates produced by query v1 after the
+BibReview DOI-exclusion fix.
+
+The reason is partly methodological: query v2 was not a strict subset of query
+v1 because it introduced new `fluid shell ...` phrase families. It therefore
+changed both phrasing precision and vocabulary coverage at the same time.
+
+The first batch also remained application-heavy and still contained
+`10.1017/S0263574726103993`, the robotic-fish FSI prototype paper already used
+as a signal of excessive application-oriented recall.
+
+The next experiment therefore adopts a different strategy: require an explicit
+FSI phrase **and** a mathematical/methodological signal directly in the OpenAlex
+title/abstract search. The piston problem remains an explicit exception.
+
+Positive-control metadata supports this approach: the benchmark set contains
+terms such as existence, strong solution, well-posedness, stabilization,
+feedback, controllability, port-Hamiltonian, finite elements, and ALE.
+
+No campaign has been persisted. The next command remains:
+
+~~~bash
+bibreview --dry-run init --batch-size 10 --json
+~~~
+
 
 ## Later — Hugo publication
 
