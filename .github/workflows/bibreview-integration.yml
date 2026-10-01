@@ -22,7 +22,7 @@ jobs:
       - name: Install pinned BibReview
         run: |
           python -m pip install --upgrade pip
-          python -m pip install "git+https://github.com/g-haine/bibreview.git@12c7d1bf86971aa89cdd37035aac47c2f38b467f"
+          python -m pip install "git+https://github.com/g-haine/bibreview.git@9c9c69b167a3575dfec4c2eafff4b5d791de96b5"
 
       - name: Verify pinned BibReview
         run: |
