@@ -808,6 +808,80 @@ Acceptance requires:
 No persistent initialization campaign has yet been started.
 
 
+
+### Final dry-run acceptance before the first real batch
+
+After query v4 was merged, the final non-mutating initialization preview
+returned:
+
+~~~json
+"discovery": {
+  "total_matches": 2169,
+  "pages_fetched": 11,
+  "works_examined": 2169,
+  "doi_candidates": 1657,
+  "truncated": false
+},
+"progress": {
+  "total": 1535,
+  "pending": 1525,
+  "active": 10
+}
+~~~
+
+The first batch was:
+
+~~~text
+10.1016/j.cma.2026.119358
+10.1016/j.compstruc.2026.108425
+10.1016/j.jfluidstructs.2026.104686
+10.1007/s00208-026-03558-7
+10.1016/j.flowmeasinst.2026.103569
+10.9734/arjom/2026/v22i91147
+10.1007/s00033-026-02892-9
+10.1007/s11044-026-10193-2
+10.1016/j.jfluidstructs.2026.104684
+10.3389/feart.2026.1905410
+~~~
+
+Acceptance observations:
+
+- the OpenAlex universe is fully traversed (`truncated: false`);
+- Research Square preprints no longer consume first-batch slots;
+- the query remains broad enough to include both analysis and reusable numerical
+  FSI methods;
+- some application/boundary false positives remain, intentionally, for the
+  conservative manual-review path to handle.
+
+The six positive benchmark titles all satisfy query v4 in title-only mode:
+
+- `10.1137/10078983X`: *Existence of Strong Solutions to a Fluid-Structure
+  System*;
+- `10.1051/m2an:2000159`: *Existence for an Unsteady Fluid-Structure
+  Interaction Problem*;
+- `10.1137/18M1172405`: *Feedback Stabilization of a Two-Dimensional
+  Fluid-Structure Interaction System with Mixed Boundary Conditions*;
+- `10.1016/j.jfluidstructs.2016.12.007`: *A port-Hamiltonian model of liquid
+  sloshing in moving containers and application to a fluid-structure system*;
+- `10.1016/j.matpur.2013.12.004`: *A fluid-structure model coupling the
+  Navier-Stokes equations and the Lamé system*;
+- `10.1137/090758313`: *An Introduction to Fluid-Structure Interaction:
+  Application to the Piston Problem*.
+
+The discovery configuration is therefore accepted for the **first real
+initialization batch**. This does not yet validate the human-review burden for
+the entire 1535-candidate campaign; that will be assessed from batch 0001 before
+increasing the batch size.
+
+Next command after this documentation PR is merged:
+
+~~~bash
+bibreview init --batch-size 10
+~~~
+
+This is the first intentionally mutating `init` command in the offsider pilot.
+
+
 ## Later — Hugo publication
 
 When the canonical bibliography and author mappings are stable enough to reach
