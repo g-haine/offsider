@@ -28,23 +28,49 @@ paths:
 discovery:
   provider: openalex
   query: >-
-    "fluid structure interaction"
-    OR "fluid structure system"
-    OR "fluid structure model"
-    OR "fluid structure coupling"
-    OR "fluid solid interaction"
-    OR "fluid solid coupling"
-    OR "fluid rigid body interaction"
-    OR "fluid rigid body coupling"
-    OR "fluid beam interaction"
-    OR "fluid beam coupling"
-    OR "fluid plate interaction"
-    OR "fluid plate coupling"
-    OR "fluid shell interaction"
-    OR "fluid shell coupling"
-    OR "fluid elastic structure interaction"
-    OR "fluid elastic structure coupling"
-    OR "interaction fluide structure"
+    (
+      (
+        "fluid structure interaction"
+        OR "fluid structure system"
+        OR "fluid structure model"
+        OR "fluid structure coupling"
+        OR "fluid solid interaction"
+        OR "fluid solid coupling"
+        OR "fluid rigid body interaction"
+        OR "fluid rigid body coupling"
+        OR "interaction fluide structure"
+      )
+      AND
+      (
+        existence
+        OR uniqueness
+        OR solvability
+        OR "well posed"
+        OR regularity
+        OR "strong solution"
+        OR "weak solution"
+        OR stabilization
+        OR stabilisation
+        OR controllability
+        OR "feedback control"
+        OR convergence
+        OR discretization
+        OR discretisation
+        OR "error estimate"
+        OR "finite element"
+        OR "numerical analysis"
+        OR variational
+        OR partitioned
+        OR monolithic
+        OR "added mass"
+        OR "time stepping"
+        OR "port Hamiltonian"
+        OR "structure preserving"
+        OR "energy preserving"
+        OR "arbitrary Lagrangian Eulerian"
+        OR "Lagrange Galerkin"
+      )
+    )
     OR ("piston problem" AND fluid)
   max_pages: 20
   accepted_types:

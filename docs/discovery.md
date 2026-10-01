@@ -288,7 +288,7 @@ mathematical/methodological core.
 This shows that query v1 is semantically too permissive rather than merely noisy
 because of repository DOI artifacts.
 
-## Active OpenAlex query v2
+## Historical OpenAlex query v2
 
 Query v2 replaces broad Boolean combinations such as:
 
@@ -335,6 +335,125 @@ initialization campaign.
 
 The relevance patterns are intentionally unchanged for this experiment. The
 next dry-run therefore measures the effect of the **query alone**.
+
+## Pilot result: query v2
+
+The query-v2 dry-run returned:
+
+~~~text
+total candidates: 3495
+batch size: 10
+first batch DOI values:
+  10.1098/rsif.2025.1261
+  10.1002/appl.70197
+  10.1007/s12034-026-03767-5
+  10.3390/axioms15100726
+  10.1016/j.anucene.2026.112880
+  10.3390/math14193536
+  10.1017/s0263574726103993
+  10.1007/978-3-032-34016-0_33
+  10.1201/9781042043149-39
+  10.1016/j.ymssp.2026.115010
+~~~
+
+This is worse than query v1 after DOI-artifact filtering:
+
+~~~text
+query v1 + DOI exclusions: 3360
+query v2 + DOI exclusions: 3495
+~~~
+
+The main methodological mistake in v2 is that it was not a strict narrowing of
+v1: it introduced new `fluid shell ...` phrase families that were absent from
+v1. The experiment therefore mixed two changes and cannot be interpreted as a
+clean narrowing test.
+
+More importantly, both candidate counts are too large for the intended
+precision-first corpus.
+
+## Active OpenAlex query v3
+
+Query v3 changes the strategy rather than adding more FSI synonyms.
+
+A candidate must now satisfy:
+
+~~~text
+explicit FSI phrase
+        AND
+mathematical / numerical-analysis / control signal
+~~~
+
+with the piston problem retained as a dedicated benchmark exception.
+
+The active query is:
+
+~~~text
+(
+  (
+    "fluid structure interaction"
+    OR "fluid structure system"
+    OR "fluid structure model"
+    OR "fluid structure coupling"
+    OR "fluid solid interaction"
+    OR "fluid solid coupling"
+    OR "fluid rigid body interaction"
+    OR "fluid rigid body coupling"
+    OR "interaction fluide structure"
+  )
+  AND
+  (
+    existence
+    OR uniqueness
+    OR solvability
+    OR "well posed"
+    OR regularity
+    OR "strong solution"
+    OR "weak solution"
+    OR stabilization
+    OR stabilisation
+    OR controllability
+    OR "feedback control"
+    OR convergence
+    OR discretization
+    OR discretisation
+    OR "error estimate"
+    OR "finite element"
+    OR "numerical analysis"
+    OR variational
+    OR partitioned
+    OR monolithic
+    OR "added mass"
+    OR "time stepping"
+    OR "port Hamiltonian"
+    OR "structure preserving"
+    OR "energy preserving"
+    OR "arbitrary Lagrangian Eulerian"
+    OR "Lagrange Galerkin"
+  )
+)
+OR ("piston problem" AND fluid)
+~~~
+
+This vocabulary is derived from the scientific scope and from the supplied
+positive controls:
+
+- existence / strong solutions;
+- well-posedness / solvability;
+- stabilization / feedback / controllability;
+- port-Hamiltonian modeling;
+- finite elements and ALE in the piston benchmark;
+- convergence/discretization terminology for numerical-analysis work.
+
+Generic terms such as `simulation`, `CFD`, `design`, `experiment`,
+`aeroelastic`, and `model` alone are deliberately not mathematical signals.
+
+The query remains intentionally conservative. Missing but relevant papers can be
+added later through ordinary reviewed discovery or manual import; freezing a
+large weakly related universe would create a much larger and less reversible
+human-review burden.
+
+The relevance regexes remain unchanged again, so the next dry-run measures only
+the effect of this discovery-query change.
 
 ## Validation protocol before freezing the campaign
 
