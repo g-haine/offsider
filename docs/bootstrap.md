@@ -304,12 +304,14 @@ It records:
 - positive benchmark DOI values and author sanity checks;
 - porous-media and experimental aeroelastic boundary controls.
 
-One scientific decision remains intentionally open before changing
-`bibreview.yml`: whether DOI `10.1108/HFF-07-2019-0592` should ultimately be
-considered in scope or used as a negative/boundary control.
+The previously ambiguous porous-media DOI
+`10.1108/HFF-07-2019-0592` has now been explicitly classified as a
+**boundary-of-exclusion control**. The classical benchmark is confirmed to be
+the **piston problem**.
 
-No OpenAlex query or relevance pattern has been committed yet. The discovery
-configuration will be derived only after this scope is reviewed.
+No OpenAlex query or relevance pattern has been committed yet. The next step is
+to derive a deliberately precise discovery query plus conservative
+mathematical/methodological auto-queue patterns from the now-stable scope.
 
 ## Step 3 — First initialization dry-run
 
