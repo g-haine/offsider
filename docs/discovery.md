@@ -1,8 +1,8 @@
 # Discovery strategy for of.FSI.der
 
 This document derives the first BibReview/OpenAlex discovery strategy from
-[`scope.md`](scope.md). It is intentionally documented before being activated
-in `bibreview.yml`.
+[`scope.md`](scope.md). Query v1 and relevance-pattern v1 are now activated in
+`bibreview.yml` after the scientific-scope review.
 
 ## Design constraints
 
@@ -27,7 +27,7 @@ A query that is too broad is undesirable: the newest-first 4,000-result window
 could crowd older foundational FSI works out of the frozen initialization
 universe.
 
-## Proposed OpenAlex query v1
+## Active OpenAlex query v1
 
 ~~~text
 ("fluid structure" AND (interaction OR system OR model OR coupling OR coupled))
@@ -90,7 +90,7 @@ Negating them at discovery time risks false negatives. Exclusion belongs in
 review unless a later pilot provides strong evidence for a safe deterministic
 rule.
 
-## Proposed accepted publication types
+## Active accepted publication types
 
 ~~~yaml
 accepted_types:
@@ -127,7 +127,7 @@ A paper should be auto-queued only when metadata contains:
 1. a convincing FSI/coupling expression; and
 2. a strong mathematical or reusable numerical-method signal.
 
-## Proposed relevance patterns v1
+## Active relevance patterns v1
 
 The following regexes are written for BibReview's normalized screening text.
 Unicode dash punctuation is normalized to `-` before matching.

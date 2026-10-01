@@ -12,10 +12,12 @@ generic BibReview onboarding documentation.
 
 ## Current status
 
-The repository is currently in the **bootstrap / scientific-scope definition**
-phase.
+The repository has completed bootstrap and scientific-scope definition.
 
-No discovery campaign has been started yet.
+The first precision-first OpenAlex discovery query and conservative BibReview
+relevance policy are configured. No persistent initialization campaign has been
+started yet; the next acceptance step is a non-mutating `bibreview init`
+dry-run.
 
 The initial configuration deliberately keeps site publication disabled. Once
 the canonical bibliography and author mappings are stable, of.FSI.der will be
@@ -44,9 +46,14 @@ unreleased `bibreview init` implementation used by this pilot.
 
 ## Next step
 
-Define the scientific inclusion/exclusion scope in
-[`docs/bootstrap.md`](docs/bootstrap.md). Only then will the OpenAlex discovery
-query and BibReview relevance patterns be added.
+Validate the configured discovery universe without persisting campaign state:
+
+~~~bash
+bibreview --dry-run init --batch-size 10 --json
+~~~
+
+Inspect the candidate count and positive-control recall before starting the
+first real initialization batch.
 
 ## Project principles
 
