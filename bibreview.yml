@@ -22,11 +22,20 @@ paths:
   archive: archive
   site: site
 
-# The scientific discovery query is deliberately not defined yet.
-# It will be added only after the inclusion/exclusion scope has been written
-# explicitly in docs/bootstrap.md and reviewed.
+# Precision-first discovery strategy derived from docs/scope.md and
+# docs/discovery.md. Application-domain exclusions are intentionally not encoded
+# here; ambiguous candidates are sent to manual review instead.
 discovery:
   provider: openalex
+  query: >-
+    ("fluid structure" AND (interaction OR system OR model OR coupling OR coupled))
+    OR ("fluid solid" AND (interaction OR system OR coupling OR coupled))
+    OR ("fluid rigid body" AND (interaction OR system OR coupling OR coupled OR motion))
+    OR ("fluid beam" AND (interaction OR system OR coupling OR coupled))
+    OR ("fluid plate" AND (interaction OR system OR coupling OR coupled))
+    OR ("fluid elastic" AND (interaction OR system OR model OR coupling OR coupled))
+    OR "interaction fluide structure"
+    OR ("piston problem" AND (fluid OR structure))
   max_pages: 20
   accepted_types:
     - journal-article
@@ -34,6 +43,7 @@ discovery:
     - book-chapter
     - book
     - monograph
+    - dissertation
   exclude_doi_substrings: []
 
 initialization:
@@ -42,7 +52,10 @@ initialization:
   batch_size: 10
 
 relevance:
-  patterns: []
+  patterns:
+    - '(?s)(?=.*\bfluid[-\s]+structure(?:s)?(?:[-\s]+interaction(?:s)?|[-\s]+system(?:s)?|[-\s]+model(?:s)?|[-\s]+coupl(?:e|ed|ing))\b)(?=.*\b(?:existence|uniqueness|well[-\s]+posed|regularity|weak[-\s]+solution|strong[-\s]+solution|stabilization|controllability|feedback|convergence|error[-\s]+estimate|port[-\s]+Hamiltonian|structure[-\s]+preserving|energy[-\s]+preserving|partitioned[-\s]+scheme|monolithic[-\s]+scheme)\b)'
+    - '(?s)(?=.*\bfluid[-\s]+(?:rigid[-\s]+bod(?:y|ies)|beam|plate|shell|elastic)\b)(?=.*\b(?:existence|uniqueness|well[-\s]+posed|regularity|weak[-\s]+solution|strong[-\s]+solution|stabilization|controllability|feedback|convergence|error[-\s]+estimate|ALE|Lagrange[-\s]+Galerkin|port[-\s]+Hamiltonian|structure[-\s]+preserving|energy[-\s]+preserving)\b)'
+    - '(?s)(?=.*\bpiston[-\s]+problem\b)(?=.*\b(?:fluid[-\s]+structure|moving[-\s]+piston|mass[-\s]+spring)\b)'
   unmatched: manual-review
 
 providers:
