@@ -44,7 +44,9 @@ discovery:
     - book
     - monograph
     - dissertation
-  exclude_doi_substrings: []
+  exclude_doi_substrings:
+    - arxiv
+    - zenodo
 
 initialization:
   campaign: audit/init/campaign.json

@@ -380,6 +380,47 @@ This incident is retained because it is useful onboarding evidence: a valid
 BibReview configuration may intentionally have no discovery query, but
 `bibreview init` requires one when starting a new campaign.
 
+### Observed first configured dry-run
+
+After PR #4 was squash-merged, the local project validated successfully and
+reported the active OpenAlex query.
+
+The non-mutating initialization preview returned:
+
+~~~text
+dry_run: true
+batch_id: batch-0001
+total: 3859
+pending: 3849
+active: 10
+~~~
+
+The first ten DOI candidates included five Zenodo records:
+
+~~~text
+10.5281/zenodo.21482924
+10.5281/zenodo.23047618
+10.5281/zenodo.23048700
+10.5281/zenodo.23043220
+10.5281/zenodo.23032611
+10.5281/zenodo.23039550
+~~~
+
+This shows that query v1 is still too noisy for a precision-first campaign.
+
+Before changing the scientific Boolean query, we first apply the same DOI-level
+noise exclusion already used in PHRAISE:
+
+~~~yaml
+exclude_doi_substrings:
+  - arxiv
+  - zenodo
+~~~
+
+This keeps the diagnostic sequence interpretable: first remove known repository
+DOI artifacts, rerun the identical dry-run, then decide whether the query itself
+must be narrowed.
+
 The first real pilot batch will remain intentionally small. We will inspect the
 frozen candidate universe and screening behavior before increasing the batch
 size.
