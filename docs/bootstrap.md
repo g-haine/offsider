@@ -597,6 +597,51 @@ bibreview --dry-run init --batch-size 10 --json
 ~~~
 
 
+
+### BibReview discovery-diagnostics repin
+
+The query-v3 dry-run returned a campaign DOI count of 3548, but this value alone
+cannot establish the size of the OpenAlex search universe.
+
+BibReview PR #143 adds provider-level initialization diagnostics so a dry-run can
+distinguish:
+
+- OpenAlex total matching works (`meta.count`);
+- pages fetched;
+- works actually examined;
+- unique DOI candidates retained;
+- whether `discovery.max_pages` truncated retrieval.
+
+PR #143 was squash-merged as:
+
+~~~text
+d1f8188b266a12492f06d26fd9850e70c25fb65f
+~~~
+
+offsider is repinned to this exact commit **without changing query v3**. This is
+a controlled instrumentation step: the scientific query must remain fixed until
+the real OpenAlex search size and truncation state are observed.
+
+The next local sequence is:
+
+~~~bash
+git pull
+bash install.sh
+conda activate offsider
+bibreview --dry-run init --batch-size 10 --json
+~~~
+
+A successful installation must print:
+
+~~~text
+BibReview commit: d1f8188b266a12492f06d26fd9850e70c25fb65f
+~~~
+
+The next decision will use the new `discovery` JSON object rather than
+`progress.total` alone. No persistent initialization campaign has yet been
+started.
+
+
 ## Later — Hugo publication
 
 When the canonical bibliography and author mappings are stable enough to reach
