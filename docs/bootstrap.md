@@ -286,20 +286,30 @@ commit pin in `offsider.yml`.
 
 ## Step 2 — Scientific scope
 
-**Pending.**
+A first explicit scientific scope has now been written in
+[`docs/scope.md`](scope.md).
 
-Before adding `discovery.query` or relevance patterns, document here:
+It records:
 
-- the scientific object covered by of.FSI.der;
-- inclusion criteria;
-- exclusion criteria;
-- terminology/synonyms likely to occur in titles and abstracts;
-- known false positives;
-- a handful of publications that must be found;
-- if possible, a handful that must *not* be retained.
+- the project identity and mining metaphor;
+- the genuine dynamical FSI criterion;
+- modelling, analysis, discretization, simulation-methodology, and control
+  viewpoints;
+- the distinction between application context and application-driven papers;
+- explicit exclusions;
+- conservative automatic/manual/reject policy;
+- terminology and supporting mathematical terms;
+- the piston problem as a classical benchmark;
+- publication-type policy, including reviewed DOI-less theses;
+- positive benchmark DOI values and author sanity checks;
+- porous-media and experimental aeroelastic boundary controls.
 
-The OpenAlex discovery query and BibReview relevance policy will be designed
-from that written scope rather than guessed from the project name.
+One scientific decision remains intentionally open before changing
+`bibreview.yml`: whether DOI `10.1108/HFF-07-2019-0592` should ultimately be
+considered in scope or used as a negative/boundary control.
+
+No OpenAlex query or relevance pattern has been committed yet. The discovery
+configuration will be derived only after this scope is reviewed.
 
 ## Step 3 — First initialization dry-run
 
