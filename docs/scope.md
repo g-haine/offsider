@@ -286,7 +286,7 @@ should find them or there should be a clear, documented reason why it does not.
 5. `10.1016/j.matpur.2013.12.004` — *A fluid-structure model coupling the
    Navier-Stokes equations and the Lamé system*.
 
-The following piston-problem reference is added as a benchmark family seed:
+The following **piston problem** reference is added as a benchmark family seed:
 
 6. `10.1137/090758313` — *An Introduction to Fluid-Structure Interaction:
    Application to the Piston Problem*.
@@ -303,19 +303,25 @@ diagnostic seeds for checking recall.
 
 ## Boundary / negative controls
 
-### Porous-media review — decision pending
+### Porous-media review — exclusion boundary
 
 `10.1108/HFF-07-2019-0592` — *A critical review on the applications of
 fluid-structure interaction in porous media*.
 
-This DOI was initially supplied with the positive examples, but its
-application-oriented porous-media scope appears to conflict with the current
-mathematical/genuine-structure criterion.
+This work is an explicit **boundary-of-exclusion control** for of.FSI.der.
 
-Until explicitly decided otherwise, treat it as a **boundary control**: it
-should not be automatically accepted. Its behavior is useful for testing whether
-the relevance policy sends ambiguous application-heavy uses of FSI to manual
-review rather than directly to the canonical acquisition queue.
+Although it uses the FSI label, its application-oriented porous-media scope does
+not satisfy the project's intended mathematical/genuine-structure criterion.
+It should therefore **not be automatically accepted**.
+
+During the pilot, the preferred behavior is either:
+
+- manual review followed by rejection; or
+- deterministic rejection if a later relevance rule can do so without harming
+  recall on genuine mathematical FSI.
+
+It is deliberately kept as a regression case for testing that broad uses of the
+FSI terminology do not leak directly into the canonical acquisition queue.
 
 ### Experimental aeroelastic thesis
 
