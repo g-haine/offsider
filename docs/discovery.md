@@ -207,6 +207,49 @@ OpenAlex DOI initialization campaign.
 
 It remains a manual-import boundary case for the later DOI-less workflow.
 
+## Pilot result: first query-v1 dry-run
+
+The first non-mutating run after activating query v1 returned:
+
+~~~text
+total candidates: 3859
+batch size: 10
+first batch DOI values:
+  10.5281/zenodo.21482924
+  10.5281/zenodo.23047618
+  10.5281/zenodo.23048700
+  10.1016/j.fuel.2026.141529
+  10.1016/j.anucene.2026.112880
+  10.3390/math14193536
+  10.5281/zenodo.23043220
+  10.5281/zenodo.23032611
+  10.1017/s0263574726103993
+  10.5281/zenodo.23039550
+~~~
+
+Five of the first ten candidates were Zenodo DOI records. This is clear
+discovery noise for the present corpus and mirrors an existing PHRAISE setting.
+
+Before tightening the scientific query itself, offsider therefore adopts:
+
+~~~yaml
+exclude_doi_substrings:
+  - arxiv
+  - zenodo
+~~~
+
+This is deliberately isolated as the **first correction** so its effect can be
+measured independently.
+
+The next action is to rerun exactly the same dry-run:
+
+~~~bash
+bibreview --dry-run init --batch-size 10 --json
+~~~
+
+Only after measuring the new candidate count and first batch should the Boolean
+query itself be narrowed further.
+
 ## Validation protocol before freezing the campaign
 
 The first query/pattern configuration should be tested in two stages.
