@@ -10,8 +10,8 @@ The first campaign should favor **precision** over exhaustive recall.
 
 Important implementation facts:
 
-- BibReview currently discovers through OpenAlex
-  `title_and_abstract.search`;
+- BibReview can select the OpenAlex `title.search`, `abstract.search`, or
+  `title_and_abstract.search` surface;
 - OpenAlex supports Boolean groups and quoted stemmed phrases in that search
   surface;
 - BibReview requests up to 20 pages of 200 results;
@@ -454,6 +454,42 @@ human-review burden.
 
 The relevance regexes remain unchanged again, so the next dry-run measures only
 the effect of this discovery-query change.
+
+## Pilot result: query v3 with title-and-abstract search
+
+With provider-level diagnostics enabled, query v3 on
+`title_and_abstract.search` returned:
+
+~~~text
+OpenAlex total matches : 23005
+pages fetched          : 20
+works examined         : 4000
+DOI candidates         : 3845
+campaign candidates    : 3548
+truncated              : true
+~~~
+
+This proves that query v3 is still far too broad for the initial frozen corpus.
+The 3548 campaign candidates are only DOI-bearing works from the newest 4000
+OpenAlex results after configured DOI exclusions; they are not the full search
+universe.
+
+The next controlled experiment changes the OpenAlex search surface only:
+
+~~~yaml
+discovery:
+  search_field: title
+~~~
+
+The Boolean query v3 itself remains unchanged.
+
+This is scientifically motivated by the positive controls, whose titles carry
+explicit FSI-family language. The dedicated piston-problem branch also remains
+available for the classical benchmark.
+
+The objective is to determine whether a title-only seed corpus is small enough
+to be exhaustively retrieved under the current `max_pages` limit while
+retaining the benchmark set.
 
 ## Validation protocol before freezing the campaign
 

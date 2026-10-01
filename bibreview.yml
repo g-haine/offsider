@@ -27,6 +27,7 @@ paths:
 # here; ambiguous candidates are sent to manual review instead.
 discovery:
   provider: openalex
+  search_field: title
   query: >-
     (
       (

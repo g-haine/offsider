@@ -642,6 +642,77 @@ The next decision will use the new `discovery` JSON object rather than
 started.
 
 
+
+### OpenAlex truncation diagnosis and title-only experiment
+
+With BibReview commit
+`d1f8188b266a12492f06d26fd9850e70c25fb65f` installed exactly, query v3
+produced the first provider-level discovery diagnostics:
+
+~~~json
+"discovery": {
+  "total_matches": 23005,
+  "pages_fetched": 20,
+  "works_examined": 4000,
+  "doi_candidates": 3845,
+  "truncated": true
+}
+~~~
+
+After configured DOI exclusions, the prospective initialization campaign
+contained 3548 DOI candidates.
+
+This establishes that the previous `progress.total` values were not the full
+OpenAlex search universe. Query v3 matches 23,005 works and BibReview examines
+only the newest 4,000 under `max_pages: 20`; discovery is therefore truncated.
+
+No real initialization campaign should be created from this state.
+
+BibReview PR #144 introduces a generic OpenAlex search-surface option:
+
+~~~yaml
+discovery:
+  search_field: title
+~~~
+
+Supported surfaces are `title`, `abstract`, and the backward-compatible
+default `title_and_abstract`.
+
+PR #144 was squash-merged as:
+
+~~~text
+4ef29b378d85365d3de4e4299395dad8c0399dbe
+~~~
+
+offsider is repinned to that exact commit and now changes **only**
+`search_field` from the default `title_and_abstract` to `title`.
+
+Query v3, relevance patterns, publication types, DOI exclusions, providers,
+`max_pages`, and batch size all remain unchanged. This isolates the effect of
+requiring the FSI/mathematical query to match the publication title.
+
+The next local sequence is:
+
+~~~bash
+git pull
+bash install.sh
+conda activate offsider
+bibreview validate
+bibreview status
+bibreview --dry-run init --batch-size 10 --json
+~~~
+
+The installation must report:
+
+~~~text
+BibReview commit: 4ef29b378d85365d3de4e4299395dad8c0399dbe
+~~~
+
+The key acceptance values are the new OpenAlex `total_matches` and
+`truncated` status, together with positive-benchmark recall. No persistent
+initialization campaign has yet been started.
+
+
 ## Later — Hugo publication
 
 When the canonical bibliography and author mappings are stable enough to reach
