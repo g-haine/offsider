@@ -190,32 +190,99 @@ repository configuration. It targets the default branch and enforces:
 
 This matches the intended PHRAISE protected-main discipline.
 
-### Expected local validation
+### Observed local validation after bootstrap merge
 
-After merging the bootstrap PR:
-
-~~~bash
-git pull
-bash install.sh
-conda activate offsider
-
-# Temporary construction setup only:
-ln -s /absolute/path/to/phraise/.env .env
-
-bibreview --version
-bibreview validate
-bibreview status
-~~~
-
-Expected BibReview package version:
+Bootstrap PR #1 was squash-merged as:
 
 ~~~text
-1.7.1
+c389142a768dab9f1a65c0ee315d9f58f2660a9e
 ~~~
 
+The local clone was updated successfully:
+
+~~~text
+(base) g.haine@port-haine:~/Documents/Recherche/offsider$ git pull
+remote: Enumerating objects: 15, done.
+remote: Counting objects: 100% (15/15), done.
+remote: Compressing objects: 100% (10/10), done.
+remote: Total 13 (delta 0), reused 0 (delta 0), pack-reused 0 (from 0)
+Dépaquetage des objets: 100% (13/13), 7.39 Kio | 7.39 Mio/s, fait.
+Depuis github.com:g-haine/offsider
+   3efce0d..c389142  main       -> origin/main
+Mise à jour 3efce0d..c389142
+Fast-forward
+ .env.example                                |   4 +
+ .github/workflows/bibreview-integration.yml |  35 +++++++
+ .gitignore                                  |   5 +
+ README.md                                   |  60 +++++++++++-
+ bibreview.yml                               |  59 ++++++++++++
+ docs/bootstrap.md                           | 272 +++++++++++++++++++++++++++++++++++++++++++++++++++++
+ install.sh                                  |  24 +++++
+ offsider.yml                                |   8 ++
+ 8 files changed, 466 insertions(+), 1 deletion(-)
+~~~
+
+The environment was then created with:
+
+~~~bash
+bash install.sh
+~~~
+
+Conda resolved the Linux environment successfully and pip resolved the exact
+BibReview Git pin:
+
+~~~text
+git+https://github.com/g-haine/bibreview.git@12c7d1bf86971aa89cdd37035aac47c2f38b467f
+Resolved https://github.com/g-haine/bibreview.git to commit 12c7d1bf86971aa89cdd37035aac47c2f38b467f
+Successfully built bibreview
+Successfully installed ... bibreview-1.7.1 ...
+Environment ready. Run: conda activate offsider
+Validate: bibreview --config "/home/disc/g.haine/Documents/Recherche/offsider/bibreview.yml" validate
+~~~
+
+The environment was activated and the pinned BibReview build reported the
+expected semantic version:
+
+~~~text
+(offsider) g.haine@port-haine:~/Documents/Recherche/offsider$ bibreview --version
+bibreview 1.7.1
+~~~
+
+Configuration validation succeeded:
+
+~~~text
+(offsider) g.haine@port-haine:~/Documents/Recherche/offsider$ bibreview validate
+Configuration valid: /home/disc/g.haine/Documents/Recherche/offsider/bibreview.yml
+~~~
+
+The initial project status was:
+
+~~~text
+(offsider) g.haine@port-haine:~/Documents/Recherche/offsider$ bibreview status
+Project: of.FSI.der (offsider)
+Schema: 1
+Discovery: openalex / (no query)
+Refresh: disabled
+Providers: crossref, openalex
+Bibliography: /home/disc/g.haine/Documents/Recherche/offsider/data/bibliography.json
+Collected staging: /home/disc/g.haine/Documents/Recherche/offsider/data/collected.json
+arXiv: disabled
+~~~
+
+This is the desired pre-discovery state:
+
+- the repository is on the merged bootstrap commit;
+- the isolated Conda environment is functional;
+- the exact post-v1.7.1 BibReview commit is reproducibly installed;
+- the configuration is valid;
+- only CrossRef and OpenAlex are currently configured for this pilot;
+- no discovery query is defined yet;
+- no bibliography or staging data has been created yet;
+- no discovery or initialization campaign has been started.
+
 The semantic version remains 1.7.1 because the init implementation is currently
-an unreleased post-v1.7.1 commit. Reproducibility is provided by the Git commit
-pin in `offsider.yml`.
+an unreleased post-v1.7.1 commit. Reproducibility is provided by the exact Git
+commit pin in `offsider.yml`.
 
 ## Step 2 — Scientific scope
 
