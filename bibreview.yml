@@ -57,4 +57,3 @@ providers:
 
 site:
   enabled: false
-  implementation: jekyll
