@@ -117,6 +117,79 @@ PHRAISE:
 The bootstrap PR adds `.github/workflows/bibreview-integration.yml` with a job
 named `integration`, matching the required PHRAISE status-check convention.
 
+### Observed local repository setup
+
+The local checkout was created from the existing PHRAISE working directory
+parent:
+
+~~~text
+(base) g.haine@port-haine:~/Documents/Recherche/phraise$ cd ..
+(base) g.haine@port-haine:~/Documents/Recherche$ clone git@github.com:g-haine/offsider.git offsider
+La commande « clone » n'a pas été trouvée, voulez-vous dire :
+  commande « rclone » du snap rclone (1.75.1)
+  commande « rclone » du deb rclone (1.53.3-4ubuntu1.22.04.4)
+Voir « snap info <nomdusnap> » pour des versions supplémentaires.
+~~~
+
+This first attempt was a shell-command typo: `clone` is not a standalone
+command. The corrected Git command was:
+
+~~~text
+(base) g.haine@port-haine:~/Documents/Recherche$ git clone git@github.com:g-haine/offsider.git offsider
+Clonage dans 'offsider'...
+remote: Enumerating objects: 37, done.
+remote: Counting objects: 100% (37/37), done.
+remote: Compressing objects: 100% (31/31), done.
+remote: Total 37 (delta 11), reused 0 (delta 0), pack-reused 0 (from 0)
+Réception d'objets: 100% (37/37), 8.62 Kio | 8.62 Mio/s, fait.
+Résolution des deltas: 100% (11/11), fait.
+~~~
+
+The repository initially contained only the committed root README on `main`:
+
+~~~text
+(base) g.haine@port-haine:~/Documents/Recherche$ cd offsider/
+(base) g.haine@port-haine:~/Documents/Recherche/offsider$ ls
+README.md
+~~~
+
+The temporary construction dotenv was then linked to the neighboring PHRAISE
+checkout:
+
+~~~text
+(base) g.haine@port-haine:~/Documents/Recherche/offsider$ ln -s ../phraise/.env .env
+~~~
+
+This relative symlink is appropriate for the observed local layout:
+
+~~~text
+~/Documents/Recherche/
+  phraise/.env
+  offsider/.env -> ../phraise/.env
+~~~
+
+No secret is copied into the offsider repository and `.env` remains ignored by
+Git.
+
+### Observed main-branch protection
+
+The GitHub ruleset **Protect main** was created and verified against the live
+repository configuration. It targets the default branch and enforces:
+
+- branch deletion blocked;
+- non-fast-forward / force-push updates blocked;
+- linear history required;
+- pull requests required;
+- zero mandatory approvals;
+- review conversations must be resolved;
+- no additional approval for unattributed changes;
+- squash is the only allowed merge method;
+- required `integration` status check;
+- strict/up-to-date status-check policy;
+- no bypass actor.
+
+This matches the intended PHRAISE protected-main discipline.
+
 ### Expected local validation
 
 After merging the bootstrap PR:
