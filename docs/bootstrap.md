@@ -286,30 +286,61 @@ commit pin in `offsider.yml`.
 
 ## Step 2 — Scientific scope
 
-**Pending.**
+A first explicit scientific scope has now been written in
+[`docs/scope.md`](scope.md).
 
-Before adding `discovery.query` or relevance patterns, document here:
+It records:
 
-- the scientific object covered by of.FSI.der;
-- inclusion criteria;
-- exclusion criteria;
-- terminology/synonyms likely to occur in titles and abstracts;
-- known false positives;
-- a handful of publications that must be found;
-- if possible, a handful that must *not* be retained.
+- the project identity and mining metaphor;
+- the genuine dynamical FSI criterion;
+- modelling, analysis, discretization, simulation-methodology, and control
+  viewpoints;
+- the distinction between application context and application-driven papers;
+- explicit exclusions;
+- conservative automatic/manual/reject policy;
+- terminology and supporting mathematical terms;
+- the piston problem as a classical benchmark;
+- publication-type policy, including reviewed DOI-less theses;
+- positive benchmark DOI values and author sanity checks;
+- porous-media and experimental aeroelastic boundary controls.
 
-The OpenAlex discovery query and BibReview relevance policy will be designed
-from that written scope rather than guessed from the project name.
+The previously ambiguous porous-media DOI
+`10.1108/HFF-07-2019-0592` has now been explicitly classified as a
+**boundary-of-exclusion control**. The classical benchmark is confirmed to be
+the **piston problem**.
 
-## Step 3 — First initialization dry-run
+No OpenAlex query or relevance pattern has been committed yet. The next step is
+to derive a deliberately precise discovery query plus conservative
+mathematical/methodological auto-queue patterns from the now-stable scope.
 
-**Pending scientific scope.**
+## Step 3 — Discovery strategy and first initialization dry-run
 
-Planned first command:
+The first precision-first discovery design is now documented in
+[`docs/discovery.md`](discovery.md).
+
+It proposes:
+
+- a Boolean OpenAlex query centered on explicit fluid/structure coupling
+  language rather than generic PDE terms;
+- no application-domain `NOT` filters;
+- `dissertation` support for DOI-backed theses;
+- strict FSI + mathematical/methodological auto-queue patterns;
+- `manual-review` for all supported unmatched candidates;
+- positive DOI recall tests;
+- the porous-media DOI as an exclusion-boundary regression test.
+
+The configuration is still **not active** in `bibreview.yml`.
+
+After the scientific/discovery documentation is merged, the next configuration
+PR will activate query v1 and the relevance patterns. Its first local acceptance
+command will be:
 
 ~~~bash
-bibreview --dry-run init --batch-size 10
+bibreview --dry-run init --batch-size 10 --json
 ~~~
+
+No real campaign should be created until the dry-run size and positive benchmark
+recall have been inspected.
 
 The first real pilot batch will remain intentionally small. We will inspect the
 frozen candidate universe and screening behavior before increasing the batch
