@@ -1,0 +1,60 @@
+schema_version: 1
+
+environment:
+  file: .env
+
+project:
+  name: of.FSI.der
+  slug: offsider
+  title: of.FSI.der
+  repository: https://github.com/g-haine/offsider
+
+paths:
+  bibliography: data/bibliography.json
+  collected: data/collected.json
+  author_mappings: data/author_mappings.json
+  known: data/ID.txt
+  pending: data/newID.txt
+  rejected: data/badID.txt
+  review: data/checkID.txt
+  bibtex: bib
+  imports: data/imports
+  archive: archive
+  site: site
+
+# The scientific discovery query is deliberately not defined yet.
+# It will be added only after the inclusion/exclusion scope has been written
+# explicitly in docs/bootstrap.md and reviewed.
+discovery:
+  provider: openalex
+  max_pages: 20
+  accepted_types:
+    - journal-article
+    - proceedings-article
+    - book-chapter
+    - book
+    - monograph
+  exclude_doi_substrings: []
+
+initialization:
+  campaign: audit/init/campaign.json
+  report: audit/init/report.json
+  batch_size: 10
+
+relevance:
+  patterns: []
+  unmatched: manual-review
+
+providers:
+  crossref:
+    enabled: true
+    min_interval_seconds: 0.5
+
+  openalex:
+    enabled: true
+    min_interval_seconds: 0.5
+    api_key_env: OPENALEX_API_KEY
+
+site:
+  enabled: false
+  implementation: jekyll
