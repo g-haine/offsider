@@ -371,7 +371,7 @@ clean narrowing test.
 More importantly, both candidate counts are too large for the intended
 precision-first corpus.
 
-## Active OpenAlex query v3
+## Historical OpenAlex query v3
 
 Query v3 changes the strategy rather than adding more FSI synonyms.
 
@@ -490,6 +490,95 @@ available for the classical benchmark.
 The objective is to determine whether a title-only seed corpus is small enough
 to be exhaustively retrieved under the current `max_pages` limit while
 retaining the benchmark set.
+
+## Pilot result: query v3 with title-only search
+
+With `search_field: title`, query v3 returned:
+
+~~~text
+OpenAlex total matches : 2147
+pages fetched          : 11
+works examined         : 2147
+DOI candidates         : 1643
+campaign candidates    : 1524
+truncated              : false
+~~~
+
+This is a major improvement over title-and-abstract search:
+
+~~~text
+title_and_abstract : 23005 matches, truncated
+title              :  2147 matches, complete
+~~~
+
+The first batch is also qualitatively much closer to the intended corpus,
+including current work on:
+
+- ALE/isogeometric FSI methods;
+- immersed isogeometric FSI discretization;
+- strong-solution analysis;
+- weak-solution analysis of vascular FSI.
+
+However, two deterministic corrections are required before freezing the
+campaign.
+
+### Research Square preprint exclusion
+
+A Research Square DOI appeared in the first batch:
+
+~~~text
+10.21203/rs.3.rs-10757285/v1
+~~~
+
+Because preprints are explicitly outside the corpus policy, query v4 extends
+the existing DOI exclusions with:
+
+~~~yaml
+- 10.21203/rs.3.rs
+~~~
+
+### Positive-control title recall
+
+The known-positive paper:
+
+~~~text
+10.1016/j.matpur.2013.12.004
+A fluid-structure model coupling the Navier-Stokes equations and the Lamé system
+~~~
+
+would not satisfy query v3 on title alone: `"fluid structure model"` matches
+the FSI-family block, but the title contains none of the current second-stage
+analysis/method signals.
+
+Query v4 therefore adds only the title signals needed to retain this family:
+
+~~~text
+"Navier Stokes"
+Lame
+Lamé
+~~~
+
+These remain gated by an explicit FSI-family phrase, so they do not act as
+standalone generic PDE discovery terms.
+
+## Active OpenAlex query v4
+
+Query v4 keeps title-only OpenAlex search and the entire v3 structure, with only
+the three additional mathematical-model signals above.
+
+The intended invariant remains:
+
+~~~text
+explicit FSI phrase in title
+        AND
+mathematical / numerical-analysis / control / governing-model signal in title
+~~~
+
+with the piston problem as its dedicated exception.
+
+The relevance regexes remain unchanged: a newly discovered positive may still
+land in manual review, which is acceptable. The discovery layer's primary
+requirement is not to miss known-positive seed families.
 
 ## Validation protocol before freezing the campaign
 
