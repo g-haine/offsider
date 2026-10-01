@@ -713,6 +713,101 @@ The key acceptance values are the new OpenAlex `total_matches` and
 initialization campaign has yet been started.
 
 
+
+### Observed title-only dry-run and final seed-query correction
+
+With BibReview commit
+`4ef29b378d85365d3de4e4299395dad8c0399dbe` installed exactly and
+`discovery.search_field: title`, the same query v3 returned:
+
+~~~json
+"discovery": {
+  "total_matches": 2147,
+  "pages_fetched": 11,
+  "works_examined": 2147,
+  "doi_candidates": 1643,
+  "truncated": false
+}
+~~~
+
+After configured DOI exclusions, the prospective initialization campaign
+contained 1524 DOI candidates.
+
+This is the first discovery configuration that is both bounded and complete
+under the current `max_pages: 20` policy:
+
+- the OpenAlex universe is fully traversed;
+- no newest-first truncation remains;
+- the first batch contains several clearly mathematical/methodological FSI
+  papers.
+
+Two issues were identified before freezing a real campaign.
+
+#### Research Square preprints
+
+The first batch contained:
+
+~~~text
+10.21203/rs.3.rs-10757285/v1
+~~~
+
+The `10.21203/rs.3.rs...` DOI family identifies Research Square preprints.
+Because of.FSI.der explicitly excludes preprints, the project now adds:
+
+~~~yaml
+exclude_doi_substrings:
+  - arxiv
+  - zenodo
+  - 10.21203/rs.3.rs
+~~~
+
+This uses BibReview's existing project-level DOI exclusion mechanism and avoids
+spending initialization slots on a publication family that is out of scope by
+policy.
+
+#### Positive-control recall gap
+
+The title-only strategy also exposes a deterministic recall gap in query v3.
+
+Positive control:
+
+~~~text
+10.1016/j.matpur.2013.12.004
+A fluid-structure model coupling the Navier-Stokes equations and the Lamé system
+~~~
+
+The title satisfies the FSI-family half of query v3 through
+`"fluid structure model"`, but none of the existing second-stage
+mathematical/methodological signals appears in that title.
+
+To preserve this known-positive family without broadly adding generic PDE terms,
+the title-query signal list is extended with:
+
+~~~text
+"Navier Stokes"
+Lame
+Lamé
+~~~
+
+This is query v4. No other query family, relevance regex, publication type,
+provider, page limit, or batch size changes.
+
+The next acceptance command remains non-mutating:
+
+~~~bash
+bibreview --dry-run init --batch-size 10 --json
+~~~
+
+Acceptance requires:
+
+- `truncated: false`;
+- no Research Square DOI in the first batch;
+- a still-manageable provider/campaign universe;
+- preservation of the known positive benchmark families.
+
+No persistent initialization campaign has yet been started.
+
+
 ## Later — Hugo publication
 
 When the canonical bibliography and author mappings are stable enough to reach

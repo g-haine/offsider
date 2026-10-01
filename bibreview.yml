@@ -60,6 +60,9 @@ discovery:
         OR "error estimate"
         OR "finite element"
         OR "numerical analysis"
+        OR "Navier Stokes"
+        OR Lame
+        OR Lamé
         OR variational
         OR partitioned
         OR monolithic
@@ -84,6 +87,7 @@ discovery:
   exclude_doi_substrings:
     - arxiv
     - zenodo
+    - 10.21203/rs.3.rs
 
 initialization:
   campaign: audit/init/campaign.json
