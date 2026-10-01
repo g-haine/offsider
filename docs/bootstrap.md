@@ -425,6 +425,47 @@ The first real pilot batch will remain intentionally small. We will inspect the
 frozen candidate universe and screening behavior before increasing the batch
 size.
 
+### BibReview init exclusion bug and repin
+
+The follow-up dry-run after configuring `exclude_doi_substrings` still returned
+the same 3859-candidate universe and still placed Zenodo DOI records in
+`batch-0001`.
+
+This revealed an upstream BibReview bug: DOI exclusions were applied only while
+screening a batch, after the stable initialization campaign had already been
+created from the raw OpenAlex DOI list.
+
+BibReview PR #142 fixed the contract so configured DOI exclusions are applied
+**before** the initialization universe is frozen.
+
+PR #142 was squash-merged as:
+
+~~~text
+9c9c69b167a3575dfec4c2eafff4b5d791de96b5
+~~~
+
+offsider is repinned from the original post-v1.7.1 initialization commit to this
+exact commit before repeating the same non-mutating acceptance test.
+
+The semantic package version remains `1.7.1`; reproducibility during this
+pre-v1.8.0 pilot therefore continues to rely on the exact Git commit pin.
+
+The next local sequence is:
+
+~~~bash
+git pull
+bash install.sh
+conda activate offsider
+bibreview --dry-run init --batch-size 10 --json
+~~~
+
+Expected acceptance signal:
+
+- Zenodo/arXiv DOI artifacts no longer contribute to `progress.total`;
+- no Zenodo/arXiv DOI appears in the first batch;
+- no campaign state is persisted because the command remains a dry-run.
+
+
 ## Later — Hugo publication
 
 When the canonical bibliography and author mappings are stable enough to reach
