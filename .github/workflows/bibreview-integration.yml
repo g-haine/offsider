@@ -33,3 +33,10 @@ jobs:
 
       - name: Show resolved project status
         run: bibreview status
+
+      - name: Verify discovery query is configured
+        run: |
+          if bibreview status | grep -F "(no query)"; then
+            echo "Discovery query is unexpectedly missing." >&2
+            exit 1
+          fi
