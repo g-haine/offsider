@@ -466,6 +466,47 @@ Expected acceptance signal:
 - no campaign state is persisted because the command remains a dry-run.
 
 
+### Existing-environment repin trap
+
+The first local test after repinning offsider to BibReview
+`9c9c69b167a3575dfec4c2eafff4b5d791de96b5` still behaved like the previous
+BibReview commit:
+
+~~~text
+bibreview 1.7.1
+...
+total: 3858
+...
+10.5281/zenodo.21482924
+10.5281/zenodo.23047618
+...
+~~~
+
+Inspection of the installation log showed that `conda env update` invoked pip
+with the new Git URL and pip resolved the new commit metadata, but did not build
+or reinstall BibReview. Because both Git commits expose the same package version
+(`1.7.1`), the already-installed distribution was considered sufficient.
+
+This is an environment-maintenance issue rather than a failure of BibReview PR
+#142.
+
+Correction: `install.sh` now extracts the BibReview VCS requirement directly
+from `offsider.yml`, forces its reinstallation with `--force-reinstall
+--no-deps`, and verifies the installed commit from the package's
+`direct_url.json`.
+
+The CI also checks the exact installed Git commit rather than only the semantic
+package version.
+
+After this correction, a successful install must print:
+
+~~~text
+BibReview commit: 9c9c69b167a3575dfec4c2eafff4b5d791de96b5
+~~~
+
+Only then should the initialization dry-run be repeated.
+
+
 ## Later — Hugo publication
 
 When the canonical bibliography and author mappings are stable enough to reach
