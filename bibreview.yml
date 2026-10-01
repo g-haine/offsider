@@ -28,14 +28,24 @@ paths:
 discovery:
   provider: openalex
   query: >-
-    ("fluid structure" AND (interaction OR system OR model OR coupling OR coupled))
-    OR ("fluid solid" AND (interaction OR system OR coupling OR coupled))
-    OR ("fluid rigid body" AND (interaction OR system OR coupling OR coupled OR motion))
-    OR ("fluid beam" AND (interaction OR system OR coupling OR coupled))
-    OR ("fluid plate" AND (interaction OR system OR coupling OR coupled))
-    OR ("fluid elastic" AND (interaction OR system OR model OR coupling OR coupled))
+    "fluid structure interaction"
+    OR "fluid structure system"
+    OR "fluid structure model"
+    OR "fluid structure coupling"
+    OR "fluid solid interaction"
+    OR "fluid solid coupling"
+    OR "fluid rigid body interaction"
+    OR "fluid rigid body coupling"
+    OR "fluid beam interaction"
+    OR "fluid beam coupling"
+    OR "fluid plate interaction"
+    OR "fluid plate coupling"
+    OR "fluid shell interaction"
+    OR "fluid shell coupling"
+    OR "fluid elastic structure interaction"
+    OR "fluid elastic structure coupling"
     OR "interaction fluide structure"
-    OR ("piston problem" AND (fluid OR structure))
+    OR ("piston problem" AND fluid)
   max_pages: 20
   accepted_types:
     - journal-article
