@@ -506,6 +506,61 @@ BibReview commit: 9c9c69b167a3575dfec4c2eafff4b5d791de96b5
 
 Only then should the initialization dry-run be repeated.
 
+### Observed validation with the exact BibReview commit installed
+
+After the installation fix was merged, `bash install.sh` explicitly confirmed:
+
+~~~text
+BibReview commit: 9c9c69b167a3575dfec4c2eafff4b5d791de96b5
+~~~
+
+The repeated non-mutating dry-run then returned:
+
+~~~text
+total: 3360
+pending: 3350
+active: 10
+~~~
+
+with first batch:
+
+~~~text
+10.1002/appl.70197
+10.1007/s12034-026-03767-5
+10.3390/axioms15100726
+10.1016/j.fuel.2026.141529
+10.1016/j.anucene.2026.112880
+10.3390/math14193536
+10.1017/s0263574726103993
+10.1007/978-3-032-34016-0_33
+10.1201/9781042043149-39
+10.1016/j.ymssp.2026.115010
+~~~
+
+This validates the upstream DOI-exclusion fix:
+
+- total candidates decreased from 3859 to 3360;
+- Zenodo/arXiv DOI artifacts disappeared from the first batch;
+- excluded DOI artifacts no longer consume initialization slots.
+
+The remaining universe is nevertheless too broad for the intended
+precision-first corpus. The first batch contains application-heavy FSI work,
+including the robotic-fish prototype paper
+`10.1017/S0263574726103993`.
+
+The next controlled experiment therefore changes **only** the OpenAlex query
+from broad Boolean combinations to explicit FSI phrase families. Relevance
+patterns, accepted publication types, provider settings, and batch size remain
+unchanged.
+
+The next acceptance command remains:
+
+~~~bash
+bibreview --dry-run init --batch-size 10 --json
+~~~
+
+No real initialization campaign has yet been persisted.
+
 
 ## Later — Hugo publication
 
