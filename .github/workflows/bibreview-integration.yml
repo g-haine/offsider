@@ -27,6 +27,22 @@ jobs:
       - name: Verify pinned BibReview
         run: |
           test "$(bibreview --version)" = "bibreview 1.7.1"
+          python - <<'PY'
+          import importlib.metadata
+          import json
+
+          expected = "9c9c69b167a3575dfec4c2eafff4b5d791de96b5"
+          distribution = importlib.metadata.distribution("bibreview")
+          raw = distribution.read_text("direct_url.json")
+          if not raw:
+              raise SystemExit("BibReview installation has no direct_url.json")
+          installed = json.loads(raw).get("vcs_info", {}).get("commit_id", "")
+          if installed != expected:
+              raise SystemExit(
+                  f"BibReview commit mismatch: expected {expected}, installed {installed}"
+              )
+          print(f"BibReview commit: {installed}")
+          PY
 
       - name: Validate configuration
         run: bibreview validate
