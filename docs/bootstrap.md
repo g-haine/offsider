@@ -80,6 +80,43 @@ has been written explicitly. Likewise, the site layer will be introduced only
 after canonical ingestion is validated; the pilot will then exercise the new
 Hugo renderer rather than creating temporary Jekyll state.
 
+### Temporary local provider credentials
+
+During the construction pilot, the local offsider checkout may reuse the
+existing PHRAISE dotenv file. Prefer a local symbolic link rather than copying
+the secret file:
+
+~~~bash
+ln -s /absolute/path/to/phraise/.env .env
+~~~
+
+The local `.env` path is ignored by Git and must never be committed. At this
+stage offsider's configuration consumes only the provider variables it
+explicitly references; unrelated variables present in the PHRAISE dotenv file
+are harmless.
+
+This is deliberately temporary. Before offsider becomes an independently
+maintained/deployed project, create project-specific API credentials where the
+providers support them and replace the symlink with an offsider-owned local
+`.env`.
+
+### Main-branch protection
+
+The repository should use the same protected-main discipline as BibReview and
+PHRAISE:
+
+- protect the default branch;
+- prevent deletion;
+- prevent non-fast-forward updates / force pushes;
+- require linear history;
+- require changes through pull requests;
+- allow squash merging only;
+- require resolution of review conversations;
+- require the `integration` status check once the bootstrap CI exists.
+
+The bootstrap PR adds `.github/workflows/bibreview-integration.yml` with a job
+named `integration`, matching the required PHRAISE status-check convention.
+
 ### Expected local validation
 
 After merging the bootstrap PR:
@@ -88,6 +125,9 @@ After merging the bootstrap PR:
 git pull
 bash install.sh
 conda activate offsider
+
+# Temporary construction setup only:
+ln -s /absolute/path/to/phraise/.env .env
 
 bibreview --version
 bibreview validate
