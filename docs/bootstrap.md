@@ -313,15 +313,34 @@ No OpenAlex query or relevance pattern has been committed yet. The next step is
 to derive a deliberately precise discovery query plus conservative
 mathematical/methodological auto-queue patterns from the now-stable scope.
 
-## Step 3 — First initialization dry-run
+## Step 3 — Discovery strategy and first initialization dry-run
 
-**Pending scientific scope.**
+The first precision-first discovery design is now documented in
+[`docs/discovery.md`](discovery.md).
 
-Planned first command:
+It proposes:
+
+- a Boolean OpenAlex query centered on explicit fluid/structure coupling
+  language rather than generic PDE terms;
+- no application-domain `NOT` filters;
+- `dissertation` support for DOI-backed theses;
+- strict FSI + mathematical/methodological auto-queue patterns;
+- `manual-review` for all supported unmatched candidates;
+- positive DOI recall tests;
+- the porous-media DOI as an exclusion-boundary regression test.
+
+The configuration is still **not active** in `bibreview.yml`.
+
+After the scientific/discovery documentation is merged, the next configuration
+PR will activate query v1 and the relevance patterns. Its first local acceptance
+command will be:
 
 ~~~bash
-bibreview --dry-run init --batch-size 10
+bibreview --dry-run init --batch-size 10 --json
 ~~~
+
+No real campaign should be created until the dry-run size and positive benchmark
+recall have been inspected.
 
 The first real pilot batch will remain intentionally small. We will inspect the
 frozen candidate universe and screening behavior before increasing the batch
