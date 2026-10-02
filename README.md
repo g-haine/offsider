@@ -13,7 +13,7 @@ generic BibReview onboarding documentation.
 ## Current status
 
 The repository has completed bootstrap, scientific-scope definition, seed-query
-acceptance, and the first three real initialization batches.
+acceptance, and the first four real initialization batches.
 
 The accepted title-only OpenAlex seed query produced a complete, non-truncated
 1535-candidate DOI campaign.
@@ -31,13 +31,18 @@ review candidates. Human review resolved the batch to 6 accepted and 4
 rejected publications; all 6 accepted records were collected and merged
 successfully.
 
-The canonical bibliography therefore currently contains 20 publications, with
-10 rejected initialization candidates. All 61 current author identities are
+Batch `batch-0004` produced 4 automatic pending candidates, 5 manual-review
+candidates, and 1 automatic rejection. Human review resolved the batch to 6
+accepted and 4 rejected publications. All 6 accepted records were collected
+and merged successfully.
+
+The canonical bibliography therefore currently contains 26 publications, with
+14 rejected initialization candidates. All 81 current author name variants are
 mapped explicitly.
 
-The persisted initialization status remains read-only at `2/3` closed batches;
+The persisted initialization status remains read-only at `3/4` closed batches;
 the next real `bibreview init` planning step will reconcile the completed
-`batch-0003`, close it, and open `batch-0004`.
+`batch-0004`, close it, and open `batch-0005`.
 
 Site publication remains disabled. Once the canonical bibliography and author
 mappings are stable, of.FSI.der will be used to validate BibReview's planned
@@ -67,11 +72,11 @@ after `batch-0002`.
 
 ## Next step
 
-The first three batches confirm that a batch size of 10 keeps the human-review
+The first four batches confirm that a batch size of 10 keeps the human-review
 burden manageable and that the end-to-end initialization workflow is resumable.
 
-The next real initialization step will reconcile the completed `batch-0003`
-and open `batch-0004`:
+The next real initialization step will reconcile the completed `batch-0004`
+and open `batch-0005`:
 
 ~~~bash
 git pull
