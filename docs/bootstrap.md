@@ -988,6 +988,102 @@ Rejected      : 2
 Only after this status is confirmed should the real `bibreview merge` be run.
 
 
+
+### First canonical merge and continuation preview
+
+After repinning to BibReview
+`411fb9ffa7d592db35b6d43ecfbd3b1a68ad35f9`, the corrected pre-merge
+initialization status was observed exactly as intended:
+
+~~~text
+Initialization campaign
+  Total         : 1535
+  Unscreened    : 1525
+  Pending       : 0
+  Manual review : 0
+  Staged        : 8
+  Merged        : 0
+  Rejected      : 2
+  Skipped       : 0
+  Retryable     : 0
+  Failed        : 0
+  Batches       : 0/1
+~~~
+
+The canonical merge preview remained:
+
+~~~text
+incoming: 8; added: 8; updated: 0; unchanged: 0; rejected: 0; retained: 8
+~~~
+
+The real merge then completed successfully with the same result:
+
+~~~text
+incoming: 8; added: 8; updated: 0; unchanged: 0; rejected: 0; retained: 8
+~~~
+
+Post-merge initialization status was:
+
+~~~text
+Initialization campaign
+  Total         : 1535
+  Unscreened    : 1525
+  Pending       : 0
+  Manual review : 0
+  Staged        : 0
+  Merged        : 8
+  Rejected      : 2
+  Skipped       : 0
+  Retryable     : 0
+  Failed        : 0
+  Batches       : 0/1
+~~~
+
+The batch counter remains `0/1` in this read-only status because reconciliation
+and batch closure are state mutations performed by the next `init` planning
+step, not by `init --status`.
+
+A final non-mutating continuation preview confirmed that behavior:
+
+~~~text
+Dry run: total: 1535; pending: 1515; active: 10; completed: 10;
+retryable: 0; failed: 0; batches: 1/2; current-batch: batch-0002
+Would initialize 10 candidate(s) in batch-0002.
+~~~
+
+This validates the complete initialization control loop:
+
+~~~text
+batch-0001 screening
+        ↓
+human relevance decisions
+        ↓
+collect
+        ↓
+staging
+        ↓
+merge
+        ↓
+canonical/rejected reconciliation
+        ↓
+close batch-0001
+        ↓
+prepare batch-0002
+~~~
+
+The canonical output of `batch-0001` is now versioned in the repository:
+
+- 8 tracked BibTeX files;
+- 8 canonical DOI tokens in `data/ID.txt`;
+- 2 rejected DOI tokens in `data/badID.txt`;
+- 8 canonical publications in `data/bibliography.json`;
+- empty current `newID.txt`, `checkID.txt`, and collected staging state.
+
+The local campaign files remain under the ignored `audit/` working state.
+The next real `bibreview init --batch-size 10` will persist the closure of
+`batch-0001` and open `batch-0002`.
+
+
 ## Later — Hugo publication
 
 When the canonical bibliography and author mappings are stable enough to reach

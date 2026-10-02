@@ -12,17 +12,22 @@ generic BibReview onboarding documentation.
 
 ## Current status
 
-The repository has completed bootstrap and scientific-scope definition.
+The repository has completed bootstrap, scientific-scope definition, seed-query
+acceptance, and the first real initialization batch.
 
-The first precision-first OpenAlex discovery query and conservative BibReview
-relevance policy are configured. No persistent initialization campaign has been
-started yet; the next acceptance step is a non-mutating `bibreview init`
-dry-run.
+The accepted title-only OpenAlex seed query produced a complete, non-truncated
+1535-candidate DOI campaign. Batch `batch-0001` was processed end to end:
+8 publications were reviewed, collected, and merged into the canonical
+bibliography; 2 candidates were deliberately rejected.
 
-The initial configuration deliberately keeps site publication disabled. Once
-the canonical bibliography and author mappings are stable, of.FSI.der will be
-used to validate BibReview's planned **Hugo** renderer and GitHub Pages
-publication workflow.
+The initialization workflow has also been validated across the explicit
+screening → human review → collect → merge boundaries. A non-mutating
+continuation preview correctly closes `batch-0001` and prepares
+`batch-0002`.
+
+Site publication remains disabled. Once the canonical bibliography and author
+mappings are stable, of.FSI.der will be used to validate BibReview's planned
+**Hugo** renderer and GitHub Pages publication workflow.
 
 ## Local environment
 
@@ -46,14 +51,16 @@ unreleased `bibreview init` implementation used by this pilot.
 
 ## Next step
 
-Validate the configured discovery universe without persisting campaign state:
+After the canonical `batch-0001` data PR is merged, continue the existing
+local initialization campaign with the next bounded batch:
 
 ~~~bash
-bibreview --dry-run init --batch-size 10 --json
+git pull
+bibreview init --batch-size 10
 ~~~
 
-Inspect the candidate count and positive-control recall before starting the
-first real initialization batch.
+Keep the batch size at 10 until at least one additional batch confirms that the
+manual-review burden and end-to-end collect/merge workflow remain acceptable.
 
 ## Project principles
 
