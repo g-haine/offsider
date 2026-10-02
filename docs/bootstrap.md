@@ -1376,6 +1376,150 @@ collection staging, and no unresolved author identity.
 
 
 
+### Fourth initialization batch
+
+The fourth real initialization batch was opened with the same bounded size of
+10 candidates.
+
+The persisted batch was:
+
+~~~text
+10.1080/09507116.2026.2662455
+10.1007/s00498-026-00446-y
+10.1016/j.compstruc.2026.108232
+10.20868/upm.thesis.95475
+10.1137/24m1695932
+10.1109/robosoft67810.2026.11522883
+10.1016/j.compgeo.2026.108115
+10.1016/j.oceaneng.2026.125353
+10.1063/5.0313805
+10.13016/m20eoh-f840
+~~~
+
+Initial screening produced:
+
+~~~text
+Pending       : 4
+Manual review : 5
+Rejected      : 1
+~~~
+
+Human review resolved the batch to 6 accepted and 4 rejected candidates.
+
+The accepted DOI values were:
+
+~~~text
+10.20868/upm.thesis.95475
+10.1137/24m1695932
+10.1109/robosoft67810.2026.11522883
+10.1016/j.compstruc.2026.108232
+10.1016/j.compgeo.2026.108115
+10.1063/5.0313805
+~~~
+
+The rejected DOI values were:
+
+~~~text
+10.1007/s00498-026-00446-y
+10.1080/09507116.2026.2662455
+10.1016/j.oceaneng.2026.125353
+10.13016/m20eoh-f840
+~~~
+
+This batch exposed one useful automatic-screening false positive:
+`10.1007/s00498-026-00446-y` contains strong mathematical FSI-style control
+signals, but its simplified "fluid" subsystem is a heat equation rather than a
+genuine fluid model under the current Offsider scope.
+
+The automatically rejected `10.13016/m20eoh-f840` was also confirmed as out of
+scope because it is a preprint-only record, while Offsider requires a formal
+publication type.
+
+Collection succeeded for all 6 accepted candidates:
+
+~~~text
+submitted: 6; candidates: 6; collected: 6; unavailable: 0; invalid: 0; existing: 20
+~~~
+
+The staged records included one dissertation, one proceedings paper, and four
+journal articles. Before merge, the dissertation
+`10.20868/upm.thesis.95475` required a reviewed BibTeX correction: DOI content
+negotiation returned `author={Xia Yingjie}` and omitted the year, while the
+canonical collected record identified `Yingjie Xia` and publication year
+`2026`. The tracked BibTeX was corrected to:
+
+~~~bibtex
+@phdthesis{Xia,
+  title={{High-Fidelity Fluid-Structure Interaction: Modeling, Analysis, and Control of Flow-Induced Vibration}},
+  DOI={10.20868/upm.thesis.95475},
+  school={Universidad Politecnica de Madrid - University Library},
+  author={Xia, Yingjie},
+  year={2026}
+}
+~~~
+
+This follows BibReview's explicit rule that provider BibTeX is evidence and may
+be corrected manually before merge when the canonical metadata is better.
+
+The canonical merge preview was:
+
+~~~text
+incoming: 6; added: 6; updated: 0; unchanged: 0; rejected: 0; retained: 26
+~~~
+
+and the real merge completed with the same result.
+
+Post-merge initialization status was:
+
+~~~text
+Initialization campaign
+  Total         : 1535
+  Unscreened    : 1495
+  Pending       : 0
+  Manual review : 0
+  Staged        : 0
+  Merged        : 26
+  Rejected      : 14
+  Skipped       : 0
+  Retryable     : 0
+  Failed        : 0
+  Batches       : 3/4
+~~~
+
+Author maintenance then found 18 safe mappings plus two legitimate identity
+collisions requiring manual review:
+
+~~~text
+Xiangyu Xu  !=  Xinpeng Xu
+Xiu Yang    !=  Xi Yang
+~~~
+
+Both were confirmed as distinct authors and received separate stable mappings.
+Final author state was:
+
+~~~text
+Known name variants: 81
+Unknown author names: 0
+All publication authors are mapped.
+~~~
+
+Final validation before versioning the batch reported:
+
+~~~text
+Configuration valid
+Dry run: incoming: 0; added: 0; updated: 0; unchanged: 0; rejected: 0; retained: 26
+~~~
+
+The fourth batch therefore leaves the project with 26 canonical publications,
+14 rejected initialization candidates, 81 mapped author-name variants, empty
+collection staging, and no unresolved author identity.
+
+As with previous batches, `init --status` is intentionally read-only. The next
+real `bibreview init --batch-size 10` planning step will reconcile the completed
+`batch-0004`, close it, and open `batch-0005`.
+
+
+
 ## Later — Hugo publication
 
 When the canonical bibliography and author mappings are stable enough to reach
