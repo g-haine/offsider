@@ -13,17 +13,25 @@ generic BibReview onboarding documentation.
 ## Current status
 
 The repository has completed bootstrap, scientific-scope definition, seed-query
-acceptance, and the first real initialization batch.
+acceptance, and the first two real initialization batches.
 
 The accepted title-only OpenAlex seed query produced a complete, non-truncated
-1535-candidate DOI campaign. Batch `batch-0001` was processed end to end:
+1535-candidate DOI campaign.
+
+Batch `batch-0001` was processed end to end:
 8 publications were reviewed, collected, and merged into the canonical
 bibliography; 2 candidates were deliberately rejected.
 
-The initialization workflow has also been validated across the explicit
-screening → human review → collect → merge boundaries. A non-mutating
-continuation preview correctly closes `batch-0001` and prepares
-`batch-0002`.
+Batch `batch-0002` was then processed through the same explicit
+screening → human review → collect → merge workflow:
+6 publications were merged and 4 candidates were rejected.
+
+The canonical bibliography therefore currently contains 14 publications, with
+6 rejected initialization candidates. All 40 current author identities are
+mapped explicitly.
+
+A non-mutating continuation preview correctly closes `batch-0002` and prepares
+`batch-0003`.
 
 Site publication remains disabled. Once the canonical bibliography and author
 mappings are stable, of.FSI.der will be used to validate BibReview's planned
@@ -51,16 +59,19 @@ unreleased `bibreview init` implementation used by this pilot.
 
 ## Next step
 
-After the canonical `batch-0001` data PR is merged, continue the existing
-local initialization campaign with the next bounded batch:
+The first two batches confirm that a batch size of 10 keeps the human-review
+burden manageable and that the end-to-end initialization workflow is resumable.
+
+Before opening `batch-0003`, the pilot observations from `batch-0002` are being
+fed back into BibReview development. The next real initialization step will
+remain:
 
 ~~~bash
 git pull
 bibreview init --batch-size 10
 ~~~
 
-Keep the batch size at 10 until at least one additional batch confirms that the
-manual-review burden and end-to-end collect/merge workflow remain acceptable.
+until a deliberate decision is made to increase the batch size.
 
 ## Project principles
 

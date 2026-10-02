@@ -1084,6 +1084,137 @@ The next real `bibreview init --batch-size 10` will persist the closure of
 `batch-0001` and open `batch-0002`.
 
 
+### Second initialization batch
+
+The second real initialization batch was opened with the same bounded size of
+10 candidates.
+
+The persisted batch was:
+
+~~~text
+10.1016/j.jcp.2026.115258
+10.1016/j.ijthermalsci.2026.111221
+10.1007/s00211-026-01553-3
+10.1088/1674-1056/ae8dac
+10.1016/j.rineng.2026.112054
+10.1007/s00603-026-05752-0
+10.1016/j.cma.2026.119195
+10.4208/cicp.oa-2025-0165
+10.1016/j.oceaneng.2026.126645
+10.82286/20yx-6x55
+~~~
+
+Initial screening produced:
+
+~~~text
+Pending       : 2
+Manual review : 7
+Rejected      : 1
+~~~
+
+Human relevance review resolved the batch to 6 accepted and 4 rejected
+candidates.
+
+The accepted DOI values were:
+
+~~~text
+10.1007/s00211-026-01553-3
+10.1016/j.cma.2026.119195
+10.1016/j.jcp.2026.115258
+10.1016/j.oceaneng.2026.126645
+10.1088/1674-1056/ae8dac
+10.4208/cicp.oa-2025-0165
+~~~
+
+The rejected DOI values were:
+
+~~~text
+10.82286/20yx-6x55
+10.1007/s00603-026-05752-0
+10.1016/j.ijthermalsci.2026.111221
+10.1016/j.rineng.2026.112054
+~~~
+
+The last candidate is especially useful as a relevance-boundary regression
+case: automatic screening accepted it because its metadata contains strong FSI
+and control signals, but manual review found that the controlled model uses an
+aerodynamic representation derived from FSI simulations rather than controlling
+a genuinely coupled FSI system itself.
+
+Collection then succeeded for all 6 accepted DOI values:
+
+~~~text
+submitted: 6; candidates: 6; collected: 6; unavailable: 0; existing: 8
+~~~
+
+CrossRef supplied an abstract containing unsupported structured markup for
+`10.1088/1674-1056/ae8dac`. BibReview rejected only that abstract candidate and
+continued collecting the publication safely.
+
+The canonical merge preview was:
+
+~~~text
+incoming: 6; added: 6; updated: 0; unchanged: 0; rejected: 0; retained: 14
+~~~
+
+and the real merge completed with the same result.
+
+Post-merge initialization status was:
+
+~~~text
+Initialization campaign
+  Total         : 1535
+  Unscreened    : 1515
+  Pending       : 0
+  Manual review : 0
+  Staged        : 0
+  Merged        : 14
+  Rejected      : 6
+  Skipped       : 0
+  Retryable     : 0
+  Failed        : 0
+  Batches       : 1/2
+~~~
+
+As with the previous batch, `init --status` is deliberately read-only and does
+not close the newly completed batch. A non-mutating continuation plan confirmed
+that reconciliation would close `batch-0002` and open `batch-0003`:
+
+~~~text
+total: 1535
+pending: 1505
+active: 10
+completed: 20
+batches_opened: 3
+batches_closed: 2
+open_batch: batch-0003
+~~~
+
+The dry-run output also exposed a small usability issue: it prints
+
+~~~text
+Would initialize 10 candidate(s) in batch-0002.
+~~~
+
+for the full persisted batch even when `needs_screening` is false and all
+screening decisions already exist. The execution logic is correct, but the
+message can misleadingly suggest that all 10 candidates would be processed
+again.
+
+After the canonical merge, `bibreview authors --apply-safe` created 40
+unambiguous author mappings. A subsequent author check reported:
+
+~~~text
+Known name variants: 40
+Unknown author names: 0
+All publication authors are mapped.
+~~~
+
+The second batch therefore validates the same complete initialization loop as
+the first one while also providing concrete upstream feedback for BibReview
+before `batch-0003` is persisted.
+
+
 ## Later — Hugo publication
 
 When the canonical bibliography and author mappings are stable enough to reach
