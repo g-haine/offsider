@@ -612,6 +612,41 @@ query misses a positive control, inspect why before broadening the query.
 Do not compensate by adding generic terms such as `Navier-Stokes` or `PDE`
 without understanding the resulting candidate growth.
 
+## Final seed-query acceptance
+
+Query v4 on `title.search` returned:
+
+~~~text
+OpenAlex total matches : 2169
+pages fetched          : 11
+works examined         : 2169
+DOI candidates         : 1657
+campaign candidates    : 1535
+truncated              : false
+~~~
+
+This is accepted as the initial seed-search configuration.
+
+The candidate universe is fully retrieved and the supplied positive benchmark
+titles satisfy the active query. The first batch also demonstrates the intended
+mix: clearly in-scope mathematical/numerical FSI papers are present, while some
+application or boundary cases remain for conservative manual review.
+
+The project deliberately does **not** try to eliminate every false positive at
+discovery time. That would increase false-negative risk and weaken the role of
+`checkID.txt`.
+
+The next experiment is no longer a query dry-run. It is the first real batch of
+10, used to measure:
+
+- automatic `newID.txt` routing;
+- manual `checkID.txt` burden;
+- deterministic rejection;
+- CrossRef/provider availability;
+- downstream collect/merge behavior.
+
+Batch size remains 10 until that end-to-end workflow is reviewed.
+
 ## First real campaign
 
 Only after the dry-run and benchmark recall checks are satisfactory:
