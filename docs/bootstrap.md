@@ -1215,6 +1215,29 @@ the first one while also providing concrete upstream feedback for BibReview
 before `batch-0003` is persisted.
 
 
+### BibReview repin before batch 0003
+
+Before persisting `batch-0003`, Offsider was repinned from BibReview
+`411fb9ffa7d592db35b6d43ecfbd3b1a68ad35f9` to:
+
+~~~text
+09d2648ba98b5b8a9ca6693b9572b8f6eb874faf
+~~~
+
+This pin includes both upstream fixes exposed by the real `batch-0002` pilot:
+
+- PR #147: `bibreview --dry-run init` now reports the actual candidates that
+  still need screening and explicitly identifies an already-screened open batch;
+- PR #148 / issue #146: `collect` now isolates candidate-local structural
+  metadata failures, reports the failing DOI and reason, leaves that DOI pending
+  for human review, and continues collecting the other valid candidates.
+
+The canonical Offsider state remains unchanged by this maintenance repin:
+14 merged publications, 6 rejected initialization candidates, and no persisted
+`batch-0003` state.
+
+
+
 ## Later — Hugo publication
 
 When the canonical bibliography and author mappings are stable enough to reach
