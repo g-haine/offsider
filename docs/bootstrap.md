@@ -882,6 +882,112 @@ bibreview init --batch-size 10
 This is the first intentionally mutating `init` command in the offsider pilot.
 
 
+
+### First real batch, collection, and staged-status bug
+
+The first mutating initialization command was run with batch size 10:
+
+~~~bash
+bibreview init --batch-size 10
+~~~
+
+Observed screening result:
+
+~~~text
+Initialization batch batch-0001
+  Screened      : 10
+  Pending       : 2
+  Manual review : 8
+  Rejected      : 0
+  Skipped       : 0
+  Retryable     : 0
+~~~
+
+After human relevance review, the batch was resolved to:
+
+~~~text
+Pending       : 8
+Manual review : 0
+Rejected      : 2
+~~~
+
+The two rejected DOI values were:
+
+~~~text
+10.1016/j.flowmeasinst.2026.103569
+10.3389/feart.2026.1905410
+~~~
+
+A non-mutating collection preview reported all 8 accepted DOI values available:
+
+~~~text
+submitted: 8; candidates: 8; collected: 8; unavailable: 0; existing: 0
+~~~
+
+The real collection then staged all 8 publications successfully. CrossRef
+reported unsupported structured markup for the abstract of
+`10.1007/s00208-026-03558-7`; BibReview ignored only that abstract candidate
+and continued collecting the publication.
+
+Immediately after collection, however:
+
+~~~bash
+bibreview init --status
+~~~
+
+failed with:
+
+~~~text
+10.1007/s00033-026-02892-9: initialization candidate appears in both queued and staged project state
+~~~
+
+This exposed an upstream orchestration bug. During the ordinary workflow,
+`collect` writes accepted publications to `collected.json` but does not
+remove their DOI tokens from `newID.txt` before the explicit merge boundary.
+Therefore a DOI can legitimately be present in both pending and staged state
+between collection and merge.
+
+The canonical merge preview itself remained correct:
+
+~~~text
+incoming: 8; added: 8; updated: 0; unchanged: 0; rejected: 0; retained: 8
+~~~
+
+BibReview PR #145 fixes initialization status/reconciliation so the expected
+`queued + staged` overlap is treated as **staged**, while incompatible
+overlaps such as `review + staged` remain errors.
+
+PR #145 was squash-merged as:
+
+~~~text
+411fb9ffa7d592db35b6d43ecfbd3b1a68ad35f9
+~~~
+
+offsider is repinned to this exact commit before the first canonical merge.
+
+The acceptance sequence after repinning is:
+
+~~~bash
+git pull
+bash install.sh
+conda activate offsider
+bibreview init --status
+bibreview --dry-run merge
+~~~
+
+Expected status before merge:
+
+~~~text
+Pending       : 0
+Manual review : 0
+Staged        : 8
+Merged        : 0
+Rejected      : 2
+~~~
+
+Only after this status is confirmed should the real `bibreview merge` be run.
+
+
 ## Later — Hugo publication
 
 When the canonical bibliography and author mappings are stable enough to reach
