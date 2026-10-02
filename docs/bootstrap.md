@@ -1238,6 +1238,144 @@ The canonical Offsider state remains unchanged by this maintenance repin:
 
 
 
+### Third initialization batch
+
+After repinning Offsider to BibReview
+`09d2648ba98b5b8a9ca6693b9572b8f6eb874faf`, the third real initialization
+batch was persisted with the same bounded size of 10 candidates.
+
+The batch was:
+
+~~~text
+10.1016/j.jfluidstructs.2026.104636
+10.1016/j.jde.2026.114598
+10.1016/j.oceaneng.2026.126553
+10.1016/j.ijsolstr.2026.114163
+10.1002/fld.70082
+10.1007/s10915-026-03327-3
+10.1016/j.compstruc.2026.108287
+10.1137/25m1736827
+10.1016/j.rineng.2026.110807
+10.3390/en19092132
+~~~
+
+Initial screening produced:
+
+~~~text
+Pending       : 3
+Manual review : 7
+Rejected      : 0
+~~~
+
+The three automatically pending candidates were all retained after scientific
+review, so this batch produced no automatic false positive.
+
+Human review resolved the seven manual-review candidates to three additional
+acceptances and four rejections.
+
+The accepted DOI values were:
+
+~~~text
+10.1016/j.jfluidstructs.2026.104636
+10.1007/s10915-026-03327-3
+10.1137/25m1736827
+10.1016/j.jde.2026.114598
+10.1016/j.oceaneng.2026.126553
+10.1002/fld.70082
+~~~
+
+The rejected DOI values were:
+
+~~~text
+10.1016/j.ijsolstr.2026.114163
+10.1016/j.compstruc.2026.108287
+10.1016/j.rineng.2026.110807
+10.3390/en19092132
+~~~
+
+The two acoustic/acousto-elastic papers were outside the project's explicit
+FSI scope. The Results in Engineering parachute paper was rejected as an
+engineering application using FSI as a simulation tool rather than a reusable
+mathematical or numerical FSI contribution. The Energies coal-reservoir paper
+was rejected as experimental porous-media/fluid-solid coupling rather than the
+target dynamical mechanical FSI class.
+
+Collection preview with the post-#146 BibReview implementation reported:
+
+~~~text
+submitted: 6; candidates: 6; collected: 6; unavailable: 0; invalid: 0; existing: 14
+~~~
+
+No candidate-local structural failure occurred in this batch, so the new
+invalid-record isolation path did not need to activate. CrossRef abstract
+normalization did refuse unsupported structured markup for:
+
+~~~text
+10.1007/s10915-026-03327-3
+10.1002/fld.70082
+~~~
+
+Both publications nevertheless received safe non-empty canonical abstracts
+through the configured enrichment path. Two other publications were safely
+collected without abstracts:
+
+~~~text
+10.1016/j.jde.2026.114598
+10.1016/j.oceaneng.2026.126553
+~~~
+
+The canonical merge preview was:
+
+~~~text
+incoming: 6; added: 6; updated: 0; unchanged: 0; rejected: 0; retained: 20
+~~~
+
+and the real merge completed with the same result.
+
+Post-merge initialization status was:
+
+~~~text
+Initialization campaign
+  Total         : 1535
+  Unscreened    : 1505
+  Pending       : 0
+  Manual review : 0
+  Staged        : 0
+  Merged        : 20
+  Rejected      : 10
+  Skipped       : 0
+  Retryable     : 0
+  Failed        : 0
+  Batches       : 2/3
+~~~
+
+As before, `init --status` is intentionally read-only. The next real
+`bibreview init --batch-size 10` planning step will reconcile the canonical
+and rejected outcomes, close `batch-0003`, and open `batch-0004`.
+
+Author maintenance added 21 unambiguous mappings:
+
+~~~text
+Applied 21 safe author mapping(s).
+Known name variants: 61
+Unknown author names: 0
+All publication authors are mapped.
+~~~
+
+Final validation before versioning the batch reported:
+
+~~~text
+Configuration valid
+Dry run: incoming: 0; added: 0; updated: 0; unchanged: 0; rejected: 0; retained: 20
+~~~
+
+The third batch therefore leaves the project with 20 canonical publications,
+10 rejected initialization candidates, 61 mapped author-name variants, empty
+collection staging, and no unresolved author identity.
+
+
+
+
 ## Later — Hugo publication
 
 When the canonical bibliography and author mappings are stable enough to reach
