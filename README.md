@@ -54,17 +54,18 @@ bibreview validate
 bibreview status
 ~~~
 
-The environment is pinned to the exact BibReview commit that introduced the
-unreleased `bibreview init` implementation used by this pilot.
+The environment is pinned to the exact unreleased BibReview commit used by this
+pilot. The current pin includes the stabilized `bibreview init` dry-run
+reporting and candidate-local invalid-metadata isolation in `collect` validated
+after `batch-0002`.
 
 ## Next step
 
 The first two batches confirm that a batch size of 10 keeps the human-review
 burden manageable and that the end-to-end initialization workflow is resumable.
 
-Before opening `batch-0003`, the pilot observations from `batch-0002` are being
-fed back into BibReview development. The next real initialization step will
-remain:
+The two upstream observations from `batch-0002` have now been incorporated into
+BibReview and repinned here. The next real initialization step is therefore:
 
 ~~~bash
 git pull
