@@ -119,6 +119,8 @@ relevance:
     - '(?is)\A(?=.{0,165}\b(?:atherosclerosis|cochlear[-\s]+mechanics)\b)'
     - '(?is)\A(?=.{0,165}\b(?:crack[-\s]+arrestors?|fuel[-\s]+cells?|hypersonic[-\s]+vehicle[-\s]+control[-\s]+surfaces?)\b)'
     - '(?is)\A(?=.{0,165}\b(?:heated[-\s]+cylinder|precision[-\s]+flow[-\s]+control[-\s]+valves?|high[-\s]+speed[-\s]+switching[-\s]+control[-\s]+valve)\b)'
+    - '(?is)\A(?=.{0,165}\bsaddle[-\s]+shaped[-\s]+membrane[-\s]+structures?\b)'
+    - '(?is)\A(?=.{0,165}\bcalcified[-\s]+aortic[-\s]+valve\b)'
   unmatched: manual-review
 
 providers:
