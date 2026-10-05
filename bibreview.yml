@@ -96,9 +96,21 @@ initialization:
 
 relevance:
   patterns:
-    - '(?s)(?=.*\bfluid[-\s]+structure(?:s)?(?:[-\s]+interaction(?:s)?|[-\s]+system(?:s)?|[-\s]+model(?:s)?|[-\s]+coupl(?:e|ed|ing))\b)(?=.*\b(?:existence|uniqueness|well[-\s]+posed|regularity|weak[-\s]+solution|strong[-\s]+solution|stabilization|controllability|feedback|convergence|error[-\s]+estimate|port[-\s]+Hamiltonian|structure[-\s]+preserving|energy[-\s]+preserving|partitioned[-\s]+scheme|monolithic[-\s]+scheme)\b)'
-    - '(?s)(?=.*\bfluid[-\s]+(?:rigid[-\s]+bod(?:y|ies)|beam|plate|shell|elastic)\b)(?=.*\b(?:existence|uniqueness|well[-\s]+posed|regularity|weak[-\s]+solution|strong[-\s]+solution|stabilization|controllability|feedback|convergence|error[-\s]+estimate|ALE|Lagrange[-\s]+Galerkin|port[-\s]+Hamiltonian|structure[-\s]+preserving|energy[-\s]+preserving)\b)'
-    - '(?s)(?=.*\bpiston[-\s]+problem\b)(?=.*\b(?:fluid[-\s]+structure|moving[-\s]+piston|mass[-\s]+spring)\b)'
+    - '(?is)(?=.*\bfluid[-\s]+(?:structure|solid)(?:s)?(?:[-\s]+interaction(?:s)?|[-\s]+system(?:s)?|[-\s]+model(?:s)?|[-\s]+coupl(?:e|ed|ing))\b)(?=.*\b(?:well[-\s]+posed(?:ness)?|existence(?:[-\s]+for|\s+(?:and\s+uniqueness|of\s+(?:(?:weak|strong|global|local)\s+)?solutions?))|uniqueness(?:\s+of\s+solutions?)?|regularity(?:\s+results?)?|(?:weak|strong)[-\s]+solutions?|stabili[sz](?:ation|ability)|controllability|feedback[-\s]+control|optimal[-\s]+control|energy[-\s]+estimate|convergence[-\s]+analysis|error[-\s]+estimate|port[-\s]+Hamiltonian|structure[-\s]+preserving|energy[-\s]+preserving)\b)'
+    - '(?is)\A(?=.{0,220}\b(?:fluid[-\s]+(?:structure|solid)(?:s)?(?:[-\s]+interaction(?:s)?|[-\s]+coupl(?:e|ed|ing))|fluid[-\s]+and[-\s]+structural[-\s]+dynamics)\b)(?=.{0,180}\b(?:solver|coupling[-\s]+methods?|(?:mixed[-\s]+)?formulations?|partitioned[-\s]+semi[-\s]+implicit|partitioned[-\s]+(?:coupling[-\s]+)?(?:scheme|method)|monolithic[-\s]+(?:fictitious[-\s]+domain[-\s]+)?(?:scheme|method)|fictitious[-\s]+domain[-\s]+method|topology[-\s]+optimization|time[-\s]+integration[-\s]+schemes?|direct[-\s]+adjoint|cut[-\s]+cell|discrete[-\s]+velocity|hybrid[-\s]+strongly[-\s]+coupled|graph[-\s]+attention[-\s]+solver|multi[-\s]+grid.{0,60}\bmethod|finite[-\s]+element[-\s]+discontinuous[-\s]+galerkin[-\s]+method|lattice[-\s]+boltzmann.{0,40}\bmethod|spectral[-\s]+element[-\s]+solver|immersed[-\s]+finite[-\s]+element[-\s]+method)\b)'
+    - '(?is)\A(?=.{0,220}\b(?:fluid[-\s]+(?:structure|solid)(?:s)?(?:[-\s]+interaction(?:s)?|[-\s]+coupl(?:e|ed|ing))|fluid[-\s]+and[-\s]+structural[-\s]+dynamics)\b)(?=.{0,180}\b(?:model[-\s]+predictive[-\s]+control|modeling[-\s]+and[-\s]+controls?|active[-\s]+control|feedback[-\s]+control|optimal[-\s]+control)\b)'
+    - '(?is)(?=.*\bfluid[-\s]+structure[-\s]+model\b)(?=.*\bNavier[-\s]+Stokes\b)(?=.*\bLam(?:e|é)\b)'
+    - '(?is)(?=.*\bpiston[-\s]+problem\b)(?=.*\b(?:fluid[-\s]+structure|moving[-\s]+piston|mass[-\s]+spring)\b)'
+  reject_patterns:
+    - '(?is)\bsoil[-\s]+fluid[-\s]+structure\b'
+    - '(?is)\A(?=.{0,220}\bhigh[-\s]+arch[-\s]+dam\b)'
+    - '(?is)\A(?=.{0,220}\bnanoparticle[-\s]+suspensions?\b)'
+    - '(?is)\A(?=.{0,220}\bhydraulic[-\s]+engine[-\s]+mount\b)'
+    - '(?is)\A(?=.{0,220}\b(?:jamming[-\s]+mechanisms?|control[-\s]+valves?)\b)(?=.*\bthermo[-\s]+fluid[-\s]+structure\b)'
+    - '(?is)\A(?=.*\bbio[-\s]+inspired\b)(?=.*\bthermal[-\s]+transport\b)(?=.*\b(?:review|strategies)\b)'
+    - '(?is)\A(?=.{0,220}\blow[-\s]+rise[-\s]+buildings?\b)(?=.{0,220}\bspoilers?\b)'
+    - '(?is)\A(?=.{0,220}\bseismic[-\s]+vulnerability\b)(?=.{0,220}\b(?:LNG|storage[-\s]+tanks?)\b)'
+    - '(?is)\A(?=.{0,220}\bsloshing[-\s]+mitigation\b)(?=.{0,220}\bbaffle[-\s]+flexibility\b)'
   unmatched: manual-review
 
 providers:
