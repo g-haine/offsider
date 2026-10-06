@@ -1542,3 +1542,225 @@ GitHub Pages
 
 Jekyll support must remain available for PHRAISE. of.FSI.der will validate Hugo
 as an additional renderer, not a replacement for the renderer-independent core.
+
+
+### Initialization batches 0005–0010 — relevance calibration and campaign acceleration
+
+The initialization pilot continued beyond batch 0004 and progressively moved
+from small acceptance batches to larger production-sized batches.
+
+#### Batch 0005 — relevance calibration
+
+Batch 0005 was opened with 50 candidates.
+
+The previous relevance rules initially produced 7 pending candidates,
+31 manual-review candidates, and 12 automatic rejections. The 62% manual-review
+rate was considered too high for the remaining campaign.
+
+After BibReview gained explicit `relevance.reject_patterns` and safe
+`init --rescreen-current` support, the current batch was used to calibrate the
+Offsider relevance policy without reopening terminal candidates.
+
+The refined rules reduced the residual human-review workload from 31 to 8
+candidates. Human review retained 3 and rejected 5.
+
+Final batch result:
+
+- screened: 50;
+- accepted and merged: 24;
+- rejected: 26;
+- canonical corpus: 26 -> 50;
+- known author-name variants: 151;
+- unknown authors: 0.
+
+#### Batch 0006 — relevance v3
+
+The calibrated relevance policy was then exercised on a larger 100-candidate
+batch.
+
+Final result:
+
+- screened: 100;
+- accepted and merged: 53;
+- rejected: 47;
+- canonical corpus: 50 -> 103;
+- known author-name variants: 309;
+- unknown authors: 0.
+
+This batch validated relevance v3 as sufficiently selective for continued
+initialization while preserving the explicit human-review boundary.
+
+#### First-class human review CLIs
+
+Before continuing the campaign, BibReview was extended with first-class
+interactive workflows for the two remaining human-maintenance boundaries:
+
+- `bibreview authors --review` for ambiguous contributor identities;
+- `bibreview review` for manual publication relevance decisions.
+
+The author reviewer exposes canonical publication evidence, possible existing
+identities, DOI, ORCID, and affiliation metadata.
+
+The relevance reviewer exposes title, type, abstract, keywords, rule matches,
+and initialization context, and requires an explicit KEEP, REJECT, or defer
+decision.
+
+These commands replaced ad-hoc Python snippets in the normal Offsider workflow.
+
+#### Provider-response cache
+
+Offsider was then repinned to BibReview commit
+`a1e71270a67c25c041448b739a271995bb903688`.
+
+The generic provider-response cache was enabled with a 6-hour TTL.
+
+The cache was repeatedly validated by running collection previews followed by
+real collection. Fresh provider responses were reused without weakening the
+explicit collect/merge boundary.
+
+#### Batch 0007
+
+Batch 0007 processed 10 candidates:
+
+- accepted and merged: 8;
+- rejected: 2;
+- canonical corpus: 103 -> 111;
+- collection: 8/8;
+- unavailable: 0;
+- invalid: 0;
+- known author-name variants: 337;
+- unknown authors: 0.
+
+#### Batch 0008
+
+Batch 0008 processed 10 candidates:
+
+- accepted and merged: 8;
+- rejected: 2;
+- canonical corpus: 111 -> 119;
+- collection: 8/8;
+- unavailable: 0;
+- invalid: 0;
+- known author-name variants: 360;
+- unknown authors: 0.
+
+#### Batch 0009 — larger batch pilot
+
+The batch size was increased to 25.
+
+Initial screening produced:
+
+- pending: 6;
+- manual review: 14;
+- automatic rejections: 5.
+
+Human review retained 8 of the 14 ambiguous candidates and rejected 6.
+
+Final result:
+
+- screened: 25;
+- accepted and merged: 14;
+- rejected: 11;
+- canonical corpus: 119 -> 133;
+- collection: 14/14;
+- unavailable: 0;
+- invalid: 0.
+
+Author reconciliation applied 48 safe mappings followed by 5 reviewed manual
+decisions.
+
+Final author state:
+
+- known name variants: 413;
+- unknown authors: 0.
+
+#### Batch 0010 — 50-candidate production batch
+
+The batch size was increased to 50.
+
+Initial screening produced:
+
+- pending: 21;
+- manual review: 23;
+- automatic rejections: 6.
+
+The 23 manual-review cases were resolved to 11 KEEP and 12 REJECT decisions.
+The complete batch therefore contained 32 accepted candidates and 18 rejected
+candidates.
+
+The first collection pass reported:
+
+- submitted: 32;
+- collected: 31;
+- unavailable: 0;
+- invalid: 1.
+
+The structurally invalid candidate was DOI `10.1063/5.0145805`. Its provider
+metadata could not construct a canonical publication because it contained
+neither an author nor an editor.
+
+BibReview correctly isolated this DOI, retained it in the pending queue for
+explicit human review, and allowed the other 31 publications to continue.
+
+Those 31 publications were merged first:
+
+- incoming: 31;
+- added: 31;
+- canonical corpus: 133 -> 164.
+
+Author maintenance then applied 70 safe mappings. Fifteen ambiguous identities
+required review. Thirteen were resolved immediately and two abbreviated names
+were deliberately deferred until their publication evidence was inspected.
+
+The final two mappings were:
+
+- `M.-H. Chen` -> `Meng-Huo Chen`;
+- `Y. Wang` -> `Yongxing Wang`.
+
+The remaining invalid publication was independently reviewed. The publication
+has four identifiable authors:
+
+- Jiakun Han;
+- Yongtao Shui;
+- Lu Nie;
+- Gang Chen.
+
+A forced live provider refresh still returned no author/editor metadata.
+
+Because BibReview currently has no dedicated CLI for repairing a structurally
+invalid DOI-backed provider record before staging, this publication was
+reconstructed through BibReview's own canonical model and provider enrichment
+pipeline, with only the reviewed author list supplied manually.
+
+The resulting publication was staged normally and merged:
+
+- incoming: 1;
+- added: 1;
+- canonical corpus: 164 -> 165.
+
+Final batch-0010 initialization state:
+
+- total campaign candidates: 1535;
+- unscreened: 1250;
+- pending: 0;
+- manual review: 0;
+- staged: 0;
+- merged: 165;
+- rejected: 120;
+- skipped: 0;
+- retryable: 0;
+- failed: 0;
+- batches: 9/10.
+
+Final author state:
+
+- known name variants: 500;
+- unknown author names: 0.
+
+Batch 0010 therefore validates a 50-candidate working batch size with the
+current relevance policy and first-class human-review CLIs.
+
+It also exposes one remaining BibReview usability gap: structurally invalid
+DOI-backed provider metadata can be safely isolated, but there is not yet a
+first-class CLI for supplying a reviewed correction and staging that
+publication.

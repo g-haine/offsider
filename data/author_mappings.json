@@ -109,7 +109,8 @@
     "Shan Wang"
   ],
   "yongxing-wang": [
-    "Yongxing Wang"
+    "Yongxing Wang",
+    "Y. Wang"
   ],
   "xinpeng-xu": [
     "Xinpeng Xu"
@@ -268,7 +269,8 @@
     "Chen Chen"
   ],
   "meng-huo-chen": [
-    "Meng-Huo Chen"
+    "Meng-Huo Chen",
+    "M.-H. Chen"
   ],
   "chiahui-cheng": [
     "Chiahui Cheng"
@@ -331,7 +333,8 @@
     "Haokui Jiang"
   ],
   "peter-k-jimack": [
-    "Peter K. Jimack"
+    "Peter K. Jimack",
+    "P.K. Jimack"
   ],
   "ziyan-jin": [
     "Ziyan Jin"
@@ -606,7 +609,8 @@
     "Pierre Joli"
   ],
   "eiji-katamine": [
-    "Eiji KATAMINE"
+    "Eiji KATAMINE",
+    "Eiji Katamine"
   ],
   "abbas-khayyer": [
     "Abbas Khayyer"
@@ -1084,10 +1088,12 @@
     "Robert Connolly"
   ],
   "joris-degroote": [
-    "Joris Degroote"
+    "Joris Degroote",
+    "J. Degroote"
   ],
   "nicolas-delaisse": [
-    "Nicolas Delaissé"
+    "Nicolas Delaissé",
+    "N. Delaissé"
   ],
   "yan-delaure": [
     "Yan Delaure"
@@ -1102,7 +1108,8 @@
     "Xiangjie Gou"
   ],
   "norbert-hosters": [
-    "Norbert Hosters"
+    "Norbert Hosters",
+    "N. Hosters"
   ],
   "ji-hou": [
     "Ji Hou"
@@ -1147,7 +1154,8 @@
     "Loic Mace"
   ],
   "freddy-portillo-morales": [
-    "Freddy Portillo Morales"
+    "Freddy Portillo Morales",
+    "Freddy Alejandro Portillo Morales"
   ],
   "nam-phan": [
     "Nam Phan"
@@ -1186,7 +1194,8 @@
     "Mathieu Specklin"
   ],
   "thomas-spenke": [
-    "Thomas Spenke"
+    "Thomas Spenke",
+    "T. Spenke"
   ],
   "leandro-jose-lemes-stival": [
     "Leandro Jose Lemes Stival"
@@ -1217,5 +1226,239 @@
   ],
   "xujin-zhang": [
     "Xujin Zhang"
+  ],
+  "arash-abbasnia": [
+    "Arash Abbasnia"
+  ],
+  "gustavo-rabello-dos-anjos": [
+    "Gustavo Rabello dos Anjos"
+  ],
+  "anderson-soares-da-costa-azevedo": [
+    "Anderson Soares da Costa Azevêdo"
+  ],
+  "g-balarac": [
+    "G. Balarac"
+  ],
+  "p-benard": [
+    "P. Benard"
+  ],
+  "barbora-benesova": [
+    "Barbora Benešová"
+  ],
+  "hai-bi": [
+    "Hai Bi"
+  ],
+  "alexander-brauchler": [
+    "Alexander Brauchler"
+  ],
+  "patrick-buchfink": [
+    "Patrick Buchfink"
+  ],
+  "remi-buffe": [
+    "Rémi Buffe"
+  ],
+  "aldemir-cavallini": [
+    "Aldemir Cavallini"
+  ],
+  "yunzhang-cheng": [
+    "Yunzhang Cheng"
+  ],
+  "suman-dutta": [
+    "Suman Dutta"
+  ],
+  "t-fabbri": [
+    "T. Fabbri"
+  ],
+  "jorg-fehr": [
+    "Jörg Fehr"
+  ],
+  "universite-de-lorraine-cnrs-inria-iecl-f-54000-nancy-france": [
+    "Université de Lorraine, CNRS, Inria, IECL, F-54000 Nancy, France"
+  ],
+  "cheng-fu": [
+    "Cheng Fu"
+  ],
+  "jing-gao": [
+    "Jing Gao"
+  ],
+  "lei-ming-geng": [
+    "Lei-Ming Geng"
+  ],
+  "rafael-dos-santos-gioria": [
+    "Rafael dos Santos Gioria"
+  ],
+  "jose-a-gonzalez": [
+    "José A. González"
+  ],
+  "takafumi-gotoh": [
+    "Takafumi Gotoh"
+  ],
+  "xiang-shan-guan": [
+    "Xiang-Shan Guan"
+  ],
+  "changhong-guo": [
+    "Changhong Guo"
+  ],
+  "bernard-haasdonk": [
+    "Bernard Haasdonk"
+  ],
+  "hirotoshi-hasegawa": [
+    "Hirotoshi Hasegawa"
+  ],
+  "luca-heltai": [
+    "Luca Heltai"
+  ],
+  "weifeng-hu": [
+    "Weifeng Hu"
+  ],
+  "meixiang-huang": [
+    "Meixiang Huang"
+  ],
+  "tifr-centre-for-applicable-mathematics-sharadanagar-bangalore-560065-india": [
+    "TIFR Centre for Applicable Mathematics, Sharadanagar, Bangalore-560065, India"
+  ],
+  "c-s-jog": [
+    "C.S. Jog"
+  ],
+  "malte-kampschulte": [
+    "Malte Kampschulte"
+  ],
+  "robert-katzschmann": [
+    "Robert Katzschmann"
+  ],
+  "piotr-krzyzanowski": [
+    "Piotr Krzyżanowski"
+  ],
+  "jeong-hun-lee": [
+    "Jeong Hun Lee"
+  ],
+  "hong-guan-lyu": [
+    "Hong-Guan Lyu"
+  ],
+  "zachary-manchester": [
+    "Zachary Manchester"
+  ],
+  "mike-y-michelis": [
+    "Mike Y. Michelis"
+  ],
+  "kota-mizutani": [
+    "Kota Mizutani"
+  ],
+  "v-moureau": [
+    "V. Moureau"
+  ],
+  "k-c-park": [
+    "K.C. Park"
+  ],
+  "umberto-perego": [
+    "Umberto Perego"
+  ],
+  "renato-picelli": [
+    "Renato Picelli"
+  ],
+  "lingxiao-quan": [
+    "Lingxiao Quan"
+  ],
+  "shahin-ranjbarzadeh": [
+    "Shahin Ranjbarzadeh"
+  ],
+  "hui-long-ren": [
+    "Hui-Long Ren"
+  ],
+  "johannes-rettberg": [
+    "Johannes Rettberg"
+  ],
+  "ricardo-serfaty": [
+    "Ricardo Serfaty"
+  ],
+  "zhiqiang-shao": [
+    "Zhiqiang Shao"
+  ],
+  "huabin-shi": [
+    "Huabin Shi"
+  ],
+  "yuma-shimizu": [
+    "Yuma Shimizu"
+  ],
+  "emilio-carlos-nelli-silva": [
+    "Emílio Carlos Nelli Silva"
+  ],
+  "joao-paulo-innocente-de-souza": [
+    "João Paulo Innocente de Souza"
+  ],
+  "stanislaw-stupkiewicz": [
+    "Stanisław Stupkiewicz"
+  ],
+  "peng-nan-sun": [
+    "Peng-Nan Sun"
+  ],
+  "ying-tang": [
+    "Ying Tang"
+  ],
+  "srdan-trifunovic": [
+    "Srđan Trifunović"
+  ],
+  "joao-marcelo-vedovotto": [
+    "João Marcelo Vedovotto"
+  ],
+  "millena-martins-villar": [
+    "Millena Martins Villar"
+  ],
+  "michal-wichrowski": [
+    "Michał Wichrowski"
+  ],
+  "dominik-wittwar": [
+    "Dominik Wittwar"
+  ],
+  "yahao-xu": [
+    "Yahao Xu"
+  ],
+  "yang-xu": [
+    "Yang Xu"
+  ],
+  "pu-xue": [
+    "Pu Xue"
+  ],
+  "shuowen-yan": [
+    "Shuowen Yan"
+  ],
+  "yidu-yang": [
+    "Yidu Yang"
+  ],
+  "jiacheng-yao": [
+    "Jiacheng Yao"
+  ],
+  "m-s-zahran": [
+    "M. S. Zahran"
+  ],
+  "bingyin-zhang": [
+    "Bingyin Zhang"
+  ],
+  "pascal-ziegler": [
+    "Pascal Ziegler"
+  ],
+  "yanjun-li": [
+    "Yanjun Li"
+  ],
+  "yingchu-li": [
+    "Yingchu Li"
+  ],
+  "jie-liu": [
+    "Jie Liu"
+  ],
+  "shixi-wang": [
+    "Shixi Wang"
+  ],
+  "yuanjin-wang": [
+    "Yuanjin Wang"
+  ],
+  "xin-zhang": [
+    "Xin Zhang"
+  ],
+  "lu-nie": [
+    "Lu Nie"
+  ],
+  "yongtao-shui": [
+    "Yongtao Shui"
   ]
 }
