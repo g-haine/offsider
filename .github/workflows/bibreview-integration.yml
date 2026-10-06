@@ -51,7 +51,8 @@ jobs:
         run: bibreview status
 
       - name: Verify provider cache policy
-        run: bibreview status | grep -F "Provider cache: enabled (6h TTL)"
+        run: |
+          bibreview status | grep -F "Provider cache: enabled (6h TTL)"
 
       - name: Verify discovery query is configured
         run: |
