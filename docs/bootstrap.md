@@ -1764,3 +1764,34 @@ It also exposes one remaining BibReview usability gap: structurally invalid
 DOI-backed provider metadata can be safely isolated, but there is not yet a
 first-class CLI for supplying a reviewed correction and staging that
 publication.
+
+#### Offline relevance analysis
+
+Offsider was then repinned to BibReview commit
+ba80285c35c5cdecc4d025378d3da98a97c9f5cf, which adds first-class offline
+relevance analysis and deterministic rule discovery.
+
+The project keeps its relevance evidence in the tracked file
+data/relevance-evidence.json rather than under the ignored audit directory.
+
+A one-time legacy backfill reconstructed 250 labeled relevance snapshots:
+
+- 165 canonical KEEP records, reconstructed locally;
+- 85 terminal REJECT records, reconstructed through provider evidence;
+- 35 historical rejected records remained unavailable;
+- 10 initialization batches are represented.
+
+Current-rule replay on the 250 available labels reported:
+
+- automatic accept: 128;
+- automatic reject: 43;
+- manual review: 79;
+- automatic coverage: 68.4%;
+- four accept/project-state disagreements;
+- no reject/project-state disagreement.
+
+No contextual rule met BibReview's conservative promotion threshold. The
+remaining contextual signals are therefore kept as exploratory evidence only.
+Future explicit decisions made through bibreview review will be retained as
+human-labeled relevance evidence and will progressively strengthen this
+analysis.
