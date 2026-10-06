@@ -35421,6 +35421,2019 @@
       "created_date": "2025-11-25",
       "permalink": "fluid-structure-interaction-in-maritime-applications-towards-partitioned-coupling-simulation-of-wind-sail-interaction",
       "references": []
+    },
+    {
+      "id": "81c4056b-e691-4836-8777-54b44310d053",
+      "identifiers": {
+        "doi": "10.1016/j.cma.2024.117172"
+      },
+      "type": "journal-article",
+      "title": "A 3D phase-field based Eulerian variational framework for multiphase fluid–structure interaction with contact dynamics",
+      "authors": [
+        {
+          "given": "Xiaoyu",
+          "family": "Mao",
+          "literal": null,
+          "source_fields": {
+            "ORCID": "https://orcid.org/0000-0003-0812-0245",
+            "authenticated-orcid": false,
+            "sequence": "first",
+            "affiliation": [],
+            "role": [
+              {
+                "vocabulary": "crossref",
+                "role": "author"
+              }
+            ]
+          }
+        },
+        {
+          "given": "Biswajeet",
+          "family": "Rath",
+          "literal": null,
+          "source_fields": {
+            "ORCID": "https://orcid.org/0009-0004-7609-1276",
+            "authenticated-orcid": false,
+            "sequence": "additional",
+            "affiliation": [],
+            "role": [
+              {
+                "vocabulary": "crossref",
+                "role": "author"
+              }
+            ]
+          }
+        },
+        {
+          "given": "Rajeev",
+          "family": "Jaiman",
+          "literal": null,
+          "source_fields": {
+            "ORCID": "https://orcid.org/0000-0002-8346-3486",
+            "authenticated-orcid": false,
+            "sequence": "additional",
+            "affiliation": [],
+            "role": [
+              {
+                "vocabulary": "crossref",
+                "role": "author"
+              }
+            ]
+          }
+        }
+      ],
+      "abstract": "Using a fixed Eulerian mesh, interface-capturing approaches such as volume-of-fluid, level-set and phase-field methods have been successfully utilized for a broad range of moving boundary problems involving multiphase fluids and single-phase fluid–structure interaction. Nevertheless, multiphase fluids interacting with multiple solids are rarely explored, especially for large-scale finite element simulations with contact dynamics. In this work, we introduce a novel parallelized three-dimensional fully Eulerian variational framework for simulating multiphase fluids interacting with multiple deformable solids subjected to solid-to-solid contact. In the framework, each solid or fluid phase is identified by a standalone phase indicator. Moreover the phase indicators are initialized by the grid cell method, which restricts the calculation to several grid cells instead of the entire domain and provides efficiency for modeling evolving interfaces on a fixed mesh. A diffuse interface description is employed for a smooth interpolation of physical properties across the phases, yielding unified mass and momentum conservation equations for the coupled dynamical interactions. For each solid object, temporal integration is carried out to track the strain evolution in an Eulerian frame of reference. The coupled differential equations are solved in a partitioned manner and integrated via nonlinear iterations. We first verify the framework against reference numerical data in a two-dimensional case of a rotational disk in a lid-driven cavity flow. The case is generalized to a rotational sphere in a lid-driven cavity flow to showcase large deformation and rotational motion of solids and examine the convergence in three dimensions. We then simulate the falling of an immersed solid sphere on an elastic block under gravitational force to demonstrate the translational motion and the solid-to-solid contact in a fluid environment. Finally, we demonstrate the capability of our proposed framework for a ship–ice interaction problem involving multiphase fluids with an air–water interface and contact between a floating ship and ice floes.",
+      "container_title": "Computer Methods in Applied Mechanics and Engineering",
+      "publication_year": "2024",
+      "volume": "429",
+      "issue": "",
+      "pages": "117172",
+      "publisher": "Elsevier BV",
+      "event": "",
+      "keywords": [],
+      "created_date": "2024-07-01",
+      "permalink": "a-3d-phase-field-based-eulerian-variational-framework-for-multiphase-fluid-structure-interaction-with-contact-dynamics",
+      "references": [
+        {
+          "identifiers": {
+            "doi": "10.1016/j.softx.2023.101483"
+          },
+          "citation": "Montgomery D, Municchi F, Leiderman K (2023) clotFoam: An open-source framework to simulate blood clot formation under arterial flow. SoftwareX 23:101483. https://doi.org/10.1016/j.softx.2023.101483"
+        },
+        {
+          "identifiers": {},
+          "citation": "Mahdy, (2019)"
+        },
+        {
+          "identifiers": {},
+          "citation": "Nojiri, Development of contact area variable surface for manipulation requiring sliding. (2019)"
+        },
+        {
+          "identifiers": {
+            "doi": "10.1016/j.oceaneng.2020.107853"
+          },
+          "citation": "Xue Y, Liu R, Li Z, Han D (2020) A review for numerical simulation methods of ship–ice interaction. Ocean Engineering 215:107853. https://doi.org/10.1016/j.oceaneng.2020.107853"
+        },
+        {
+          "identifiers": {},
+          "citation": "Donea, Arbitrary Lagrangian-Eulerian methods. (2017)"
+        },
+        {
+          "identifiers": {},
+          "citation": "Peskin, (2002)"
+        },
+        {
+          "identifiers": {
+            "doi": "10.2514/6.1983-1944"
+          },
+          "citation": "BENEK J, STEGER J, DOUGHERTY FC (1983) A flexible grid embedding technique with application to the Euler equations. 6th Computational Fluid Dynamics Conference Danvers"
+        },
+        {
+          "identifiers": {
+            "doi": "10.1016/s0021-9991(03)00331-0"
+          },
+          "citation": "Tang HS, Casey Jones S, Sotiropoulos F (2003) An overset-grid method for 3D unsteady incompressible flows. Journal of Computational Physics 191(2):567–600. https://doi.org/10.1016/s0021-9991(03)00331-0"
+        },
+        {
+          "identifiers": {
+            "doi": "10.1016/0045-7825(94)90135-x"
+          },
+          "citation": "Glowinski R, Pan T-W, Periaux J (1994) A fictitious domain method for Dirichlet problem and applications. Computer Methods in Applied Mechanics and Engineering 111(3–4):283–303. https://doi.org/10.1016/0045-7825(94)90135-x"
+        },
+        {
+          "identifiers": {
+            "doi": "10.1002/1097-0363(20010415)35:7<743::aid-fld109>3.0.co;2-a"
+          },
+          "citation": "Baaijens FPT (2001) A fictitious domain/mortar element method for fluid-structure interaction. Int J Numer Meth Fluids 35(7):743–761. https://doi.org/10.1002/1097-0363(20010415)35:7<743::aid-fld109>3.0.co;2-a"
+        },
+        {
+          "identifiers": {
+            "doi": "10.1002/fld.1205"
+          },
+          "citation": "Dunne Th (2006) An Eulerian approach to fluid–structure interaction and goal‐oriented mesh adaptation. Numerical Methods in Fluids 51(9–10):1017–1039. https://doi.org/10.1002/fld.1205"
+        },
+        {
+          "identifiers": {
+            "doi": "10.1016/j.cma.2012.11.009"
+          },
+          "citation": "Wick T (2013) Fully Eulerian fluid–structure interaction for time-dependent problems. Computer Methods in Applied Mechanics and Engineering 255:14–26. https://doi.org/10.1016/j.cma.2012.11.009"
+        },
+        {
+          "identifiers": {
+            "doi": "10.1016/j.jcp.2021.110166"
+          },
+          "citation": "Mao X, Joshi V, Jaiman R (2021) A variational interface-preserving and conservative phase-field method for the surface tension effect in two-phase flows. Journal of Computational Physics 433:110166. https://doi.org/10.1016/j.jcp.2021.110166"
+        },
+        {
+          "identifiers": {
+            "doi": "10.1016/j.jmps.2012.06.003"
+          },
+          "citation": "Kamrin K, Rycroft CH, Nave J-C (2012) Reference map technique for finite-strain elasticity and fluid–solid interaction. Journal of the Mechanics and Physics of Solids 60(11):1952–1969. https://doi.org/10.1016/j.jmps.2012.06.003"
+        },
+        {
+          "identifiers": {
+            "doi": "10.1016/j.compfluid.2013.11.010"
+          },
+          "citation": "Sun P, Xu J, Zhang L (2014) Full Eulerian finite element method of a phase field model for fluid–structure interaction problem. Computers & Fluids 90:1–8. https://doi.org/10.1016/j.compfluid.2013.11.010"
+        },
+        {
+          "identifiers": {
+            "doi": "10.1016/j.jcp.2018.06.063"
+          },
+          "citation": "Mokbel D, Abels H, Aland S (2018) A phase-field model for fluid–structure interaction. Journal of Computational Physics 372:823–840. https://doi.org/10.1016/j.jcp.2018.06.063"
+        },
+        {
+          "identifiers": {
+            "doi": "10.1016/j.jcp.2022.111903"
+          },
+          "citation": "Mao X, Jaiman R (2023) An interface and geometry preserving phase-field method for fully Eulerian fluid-structure interaction. Journal of Computational Physics 476:111903. https://doi.org/10.1016/j.jcp.2022.111903"
+        },
+        {
+          "identifiers": {
+            "doi": "10.1016/s0045-7825(00)00203-6"
+          },
+          "citation": "Jansen KE, Whiting CH, Hulbert GM (2000) A generalized-α method for integrating the filtered Navier–Stokes equations with a stabilized finite element method. Computer Methods in Applied Mechanics and Engineering 190(3–4):305–319. https://doi.org/10.1016/s0045-7825(00)00203-6"
+        },
+        {
+          "identifiers": {
+            "doi": "10.1016/0045-7825(91)90041-4"
+          },
+          "citation": "Shakib F, Hughes TJR, Johan Z (1991) A new finite element formulation for computational fluid dynamics: X. The compressible Euler and Navier-Stokes equations. Computer Methods in Applied Mechanics and Engineering 89(1–3):141–219. https://doi.org/10.1016/0045-7825(91)90041-4"
+        },
+        {
+          "identifiers": {
+            "doi": "10.1016/0045-7825(82)90071-8"
+          },
+          "citation": "Brooks AN, Hughes TJR (1982) Streamline upwind/Petrov-Galerkin formulations for convection dominated flows with particular emphasis on the incompressible Navier-Stokes equations. Computer Methods in Applied Mechanics and Engineering 32(1–3):199–259. https://doi.org/10.1016/0045-7825(82)90071-8"
+        },
+        {
+          "identifiers": {
+            "doi": "10.1016/0045-7825(92)90162-d"
+          },
+          "citation": "Harari I, Hughes TJR (1992) What are C and h?: Inequalities for the analysis and design of finite element methods. Computer Methods in Applied Mechanics and Engineering 97(2):157–192. https://doi.org/10.1016/0045-7825(92)90162-d"
+        },
+        {
+          "identifiers": {},
+          "citation": "Johnson, (1987)"
+        },
+        {
+          "identifiers": {
+            "doi": "10.1002/mma.1426"
+          },
+          "citation": "Brassel M, Bretin E (2011) A modified phase field approximation for mean curvature flow with conservation of the volume. Math Meth Appl Sci 34(10):1157–1180. https://doi.org/10.1002/mma.1426"
+        },
+        {
+          "identifiers": {
+            "doi": "10.1016/j.compfluid.2016.04.023"
+          },
+          "citation": "Jaiman RK, Guan MZ, Miyanawala TP (2016) Partitioned iterative and dynamic subgrid-scale methods for freely vibrating square-section structures at subcritical Reynolds number. Computers & Fluids 133:68–89. https://doi.org/10.1016/j.compfluid.2016.04.023"
+        },
+        {
+          "identifiers": {
+            "doi": "10.1016/j.jcp.2018.01.028"
+          },
+          "citation": "Joshi V, Jaiman RK (2018) A positivity preserving and conservative variational scheme for phase-field modeling of two-phase flows. Journal of Computational Physics 360:137–166. https://doi.org/10.1016/j.jcp.2018.01.028"
+        },
+        {
+          "identifiers": {},
+          "citation": "Bonet, (1997)"
+        },
+        {
+          "identifiers": {
+            "doi": "10.1016/b978-0-12-336156-1.50013-6"
+          },
+          "citation": "Haines E (1994) Point in Polygon Strategies. Graphics Gems 24–46"
+        },
+        {
+          "identifiers": {},
+          "citation": "O’Rourke, (1998)"
+        },
+        {
+          "identifiers": {
+            "doi": "10.1016/j.jcp.2010.09.032"
+          },
+          "citation": "Sugiyama K, Ii S, Takeuchi S, Takagi S, Matsumoto Y (2011) A full Eulerian finite difference approach for solving fluid–structure coupling problems. Journal of Computational Physics 230(3):596–627. https://doi.org/10.1016/j.jcp.2010.09.032"
+        },
+        {
+          "identifiers": {},
+          "citation": "Stadtländer, (2020)"
+        },
+        {
+          "identifiers": {},
+          "citation": "Schoolmeester, (2019)"
+        },
+        {
+          "identifiers": {},
+          "citation": "Larsen, (2015)"
+        },
+        {
+          "identifiers": {
+            "doi": "10.1029/2018jc014378"
+          },
+          "citation": "Timmermans M, Marshall J (2020) Understanding Arctic Ocean Circulation: A Review of Ocean Dynamics in a Changing Climate. JGR Oceans 125(4). https://doi.org/10.1029/2018jc014378"
+        },
+        {
+          "identifiers": {},
+          "citation": "Lavissière, Transportation systems in the Arctic: A systematic literature review using textometry. Transp. Res. A (2020)"
+        },
+        {
+          "identifiers": {
+            "doi": "10.3390/jmse10020165"
+          },
+          "citation": "Li F, Huang L (2022) A Review of Computational Simulation Methods for a Ship Advancing in Broken Ice. JMSE 10(2):165. https://doi.org/10.3390/jmse10020165"
+        },
+        {
+          "identifiers": {
+            "doi": "10.1016/j.marstruc.2020.102817"
+          },
+          "citation": "Huang L, Tuhkuri J, Igrec B, Li M, Stagonas D, Toffoli A, Cardiff P, Thomas G (2020) Ship resistance when operating in floating ice floes: A combined CFD&DEM approach. Marine Structures 74:102817. https://doi.org/10.1016/j.marstruc.2020.102817"
+        },
+        {
+          "identifiers": {},
+          "citation": "P. Kelly, Solid mechanics part I: An introduction to solid mechanics, in: A Creative Commons Attributions, Vol. 94042, Mountain View, CA, 2013."
+        },
+        {
+          "identifiers": {},
+          "citation": "Turek, Proposal for numerical benchmarking of fluid-structure interaction between an elastic object and laminar incompressible flow. (2006)"
+        }
+      ]
+    },
+    {
+      "id": "9e1ee679-7696-4f16-9d60-032dd6e16b27",
+      "identifiers": {
+        "doi": "10.3390/computation12060129"
+      },
+      "type": "journal-article",
+      "title": "Development and Verification of Coupled Fluid–Structure Interaction Solver",
+      "authors": [
+        {
+          "given": "Avery",
+          "family": "Schemmel",
+          "literal": null,
+          "source_fields": {
+            "sequence": "first",
+            "affiliation": [
+              {
+                "name": "US Army Corps of Engineers, Vicksburg, MS 39180, USA"
+              }
+            ],
+            "role": [
+              {
+                "vocabulary": "crossref",
+                "role": "author"
+              }
+            ]
+          }
+        },
+        {
+          "given": "Seshendra",
+          "family": "Palakurthy",
+          "literal": null,
+          "source_fields": {
+            "ORCID": "https://orcid.org/0000-0002-4461-0885",
+            "authenticated-orcid": false,
+            "sequence": "additional",
+            "affiliation": [
+              {
+                "name": "Center for Advanced Vehicular Systems, Mississippi State University, Starkville, MS 39759, USA"
+              }
+            ],
+            "role": [
+              {
+                "vocabulary": "crossref",
+                "role": "author"
+              }
+            ]
+          }
+        },
+        {
+          "given": "Anup",
+          "family": "Zope",
+          "literal": null,
+          "source_fields": {
+            "sequence": "additional",
+            "affiliation": [
+              {
+                "name": "Center for Advanced Vehicular Systems, Mississippi State University, Starkville, MS 39759, USA"
+              }
+            ],
+            "role": [
+              {
+                "vocabulary": "crossref",
+                "role": "author"
+              }
+            ]
+          }
+        },
+        {
+          "given": "Eric",
+          "family": "Collins",
+          "literal": null,
+          "source_fields": {
+            "ORCID": "https://orcid.org/0000-0002-9962-9890",
+            "authenticated-orcid": false,
+            "sequence": "additional",
+            "affiliation": [
+              {
+                "name": "Center for Advanced Vehicular Systems, Mississippi State University, Starkville, MS 39759, USA"
+              }
+            ],
+            "role": [
+              {
+                "vocabulary": "crossref",
+                "role": "author"
+              }
+            ]
+          }
+        },
+        {
+          "given": "Shanti",
+          "family": "Bhushan",
+          "literal": null,
+          "source_fields": {
+            "sequence": "additional",
+            "affiliation": [
+              {
+                "name": "Department of Mechanical Engineering, Mississippi State University, Starkville, MS 39759, USA"
+              }
+            ],
+            "role": [
+              {
+                "vocabulary": "crossref",
+                "role": "author"
+              }
+            ]
+          }
+        }
+      ],
+      "abstract": "Recent trends in aeroelastic analysis have shown a great interest in understanding the role of shock boundary layer interaction in predicting the dynamic instability of aircraft structural components at supersonic and hypersonic flows. The analysis of such complex dynamics requires a time-accurate fluid-structure interaction solver. This study focuses on the development of such a solver by coupling a finite-volume Navier-Stokes solver for fluid flow with a finite-element solver for structural dynamics. The coupled solver is then verified for the prediction of several panel instability cases in 2D and 3D uniform flows and in the presence of an impinging shock for a range of subsonic and supersonic Mach numbers, dynamic pressures, and shock strengths. The panel deflections and limit cycle oscillation amplitudes, frequencies, and bifurcation point predictions were compared within 10% of the benchmark results; thus, the solver was deemed verified. Future studies will focus on extending the solver to 3D turbulent flows and applying the solver to study the effect of turbulent load fluctuations and shock boundary layer interactions on the fluid-structure coupling and structural dynamics of 2D panels.",
+      "container_title": "Computation",
+      "publication_year": "2024",
+      "volume": "12",
+      "issue": "6",
+      "pages": "129",
+      "publisher": "MDPI AG",
+      "event": "",
+      "keywords": [],
+      "created_date": "2024-06-20",
+      "permalink": "development-and-verification-of-coupled-fluid-structure-interaction-solver",
+      "references": [
+        {
+          "identifiers": {
+            "doi": "10.1017/s0368393100120358"
+          },
+          "citation": "Collar AR (1946) The Expanding Domain of Aeroelasticity. J R Aeronaut Soc 50(428):613–636. https://doi.org/10.1017/s0368393100120358"
+        },
+        {
+          "identifiers": {},
+          "citation": "Costanzo, A. (2014). Experimental Investigation of Shock Wave-Boundary Layer Interaction on a Generic Oscillating Bump, KTH Industrial Engineering and Management."
+        },
+        {
+          "identifiers": {
+            "doi": "10.2514/3.5680"
+          },
+          "citation": "DOWELL EH (1970) Panel flutter - A review of the aeroelastic stability of plates and shells. AIAA Journal 8(3):385–399. https://doi.org/10.2514/3.5680"
+        },
+        {
+          "identifiers": {
+            "doi": "10.1115/1.3098919"
+          },
+          "citation": "Mei, Review of nonlinear panel flutter at supersonic and hypersonic speeds. Appl. Mech. Rev. (1999)"
+        },
+        {
+          "identifiers": {
+            "doi": "10.1016/j.jfluidstructs.2016.03.003"
+          },
+          "citation": "Ganji HF, Dowell EH (2016) Panel flutter prediction in two dimensional flow with enhanced piston theory. Journal of Fluids and Structures 63:97–102. https://doi.org/10.1016/j.jfluidstructs.2016.03.003"
+        },
+        {
+          "identifiers": {
+            "doi": "10.2514/1.j057595"
+          },
+          "citation": "Brouwer KR, McNamara JJ (2019) Enriched Piston Theory for Expedient Aeroelastic Loads Prediction in the Presence of Shock Impingements. AIAA Journal 57(3):1288–1302. https://doi.org/10.2514/1.j057595"
+        },
+        {
+          "identifiers": {
+            "doi": "10.1002/msd2.12015"
+          },
+          "citation": "Chai Y, Gao W, Ankay B, Li F, Zhang C (2021) Aeroelastic analysis and flutter control of wings and panels: A review. Int Journal of Mech Sys Dyn 1(1):5–34. https://doi.org/10.1002/msd2.12015"
+        },
+        {
+          "identifiers": {
+            "doi": "10.1016/j.paerosci.2021.100729"
+          },
+          "citation": "Panchal J, Benaroya H (2021) Review of control surface freeplay. Progress in Aerospace Sciences 127:100729. https://doi.org/10.1016/j.paerosci.2021.100729"
+        },
+        {
+          "identifiers": {
+            "doi": "10.1115/1.4064324"
+          },
+          "citation": "Antimirova E, Jung J, Zhang Z, Machuca A, Gu GX (2024) Overview of Computational Methods to Predict Flutter in Aircraft. Journal of Applied Mechanics 91(5). https://doi.org/10.1115/1.4064324"
+        },
+        {
+          "identifiers": {
+            "doi": "10.1016/j.compfluid.2003.06.006"
+          },
+          "citation": "Michler C, Hulshoff SJ, van Brummelen EH, de Borst R (2004) A monolithic approach to fluid–structure interaction. Computers & Fluids 33(5–6):839–848. https://doi.org/10.1016/j.compfluid.2003.06.006"
+        },
+        {
+          "identifiers": {
+            "doi": "10.1002/nme.5602"
+          },
+          "citation": "Meduri S, Cremonesi M, Perego U, Bettinotti O, Kurkchubasche A, Oancea V (2017) A partitioned fully explicit Lagrangian finite element method for highly nonlinear fluid‐structure interaction problems. Numerical Meth Engineering 113(1):43–64. https://doi.org/10.1002/nme.5602"
+        },
+        {
+          "identifiers": {
+            "doi": "10.2514/6.1993-1476"
+          },
+          "citation": "DAVIS G, BENDIKSEN O (1993) Transonic panel flutter. 34th Structures, Structural Dynamics and Materials Conference"
+        },
+        {
+          "identifiers": {
+            "doi": "10.2514/3.46732"
+          },
+          "citation": "Lee-Rausch EM, Batina JT (1995) Wing flutter boundary prediction using unsteady Euler aerodynamic method. Journal of Aircraft 32(2):416–422. https://doi.org/10.2514/3.46732"
+        },
+        {
+          "identifiers": {
+            "doi": "10.1016/j.compfluid.2006.08.005"
+          },
+          "citation": "Chen X, Zha G-C, Yang M-T (2007) Numerical simulation of 3-D wing flutter with fully coupled fluid–structural interaction. Computers & Fluids 36(5):856–867. https://doi.org/10.1016/j.compfluid.2006.08.005"
+        },
+        {
+          "identifiers": {
+            "doi": "10.1016/j.jfluidstructs.2012.02.002"
+          },
+          "citation": "Visbal MR (2012) On the interaction of an oblique shock with a flexible panel. Journal of Fluids and Structures 30:219–225. https://doi.org/10.1016/j.jfluidstructs.2012.02.002"
+        },
+        {
+          "identifiers": {
+            "doi": "10.1016/j.jfluidstructs.2015.05.005"
+          },
+          "citation": "Shishaeva A, Vedeneev V, Aksenov A (2015) Nonlinear single-mode and multi-mode panel flutter oscillations at low supersonic speeds. Journal of Fluids and Structures 56:205–223. https://doi.org/10.1016/j.jfluidstructs.2015.05.005"
+        },
+        {
+          "identifiers": {
+            "doi": "10.2514/1.j055839"
+          },
+          "citation": "Bhatia M, Beran P (2017) Transonic Panel Flutter Predictions Using a Linearized Stability Formulation. AIAA Journal 55(10):3499–3516. https://doi.org/10.2514/1.j055839"
+        },
+        {
+          "identifiers": {
+            "doi": "10.1016/j.jfluidstructs.2018.10.001"
+          },
+          "citation": "Boyer NR, McNamara JJ, Gaitonde DV, Barnes CJ, Visbal MR (2018) Features of shock-induced panel flutter in three-dimensional inviscid flow. Journal of Fluids and Structures 83:490–506. https://doi.org/10.1016/j.jfluidstructs.2018.10.001"
+        },
+        {
+          "identifiers": {
+            "doi": "10.1006/jfls.2000.0434"
+          },
+          "citation": "GORDNIER RE, VISBAL MR (2002) DEVELOPMENT OF A THREE-DIMENSIONAL VISCOUS AEROELASTIC SOLVER FOR NONLINEAR PANEL FLUTTER. Journal of Fluids and Structures 16(4):497–527. https://doi.org/10.1006/jfls.2000.0434"
+        },
+        {
+          "identifiers": {
+            "doi": "10.1061/(asce)0893-1321(2003)16:4(155)"
+          },
+          "citation": "Gordnier RE, Visbal MR (2003) Computation of Three-Dimensional Nonlinear Panel Flutter. J Aerosp Eng 16(4):155–166. https://doi.org/10.1061/(asce)0893-1321(2003)16:4(155)"
+        },
+        {
+          "identifiers": {
+            "doi": "10.1017/jfm.2013.522"
+          },
+          "citation": "Vedeneev V (2013) Interaction of panel flutter with inviscid boundary layer instability in supersonic flow. J Fluid Mech 736:216–249. https://doi.org/10.1017/jfm.2013.522"
+        },
+        {
+          "identifiers": {
+            "doi": "10.1063/1.4819350"
+          },
+          "citation": "Ostoich CM, Bodony DJ, Geubelle PH (2013) Interaction of a Mach 2.25 turbulent boundary layer with a fluttering panel using direct numerical simulation. Physics of Fluids 25(11). https://doi.org/10.1063/1.4819350"
+        },
+        {
+          "identifiers": {
+            "doi": "10.1016/j.jfluidstructs.2019.06.008"
+          },
+          "citation": "Li Y, Luo H, Chen X, Xu J (2019) Laminar boundary layer separation over a fluttering panel induced by an oblique shock wave. Journal of Fluids and Structures 90:90–109. https://doi.org/10.1016/j.jfluidstructs.2019.06.008"
+        },
+        {
+          "identifiers": {
+            "doi": "10.1016/j.jfluidstructs.2020.103207"
+          },
+          "citation": "Boyer NR, McNamara JJ, Gaitonde DV, Barnes CJ, Visbal MR (2021) Features of panel flutter response to shock boundary layer interactions. Journal of Fluids and Structures 101:103207. https://doi.org/10.1016/j.jfluidstructs.2020.103207"
+        },
+        {
+          "identifiers": {
+            "doi": "10.2514/6.2018-3548"
+          },
+          "citation": "Shinde V, McNamara JJ, Gaitonde DV, Barnes CJ, Visbal MR (2018) Panel Flutter Induced by Transitional Shock Wave Boundary Layer Interaction. 2018 Fluid Dynamics Conference"
+        },
+        {
+          "identifiers": {
+            "doi": "10.2514/6.2021-0488"
+          },
+          "citation": "Shinde VJ, McNamara JJ, Gaitonde DV (2021) Shock Wave Turbulent Boundary Layer Interaction Over a Flexible Panel. AIAA Scitech 2021 Forum"
+        },
+        {
+          "identifiers": {
+            "doi": "10.1016/j.compstruc.2007.01.005"
+          },
+          "citation": "Cavagna L, Quaranta G, Mantegazza P (2007) Application of Navier–Stokes simulations for aeroelastic stability assessment in transonic regime. Computers & Structures 85(11–14):818–832. https://doi.org/10.1016/j.compstruc.2007.01.005"
+        },
+        {
+          "identifiers": {
+            "doi": "10.1109/icmae.2018.8467693"
+          },
+          "citation": "Ozcatalbas M, Acar B, Uslu S (2018) Investigation of Aeroelastic Stability on AGARD 445.6 Wing at Transonic Regime. 2018 9th International Conference on Mechanical and Aerospace Engineering (ICMAE) 565–569"
+        },
+        {
+          "identifiers": {
+            "doi": "10.1063/1.5087963"
+          },
+          "citation": "Wang J (2019) Transonic static aeroelastic and longitudinal aerodynamic characteristics of a low-aspect-ratio swept wing. AIP Advances 9(4). https://doi.org/10.1063/1.5087963"
+        },
+        {
+          "identifiers": {
+            "doi": "10.2514/6.2012-39"
+          },
+          "citation": "Im H, Chen X, Zha G (2012) Prediction of a Supersonic Wing Flutter Boundary Using a High Fidelity Detached Eddy Simulation. 50th AIAA Aerospace Sciences Meeting including the New Horizons Forum and Aerospace Exposition"
+        },
+        {
+          "identifiers": {
+            "doi": "10.2514/6.2016-4046"
+          },
+          "citation": "Gan J, Zha G (2016) Delayed Detached Eddy Simulation of Supersonic Panel Aeroelasticity Using Fully Coupled Fluid Structure Interaction with High Order Schemes. 34th AIAA Applied Aerodynamics Conference"
+        },
+        {
+          "identifiers": {
+            "doi": "10.1016/j.compfluid.2007.03.008"
+          },
+          "citation": "Luke EA, Cinnella P (2007) Numerical simulations of mixtures of fluids using upwind algorithms. Computers & Fluids 36(10):1547–1566. https://doi.org/10.1016/j.compfluid.2007.03.008"
+        },
+        {
+          "identifiers": {
+            "doi": "10.2514/6.2018-1650"
+          },
+          "citation": "Bhatia M, Beran PS (2018) MAST: An Open-Source Computational Framework for Design of Multiphysics Systems. 2018 AIAA/ASCE/AHS/ASC Structures, Structural Dynamics, and Materials Conference"
+        },
+        {
+          "identifiers": {
+            "doi": "10.1016/j.jcp.2011.09.021"
+          },
+          "citation": "Luke E, Collins E, Blades E (2012) A fast mesh deformation method using explicit interpolation. Journal of Computational Physics 231(2):586–601. https://doi.org/10.1016/j.jcp.2011.09.021"
+        },
+        {
+          "identifiers": {
+            "doi": "10.1017/cbo9780511842757"
+          },
+          "citation": "Babinsky H, Harvey JK (eds) (2011) Shock Wave-Boundary-Layer Interactions"
+        },
+        {
+          "identifiers": {
+            "doi": "10.1016/s0045-7949(02)00390-5"
+          },
+          "citation": "Gordnier RE, Fithen R (2003) Coupling of a nonlinear finite element structural method with a Navier–Stokes solver. Computers & Structures 81(2):75–89. https://doi.org/10.1016/s0045-7949(02)00390-5"
+        },
+        {
+          "identifiers": {
+            "doi": "10.2514/3.4316"
+          },
+          "citation": "DOWELL EH (1967) Nonlinear oscillations of a fluttering plate. II. AIAA Journal 5(10):1856–1862. https://doi.org/10.2514/3.4316"
+        },
+        {
+          "identifiers": {
+            "doi": "10.1115/1.2900803"
+          },
+          "citation": "Chung J, Hulbert GM (1993) A Time Integration Algorithm for Structural Dynamics With Improved Numerical Dissipation: The Generalized-α Method. Journal of Applied Mechanics 60(2):371–375. https://doi.org/10.1115/1.2900803"
+        },
+        {
+          "identifiers": {
+            "doi": "10.1016/j.jfluidstructs.2014.02.003"
+          },
+          "citation": "Visbal M (2014) Viscous and inviscid interactions of an oblique shock with a flexible panel. Journal of Fluids and Structures 48:27–45. https://doi.org/10.1016/j.jfluidstructs.2014.02.003"
+        },
+        {
+          "identifiers": {
+            "doi": "10.1063/1.864049"
+          },
+          "citation": "Favre A (1983) Turbulence: Space-time statistical properties and behavior in supersonic flows. The Physics of Fluids 26(10):2851–2863. https://doi.org/10.1063/1.864049"
+        },
+        {
+          "identifiers": {
+            "doi": "10.2514/6.2020-3006"
+          },
+          "citation": "Zope AD, Schemmel A, Bhatia M, Bhushan S, Collins E (2020) Development and Validation of Fluid-Thermal Interaction Solver for High Fidelity Transient Simulations. AIAA AVIATION 2020 FORUM"
+        },
+        {
+          "identifiers": {
+            "doi": "10.1145/360767.360802"
+          },
+          "citation": "Sutherland IE, Hodgman GW (1974) Reentrant polygon clipping. Commun ACM 17(1):32–42. https://doi.org/10.1145/360767.360802"
+        }
+      ]
+    },
+    {
+      "id": "33df9d94-89d6-4978-b171-929b6eef0eb2",
+      "identifiers": {
+        "doi": "10.1115/omae2024-126962"
+      },
+      "type": "proceedings-article",
+      "title": "Construction and Validation of a Two-Way Fluid-Structure Interaction Solver Under an Open-Source Framework",
+      "authors": [
+        {
+          "given": "Jia-Yu",
+          "family": "Sun",
+          "literal": null,
+          "source_fields": {
+            "sequence": "additional",
+            "affiliation": [
+              {
+                "name": "Harbin Engineering University , Harbin, China (Mainland)"
+              }
+            ],
+            "role": [
+              {
+                "role": "author",
+                "vocabulary": "crossref"
+              }
+            ]
+          }
+        },
+        {
+          "given": "Shi-Li",
+          "family": "Sun",
+          "literal": null,
+          "source_fields": {
+            "sequence": "additional",
+            "affiliation": [
+              {
+                "name": "Harbin Engineering University , Harbin, China (Mainland)"
+              }
+            ],
+            "role": [
+              {
+                "role": "author",
+                "vocabulary": "crossref"
+              }
+            ]
+          }
+        },
+        {
+          "given": "Shuang",
+          "family": "Wang",
+          "literal": null,
+          "source_fields": {
+            "sequence": "additional",
+            "affiliation": [
+              {
+                "name": "Harbin Engineering University , Harbin, China (Mainland)"
+              }
+            ],
+            "role": [
+              {
+                "role": "author",
+                "vocabulary": "crossref"
+              }
+            ]
+          }
+        }
+      ],
+      "abstract": "The Fluid-Structure Interaction (FSI) issue is a complex and nonlinear process involving the interaction between a deformed structure and the surrounding fluid. In this work, we developed a novel high-fidelity, modular, open-source and user-friendly FSI simulation framework by coupling the well-established fluid solver OpenFOAM® with the structure solver CalculiX. The fluid solver solves unsteady RANS equations using a finite volume method on unstructured meshes. The hydrodynamic loads on the surfaces of the object are then passed to structural solver. The displacements and structural response of the object are efficiently computed and exchanged with the fluid solver through a finite element analysis. The coupling was implemented through the preCICE coupling library for partitioned multi-physics simulations, which treats the two dedicated solvers as ‘black boxes’ and provides data mapping between non-matching meshes. Two classical FSI test cases are presented, and the numerical results are compared with previously published laboratory tests and benchmark data, achieving a satisfactory agreement. This work provides an efficient tool under the open-source framework for Fluid-Structure Interaction simulation.",
+      "container_title": "Volume 6: Polar and Arctic Sciences and Technology; CFD, FSI, and AI",
+      "publication_year": "2024",
+      "volume": "",
+      "issue": "",
+      "pages": "V006T08A033",
+      "publisher": "American Society of Mechanical Engineers",
+      "event": "",
+      "keywords": [],
+      "created_date": "2024-08-09",
+      "permalink": "construction-and-validation-of-a-two-way-fluid-structure-interaction-solver-under-an-open-source-framework",
+      "references": []
+    },
+    {
+      "id": "23a2e15e-465c-47f4-a57f-2e2bb6eb417d",
+      "identifiers": {
+        "doi": "10.5821/dissertation-2117-421448"
+      },
+      "type": "dissertation",
+      "title": "Numerical approximation of thin structures using stabilized mixed formulations for infinitesimal and finite strain theories, including fluid-structure interaction problem applications",
+      "authors": [
+        {
+          "given": "Alejandro",
+          "family": "Aguirre Ruz",
+          "literal": null,
+          "source_fields": {
+            "sequence": "first",
+            "affiliation": [],
+            "role": [
+              {
+                "vocabulary": "crossref",
+                "role": "author"
+              }
+            ]
+          }
+        }
+      ],
+      "abstract": "(English) The theories of thin structures can be classified into two main branches depending upon whether shear deformation in the transverse direction is taken into consideration or not. In this context, theories accounting for shear deformations prove suitable for modeling structures with both thin and thick profiles. In the Finite Element context, they are referred to as C0 theories due to the minimum continuity order of shape functions required to pose a discretized approximation. However, there are space incompatibilities in the standard discrete approximation that exhibits spurious solutions, particularly evident in thin structures. These instabilities, known as numerical locking, result in an artificial stiffening of the structure, whose effect becomes more pronounced for thinner structures. Various forms of numerical locking can be triggered, influenced not only by the slenderness of the structure but also by its shape and the nature of the applied loads. In this context, flat structures are prone to shear locking when exposed to transverse loads. Conversely, curved structures may confront different mechanisms leading to various forms of numerical locking, namely membrane, thickness, and trapezoidal locking. The initial part of the study aims to develop a specialized framework to address instabilities in the context of flat structures in the context of Reissner-Mindlin theory. Subsequently, the second part of the study aims to expand the framework to effectively address instabilities arising in of curved structures in the context of Solid-Shell elements. The locking problem is approached by means of a mixed formulation that considers displacements and stress as unknowns in a curvilinear coordinate framework. This approach allows to isolate the components of the stress tensor in order to study the mechanisms in which every type of numerical locking are triggered. The third part of the thesis is dedicated to integrating the previous advancements into Finite Strain analysis by the inclusion of standard hyperelastic constitutive behavior. With this approach, the problem becomes even more difficult to solve because of the non-linearity and the large deformations the shell is subject to. Lastly, the fourth and final part is dedicated to addressing the Fluid-Structure Interaction problem using an embedded mesh approach, which has consistently been a topic of great research interest in the literature, because of its complexity and wide variety of applications. This problem introduces a variety of challenges that have to be properly addressed: the discontinuous pressure field arising for the structure separating the fluid domain, the computation and imposition of transmission conditions between domains, the coupling strategy, and the algorithmic work needed to join all of these ingredients together. This thesis mainly focuses on overcoming challenges associated with thin structures when employing the conventional Galerkin Finite Element approach. It seeks solutions through stabilized methods, specifically within the Variational Multiscale framework. As result, the formulations developed through the investigations have proven to be robust, allowing to model locking-free thin structures efficiently, and to accurately describe the physics of thin shells immersed in fluid flows and being subject to large deformations. (Català) Les teories de les estructures primes poden classificar-se en dues branques principals depenent de si es té en compte o no la deformació per tall en la direcció transversal. En aquest context, les teories que tenen en compte les deformacions per tall resulten adequades per modelar estructures amb perfils tant primes com gruixuts. En el context del Mètode dels Elements Finitos, se les denomina teories C0 a causa de l'ordre mínim de continuïtat de les funcions de forma requerit per plantejar una aproximació discretitzada. Tanmateix, hi ha incompatibilitats espacials en l'aproximació discreta estàndard que exhibeixen solucions espúries, especialment evidents en estructures primes. Aquestes inestabilitats, conegudes com a bloqueig numèric, resulten en un endureixement artificial de l'estructura, el seu efecte es fa més pronunciat per a estructures més primes. Es poden desencadenar diverses formes de bloqueig numèric, influïdes no només per l'esveltesa de l'estructura, sinó també per la seva forma i la naturalesa de les càrregues aplicades. En aquest context, les estructures planes són propenses al bloqueig per tall quan estan exposades a càrregues transversals. Per contra, les estructures corbades poden enfrontar-se a diferents mecanismes que condueixen a diverses formes de bloqueig numèric, a saber, bloqueig de membrana, de gruix i trapezoidal. La part inicial de l'estudi té com a objectiu desenvolupar un marc especialitzat per abordar les inestabilitats en el context d'estructures planes en la teoria de Reissner-Mindlin. Posteriorment, la segona part de l'estudi té com a objectiu ampliar el marc per abordar eficaçment les inestabilitats que sorgeixen en estructures corbades en el context d'elements Solid-Shell. El problema de bloqueig s'aborda mitjançant una formulació mixta que considera desplaçaments i tensions com a incògnites en un marc de coordenades corvilínies. Aquest enfocament permet aïllar els components del tensor de tensions per estudiar els mecanismes en què es desencadenen cada tipus de bloqueig numèric. La tercera part de la tesi està dedicada a integrar els avenços anteriors en l'anàlisi de deformacions finites mitjançant la inclusió d'un comportament constitutiu hiperelàstic estàndard. Amb aquest enfocament, el problema esdevé encara més difícil de resoldre a causa de la no linealitat i les grans deformacions a les quals està sotmesa la closca. Finalment, la quarta i darrera part està dedicada a abordar el problema d'Interacció Fluid-Estructura utilitzant un enfocament de malla incrustada, que ha estat constantment un tema de gran interès en la literatura a causa de la seva complexitat i àmplia varietat d'aplicacions. Aquest problema introdueix una varietat de reptes que han de ser abordats adequadament: el camp de pressió discontinu que sorgeix per a l'estructura separant el domini del fluid, el càlcul i la imposició de condicions de transmissió entre dominis, l'estratègia d'acoblament i el treball algorítmic necessari per unir tots aquests ingredients. Aquesta tesi es centra principalment a superar els reptes associats amb estructures primes quan s'emplea l'enfocament convencional d'Elements Finitos de Galerkin. Cerca solucions a través de mètodes estabilitzats, específicament dins del marc Variacional Multiescala. Com a resultat, les formulacions desenvolupades a través de les investigacions han demostrat ser robustes, el que permet modelar eficientment estructures primes sense bloqueig i descriure amb precisió la física de les làmines primes immerses en fluxos de fluids i sotmeses a grans deformacions. (Español) Las teorías de estructuras delgadas pueden clasificarse en dos ramas principales dependiendo de si se tiene en cuenta o no la deformación por corte en la dirección transversal. Las teorías que tienen en cuenta las deformaciones por corte son adecuadas para modelar estructuras con perfiles tanto delgados como gruesos. En el contexto del Método de Elementos Finitos, se las denomina teorías C0, debido al orden mínimo de continuidad de las funciones de forma requerido para plantear una aproximación discretizada. Sin embargo, existen incompatibilidades espaciales en la aproximación discreta estándar que exhiben soluciones espurias, especialmente evidentes en estructuras delgadas. Estas inestabilidades, conocidas como bloqueo numérico, resultan en un endurecimiento artificial de la estructura, cuyo efecto se hace más pronunciado a medida que disminuye su espesor. Se pueden desencadenar varias formas de bloqueo numérico, influenciadas no solo por la esbeltez de la estructura, sino también por su forma y la naturaleza de las cargas aplicadas. La parte inicial del estudio tiene como objetivo desarrollar un marco especializado para abordar las inestabilidades de estructuras planas usando la teoría de placas de Reissner-Mindlin. Posteriormente, la segunda parte del estudio tiene como objetivo expandir el marco para abordar eficazmente las inestabilidades que surgen en estructuras curvas usando elementos de tipo Solid-Shell. El problema de bloqueo se aborda mediante una formulación mixta que considera desplazamientos y tensiones como incógnitas en un marco de coordenadas curvilíneas. Este enfoque permite aislar los componentes del tensor de tensiones para estudiar los mecanismos en los que se desencadenan cada tipo de bloqueo numérico. La tercera parte de la tesis está dedicada a integrar los avances anteriores en el análisis de deformaciones finitas mediante la inclusión de un comportamiento constitutivo hiperelástico estándar. Con este enfoque, el problema se vuelve aún más difícil de resolver debido a la no-linealidad y las grandes deformaciones a las que está sujeta la estructura. Por último, la cuarta y última parte está dedicada a abordar el problema de Interacción Fluido-Estructura utilizando un enfoque de malla embebida, que ha sido consistentemente un tema de gran interés en la literatura debido a su complejidad y amplia variedad de aplicaciones. Este problema introduce una variedad de desafíos que deben abordarse adecuadamente: el campo de presión discontinuo que surge para la estructura separando el dominio del fluido, el cálculo y la imposición de condiciones de transmisión entre dominios, la estrategia de acoplamiento y el trabajo algorítmico necesario para unir todos estos ingredientes. Esta tesis se centra principalmente en superar los desafíos asociados con estructuras delgadas al emplear método de Elementos Finitos de Galerkin. Busca soluciones a través de métodos estabilizados, específicamente dentro del marco Variacional Multiescala. Como resultado, las formulaciones desarrolladas a través de las investigaciones han demostrado ser robustas, lo que permite modelar eficientemente estructuras delgadas libres de bloqueo y describir con precisión la física de las láminas delgadas inmersas en flujos de fluidos y sujetas a grandes deformaciones.",
+      "container_title": "",
+      "publication_year": "2025",
+      "volume": "",
+      "issue": "",
+      "pages": "",
+      "publisher": "Universitat Politècnica de Catalunya",
+      "event": "",
+      "keywords": [],
+      "created_date": "2025-01-09",
+      "permalink": "numerical-approximation-of-thin-structures-using-stabilized-mixed-formulations-for-infinitesimal-and-finite-strain-theories-including-fluid-structure-interaction-problem-applications",
+      "references": [],
+      "editors": [
+        {
+          "given": "Ramon",
+          "family": "Codina",
+          "literal": null,
+          "source_fields": {
+            "sequence": "first",
+            "affiliation": [],
+            "role": [
+              {
+                "vocabulary": "crossref",
+                "role": "editor"
+              }
+            ]
+          }
+        },
+        {
+          "given": "Joan",
+          "family": "Baiges Aznar",
+          "literal": null,
+          "source_fields": {
+            "sequence": "additional",
+            "affiliation": [],
+            "role": [
+              {
+                "vocabulary": "crossref",
+                "role": "editor"
+              }
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "id": "ad872b64-dec3-41ae-a63b-dad35e5d7337",
+      "identifiers": {
+        "doi": "10.1016/j.net.2024.05.023"
+      },
+      "type": "journal-article",
+      "title": "A computational framework for drop time assessment of a control element assembly under fuel assembly deformations with fluid-structure interaction and frictional contact",
+      "authors": [
+        {
+          "given": "Dae-Guen",
+          "family": "Lim",
+          "literal": null,
+          "source_fields": {
+            "ORCID": "https://orcid.org/0009-0001-0758-0947",
+            "authenticated-orcid": false,
+            "sequence": "first",
+            "affiliation": [],
+            "role": [
+              {
+                "role": "author",
+                "vocabulary": "crossref"
+              }
+            ]
+          }
+        },
+        {
+          "given": "Gil-Yong",
+          "family": "Lee",
+          "literal": null,
+          "source_fields": {
+            "ORCID": "https://orcid.org/0000-0002-0299-8826",
+            "authenticated-orcid": false,
+            "sequence": "additional",
+            "affiliation": [],
+            "role": [
+              {
+                "role": "author",
+                "vocabulary": "crossref"
+              }
+            ]
+          }
+        },
+        {
+          "given": "Nam-Gyu",
+          "family": "Park",
+          "literal": null,
+          "source_fields": {
+            "sequence": "additional",
+            "affiliation": [],
+            "role": [
+              {
+                "role": "author",
+                "vocabulary": "crossref"
+              }
+            ]
+          }
+        },
+        {
+          "given": "Yong-Hwa",
+          "family": "Park",
+          "literal": null,
+          "source_fields": {
+            "ORCID": "https://orcid.org/0000-0003-3519-1321",
+            "authenticated-orcid": false,
+            "sequence": "additional",
+            "affiliation": [],
+            "role": [
+              {
+                "role": "author",
+                "vocabulary": "crossref"
+              }
+            ]
+          }
+        }
+      ],
+      "abstract": "This paper presents a computational framework for drop time assessment of a control element assembly (CEA) under fuel assembly (FA) deformations. The proposed framework consists of three key components: 1) finite element modeling of CEA, 2) fluid-structure interaction to compute drag force, and 3) modeling of frictional contact between CEA and FA. Specially, to accommodate the large motion of CEA, beam elements based on absolute nodal coordinate formulation (ANCF) are adopted. The continuity equation is utilized to calculate the drag force, considering flow changes in the cross-sectional area during the CEA drop. Lastly, beam-inside-beam frictional contact model is employed to capture practical contact conditions between CEA and FA. The proposed framework is validated through experiments under two scenarios: free falls of CEA within FA, encompassing undeformed and deformed scenarios. The experimental validation of the framework demonstrated that the drop time of CEA can be accurately predicted under the complex coupling effects of fluid and frictional contact. The drop times of the S-shaped deformation case is longer than those of the C-shaped deformation case, affirming the time delay due to frictional force. The validation confirms the potential applicability to access the safety and reliability of nuclear power plants under extreme conditions.",
+      "container_title": "Nuclear Engineering and Technology",
+      "publication_year": "2024",
+      "volume": "56",
+      "issue": "8",
+      "pages": "3450--3462",
+      "publisher": "Elsevier BV",
+      "event": "",
+      "keywords": [],
+      "created_date": "2024-05-22",
+      "permalink": "a-computational-framework-for-drop-time-assessment-of-a-control-element-assembly-under-fuel-assembly-deformations-with-fluid-structure-interaction-and-frictional-contact",
+      "references": [
+        {
+          "identifiers": {},
+          "citation": "Glasstone, (2012)"
+        },
+        {
+          "identifiers": {},
+          "citation": "Kok, (2016)"
+        },
+        {
+          "identifiers": {},
+          "citation": "Lamarsh, (2001)"
+        },
+        {
+          "identifiers": {
+            "doi": "10.1016/j.net.2018.11.014"
+          },
+          "citation": "Son JG, Lee JH, Kim HW, Kim SK, Kim JB (2019) Influence of design modification of control rod assembly for Prototype Generation IV Sodium-cooled Fast Reactor on drop performance. Nuclear Engineering and Technology 51(3):922–929. https://doi.org/10.1016/j.net.2018.11.014"
+        },
+        {
+          "identifiers": {
+            "doi": "10.1016/j.net.2016.12.004"
+          },
+          "citation": "Lee Y-K, Lee J-H, Kim H-W, Kim S-K, Kim J-B (2017) Drop Performance Test of Conceptually Designed Control Rod Assembly for Prototype Generation IV Sodium-Cooled Fast Reactor. Nuclear Engineering and Technology 49(4):855–864. https://doi.org/10.1016/j.net.2016.12.004"
+        },
+        {
+          "identifiers": {
+            "doi": "10.1016/j.nucengdes.2017.06.031"
+          },
+          "citation": "Lin Z, Zhai L, Zhu L, Wang X, Zhang X, Cao Y, Wang N (2017) Control rod drop dynamic analysis in the TMSR – SF1 based on numerical simulation and experiment. Nuclear Engineering and Design 322:131–137. https://doi.org/10.1016/j.nucengdes.2017.06.031"
+        },
+        {
+          "identifiers": {
+            "doi": "10.1016/0029-5493(72)90193-8"
+          },
+          "citation": "Donis JM, Goller H (1972) A mathematical model of a control rod drop. Nuclear Engineering and Design 23(1):107–120. https://doi.org/10.1016/0029-5493(72)90193-8"
+        },
+        {
+          "identifiers": {},
+          "citation": "Park, Development of A computer program for drop time and impact velocity of the rod cluster control assembly. Nucl. Eng. Technol. (1994)"
+        },
+        {
+          "identifiers": {
+            "doi": "10.1016/j.nucengdes.2006.09.001"
+          },
+          "citation": "Andriambololona H, Bosselut D, Massin P (2007) Methodology for a numerical simulation of an insertion or a drop of the rod cluster control assembly in a PWR. Nuclear Engineering and Design 237(6):600–606. https://doi.org/10.1016/j.nucengdes.2006.09.001"
+        },
+        {
+          "identifiers": {
+            "doi": "10.1016/j.anucene.2022.109402"
+          },
+          "citation": "Zhao K, Xu X, Chen C, Wu F, Huang D, Xi Y, Zhong W (2022) Nonlinear state equation and adaptive symplectic algorithm for the control rod drop. Annals of Nuclear Energy 179:109402. https://doi.org/10.1016/j.anucene.2022.109402"
+        },
+        {
+          "identifiers": {
+            "doi": "10.1016/j.pnucene.2015.12.007"
+          },
+          "citation": "Rabiee A, Atf A (2016) Control rod drop hydrodynamic analysis for a pressurized water reactor. Progress in Nuclear Energy 88:191–197. https://doi.org/10.1016/j.pnucene.2015.12.007"
+        },
+        {
+          "identifiers": {
+            "doi": "10.1016/j.net.2019.11.011"
+          },
+          "citation": "Lee S, Jeong YH (2020) Performance evaluation of the Floating Absorber for Safety at Transient (FAST) in the innovative Sodium-cooled Fast Reactor (iSFR) under a single control rod withdrawal accident. Nuclear Engineering and Technology 52(6):1110–1119. https://doi.org/10.1016/j.net.2019.11.011"
+        },
+        {
+          "identifiers": {},
+          "citation": "Ricotti, Hydraulically driven control rod concept for integral reactors: fluid dynamic simulation and preliminary test. (2003)"
+        },
+        {
+          "identifiers": {
+            "doi": "10.1023/a:1009773505418"
+          },
+          "citation": "Shabana AA (1997) Flexible Multibody Dynamics: Review of Past and Recent Developments. Multibody System Dynamics 1(2):189–222. https://doi.org/10.1023/a:1009773505418"
+        },
+        {
+          "identifiers": {},
+          "citation": "Schwab, Comparison of three-dimensional flexible beam elements for dynamic analysis: finite element method and absolute nodal coordinate formulation. (2005)"
+        },
+        {
+          "identifiers": {
+            "doi": "10.1007/s11044-013-9374-7"
+          },
+          "citation": "Bauchau OA, Han S, Mikkola A, Matikainen MK (2013) Comparison of the absolute nodal coordinate and geometrically exact formulations for beams. Multibody Syst Dyn 32(1):67–85. https://doi.org/10.1007/s11044-013-9374-7"
+        },
+        {
+          "identifiers": {
+            "doi": "10.1115/1.4030369"
+          },
+          "citation": "Shabana AA (2015) Definition of ANCF Finite Elements. Journal of Computational and Nonlinear Dynamics 10(5). https://doi.org/10.1115/1.4030369"
+        },
+        {
+          "identifiers": {},
+          "citation": "Shabana, (2018)"
+        },
+        {
+          "identifiers": {},
+          "citation": "Shabana, (2020)"
+        },
+        {
+          "identifiers": {
+            "doi": "10.1016/j.nucengdes.2009.05.023"
+          },
+          "citation": "Yoon KH, Kim JY, Lee KH, Lee YH, Kim HK (2009) Control rod drop analysis by finite element method using fluid–structure interaction for a pressurized water reactor power plant. Nuclear Engineering and Design 239(10):1857–1861. https://doi.org/10.1016/j.nucengdes.2009.05.023"
+        },
+        {
+          "identifiers": {
+            "doi": "10.5293/kfma.2015.18.6.005"
+          },
+          "citation": "Kim J, Yoon K, Oh S-H, Ko S (2015) CFD Analysis to Estimate Drop Time and Impact Velocity of a Control Rod Assembly in the Sodium Cooled Faster Reactor. The KSFM Journal of Fluid Machinery 18(6):5–11. https://doi.org/10.5293/kfma.2015.18.6.005"
+        },
+        {
+          "identifiers": {
+            "doi": "10.1007/s00419-016-1189-6"
+          },
+          "citation": "Dyk Š, Zeman V (2016) Impact vibrations of guide thimbles in nuclear fuel assembly. Arch Appl Mech 87(2):231–244. https://doi.org/10.1007/s00419-016-1189-6"
+        },
+        {
+          "identifiers": {},
+          "citation": "Bulín, Investigation of falling control rods in deformed guiding tubes in nuclear reactors using multibody approaches. (2018)"
+        },
+        {
+          "identifiers": {
+            "doi": "10.1007/s11071-021-06582-1"
+          },
+          "citation": "Bulín R, Dyk Š, Hajžman M (2021) Nonlinear dynamics of flexible slender structures moving in a limited space with application in nuclear reactors. Nonlinear Dyn 104(4):3561–3579. https://doi.org/10.1007/s11071-021-06582-1"
+        },
+        {
+          "identifiers": {
+            "doi": "10.1115/1.4062275"
+          },
+          "citation": "Park N, Kwon O, Yoo Y, Kim T (2023) Experimental Investigation of Control Rod Drops Into Perturbed Fuel Assemblies. Journal of Nuclear Engineering and Radiation Science 9(4). https://doi.org/10.1115/1.4062275"
+        },
+        {
+          "identifiers": {
+            "doi": "10.1115/1.1410100"
+          },
+          "citation": "Shabana AA, Yakoub RY (2000) Three Dimensional Absolute Nodal Coordinate Formulation for Beam Elements: Theory. Journal of Mechanical Design 123(4):606–613. https://doi.org/10.1115/1.1410100"
+        },
+        {
+          "identifiers": {},
+          "citation": "Cook, (2007)"
+        },
+        {
+          "identifiers": {},
+          "citation": "Schetz, (1999)"
+        },
+        {
+          "identifiers": {},
+          "citation": "Hunt, (1975)"
+        },
+        {
+          "identifiers": {
+            "doi": "10.1002/(sici)1096-9845(199705)26:5<541::aid-eqe660>3.0.co;2-w"
+          },
+          "citation": "MOSTAGHEL N, DAVIS T (1997) REPRESENTATIONS OF COULOMB FRICTION FOR DYNAMIC ANALYSIS. Earthquake Engng Struct Dyn 26(5):541–548. https://doi.org/10.1002/(sici)1096-9845(199705)26:5<541::aid-eqe660>3.0.co;2-w"
+        },
+        {
+          "identifiers": {},
+          "citation": "Haug, (1989)"
+        }
+      ]
+    },
+    {
+      "id": "45ee2e29-b911-4a96-beee-9c9d60dd8c4f",
+      "identifiers": {
+        "doi": "10.5957/josr.01240002"
+      },
+      "type": "journal-article",
+      "title": "Optimization of Ship Propellers Under Consideration of the Acoustic Emission Based on Partitioned Fluid–Structure Interaction Simulations",
+      "authors": [
+        {
+          "given": "Daniel",
+          "family": "Ferreira González",
+          "literal": null,
+          "source_fields": {
+            "sequence": "first",
+            "affiliation": [
+              {
+                "name": "Institute for Fluid Dynamics and Ship Theory (M-8), Hamburg University of Technology (TUHH), Hamburg, Germany"
+              }
+            ],
+            "role": [
+              {
+                "vocabulary": "crossref",
+                "role": "author"
+              }
+            ]
+          }
+        },
+        {
+          "given": "Jorrid",
+          "family": "Lund",
+          "literal": null,
+          "source_fields": {
+            "sequence": "additional",
+            "affiliation": [
+              {
+                "name": "Numerical Structural Analysis with Application in Ship Technology (M-10), Hamburg University of Technology (TUHH), Hamburg, Germany"
+              }
+            ],
+            "role": [
+              {
+                "vocabulary": "crossref",
+                "role": "author"
+              }
+            ]
+          }
+        },
+        {
+          "given": "Raphael",
+          "family": "Bevand",
+          "literal": null,
+          "source_fields": {
+            "sequence": "additional",
+            "affiliation": [
+              {
+                "name": "Institute for Fluid Dynamics and Ship Theory (M-8), Hamburg University of Technology (TUHH), Hamburg, Germany"
+              }
+            ],
+            "role": [
+              {
+                "vocabulary": "crossref",
+                "role": "author"
+              }
+            ]
+          }
+        },
+        {
+          "given": "Alexander",
+          "family": "Düster",
+          "literal": null,
+          "source_fields": {
+            "sequence": "additional",
+            "affiliation": [
+              {
+                "name": "Numerical Structural Analysis with Application in Ship Technology (M-10), Hamburg University of Technology (TUHH), Hamburg, Germany"
+              }
+            ],
+            "role": [
+              {
+                "vocabulary": "crossref",
+                "role": "author"
+              }
+            ]
+          }
+        },
+        {
+          "given": "Moustafa",
+          "family": "Abdel-Maksoud",
+          "literal": null,
+          "source_fields": {
+            "sequence": "additional",
+            "affiliation": [
+              {
+                "name": "Institute for Fluid Dynamics and Ship Theory (M-8), Hamburg University of Technology (TUHH), Hamburg, Germany"
+              }
+            ],
+            "role": [
+              {
+                "vocabulary": "crossref",
+                "role": "author"
+              }
+            ]
+          }
+        }
+      ],
+      "abstract": "_ The focus of this paper is the optimization of a ship propeller with regard to its acoustic emission, taking advantage of its flexible material. For this purpose, an optimization method is developed based on a partitioned approach for the simulation of the fluid–structure problem. A boundary element method is applied on the hydrodynamic side whilst the structural problem is solved via a finite element approximation. The approach is validated referring to the hydrodynamic performance of model propellers at different stiffness values. Two optimization approaches are applied. In the first approach, only the hydrodynamic part of the problem is simulated. The second approach considers the fully coupled fluid–structure interaction. The optimized propeller is simulated using a partially nonlinear model for sheet cavitation to evaluate the noise level. Finally, the results are compared with those of the reference propeller. Keywords propeller; hydroacoustics; cavitation; Ffowcs Williams and Hawkings equation; partitioned fluid-structure interaction; finite element method; boundary element method",
+      "container_title": "Journal of Ship Research",
+      "publication_year": "2024",
+      "volume": "68",
+      "issue": "03",
+      "pages": "95--106",
+      "publisher": "The Society of Naval Architects and Marine Engineers",
+      "event": "",
+      "keywords": [],
+      "created_date": "2024-07-26",
+      "permalink": "optimization-of-ship-propellers-under-consideration-of-the-acoustic-emission-based-on-partitioned-fluid-structure-interaction-simulations",
+      "references": []
+    },
+    {
+      "id": "464e11d4-3321-4778-b2fa-e868738f7f59",
+      "identifiers": {
+        "doi": "10.1007/s10915-024-02591-5"
+      },
+      "type": "journal-article",
+      "title": "On the Immersed Boundary Method with Time-Filter-SAV for Solving Fluid–Structure Interaction Problem",
+      "authors": [
+        {
+          "given": "Qixing",
+          "family": "Chen",
+          "literal": null,
+          "source_fields": {
+            "sequence": "first",
+            "affiliation": [],
+            "role": [
+              {
+                "vocabulary": "crossref",
+                "role": "author"
+              }
+            ]
+          }
+        },
+        {
+          "given": "Li",
+          "family": "Cai",
+          "literal": null,
+          "source_fields": {
+            "ORCID": "https://orcid.org/0000-0002-2031-2015",
+            "authenticated-orcid": false,
+            "sequence": "additional",
+            "affiliation": [],
+            "role": [
+              {
+                "vocabulary": "crossref",
+                "role": "author"
+              }
+            ]
+          }
+        },
+        {
+          "given": "Feifei",
+          "family": "Jing",
+          "literal": null,
+          "source_fields": {
+            "ORCID": "https://orcid.org/0000-0002-7811-1443",
+            "authenticated-orcid": false,
+            "sequence": "additional",
+            "affiliation": [],
+            "role": [
+              {
+                "vocabulary": "crossref",
+                "role": "author"
+              }
+            ]
+          }
+        },
+        {
+          "given": "Pengfei",
+          "family": "Ma",
+          "literal": null,
+          "source_fields": {
+            "sequence": "additional",
+            "affiliation": [],
+            "role": [
+              {
+                "vocabulary": "crossref",
+                "role": "author"
+              }
+            ]
+          }
+        },
+        {
+          "given": "Xiaoyu",
+          "family": "Luo",
+          "literal": null,
+          "source_fields": {
+            "sequence": "additional",
+            "affiliation": [],
+            "role": [
+              {
+                "vocabulary": "crossref",
+                "role": "author"
+              }
+            ]
+          }
+        },
+        {
+          "given": "Hao",
+          "family": "Gao",
+          "literal": null,
+          "source_fields": {
+            "sequence": "additional",
+            "affiliation": [],
+            "role": [
+              {
+                "vocabulary": "crossref",
+                "role": "author"
+              }
+            ]
+          }
+        }
+      ],
+      "abstract": "",
+      "container_title": "Journal of Scientific Computing",
+      "publication_year": "2024",
+      "volume": "100",
+      "issue": "2",
+      "pages": "45",
+      "publisher": "Springer Science and Business Media LLC",
+      "event": "",
+      "keywords": [],
+      "created_date": "2024-06-27",
+      "permalink": "on-the-immersed-boundary-method-with-time-filter-sav-for-solving-fluid-structure-interaction-problem",
+      "references": [
+        {
+          "identifiers": {},
+          "citation": "Alnaes, M.S., Blechta, J., Hake, J., Johansson, A., Kehlet, B., Logg, A., Richardson, C. Ring, J., Rognes, M.E., Wells, G.N.: The FEniCS Project Version 1.5, Archive of Numerical Software, 3 (2015)"
+        },
+        {
+          "identifiers": {
+            "doi": "10.1137/140978399"
+          },
+          "citation": "Boffi D, Cavallini N, Gastaldi L (2015) The Finite Element Immersed Boundary Method with Distributed Lagrange Multiplier. SIAM J Numer Anal 53(6):2584–2604. https://doi.org/10.1137/140978399"
+        },
+        {
+          "identifiers": {
+            "doi": "10.1016/s0045-7949(02)00404-2"
+          },
+          "citation": "Boffi D, Gastaldi L (2003) A finite element approach for the immersed boundary method. Computers & Structures 81(8–11):491–501. https://doi.org/10.1016/s0045-7949(02)00404-2"
+        },
+        {
+          "identifiers": {
+            "doi": "10.1007/s00211-016-0814-1"
+          },
+          "citation": "Boffi D, Gastaldi L (2016) A fictitious domain approach with Lagrange multiplier for fluid-structure interactions. Numer Math 135(3):711–732. https://doi.org/10.1007/s00211-016-0814-1"
+        },
+        {
+          "identifiers": {},
+          "citation": "Boffi, D., Gastaldi, L.: Discrete models for fluid-structure interactions: the finite element immersed boundary method. Discrete Contin. Dyn. Syst. Ser. S 9(1), 89–107 (2016)"
+        },
+        {
+          "identifiers": {
+            "doi": "10.4171/rlm/966"
+          },
+          "citation": "Boffi D, Gastaldi L (2022) Existence, uniqueness, and approximation of a fictitious domain formulation for fluid-structure interactions. Atti Accad Naz Lincei Cl Sci Fis Mat Natur 33(1):109–137. https://doi.org/10.4171/rlm/966"
+        },
+        {
+          "identifiers": {},
+          "citation": "Boffi, D., Gastaldi, L., Heltai, L.: Stability results and algorithmic strategies for the finite element approach to the immersed boundary method, in: Bermudez de Castro, A., Gomez, D., Quintela, P., Salgado, P. (Eds.), Proceedings of ENUMATH 2005 the European Conference on Numerical Mathematics and Advanced Applications, (2006) 557-566"
+        },
+        {
+          "identifiers": {
+            "doi": "10.1142/s0218202507002352"
+          },
+          "citation": "BOFFI D, GASTALDI L, HELTAI L (2007) NUMERICAL STABILITY OF THE FINITE ELEMENT IMMERSED BOUNDARY METHOD. Math Models Methods Appl Sci 17(10):1479–1505. https://doi.org/10.1142/s0218202507002352"
+        },
+        {
+          "identifiers": {
+            "doi": "10.1016/j.compstruc.2007.01.009"
+          },
+          "citation": "Boffi D, Gastaldi L, Heltai L (2007) On the CFL condition for the finite element immersed boundary method. Computers & Structures 85(11–14):775–783. https://doi.org/10.1016/j.compstruc.2007.01.009"
+        },
+        {
+          "identifiers": {
+            "doi": "10.1016/j.cma.2007.09.015"
+          },
+          "citation": "Boffi D, Gastaldi L, Heltai L, Peskin CS (2008) On the hyper-elastic formulation of the immersed boundary method. Computer Methods in Applied Mechanics and Engineering 197(25–28):2210–2231. https://doi.org/10.1016/j.cma.2007.09.015"
+        },
+        {
+          "identifiers": {
+            "doi": "10.1007/s10439-009-9807-x"
+          },
+          "citation": "Borazjani I, Ge L, Sotiropoulos F (2009) High-Resolution Fluid–Structure Interaction Simulations of Flow Through a Bi-Leaflet Mechanical Heart Valve in an Anatomic Aorta. Ann Biomed Eng 38(2):326–344. https://doi.org/10.1007/s10439-009-9807-x"
+        },
+        {
+          "identifiers": {
+            "doi": "10.1016/0307-904x(81)90049-4"
+          },
+          "citation": "Bratanow T (1981) Finite element approximations of the Navier-Stokes equations. Applied Mathematical Modelling 5(3):212–213. https://doi.org/10.1016/0307-904x(81)90049-4"
+        },
+        {
+          "identifiers": {
+            "doi": "10.1016/j.jcp.2021.110927"
+          },
+          "citation": "DeCaria V, Gottlieb S, Grant ZJ, Layton WJ (2022) A general linear method approach to the design and optimization of efficient, accurate, and easily implemented time-stepping methods in CFD. Journal of Computational Physics 455:110927. https://doi.org/10.1016/j.jcp.2021.110927"
+        },
+        {
+          "identifiers": {
+            "doi": "10.1137/19m1258153"
+          },
+          "citation": "DeCaria V, Guzel A, Layton W, Li Y (2021) A Variable Stepsize, Variable Order Family of Low Complexity. SIAM J Sci Comput 43(3):A2130–A2160. https://doi.org/10.1137/19m1258153"
+        },
+        {
+          "identifiers": {
+            "doi": "10.1016/j.cma.2017.07.033"
+          },
+          "citation": "DeCaria V, Layton W, McLaughlin M (2017) A conservative, second order, unconditionally stable artificial compression method. Computer Methods in Applied Mechanics and Engineering 325:733–747. https://doi.org/10.1016/j.cma.2017.07.033"
+        },
+        {
+          "identifiers": {
+            "doi": "10.1002/num.22331"
+          },
+          "citation": "DeCaria V, Layton W, McLaughlin M (2018) An analysis of the Robert–Asselin time filter for the correction of nonphysical acoustics in an artificial compression method. Numerical Methods Partial 35(3):916–935. https://doi.org/10.1002/num.22331"
+        },
+        {
+          "identifiers": {},
+          "citation": "DeCaria, V., Layton, W., Zhao, H.: A time-accurate, adaptive discretization for fluid flow problems. Int. J. Numer. Anal. Model. 17(2), 254–280 (2020)"
+        },
+        {
+          "identifiers": {
+            "doi": "10.1016/j.cma.2020.113661"
+          },
+          "citation": "DeCaria V, Schneier M (2021) An embedded variable step IMEX scheme for the incompressible Navier–Stokes equations. Computer Methods in Applied Mechanics and Engineering 376:113661. https://doi.org/10.1016/j.cma.2020.113661"
+        },
+        {
+          "identifiers": {
+            "doi": "10.1016/j.jcp.2012.02.020"
+          },
+          "citation": "Devendran D, Peskin CS (2012) An immersed boundary energy-based method for incompressible viscoelasticity. Journal of Computational Physics 231(14):4613–4642. https://doi.org/10.1016/j.jcp.2012.02.020"
+        },
+        {
+          "identifiers": {
+            "doi": "10.1007/978-3-642-61623-5"
+          },
+          "citation": "Girault V, Raviart P-A (1986) Finite Element Methods for Navier-Stokes Equations. Springer Berlin Heidelberg"
+        },
+        {
+          "identifiers": {},
+          "citation": "Glowinski, R.: Finite element methods for incompressible viscous flow. Handb. Numer. Anal. 9, 3–1176 (2003)"
+        },
+        {
+          "identifiers": {
+            "doi": "10.1002/cnm.2888"
+          },
+          "citation": "Griffith BE, Luo X (2017) Hybrid finite difference/finite element immersed boundary method. Numer Methods Biomed Eng 33(12). https://doi.org/10.1002/cnm.2888"
+        },
+        {
+          "identifiers": {
+            "doi": "10.1142/s1758825109000113"
+          },
+          "citation": "GRIFFITH BE, LUO X, McQUEEN DM, PESKIN CS (2009) SIMULATING THE FLUID DYNAMICS OF NATURAL AND PROSTHETIC HEART VALVES USING THE IMMERSED BOUNDARY METHOD. Int J Appl Mechanics 01(01):137–177. https://doi.org/10.1142/s1758825109000113"
+        },
+        {
+          "identifiers": {
+            "doi": "10.1016/j.jcp.2009.06.007"
+          },
+          "citation": "Guidoboni G, Glowinski R, Cavallini N, Canic S (2009) Stable loosely-coupled-type algorithm for fluid–structure interaction in blood flow. Journal of Computational Physics 228(18):6916–6937. https://doi.org/10.1016/j.jcp.2009.06.007"
+        },
+        {
+          "identifiers": {
+            "doi": "10.1007/s10543-018-0695-z"
+          },
+          "citation": "Guzel A, Layton W (2018) Time filters increase accuracy of the fully implicit method. Bit Numer Math 58(2):301–315. https://doi.org/10.1007/s10543-018-0695-z"
+        },
+        {
+          "identifiers": {
+            "doi": "10.1016/j.cma.2012.04.001"
+          },
+          "citation": "Heltai L, Costanzo F (2012) Variational implementation of immersed finite element methods. Computer Methods in Applied Mechanics and Engineering 229–232:110–127. https://doi.org/10.1016/j.cma.2012.04.001"
+        },
+        {
+          "identifiers": {
+            "doi": "10.1137/0727022"
+          },
+          "citation": "Heywood JG, Rannacher R (1990) Finite-Element Approximation of the Nonstationary Navier–Stokes Problem. Part IV: Error Analysis for Second-Order Time Discretization. SIAM J Numer Anal 27(2):353–384. https://doi.org/10.1137/0727022"
+        },
+        {
+          "identifiers": {
+            "doi": "10.1061/(asce)0733-9445(1996)122:7(716)"
+          },
+          "citation": "Jain A, Jones NP, Scanlan RH (1996) Coupled Flutter and Buffeting Analysis of Long-Span Bridges. J Struct Eng 122(7):716–725. https://doi.org/10.1061/(asce)0733-9445(1996)122:7(716)"
+        },
+        {
+          "identifiers": {
+            "doi": "10.1016/j.jtbi.2015.07.035"
+          },
+          "citation": "Jones SK, Laurenza R, Hedrick TL, Griffith BE, Miller LA (2015) Lift vs. drag based mechanisms for vertical force production in the smallest flying insects. Journal of Theoretical Biology 384:105–120. https://doi.org/10.1016/j.jtbi.2015.07.035"
+        },
+        {
+          "identifiers": {
+            "doi": "10.1016/j.jcp.2003.08.010"
+          },
+          "citation": "Knoll DA, Keyes DE (2004) Jacobian-free Newton–Krylov methods: a survey of approaches and applications. Journal of Computational Physics 193(2):357–397. https://doi.org/10.1016/j.jcp.2003.08.010"
+        },
+        {
+          "identifiers": {
+            "doi": "10.1016/j.cam.2015.09.038"
+          },
+          "citation": "Layton W, Li Y, Trenchea C (2016) Recent developments in IMEX methods with time filters for systems of evolution equations. Journal of Computational and Applied Mathematics 299:50–67. https://doi.org/10.1016/j.cam.2015.09.038"
+        },
+        {
+          "identifiers": {
+            "doi": "10.1115/1.429648"
+          },
+          "citation": "Lemmon JD, Yoganathan AP (1999) Three-Dimensional Computational Model of Left Heart Diastolic Function With Fluid–Structure Interaction. Journal of Biomechanical Engineering 122(2):109–117. https://doi.org/10.1115/1.429648"
+        },
+        {
+          "identifiers": {
+            "doi": "10.1115/1.1286559"
+          },
+          "citation": "Lemmon JD, Yoganathan AP (2000) Computational Modeling of Left Heart Diastolic Function: Examination of Ventricular Dysfunction. Journal of Biomechanical Engineering 122(4):297–303. https://doi.org/10.1115/1.1286559"
+        },
+        {
+          "identifiers": {
+            "doi": "10.1137/19m1288267"
+          },
+          "citation": "Li X, Shen J (2020) Error Analysis of the SAV-MAC Scheme for the Navier--Stokes Equations. SIAM J Numer Anal 58(5):2465–2491. https://doi.org/10.1137/19m1288267"
+        },
+        {
+          "identifiers": {
+            "doi": "10.1090/mcom/3651"
+          },
+          "citation": "Li X, Shen J, Liu Z (2021) New SAV-pressure correction methods for the Navier-Stokes equations: stability and error analysis. Math Comp 91(333):141–167. https://doi.org/10.1090/mcom/3651"
+        },
+        {
+          "identifiers": {},
+          "citation": "Li, N., Wu, J.L., Feng, X.L.: Filtered time-stepping method for incompressible Navier-Stokes equations with variable density. J. Comput. Phys. 473, 111764 (2023)"
+        },
+        {
+          "identifiers": {
+            "doi": "10.1016/j.jcp.2019.03.012"
+          },
+          "citation": "Lin L, Yang Z, Dong S (2019) Numerical approximation of incompressible Navier-Stokes equations based on an auxiliary energy variable. Journal of Computational Physics 388:1–22. https://doi.org/10.1016/j.jcp.2019.03.012"
+        },
+        {
+          "identifiers": {
+            "doi": "10.1007/978-3-642-23099-8"
+          },
+          "citation": "Logg A, Mardal K-A, Wells G (eds) (2012) Automated Solution of Differential Equations by the Finite Element Method. Springer Berlin Heidelberg"
+        },
+        {
+          "identifiers": {
+            "doi": "10.1023/a:1007951707260"
+          },
+          "citation": "McQueen D, Peskin C (1997) Shared-Memory Parallel Vector Implementation of the Immersed Boundary Method for the Computation of Blood Flow in the Beating Mammalian Heart. The Journal of Supercomputing 11(3):213–236. https://doi.org/10.1023/a:1007951707260"
+        },
+        {
+          "identifiers": {
+            "doi": "10.1145/563788.604453"
+          },
+          "citation": "McQueen DM, Peskin CS (2000) A three-dimensional computer model of the human heart for studying cardiac fluid dynamics. SIGGRAPH Comput Graph 34(1):56–60. https://doi.org/10.1145/563788.604453"
+        },
+        {
+          "identifiers": {
+            "doi": "10.1242/jeb.01138"
+          },
+          "citation": "Miller LA, Peskin CS (2004) When vortices stick: an aerodynamic transition in tiny insect flight. Journal of Experimental Biology 207(17):3073–3088. https://doi.org/10.1242/jeb.01138"
+        },
+        {
+          "identifiers": {
+            "doi": "10.1242/jeb.028662"
+          },
+          "citation": "Miller LA, Peskin CS (2009) Flexible clap and fling in tiny insect flight. Journal of Experimental Biology 212(19):3076–3090. https://doi.org/10.1242/jeb.028662"
+        },
+        {
+          "identifiers": {
+            "doi": "10.1016/0021-9991(72)90065-4"
+          },
+          "citation": "Peskin CS (1972) Flow patterns around heart valves: A numerical method. Journal of Computational Physics 10(2):252–271. https://doi.org/10.1016/0021-9991(72)90065-4"
+        },
+        {
+          "identifiers": {
+            "doi": "10.1016/0021-9991(77)90100-0"
+          },
+          "citation": "Peskin CS (1977) Numerical analysis of blood flow in the heart. Journal of Computational Physics 25(3):220–252. https://doi.org/10.1016/0021-9991(77)90100-0"
+        },
+        {
+          "identifiers": {
+            "doi": "10.1017/s0962492902000077"
+          },
+          "citation": "Peskin CS (2002) The immersed boundary method. Acta Numerica 11:479–517. https://doi.org/10.1017/s0962492902000077"
+        },
+        {
+          "identifiers": {
+            "doi": "10.1137/21m1464828"
+          },
+          "citation": "Qin Y, Wang Y, Li J (2022) A Variable Time Step Time Filter Algorithm for the Geothermal System. SIAM J Numer Anal 60(5):2781–2806. https://doi.org/10.1137/21m1464828"
+        },
+        {
+          "identifiers": {},
+          "citation": "Quarteroni, A., Formaggia, L.: Mathematical Modelling and Numerical Simulation of the Cardiovascular System, Handbook of Numerical. Analysis 12, 3–127 (2004)"
+        },
+        {
+          "identifiers": {
+            "doi": "10.1017/s0962492917000046"
+          },
+          "citation": "Quarteroni A, Manzoni A, Vergara C (2017) The cardiovascular system: Mathematical modelling, numerical algorithms and clinical applications. Acta Numerica 26:365–590. https://doi.org/10.1017/s0962492917000046"
+        },
+        {
+          "identifiers": {
+            "doi": "10.1090/s0025-5718-96-00750-8"
+          },
+          "citation": "Shen J (1996) On error estimates of the projection methods for the Navier-Stokes equations: Second-order schemes. Math Comp 65(215):1039–1065. https://doi.org/10.1090/s0025-5718-96-00750-8"
+        },
+        {
+          "identifiers": {
+            "doi": "10.1016/j.jcp.2017.10.021"
+          },
+          "citation": "Shen J, Xu J, Yang J (2018) The scalar auxiliary variable (SAV) approach for gradient flows. Journal of Computational Physics 353:407–416. https://doi.org/10.1016/j.jcp.2017.10.021"
+        },
+        {
+          "identifiers": {
+            "doi": "10.1137/17m1150153"
+          },
+          "citation": "Shen J, Xu J, Yang J (2019) A New Class of Efficient and Robust Energy Stable Schemes for Gradient Flows. SIAM Rev 61(3):474–506. https://doi.org/10.1137/17m1150153"
+        },
+        {
+          "identifiers": {
+            "doi": "10.1007/s11517-009-0438-z"
+          },
+          "citation": "Sotiropoulos F, Borazjani I (2009) A review of state-of-the-art numerical methods for simulating flow through mechanical heart valves. Med Biol Eng Comput 47(3):245–256. https://doi.org/10.1007/s11517-009-0438-z"
+        },
+        {
+          "identifiers": {
+            "doi": "10.1006/jcph.1999.6297"
+          },
+          "citation": "Stockie JM, Wetton BR (1999) Analysis of Stiffness in the Immersed Boundary Method and Implications for Time-Stepping Schemes. Journal of Computational Physics 154(1):41–64. https://doi.org/10.1006/jcph.1999.6297"
+        },
+        {
+          "identifiers": {
+            "doi": "10.1137/s0036139994267018"
+          },
+          "citation": "Stockie JM, Wetton BTR (1995) Stability Analysis for the Immersed Fiber Problem. SIAM J Appl Math 55(6):1577–1591. https://doi.org/10.1137/s0036139994267018"
+        },
+        {
+          "identifiers": {
+            "doi": "10.1007/bf01396329"
+          },
+          "citation": "Suli, E.: Convergence and nonlinear stability of the Lagrange-Galerkin method for the Navier-Stokes equations. Numer. Math. 53(4), 459–483 (1988)"
+        },
+        {
+          "identifiers": {
+            "doi": "10.1090/chel/343"
+          },
+          "citation": "Temam R (2001) Navier–Stokes Equations"
+        },
+        {
+          "identifiers": {
+            "doi": "10.1016/j.jcp.2011.05.028"
+          },
+          "citation": "Tian F-B, Luo H, Zhu L, Liao JC, Lu X-Y (2011) An efficient immersed boundary-lattice Boltzmann method for the hydrodynamic interaction of elastic filaments. Journal of Computational Physics 230(19):7266–7283. https://doi.org/10.1016/j.jcp.2011.05.028"
+        },
+        {
+          "identifiers": {
+            "doi": "10.1137/0913077"
+          },
+          "citation": "Tu C, Peskin CS (1992) Stability and Instability in the Computation of Flows with Moving Immersed Boundaries: A Comparison of Three Methods. SIAM J Sci and Stat Comput 13(6):1361–1376. https://doi.org/10.1137/0913077"
+        },
+        {
+          "identifiers": {
+            "doi": "10.1007/s00466-011-0652-z"
+          },
+          "citation": "Wang X, Wang C, Zhang LT (2011) Semi-implicit formulation of the immersed finite element method. Comput Mech 49(4):421–430. https://doi.org/10.1007/s00466-011-0652-z"
+        },
+        {
+          "identifiers": {
+            "doi": "10.1007/s00466-009-0449-5"
+          },
+          "citation": "Wang X, Zhang LT (2009) Interpolation functions in the immersed boundary and finite element methods. Comput Mech 45(4):321–334. https://doi.org/10.1007/s00466-009-0449-5"
+        },
+        {
+          "identifiers": {
+            "doi": "10.1299/jsme1987.30.1009"
+          },
+          "citation": "YAGAWA G, EGUCHI Y (1987) Finite element methods for incompressible viscous flow. JSME international journal 30(265):1009–1017. https://doi.org/10.1299/jsme1987.30.1009"
+        },
+        {
+          "identifiers": {
+            "doi": "10.1061/(asce)0733-9399(2004)130:4(437)"
+          },
+          "citation": "Yang JN, Agrawal AK, Samali B, Wu J-C (2004) Benchmark Problem for Response Control of Wind-Excited Tall Buildings. J Eng Mech 130(4):437–446. https://doi.org/10.1061/(asce)0733-9399(2004)130:4(437)"
+        },
+        {
+          "identifiers": {
+            "doi": "10.1016/j.compfluid.2021.105265"
+          },
+          "citation": "Zeng Y, Huang P, He Y (2022) A time filter method for solving the double-diffusive natural convection model. Computers & Fluids 235:105265. https://doi.org/10.1016/j.compfluid.2021.105265"
+        },
+        {
+          "identifiers": {
+            "doi": "10.1016/j.jfluidstructs.2007.01.001"
+          },
+          "citation": "Zhang LT, Gay M (2007) Immersed finite element method for fluid-structure interactions. Journal of Fluids and Structures 23(6):839–857. https://doi.org/10.1016/j.jfluidstructs.2007.01.001"
+        },
+        {
+          "identifiers": {
+            "doi": "10.1016/j.jcp.2007.11.019"
+          },
+          "citation": "Zhao H, Freund JB, Moser RD (2008) A fixed-mesh method for incompressible flow–structure systems with finite solid deformations. Journal of Computational Physics 227(6):3114–3140. https://doi.org/10.1016/j.jcp.2007.11.019"
+        }
+      ]
+    },
+    {
+      "id": "afea736f-fd26-4723-9c6d-b7a84d977777",
+      "identifiers": {
+        "doi": "10.1016/j.jfluidstructs.2024.104156"
+      },
+      "type": "journal-article",
+      "title": "Non-intrusive reduced order models for partitioned fluid–structure interactions",
+      "authors": [
+        {
+          "given": "Azzeddine",
+          "family": "Tiba",
+          "literal": null,
+          "source_fields": {
+            "ORCID": "https://orcid.org/0000-0003-3578-141X",
+            "authenticated-orcid": false,
+            "sequence": "first",
+            "affiliation": [],
+            "role": [
+              {
+                "vocabulary": "crossref",
+                "role": "author"
+              }
+            ]
+          }
+        },
+        {
+          "given": "Thibault",
+          "family": "Dairay",
+          "literal": null,
+          "source_fields": {
+            "sequence": "additional",
+            "affiliation": [],
+            "role": [
+              {
+                "vocabulary": "crossref",
+                "role": "author"
+              }
+            ]
+          }
+        },
+        {
+          "given": "Florian",
+          "family": "De Vuyst",
+          "literal": null,
+          "source_fields": {
+            "sequence": "additional",
+            "affiliation": [],
+            "role": [
+              {
+                "vocabulary": "crossref",
+                "role": "author"
+              }
+            ]
+          }
+        },
+        {
+          "given": "Iraj",
+          "family": "Mortazavi",
+          "literal": null,
+          "source_fields": {
+            "sequence": "additional",
+            "affiliation": [],
+            "role": [
+              {
+                "vocabulary": "crossref",
+                "role": "author"
+              }
+            ]
+          }
+        },
+        {
+          "given": "Juan-Pedro",
+          "family": "Berro Ramirez",
+          "literal": null,
+          "source_fields": {
+            "sequence": "additional",
+            "affiliation": [],
+            "role": [
+              {
+                "vocabulary": "crossref",
+                "role": "author"
+              }
+            ]
+          }
+        }
+      ],
+      "abstract": "",
+      "container_title": "Journal of Fluids and Structures",
+      "publication_year": "2024",
+      "volume": "128",
+      "issue": "",
+      "pages": "104156",
+      "publisher": "Elsevier BV",
+      "event": "",
+      "keywords": [],
+      "created_date": "2024-06-20",
+      "permalink": "non-intrusive-reduced-order-models-for-partitioned-fluid-structure-interactions",
+      "references": [
+        {
+          "identifiers": {},
+          "citation": "Andrés Arcones, (2022)"
+        },
+        {
+          "identifiers": {
+            "doi": "10.1002/nme.959"
+          },
+          "citation": "Bathe K, Zhang H (2004) Finite element developments for general fluid flows with structural interactions. Numerical Meth Engineering 60(1):213–232. https://doi.org/10.1002/nme.959"
+        },
+        {
+          "identifiers": {
+            "doi": "10.1016/j.cma.2014.06.033"
+          },
+          "citation": "Bogaers AEJ, Kok S, Reddy BD, Franz T (2014) Quasi-Newton methods for implicit black-box FSI coupling. Computer Methods in Applied Mechanics and Engineering 279:113–132. https://doi.org/10.1016/j.cma.2014.06.033"
+        },
+        {
+          "identifiers": {
+            "doi": "10.1137/22m1478665"
+          },
+          "citation": "Bou Hamdan T, Mercère G, Dairay T, Meunier R, Tremblay P, Coirault P (2023) Tracking Distributed Parameters System Dynamics with Recursive Dynamic Mode Decomposition with Control. SIAM J Appl Dyn Syst 22(1):37–64. https://doi.org/10.1137/22m1478665"
+        },
+        {
+          "identifiers": {
+            "doi": "10.1073/pnas.1517384113"
+          },
+          "citation": "Brunton SL, Proctor JL, Kutz JN (2016) Discovering governing equations from data by sparse identification of nonlinear dynamical systems. Proc Natl Acad Sci USA 113(15):3932–3937. https://doi.org/10.1073/pnas.1517384113"
+        },
+        {
+          "identifiers": {
+            "doi": "10.2514/1.35850"
+          },
+          "citation": "Bui-Thanh T, Willcox K, Ghattas O (2008) Parametric Reduced-Order Models for Probabilistic Analysis of Unsteady Aerodynamic Applications. AIAA Journal 46(10):2520–2529. https://doi.org/10.2514/1.35850"
+        },
+        {
+          "identifiers": {
+            "doi": "10.1016/j.cma.2004.12.005"
+          },
+          "citation": "Causin P, Gerbeau JF, Nobile F (2005) Added-mass effect in the design of partitioned algorithms for fluid–structure problems. Computer Methods in Applied Mechanics and Engineering 194(42–44):4506–4527. https://doi.org/10.1016/j.cma.2004.12.005"
+        },
+        {
+          "identifiers": {},
+          "citation": "Chourdakis, preCICE v2: A sustainable and user-friendly coupling library. Open Res. Eur. (2022)"
+        },
+        {
+          "identifiers": {
+            "doi": "10.1016/s0045-7825(00)00260-7"
+          },
+          "citation": "Codina R (2001) A stabilized finite element method for generalized stationary incompressible flows. Computer Methods in Applied Mechanics and Engineering 190(20–21):2681–2706. https://doi.org/10.1016/s0045-7825(00)00260-7"
+        },
+        {
+          "identifiers": {
+            "doi": "10.1007/s11831-010-9045-2"
+          },
+          "citation": "Dadvand P, Rossi R, Oñate E (2010) An Object-oriented Environment for Developing Finite Element Codes for Multi-disciplinary Applications. Arch Computat Methods Eng 17(3):253–297. https://doi.org/10.1007/s11831-010-9045-2"
+        },
+        {
+          "identifiers": {
+            "doi": "10.1016/j.compstruc.2008.11.013"
+          },
+          "citation": "Degroote J, Bathe K-J, Vierendeels J (2009) Performance of a new partitioned procedure versus a monolithic procedure in fluid–structure interaction. Computers & Structures 87(11–12):793–801. https://doi.org/10.1016/j.compstruc.2008.11.013"
+        },
+        {
+          "identifiers": {
+            "doi": "10.1016/j.compstruc.2008.05.005"
+          },
+          "citation": "Degroote J, Bruggeman P, Haelterman R, Vierendeels J (2008) Stability of a coupling technique for partitioned solvers in FSI applications. Computers & Structures 86(23–24):2224–2234. https://doi.org/10.1016/j.compstruc.2008.05.005"
+        },
+        {
+          "identifiers": {
+            "doi": "10.1016/0045-7825(82)90128-1"
+          },
+          "citation": "Donea J, Giuliani S, Halleux JP (1982) An arbitrary lagrangian-eulerian finite element method for transient dynamic fluid-structure interactions. Computer Methods in Applied Mechanics and Engineering 33(1–3):689–723. https://doi.org/10.1016/0045-7825(82)90128-1"
+        },
+        {
+          "identifiers": {
+            "doi": "10.2514/1.j056405"
+          },
+          "citation": "Dupuis R, Jouhaud J-C, Sagaut P (2018) Surrogate Modeling of Aerodynamic Simulations for Multiple Operating Conditions Using Machine Learning. AIAA Journal 56(9):3622–3635. https://doi.org/10.2514/1.j056405"
+        },
+        {
+          "identifiers": {},
+          "citation": "Edwidge, Modal analysis and flow control on a reduced scale SUV. Flow Turbul. Combust. (2024)"
+        },
+        {
+          "identifiers": {
+            "doi": "10.1214/009053604000000067"
+          },
+          "citation": "Efron B, Hastie T, Johnstone I, Tibshirani R (2004) Least angle regression. Ann Statist 32(2). https://doi.org/10.1214/009053604000000067"
+        },
+        {
+          "identifiers": {
+            "doi": "10.1016/j.camwa.2017.09.012"
+          },
+          "citation": "Fareed H, Singler JR, Zhang Y, Shen J (2018) Incremental proper orthogonal decomposition for PDE simulation data. Computers & Mathematics with Applications 75(6):1942–1960. https://doi.org/10.1016/j.camwa.2017.09.012"
+        },
+        {
+          "identifiers": {
+            "doi": "10.1016/s0045-7825(99)00206-6"
+          },
+          "citation": "Farhat C, Lesoinne M (2000) Two efficient staggered algorithms for the serial and parallel solution of three-dimensional nonlinear transient aeroelastic problems. Computer Methods in Applied Mechanics and Engineering 182(3–4):499–515. https://doi.org/10.1016/s0045-7825(99)00206-6"
+        },
+        {
+          "identifiers": {
+            "doi": "10.1016/s0045-7825(00)00391-1"
+          },
+          "citation": "Felippa CA, Park KC, Farhat C (2001) Partitioned analysis of coupled mechanical systems. Computer Methods in Applied Mechanics and Engineering 190(24–25):3247–3270. https://doi.org/10.1016/s0045-7825(00)00391-1"
+        },
+        {
+          "identifiers": {},
+          "citation": "Fernández, Algorithms for fluid-structure interaction problems. (2009)"
+        },
+        {
+          "identifiers": {
+            "doi": "10.1016/j.cma.2021.114181"
+          },
+          "citation": "Fresca S, Manzoni A (2022) POD-DL-ROM: Enhancing deep learning-based reduced order models for nonlinear parametrized PDEs by proper orthogonal decomposition. Computer Methods in Applied Mechanics and Engineering 388:114181. https://doi.org/10.1016/j.cma.2021.114181"
+        },
+        {
+          "identifiers": {
+            "doi": "10.1016/j.cma.2022.115436"
+          },
+          "citation": "Fries WD, He X, Choi Y (2022) LaSDI: Parametric Latent Space Dynamics Identification. Computer Methods in Applied Mechanics and Engineering 399:115436. https://doi.org/10.1016/j.cma.2022.115436"
+        },
+        {
+          "identifiers": {},
+          "citation": "Gatzhammer, (2015)"
+        },
+        {
+          "identifiers": {
+            "doi": "10.1016/j.cma.2022.115717"
+          },
+          "citation": "Geelen R, Wright S, Willcox K (2023) Operator inference for non-intrusive model reduction with quadratic manifolds. Computer Methods in Applied Mechanics and Engineering 403:115717. https://doi.org/10.1016/j.cma.2022.115717"
+        },
+        {
+          "identifiers": {
+            "doi": "10.1016/j.cma.2018.07.017"
+          },
+          "citation": "Guo M, Hesthaven JS (2018) Reduced order modeling for nonlinear structural analysis using Gaussian process regression. Computer Methods in Applied Mechanics and Engineering 341:807–826. https://doi.org/10.1016/j.cma.2018.07.017"
+        },
+        {
+          "identifiers": {
+            "doi": "10.1016/j.compfluid.2021.105239"
+          },
+          "citation": "Gupta R, Jaiman R (2022) A hybrid partitioned deep learning methodology for moving interface and fluid–structure interaction. Computers & Fluids 233:105239. https://doi.org/10.1016/j.compfluid.2021.105239"
+        },
+        {
+          "identifiers": {
+            "doi": "10.2514/3.10415"
+          },
+          "citation": "Guruswamy GP (1990) Unsteady aerodynamic and aeroelastic calculations for wings using Euler equations. AIAA Journal 28(3):461–469. https://doi.org/10.2514/3.10415"
+        },
+        {
+          "identifiers": {
+            "doi": "10.1016/j.compstruc.2016.04.001"
+          },
+          "citation": "Haelterman R, Bogaers AEJ, Scheufele K, Uekermann B, Mehl M (2016) Improving the performance of the partitioned QN-ILS procedure for fluid–structure interaction problems: Filtering. Computers & Structures 171:9–17. https://doi.org/10.1016/j.compstruc.2016.04.001"
+        },
+        {
+          "identifiers": {
+            "doi": "10.1016/j.cma.2003.09.006"
+          },
+          "citation": "Heil M (2004) An efficient solver for the fully coupled solution of large-displacement fluid–structure interaction problems. Computer Methods in Applied Mechanics and Engineering 193(1–2):1–23. https://doi.org/10.1016/j.cma.2003.09.006"
+        },
+        {
+          "identifiers": {},
+          "citation": "Lassila, Model order reduction in fluid dynamics: Challenges and perspectives. (2014)"
+        },
+        {
+          "identifiers": {},
+          "citation": "Lee, Parametric model order reduction by machine learning for fluid–structure interaction analysis. Eng. Comput. (2023)"
+        },
+        {
+          "identifiers": {
+            "doi": "10.1016/0045-7825(96)01028-6"
+          },
+          "citation": "Lesoinne M, Farhat C (1996) Geometric conservation laws for flow problems with moving boundaries and deformable meshes, and their impact on aeroelastic computations. Computer Methods in Applied Mechanics and Engineering 134(1–2):71–90. https://doi.org/10.1016/0045-7825(96)01028-6"
+        },
+        {
+          "identifiers": {
+            "doi": "10.1016/j.jfluidstructs.2017.12.011"
+          },
+          "citation": "Longatte E, Liberge E, Pomarede M, Sigrist J-F, Hamdouni A (2018) Parametric study of flow-induced vibrations in cylinder arrays under single-phase fluid cross flows using POD-ROM. Journal of Fluids and Structures 78:314–330. https://doi.org/10.1016/j.jfluidstructs.2017.12.011"
+        },
+        {
+          "identifiers": {},
+          "citation": "Miyanawala, A hybrid data-driven deep learning technique for fluid-structure interaction. (2019)"
+        },
+        {
+          "identifiers": {
+            "doi": "10.2514/2.2372"
+          },
+          "citation": "Morton SA, Melville RB, Visbal MR (1998) Accuracy and Coupling Issues of Aeroelastic Navier-Stokes Solutions on Deforming Meshes. Journal of Aircraft 35(5):798–805. https://doi.org/10.2514/2.2372"
+        },
+        {
+          "identifiers": {},
+          "citation": "Nobile, (2001)"
+        },
+        {
+          "identifiers": {},
+          "citation": "Pedregosa, Scikit-learn: Machine learning in Python. J. Mach. Learn. Res. (2011)"
+        },
+        {
+          "identifiers": {
+            "doi": "10.1016/0045-7825(95)92707-9"
+          },
+          "citation": "Piperno S, Farhat C, Larrouturou B (1995) Partitioned procedures for the transient solution of coupled aroelastic problems Part I: Model problem, theory and two-dimensional application. Computer Methods in Applied Mechanics and Engineering 124(1–2):79–112. https://doi.org/10.1016/0045-7825(95)92707-9"
+        },
+        {
+          "identifiers": {},
+          "citation": "Pulikkathodi, A neural network-based data-driven local modeling of spotwelded plates under impact. Mech. Ind. (2023)"
+        },
+        {
+          "identifiers": {
+            "doi": "10.1016/j.jcp.2019.06.073"
+          },
+          "citation": "Shinde V, Longatte E, Baj F, Hoarau Y, Braza M (2019) Galerkin-free model reduction for fluid-structure interaction using proper orthogonal decomposition. Journal of Computational Physics 396:579–595. https://doi.org/10.1016/j.jcp.2019.06.073"
+        },
+        {
+          "identifiers": {
+            "doi": "10.1090/qam/910463"
+          },
+          "citation": "Sirovich L (1987) Turbulence and the dynamics of coherent structures. II. Symmetries and transformations. Quart Appl Math 45(3):573–582. https://doi.org/10.1090/qam/910463"
+        },
+        {
+          "identifiers": {},
+          "citation": "Totounferoush, (2021)"
+        },
+        {
+          "identifiers": {},
+          "citation": "Uekermann, (2016)"
+        },
+        {
+          "identifiers": {},
+          "citation": "Veroy, A posteriori error bounds for reduced-basis approximation of parametrized noncoercive and nonlinear elliptic partial differential equations. (2012)"
+        },
+        {
+          "identifiers": {},
+          "citation": "Wahba, (1990)"
+        },
+        {
+          "identifiers": {
+            "doi": "10.1111/1467-9868.00374"
+          },
+          "citation": "Wood SN (2003) Thin Plate Regression Splines. Journal of the Royal Statistical Society Series B: Statistical Methodology 65(1):95–114. https://doi.org/10.1111/1467-9868.00374"
+        },
+        {
+          "identifiers": {
+            "doi": "10.1016/j.cma.2015.12.029"
+          },
+          "citation": "Xiao D, Yang P, Fang F, Xiang J, Pain CC, Navon IM (2016) Non-intrusive reduced order modelling of fluid–structure interactions. Computer Methods in Applied Mechanics and Engineering 303:35–54. https://doi.org/10.1016/j.cma.2015.12.029"
+        },
+        {
+          "identifiers": {
+            "doi": "10.1063/5.0090394"
+          },
+          "citation": "Zhang X, Ji T, Xie F, Zheng C, Zheng Y (2022) Data-driven nonlinear reduced-order modeling of unsteady fluid–structure interactions. Physics of Fluids 34(5). https://doi.org/10.1063/5.0090394"
+        }
+      ]
     }
   ]
 }
