@@ -22,7 +22,7 @@ jobs:
       - name: Install pinned BibReview
         run: |
           python -m pip install --upgrade pip
-          python -m pip install "git+https://github.com/g-haine/bibreview.git@c768b3de49b68aa78974671342802532da3cd0c5"
+          python -m pip install "git+https://github.com/g-haine/bibreview.git@a1e71270a67c25c041448b739a271995bb903688"
 
       - name: Verify pinned BibReview
         run: |
@@ -31,7 +31,7 @@ jobs:
           import importlib.metadata
           import json
 
-          expected = "c768b3de49b68aa78974671342802532da3cd0c5"
+          expected = "a1e71270a67c25c041448b739a271995bb903688"
           distribution = importlib.metadata.distribution("bibreview")
           raw = distribution.read_text("direct_url.json")
           if not raw:
@@ -49,6 +49,10 @@ jobs:
 
       - name: Show resolved project status
         run: bibreview status
+
+      - name: Verify provider cache policy
+        run: |
+          bibreview status | grep -F "Provider cache: enabled (6h TTL)"
 
       - name: Verify discovery query is configured
         run: |
