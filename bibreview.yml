@@ -3,6 +3,10 @@ schema_version: 1
 environment:
   file: .env
 
+cache:
+  enabled: true
+  ttl_hours: 6
+
 project:
   name: of.FSI.der
   slug: offsider
