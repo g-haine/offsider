@@ -1873,3 +1873,70 @@ analysis.
 
 Final validation reported an empty merge staging area and 200 retained
 canonical publications.
+
+#### Batch 0012 — 100-candidate acceleration batch
+
+Batch 0012 processed 100 candidates.
+
+Initial screening produced:
+
+- pending: 41;
+- manual review: 47;
+- automatic rejections: 12.
+
+Manual relevance review completed with:
+
+- human KEEP: 27;
+- human REJECT: 20;
+- deferred: 0.
+
+The final batch therefore contained:
+
+- accepted: 68;
+- rejected: 32;
+- canonical corpus: 200 -> 268.
+
+Collection initially produced:
+
+- submitted: 68;
+- collected normally: 67;
+- unavailable: 0;
+- structurally invalid: 1.
+
+The remaining DOI,
+`10.1137/1.9781611976953.ch7`, was a valid SIAM book chapter whose provider
+metadata lacked both authors and editors. After explicit bibliographic
+verification, the missing authors André Garon and Michel C. Delfour were
+supplied through an exceptional reviewed repair while retaining the ordinary
+BibReview collection and merge pipeline. The repaired publication was then
+merged normally.
+
+This second real structurally-invalid provider case motivated BibReview issue
+#166 for a first-class reviewed structural metadata repair workflow.
+
+Author maintenance completed with:
+
+- 132 safe mappings;
+- 17 explicit human identity decisions;
+- known author-name variants: 719;
+- unknown authors: 0;
+- unresolved author identities: 0.
+
+After completion, offline relevance analysis reported:
+
+- evidence snapshots: 385;
+- labeled: 385;
+- KEEP: 268;
+- REJECT: 117;
+- human-reviewed: 69;
+- label provenance: canonical=229, human=69, terminal=87;
+- batches represented: 12;
+- automatic coverage: 61.6%;
+- accept/project-state disagreements: 4;
+- reject/project-state disagreements: 0.
+
+No contextual relevance rule met the conservative promotion threshold and no
+relevance rule was changed from this analysis.
+
+Final validation reported a valid configuration, no unresolved author identity,
+and clean diff whitespace checks.
