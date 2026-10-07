@@ -1810,3 +1810,66 @@ are deliberately excluded from automatic relevance rule mining.
 Because batch 0011 was opened immediately before this enhancement, its active
 screening snapshots are refreshed once with `init --rescreen-current` before
 human decisions are recorded.
+
+#### Batch 0011 — first human-labeled relevance batch
+
+Batch 0011 processed 50 candidates.
+
+Initial screening produced:
+
+- pending: 23;
+- manual review: 22;
+- automatic rejections: 5.
+
+The 22 manual relevance decisions were completed through the first-class
+`bibreview review` workflow:
+
+- human KEEP: 12;
+- human REJECT: 10.
+
+The final batch therefore contained:
+
+- accepted and merged: 35;
+- rejected: 15;
+- canonical corpus: 165 -> 200.
+
+Collection completed without structural failures:
+
+- submitted: 35;
+- collected: 35;
+- unavailable: 0;
+- invalid: 0.
+
+Several CrossRef abstracts containing unsupported structured markup were
+conservatively ignored by BibReview without preventing publication collection.
+
+Author maintenance then applied:
+
+- 60 safe mappings;
+- 10 explicit human identity decisions;
+- known author-name variants: 570;
+- unknown authors: 0.
+
+Batch 0011 is also the first initialization batch whose manual relevance
+decisions are retained explicitly as human-labeled relevance evidence.
+
+After completion, offline relevance analysis reported:
+
+- evidence snapshots: 296;
+- labeled: 296;
+- KEEP: 200;
+- REJECT: 96;
+- human-reviewed: 22;
+- label provenance: canonical=188, human=22, terminal=86;
+- batches represented: 11;
+- automatic coverage: 65.9%;
+- accept/project-state disagreements: 4;
+- reject/project-state disagreements: 0.
+
+No contextual relevance rule met the conservative promotion threshold.
+Single-signal candidates were retained as statistical evidence only; no
+Offsider relevance rule was changed automatically or manually from this
+analysis.
+
+Final validation reported an empty merge staging area and 200 retained
+canonical publications.
