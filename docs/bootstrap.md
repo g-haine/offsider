@@ -1795,3 +1795,18 @@ remaining contextual signals are therefore kept as exploratory evidence only.
 Future explicit decisions made through bibreview review will be retained as
 human-labeled relevance evidence and will progressively strengthen this
 analysis.
+
+
+#### Relevance review context
+
+Offsider was then repinned to BibReview commit
+`699a9524b7807c7c4863df1e47ed6795d9e57ee1`.
+
+The first-class `bibreview review` workflow now exposes provider authors and
+journal/publication venue alongside title, type, abstract, keywords, and rule
+matches. These fields are retained as relevance evidence for human review but
+are deliberately excluded from automatic relevance rule mining.
+
+Because batch 0011 was opened immediately before this enhancement, its active
+screening snapshots are refreshed once with `init --rescreen-current` before
+human decisions are recorded.
