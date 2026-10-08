@@ -12493,6 +12493,2066 @@
       "attempt": 1,
       "human_decision": "keep",
       "correction_decision": ""
+    },
+    {
+      "doi": "10.1007/978-3-319-70563-7_12",
+      "title": "Remarks on a Fluid-Structure Interaction Scheme Based on the Least-Squares Finite Element Method at Small Strains",
+      "abstract": "",
+      "keywords": [],
+      "work_type": "book-chapter",
+      "authors": [
+        "Carina Nisters",
+        "Alexander Schwarz",
+        "Solveigh Averweg",
+        "Jörg Schröder"
+      ],
+      "container_title": "Advanced Structured Materials",
+      "screening_outcome": "review",
+      "accept_matches": [],
+      "reject_matches": [],
+      "source": "screening",
+      "batch_id": "batch-0016",
+      "attempt": 1,
+      "human_decision": "keep",
+      "correction_decision": ""
+    },
+    {
+      "doi": "10.1063/1.5043897",
+      "title": "Numerical simulation of a falling drop on a bending wall by coupling a VOF method with a fluid structure interaction solver",
+      "abstract": "In this work we consider a multiphase interface advection problem, solved with a volume of fluid (VOF) technique, coupled with a FSI problem. A Cartesian mesh grid and an unstructured one are used to solve the VOF and FSI problem, respectively. We propose a new algorithm to project the velocity field, solution of the FSI problem, into the Cartesian grid. The FSI and the energy balance problems are solved with a parallel multigrid C++ Finite Element code.",
+      "keywords": [],
+      "work_type": "proceedings-article",
+      "authors": [
+        "Daniele Cerroni",
+        "Leonardo Chirco",
+        "Roberto Da Vià",
+        "Sandro Manservisi"
+      ],
+      "container_title": "AIP Conference Proceedings",
+      "screening_outcome": "queued",
+      "accept_matches": [
+        "(?is)\\A(?=.{0,165}\\b(?:fluid[-\\s]+(?:structure|solid)(?:s)?(?:[-\\s]+(?:interaction(?:s)?|coupl(?:e|ed|ing)|system(?:s)?|model(?:s)?))|fluid[-\\s]+rigid[-\\s]+body(?:[-\\s]+(?:interaction|problem|system))?)\\b)(?=.{0,165}\\b(?:solver(?:s)?|(?:semi[-\\s]+implicit[-\\s]+)?(?:partition(?:ed)?[-\\s]+)?algorithm(?:s)?|framework|methodology|(?:mixed[-\\s]+)?formulation(?:s)?|discretization(?:s)?|reduced[-\\s]+order[-\\s]+model|ROM|domain[-\\s]+decomposition|local[-\\s]+time[-\\s]+stepping|low[-\\s]+rank[-\\s]+method|interface[-\\s]+treatment|material[-\\s]+point[-\\s]+method|PFEM[-\\s]*FEM[-\\s]+approach|smoothed[-\\s]+finite[-\\s]+element[-\\s]+method|scaled[-\\s]+boundary[-\\s]+finite[-\\s]+element[-\\s]+method|arbitrary[-\\s]+lagrangian[-\\s]+eulerian[-\\s]+(?:method|approach)|immersed[-\\s]+multi[-\\s]+material.{0,80}\\bfinite[-\\s]+element[-\\s]+method|monolithic.{0,50}\\bmethod|partitioned.{0,50}\\b(?:method|scheme|algorithm)|finite[-\\s]+element[-\\s]+discontinuous[-\\s]+galerkin[-\\s]+method|lattice[-\\s]+boltzmann.{0,50}\\bmethod|parallel|spectral[-\\s]+element[-\\s]+solver|multi[-\\s]+grid.{0,60}\\bmethod|cut[-\\s]+cell.{0,50}\\b(?:method|discrete[-\\s]+velocity)|direct[-\\s]+adjoint.{0,50}\\bsolver|graph[-\\s]+attention[-\\s]+solver|topology[-\\s]+optimization|shape[-\\s]+design|time[-\\s]+integration[-\\s]+schemes?|predictors?.{0,80}\\bconvergence|stabilized.{0,50}\\bmethod|stabilization[-\\s]+free.{0,50}\\bmethod|decoupling[-\\s]+methods?|coupled[-\\s]+stabilized[-\\s]+scheme|periodic[-\\s]+dual[-\\s]+mixing[-\\s]+method|semi[-\\s]+analytical[-\\s]+approach|isogeometric.{0,60}\\bcoupling[-\\s]+methods?|coupling[-\\s]+scheme|partitioned[-\\s]+semi[-\\s]+implicit[-\\s]+coupling[-\\s]+methods?)\\b)"
+      ],
+      "reject_matches": [],
+      "source": "screening",
+      "batch_id": "batch-0016",
+      "attempt": 1,
+      "human_decision": "",
+      "correction_decision": ""
+    },
+    {
+      "doi": "10.14311/tpfm.2018.016",
+      "title": "MONOLITHIC FLUID STRUCTURE INTERACTION MODEL, APPLICATION TO WATER ENTRY PROBLEM",
+      "abstract": "",
+      "keywords": [],
+      "work_type": "proceedings-article",
+      "authors": [
+        "F. Golay"
+      ],
+      "container_title": "Topical Problems of Fluid Mechanics 2018",
+      "screening_outcome": "review",
+      "accept_matches": [],
+      "reject_matches": [],
+      "source": "screening",
+      "batch_id": "batch-0016",
+      "attempt": 1,
+      "human_decision": "keep",
+      "correction_decision": ""
+    },
+    {
+      "doi": "10.1016/j.softx.2018.02.004",
+      "title": "LUMA: A many-core, Fluid–Structure Interaction solver based on the Lattice-Boltzmann Method",
+      "abstract": "The Lattice-Boltzmann Method at the University of Manchester (LUMA) project was commissioned to build a collaborative research environment in which researchers of all abilities can study fluid–structure interaction (FSI) problems in engineering applications from aerodynamics to medicine. It is built on the principles of accessibility, simplicity and flexibility. The LUMA software at the core of the project is a capable FSI solver with turbulence modelling and many-core scalability as well as a wealth of input/output and pre- and post-processing facilities. The software has been validated and several major releases benchmarked on supercomputing facilities internationally. The software architecture is modular and arranged logically using a minimal amount of object-orientation to maintain a simple and accessible software.",
+      "keywords": [],
+      "work_type": "journal-article",
+      "authors": [
+        "Adrian R.G. Harwood",
+        "Joseph O’Connor",
+        "Jonathan Sanchez Muñoz",
+        "Marta Camps Santasmasas",
+        "Alistair J. Revell"
+      ],
+      "container_title": "SoftwareX",
+      "screening_outcome": "queued",
+      "accept_matches": [
+        "(?is)\\A(?=.{0,165}\\b(?:fluid[-\\s]+(?:structure|solid)(?:s)?(?:[-\\s]+(?:interaction(?:s)?|coupl(?:e|ed|ing)|system(?:s)?|model(?:s)?))|fluid[-\\s]+rigid[-\\s]+body(?:[-\\s]+(?:interaction|problem|system))?)\\b)(?=.{0,165}\\b(?:solver(?:s)?|(?:semi[-\\s]+implicit[-\\s]+)?(?:partition(?:ed)?[-\\s]+)?algorithm(?:s)?|framework|methodology|(?:mixed[-\\s]+)?formulation(?:s)?|discretization(?:s)?|reduced[-\\s]+order[-\\s]+model|ROM|domain[-\\s]+decomposition|local[-\\s]+time[-\\s]+stepping|low[-\\s]+rank[-\\s]+method|interface[-\\s]+treatment|material[-\\s]+point[-\\s]+method|PFEM[-\\s]*FEM[-\\s]+approach|smoothed[-\\s]+finite[-\\s]+element[-\\s]+method|scaled[-\\s]+boundary[-\\s]+finite[-\\s]+element[-\\s]+method|arbitrary[-\\s]+lagrangian[-\\s]+eulerian[-\\s]+(?:method|approach)|immersed[-\\s]+multi[-\\s]+material.{0,80}\\bfinite[-\\s]+element[-\\s]+method|monolithic.{0,50}\\bmethod|partitioned.{0,50}\\b(?:method|scheme|algorithm)|finite[-\\s]+element[-\\s]+discontinuous[-\\s]+galerkin[-\\s]+method|lattice[-\\s]+boltzmann.{0,50}\\bmethod|parallel|spectral[-\\s]+element[-\\s]+solver|multi[-\\s]+grid.{0,60}\\bmethod|cut[-\\s]+cell.{0,50}\\b(?:method|discrete[-\\s]+velocity)|direct[-\\s]+adjoint.{0,50}\\bsolver|graph[-\\s]+attention[-\\s]+solver|topology[-\\s]+optimization|shape[-\\s]+design|time[-\\s]+integration[-\\s]+schemes?|predictors?.{0,80}\\bconvergence|stabilized.{0,50}\\bmethod|stabilization[-\\s]+free.{0,50}\\bmethod|decoupling[-\\s]+methods?|coupled[-\\s]+stabilized[-\\s]+scheme|periodic[-\\s]+dual[-\\s]+mixing[-\\s]+method|semi[-\\s]+analytical[-\\s]+approach|isogeometric.{0,60}\\bcoupling[-\\s]+methods?|coupling[-\\s]+scheme|partitioned[-\\s]+semi[-\\s]+implicit[-\\s]+coupling[-\\s]+methods?)\\b)"
+      ],
+      "reject_matches": [],
+      "source": "screening",
+      "batch_id": "batch-0016",
+      "attempt": 1,
+      "human_decision": "",
+      "correction_decision": ""
+    },
+    {
+      "doi": "10.4018/978-1-5225-4760-0.ch008",
+      "title": "Fluid-Structure Interaction Using Lattice Boltzmann Method Coupled With Finite Element Method",
+      "abstract": "This chapter presents several partitioned algorithms to couple lattice Boltzmann method (LBM) and finite element method (FEM) for numerical simulation of transient fluid-structure interaction (FSI) problems with large interface motion. Partitioned coupling strategies allow one to solve separately the fluid and solid subdomains using adapted or optimized numerical schemes, which provides a considerable flexibility for FSI simulation, especially for more realistic and industrial applications. However, partitioned coupling procedures often encounter numerical instabilities due to the fact that the time integrations of the two subdomains are usually carried out in a staggered way. As a consequence, the energy transfer across the fluid-solid interface is usually not correctly simulated, which means numerical energy injection or dissipation might occur at the interface with partitioned methods. The focus of the present chapter is given to the energy conservation property of different partitioned coupling strategies for FSI simulation.",
+      "keywords": [],
+      "work_type": "book-chapter",
+      "authors": [
+        "Zhe Li",
+        "Julien Favier"
+      ],
+      "container_title": "Advances in Computer and Electrical Engineering",
+      "screening_outcome": "queued",
+      "accept_matches": [
+        "(?is)\\A(?=.{0,165}\\b(?:fluid[-\\s]+(?:structure|solid)(?:s)?(?:[-\\s]+(?:interaction(?:s)?|coupl(?:e|ed|ing)|system(?:s)?|model(?:s)?))|fluid[-\\s]+rigid[-\\s]+body(?:[-\\s]+(?:interaction|problem|system))?)\\b)(?=.{0,165}\\b(?:solver(?:s)?|(?:semi[-\\s]+implicit[-\\s]+)?(?:partition(?:ed)?[-\\s]+)?algorithm(?:s)?|framework|methodology|(?:mixed[-\\s]+)?formulation(?:s)?|discretization(?:s)?|reduced[-\\s]+order[-\\s]+model|ROM|domain[-\\s]+decomposition|local[-\\s]+time[-\\s]+stepping|low[-\\s]+rank[-\\s]+method|interface[-\\s]+treatment|material[-\\s]+point[-\\s]+method|PFEM[-\\s]*FEM[-\\s]+approach|smoothed[-\\s]+finite[-\\s]+element[-\\s]+method|scaled[-\\s]+boundary[-\\s]+finite[-\\s]+element[-\\s]+method|arbitrary[-\\s]+lagrangian[-\\s]+eulerian[-\\s]+(?:method|approach)|immersed[-\\s]+multi[-\\s]+material.{0,80}\\bfinite[-\\s]+element[-\\s]+method|monolithic.{0,50}\\bmethod|partitioned.{0,50}\\b(?:method|scheme|algorithm)|finite[-\\s]+element[-\\s]+discontinuous[-\\s]+galerkin[-\\s]+method|lattice[-\\s]+boltzmann.{0,50}\\bmethod|parallel|spectral[-\\s]+element[-\\s]+solver|multi[-\\s]+grid.{0,60}\\bmethod|cut[-\\s]+cell.{0,50}\\b(?:method|discrete[-\\s]+velocity)|direct[-\\s]+adjoint.{0,50}\\bsolver|graph[-\\s]+attention[-\\s]+solver|topology[-\\s]+optimization|shape[-\\s]+design|time[-\\s]+integration[-\\s]+schemes?|predictors?.{0,80}\\bconvergence|stabilized.{0,50}\\bmethod|stabilization[-\\s]+free.{0,50}\\bmethod|decoupling[-\\s]+methods?|coupled[-\\s]+stabilized[-\\s]+scheme|periodic[-\\s]+dual[-\\s]+mixing[-\\s]+method|semi[-\\s]+analytical[-\\s]+approach|isogeometric.{0,60}\\bcoupling[-\\s]+methods?|coupling[-\\s]+scheme|partitioned[-\\s]+semi[-\\s]+implicit[-\\s]+coupling[-\\s]+methods?)\\b)"
+      ],
+      "reject_matches": [],
+      "source": "screening",
+      "batch_id": "batch-0016",
+      "attempt": 1,
+      "human_decision": "",
+      "correction_decision": ""
+    },
+    {
+      "doi": "10.26678/abcm.encit2018.cit18-0776",
+      "title": "TOPOLOGICAL OPTIMIZATION OF DISCRETIZED FLUID-STRUCTURE SYSTEMS WITH UNSTRUCTURED MESHES",
+      "abstract": "",
+      "keywords": [],
+      "work_type": "proceedings-article",
+      "authors": [
+        "Fernanda Link",
+        "Vitor Souza Viana Silva",
+        "Gustavo Comerlato Rodrigues",
+        "Emanuel Moutinho Cesconeto",
+        "EDERVAL LISBOA",
+        "João Baptista Dias Moreira",
+        "Walter Jesus Paucar Casas"
+      ],
+      "container_title": "17th Brazilian Congress of Thermal Sciences and Engineering",
+      "screening_outcome": "review",
+      "accept_matches": [],
+      "reject_matches": [],
+      "source": "screening",
+      "batch_id": "batch-0016",
+      "attempt": 1,
+      "human_decision": "keep",
+      "correction_decision": ""
+    },
+    {
+      "doi": "10.4467/2353737xct.18.029.8002",
+      "title": "Interaction between hydraulic conditions and structures – fluid structure interaction problem solving. A case study of a hydraulic structure",
+      "abstract": "konstrukcji -rozwiązywanie problemów FSI na przykładzie obiektu hydrotechnicznego",
+      "keywords": [],
+      "work_type": "journal-article",
+      "authors": [],
+      "container_title": "Czasopismo Techniczne",
+      "screening_outcome": "review",
+      "accept_matches": [],
+      "reject_matches": [],
+      "source": "screening",
+      "batch_id": "batch-0016",
+      "attempt": 1,
+      "human_decision": "reject",
+      "correction_decision": ""
+    },
+    {
+      "doi": "10.1016/j.finel.2017.12.002",
+      "title": "Adaptive time stepping for fluid-structure interaction solvers",
+      "abstract": "",
+      "keywords": [],
+      "work_type": "journal-article",
+      "authors": [
+        "M. Mayr",
+        "W.A. Wall",
+        "M.W. Gee"
+      ],
+      "container_title": "Finite Elements in Analysis and Design",
+      "screening_outcome": "queued",
+      "accept_matches": [
+        "(?is)\\A(?=.{0,165}\\b(?:fluid[-\\s]+(?:structure|solid)(?:s)?(?:[-\\s]+(?:interaction(?:s)?|coupl(?:e|ed|ing)|system(?:s)?|model(?:s)?))|fluid[-\\s]+rigid[-\\s]+body(?:[-\\s]+(?:interaction|problem|system))?)\\b)(?=.{0,165}\\b(?:solver(?:s)?|(?:semi[-\\s]+implicit[-\\s]+)?(?:partition(?:ed)?[-\\s]+)?algorithm(?:s)?|framework|methodology|(?:mixed[-\\s]+)?formulation(?:s)?|discretization(?:s)?|reduced[-\\s]+order[-\\s]+model|ROM|domain[-\\s]+decomposition|local[-\\s]+time[-\\s]+stepping|low[-\\s]+rank[-\\s]+method|interface[-\\s]+treatment|material[-\\s]+point[-\\s]+method|PFEM[-\\s]*FEM[-\\s]+approach|smoothed[-\\s]+finite[-\\s]+element[-\\s]+method|scaled[-\\s]+boundary[-\\s]+finite[-\\s]+element[-\\s]+method|arbitrary[-\\s]+lagrangian[-\\s]+eulerian[-\\s]+(?:method|approach)|immersed[-\\s]+multi[-\\s]+material.{0,80}\\bfinite[-\\s]+element[-\\s]+method|monolithic.{0,50}\\bmethod|partitioned.{0,50}\\b(?:method|scheme|algorithm)|finite[-\\s]+element[-\\s]+discontinuous[-\\s]+galerkin[-\\s]+method|lattice[-\\s]+boltzmann.{0,50}\\bmethod|parallel|spectral[-\\s]+element[-\\s]+solver|multi[-\\s]+grid.{0,60}\\bmethod|cut[-\\s]+cell.{0,50}\\b(?:method|discrete[-\\s]+velocity)|direct[-\\s]+adjoint.{0,50}\\bsolver|graph[-\\s]+attention[-\\s]+solver|topology[-\\s]+optimization|shape[-\\s]+design|time[-\\s]+integration[-\\s]+schemes?|predictors?.{0,80}\\bconvergence|stabilized.{0,50}\\bmethod|stabilization[-\\s]+free.{0,50}\\bmethod|decoupling[-\\s]+methods?|coupled[-\\s]+stabilized[-\\s]+scheme|periodic[-\\s]+dual[-\\s]+mixing[-\\s]+method|semi[-\\s]+analytical[-\\s]+approach|isogeometric.{0,60}\\bcoupling[-\\s]+methods?|coupling[-\\s]+scheme|partitioned[-\\s]+semi[-\\s]+implicit[-\\s]+coupling[-\\s]+methods?)\\b)"
+      ],
+      "reject_matches": [],
+      "source": "screening",
+      "batch_id": "batch-0016",
+      "attempt": 1,
+      "human_decision": "",
+      "correction_decision": ""
+    },
+    {
+      "doi": "10.1007/s10915-017-0629-y",
+      "title": "A Higher-Order Discontinuous Galerkin/Arbitrary Lagrangian Eulerian Partitioned Approach to Solving Fluid–Structure Interaction Problems with Incompressible, Viscous Fluids and Elastic Structures",
+      "abstract": "",
+      "keywords": [],
+      "work_type": "journal-article",
+      "authors": [
+        "Yifan Wang",
+        "Annalisa Quaini",
+        "Sunčica Čanić"
+      ],
+      "container_title": "Journal of Scientific Computing",
+      "screening_outcome": "review",
+      "accept_matches": [],
+      "reject_matches": [],
+      "source": "screening",
+      "batch_id": "batch-0016",
+      "attempt": 1,
+      "human_decision": "keep",
+      "correction_decision": ""
+    },
+    {
+      "doi": "10.1016/j.compgeo.2017.11.006",
+      "title": "A discrete numerical model involving partial fluid-solid coupling to describe suffusion effects in soils",
+      "abstract": "",
+      "keywords": [],
+      "work_type": "journal-article",
+      "authors": [
+        "R. Aboul Hosn",
+        "L. Sibille",
+        "N. Benahmed",
+        "B. Chareyre"
+      ],
+      "container_title": "Computers and Geotechnics",
+      "screening_outcome": "review",
+      "accept_matches": [],
+      "reject_matches": [],
+      "source": "screening",
+      "batch_id": "batch-0016",
+      "attempt": 1,
+      "human_decision": "reject",
+      "correction_decision": ""
+    },
+    {
+      "doi": "10.1515/cmam-2017-0050",
+      "title": "A Nonconforming Finite Element Method for an Acoustic Fluid-Structure Interaction Problem",
+      "abstract": "<jats:title>Abstract</jats:title>\n               <jats:p>We study a nonconforming finite element approximation of the vibration modes\nof an acoustic fluid-structure interaction. Displacement variables are used\nfor both the fluid and the solid. The numerical scheme is based on an irrotational\nfluid displacement formulation and hence it is free of spurious eigenmodes.\nThe method uses weakly continuous <jats:inline-formula id=\"j_cmam-2017-0050_ineq_9999_w2aab3b7e1642b1b6b1aab1c14b1b1Aa\">\n                     <jats:alternatives>\n                        <m:math xmlns:m=\"http://www.w3.org/1998/Math/MathML\">\n                           <m:msub>\n                              <m:mi>P</m:mi>\n                              <m:mn>1</m:mn>\n                           </m:msub>\n                        </m:math>\n                        <jats:inline-graphic xmlns:xlink=\"http://www.w3.org/1999/xlink\" xlink:href=\"graphic/j_cmam-2017-0050_eq_1078.png\"/>\n                        <jats:tex-math>{P_{1}}</jats:tex-math>\n                     </jats:alternatives>\n                  </jats:inline-formula> vector fields for the fluid and\nclassical piecewise linear elements for the solid, and it has <jats:inline-formula id=\"j_cmam-2017-0050_ineq_9998_w2aab3b7e1642b1b6b1aab1c14b1b3Aa\">\n                     <jats:alternatives>\n                        <m:math xmlns:m=\"http://www.w3.org/1998/Math/MathML\">\n                           <m:mrow>\n                              <m:mi>O</m:mi>\n                              <m:mo>⁢</m:mo>\n                              <m:mrow>\n                                 <m:mo stretchy=\"false\">(</m:mo>\n                                 <m:msup>\n                                    <m:mi>h</m:mi>\n                                    <m:mn>2</m:mn>\n                                 </m:msup>\n                                 <m:mo stretchy=\"false\">)</m:mo>\n                              </m:mrow>\n                           </m:mrow>\n                        </m:math>\n                        <jats:inline-graphic xmlns:xlink=\"http://www.w3.org/1999/xlink\" xlink:href=\"graphic/j_cmam-2017-0050_eq_1077.png\"/>\n                        <jats:tex-math>{O(h^{2})}</jats:tex-math>\n                     </jats:alternatives>\n                  </jats:inline-formula>\nconvergence for the eigenvalues on properly graded meshes. The theoretical results\nare confirmed by numerical experiments.</jats:p>",
+      "keywords": [],
+      "work_type": "journal-article",
+      "authors": [
+        "Susanne C. Brenner",
+        "Ayçıl Çeşmelioğlu",
+        "Jintao Cui",
+        "Li-Yeng Sung"
+      ],
+      "container_title": "Computational Methods in Applied Mathematics",
+      "screening_outcome": "review",
+      "accept_matches": [],
+      "reject_matches": [],
+      "source": "screening",
+      "batch_id": "batch-0016",
+      "attempt": 1,
+      "human_decision": "reject",
+      "correction_decision": ""
+    },
+    {
+      "doi": "10.1142/s0219876218500639",
+      "title": "A Lattice Boltzmann-Immersed Boundary-Finite Element Method for Nonlinear Fluid–Solid Interaction Simulation with Moving Objects",
+      "abstract": "A nonlinear finite element method (FEM) was introduced into the immersed boundary (IB) — lattice Boltzmann method (LBM) framework to simulate the nonlinear fluid–solid interactions for moving deformable objects in incompressible fluid flow. The fluid motion is obtained by solving the discrete lattice Boltzmann equation, the moving boundaries of the solids are handled by the IB method, and the nonlinear dynamics of the deforming/moving objects are calculated by nonlinear FEM solvers in which the structural nodes are also set as Lagrangian markers to track the moving boundaries of the structures in IB method. The simulation results indicate that the proposed IB-LBM-FEM simulation framework not only satisfies the nonslip boundary condition well at the boundary points, but also has better accuracy for capturing nonlinearity because of its mature nonlinear FEM solver.",
+      "keywords": [],
+      "work_type": "journal-article",
+      "authors": [
+        "Chunlin Gong",
+        "Zhe Fang",
+        "Gang Chen"
+      ],
+      "container_title": "International Journal of Computational Methods",
+      "screening_outcome": "queued",
+      "accept_matches": [
+        "(?is)\\A(?=.{0,165}\\b(?:fluid[-\\s]+(?:structure|solid)(?:s)?(?:[-\\s]+(?:interaction(?:s)?|coupl(?:e|ed|ing)|system(?:s)?|model(?:s)?))|fluid[-\\s]+rigid[-\\s]+body(?:[-\\s]+(?:interaction|problem|system))?)\\b)(?=.{0,165}\\b(?:solver(?:s)?|(?:semi[-\\s]+implicit[-\\s]+)?(?:partition(?:ed)?[-\\s]+)?algorithm(?:s)?|framework|methodology|(?:mixed[-\\s]+)?formulation(?:s)?|discretization(?:s)?|reduced[-\\s]+order[-\\s]+model|ROM|domain[-\\s]+decomposition|local[-\\s]+time[-\\s]+stepping|low[-\\s]+rank[-\\s]+method|interface[-\\s]+treatment|material[-\\s]+point[-\\s]+method|PFEM[-\\s]*FEM[-\\s]+approach|smoothed[-\\s]+finite[-\\s]+element[-\\s]+method|scaled[-\\s]+boundary[-\\s]+finite[-\\s]+element[-\\s]+method|arbitrary[-\\s]+lagrangian[-\\s]+eulerian[-\\s]+(?:method|approach)|immersed[-\\s]+multi[-\\s]+material.{0,80}\\bfinite[-\\s]+element[-\\s]+method|monolithic.{0,50}\\bmethod|partitioned.{0,50}\\b(?:method|scheme|algorithm)|finite[-\\s]+element[-\\s]+discontinuous[-\\s]+galerkin[-\\s]+method|lattice[-\\s]+boltzmann.{0,50}\\bmethod|parallel|spectral[-\\s]+element[-\\s]+solver|multi[-\\s]+grid.{0,60}\\bmethod|cut[-\\s]+cell.{0,50}\\b(?:method|discrete[-\\s]+velocity)|direct[-\\s]+adjoint.{0,50}\\bsolver|graph[-\\s]+attention[-\\s]+solver|topology[-\\s]+optimization|shape[-\\s]+design|time[-\\s]+integration[-\\s]+schemes?|predictors?.{0,80}\\bconvergence|stabilized.{0,50}\\bmethod|stabilization[-\\s]+free.{0,50}\\bmethod|decoupling[-\\s]+methods?|coupled[-\\s]+stabilized[-\\s]+scheme|periodic[-\\s]+dual[-\\s]+mixing[-\\s]+method|semi[-\\s]+analytical[-\\s]+approach|isogeometric.{0,60}\\bcoupling[-\\s]+methods?|coupling[-\\s]+scheme|partitioned[-\\s]+semi[-\\s]+implicit[-\\s]+coupling[-\\s]+methods?)\\b)"
+      ],
+      "reject_matches": [],
+      "source": "screening",
+      "batch_id": "batch-0016",
+      "attempt": 1,
+      "human_decision": "",
+      "correction_decision": ""
+    },
+    {
+      "doi": "10.22606/jaam.2018.31003",
+      "title": "Partitioned Computation for Fluid-structure Interaction with Rigid Body Motion",
+      "abstract": "We present a new computational framework for fluid-structure interaction problems that involve rigid body motion.Based on a partitioned strategy, the fluid and structural dynamics are computed separately, and the solutions communicate at the interface.The immersed boundary method is employed to handle the fluid-structure interaction, and the direct-forcing technique is utilized to calculate the interaction force.In particular, the rigid body motion is directly and explicitly incorporated into the formulation and computation of the structural dynamics.We demonstrate our methodology by numerically simulating the motion of single and multiple rigid circular discs interacting with nonlinear viscous flow.",
+      "keywords": [],
+      "work_type": "journal-article",
+      "authors": [
+        "Department of Mathematics and Statistics, Old Dominion University, Norfolk, VA 23529",
+        "Asim Timalsina",
+        "Gene Hou",
+        "Department of Mechanical and Aerospace Engineering, Old Dominion University, Norfolk, VA 23529",
+        "Jin Wang",
+        "Department of Mathematics, University of Tennessee at Chattanooga, Chattanooga, TN 37403"
+      ],
+      "container_title": "Journal of Advances in Applied Mathematics",
+      "screening_outcome": "queued",
+      "accept_matches": [
+        "(?is)\\A(?=.{0,165}\\b(?:fluid[-\\s]+(?:structure|solid)(?:s)?(?:[-\\s]+(?:interaction(?:s)?|coupl(?:e|ed|ing)|system(?:s)?|model(?:s)?))|fluid[-\\s]+rigid[-\\s]+body(?:[-\\s]+(?:interaction|problem|system))?)\\b)(?=.{0,165}\\b(?:solver(?:s)?|(?:semi[-\\s]+implicit[-\\s]+)?(?:partition(?:ed)?[-\\s]+)?algorithm(?:s)?|framework|methodology|(?:mixed[-\\s]+)?formulation(?:s)?|discretization(?:s)?|reduced[-\\s]+order[-\\s]+model|ROM|domain[-\\s]+decomposition|local[-\\s]+time[-\\s]+stepping|low[-\\s]+rank[-\\s]+method|interface[-\\s]+treatment|material[-\\s]+point[-\\s]+method|PFEM[-\\s]*FEM[-\\s]+approach|smoothed[-\\s]+finite[-\\s]+element[-\\s]+method|scaled[-\\s]+boundary[-\\s]+finite[-\\s]+element[-\\s]+method|arbitrary[-\\s]+lagrangian[-\\s]+eulerian[-\\s]+(?:method|approach)|immersed[-\\s]+multi[-\\s]+material.{0,80}\\bfinite[-\\s]+element[-\\s]+method|monolithic.{0,50}\\bmethod|partitioned.{0,50}\\b(?:method|scheme|algorithm)|finite[-\\s]+element[-\\s]+discontinuous[-\\s]+galerkin[-\\s]+method|lattice[-\\s]+boltzmann.{0,50}\\bmethod|parallel|spectral[-\\s]+element[-\\s]+solver|multi[-\\s]+grid.{0,60}\\bmethod|cut[-\\s]+cell.{0,50}\\b(?:method|discrete[-\\s]+velocity)|direct[-\\s]+adjoint.{0,50}\\bsolver|graph[-\\s]+attention[-\\s]+solver|topology[-\\s]+optimization|shape[-\\s]+design|time[-\\s]+integration[-\\s]+schemes?|predictors?.{0,80}\\bconvergence|stabilized.{0,50}\\bmethod|stabilization[-\\s]+free.{0,50}\\bmethod|decoupling[-\\s]+methods?|coupled[-\\s]+stabilized[-\\s]+scheme|periodic[-\\s]+dual[-\\s]+mixing[-\\s]+method|semi[-\\s]+analytical[-\\s]+approach|isogeometric.{0,60}\\bcoupling[-\\s]+methods?|coupling[-\\s]+scheme|partitioned[-\\s]+semi[-\\s]+implicit[-\\s]+coupling[-\\s]+methods?)\\b)"
+      ],
+      "reject_matches": [],
+      "source": "screening",
+      "batch_id": "batch-0016",
+      "attempt": 1,
+      "human_decision": "",
+      "correction_decision": ""
+    },
+    {
+      "doi": "10.1002/pamm.201710225",
+      "title": "Finite Element Approximation of Fluid‐Structure Interaction with Coupled Wave Propagation",
+      "abstract": "<jats:title>Abstract</jats:title><jats:p>In this contribution, a concept of coupling the fluid‐structure interaction (FSI) with an ultrasonic wave propagation is proposed. It is referred to as the extended Fluid‐Structure Interaction (eXFSI) problem. The eXFSI is a one‐directional coupling of typical FSI problem with an ultrasonic wave propagation in fluid‐solid and their interaction (WpFSI). Notably, the WpFSI is a strongly coupled problem of acoustic and elastic wave equations and automatically adopts the boundary conditions from the FSI problem at each time step. To the best of our knowledge, such a model is novel in the literature. The principal aim we pursue is to explore and develop concept of the efficient numerical solution of the eXFSI problem. The solution of the eXFSI and WpFSI models constitute an important part of on‐live and off‐live structural health monitoring (SHM) systems design for composite material and lightweight structures. (© 2017 Wiley‐VCH Verlag GmbH &amp; Co. KGaA, Weinheim)</jats:p>",
+      "keywords": [],
+      "work_type": "journal-article",
+      "authors": [
+        "Bhuiyan Shameem Mahmood Ebna Hai",
+        "Markus Bause"
+      ],
+      "container_title": "PAMM",
+      "screening_outcome": "review",
+      "accept_matches": [],
+      "reject_matches": [],
+      "source": "screening",
+      "batch_id": "batch-0016",
+      "attempt": 1,
+      "human_decision": "keep",
+      "correction_decision": ""
+    },
+    {
+      "doi": "10.1002/pamm.201710226",
+      "title": "Boundary element and finite element analysis for the efficient simulation of fluid‐structure interaction and its application to mold filling processes",
+      "abstract": "<jats:title>Abstract</jats:title><jats:p>Metal casting and polymer molding are widely used for the economical shape processing of complex geometries. In these manufacturing processes, a liquid melt (metal, mineral or synthetic) is filled into a mold with a cavity of the desired shape. Cooling and solidification of the melt results in a product with almost the same shape as the cavity. Numerical simulations can be employed to increase the accuracy of the process. To this end, boundary element method for Stokes flow and a finite element formulation for liquid membranes are investigated in this work. (© 2017 Wiley‐VCH Verlag GmbH &amp; Co. KGaA, Weinheim)</jats:p>",
+      "keywords": [],
+      "work_type": "journal-article",
+      "authors": [
+        "Maximilian Harmel",
+        "Roger A. Sauer"
+      ],
+      "container_title": "PAMM",
+      "screening_outcome": "review",
+      "accept_matches": [],
+      "reject_matches": [],
+      "source": "screening",
+      "batch_id": "batch-0016",
+      "attempt": 1,
+      "human_decision": "keep",
+      "correction_decision": ""
+    },
+    {
+      "doi": "10.1007/s00466-017-1511-3",
+      "title": "On the convergence rate of the Dirichlet–Neumann iteration for unsteady thermal fluid–structure interaction",
+      "abstract": "We consider the Dirichlet–Neumann iteration for partitioned simulation of thermal fluid–structure interaction, also called conjugate heat transfer. We analyze its convergence rate for two coupled fully discretized 1D linear heat equations with jumps in the material coefficients across the interface. The heat equations are discretized using an implicit Euler scheme in time, whereas a finite element method on one domain and a finite volume method with variable aspect ratio on the other one are used in space. We provide an exact formula for the spectral radius of the iteration matrix. The formula indicates that for large time steps, the convergence rate is the aspect ratio times the quotient of heat conductivities and that decreasing the time step will improve the convergence rate. Numerical results confirm the analysis and show that the 1D formula is a very good estimator in 2D and even for nonlinear thermal FSI applications.",
+      "keywords": [],
+      "work_type": "journal-article",
+      "authors": [
+        "Azahar Monge",
+        "Philipp Birken"
+      ],
+      "container_title": "Computational Mechanics",
+      "screening_outcome": "review",
+      "accept_matches": [],
+      "reject_matches": [],
+      "source": "screening",
+      "batch_id": "batch-0016",
+      "attempt": 1,
+      "human_decision": "reject",
+      "correction_decision": ""
+    },
+    {
+      "doi": "10.1515/9783110494259-008",
+      "title": "8. Binary-fluid–solid interaction based on the Navier–Stokes–Cahn–Hilliard Equations",
+      "abstract": "We consider amodel for binary-fluid-solid interaction based on a diffuse-interface model for the binary fluid and a hyperelastic-materialmodel for the solid. The diffuse-interface binary-fluidmodel is described by the quasi-incompressible Navier- Stokes-Cahn-Hilliard equations with preferential-wetting boundary conditions at the fluid-solid interface. The fluid traction on the interface includes a capillary-stress contribution in addition to the regular viscous-stress and pressure contributions. The dynamic interface condition comprises the traction exerted by the nonuniform solid- fluid surface tension in accordance with the Young-Laplace law for the solid-fluid interface. The solid is modeled as a hyperelastic material. We present a weak formulation of the aggregated binary-fluid-solid interaction problem, based on an arbitrary Lagrangian-Eulerian formulation of theNavier-Stokes-Cahn-Hilliard equations and a properweak evaluation of the binary-fluid traction and of the solid-fluid surface tension. We also present an analysis of the essential properties of the binary-fluid-solid interaction problem, including a dissipation relation for the complete fluid-solid interaction problem. To validate the presented binary-fluid-solid interactionmodel, we consider numerical simulations for the elasto-capillary interaction of a droplet with a soft solid substrate and present a comparison to corresponding experimental data.",
+      "keywords": [],
+      "work_type": "book-chapter",
+      "authors": [
+        "E. Harald van Brummelen",
+        "Mahnaz Shokrpour Roudbari",
+        "Görkem Şimşek",
+        "Kristoffer G. van der Zee"
+      ],
+      "container_title": "Fluid-Structure Interaction",
+      "screening_outcome": "review",
+      "accept_matches": [],
+      "reject_matches": [],
+      "source": "screening",
+      "batch_id": "batch-0016",
+      "attempt": 1,
+      "human_decision": "keep",
+      "correction_decision": ""
+    },
+    {
+      "doi": "10.1515/9783110494259-005",
+      "title": "5. Recent development of robust monolithic fluid-structure interaction solvers",
+      "abstract": "In the last few years, from the modeling point of view, the monolithic approach for fluid-structure interaction problems in many different application fields has been adopted by more and more researchers. Meanwhile, the development of monolithic solvers in the solution procedure for solving such coupled fluid-structure interaction problems all at once is in general a very hard task and has received a lot of attention. Because of the coupling conditions on the interface, it is challenging to design efficient preconditioners for the linearized coupled system of equations, that are robust with respect to the mesh size, time-step size andmaterial parameters. Further, it is nontrivial to realize scalable parallel implementations for solving such large-scale coupled systems, which requires special care for handling the interface conditions. In this survey, we present an overview of some recent results on robust monolithic fluid-structure interaction solvers, that are mainly based on the block factorization, geometric and algebraic multigrid, and domain decomposition methods.",
+      "keywords": [],
+      "work_type": "book-chapter",
+      "authors": [
+        "Ulrich Langer",
+        "Huidong Yang"
+      ],
+      "container_title": "Fluid-Structure Interaction",
+      "screening_outcome": "queued",
+      "accept_matches": [
+        "(?is)\\A(?=.{0,165}\\b(?:fluid[-\\s]+(?:structure|solid)(?:s)?(?:[-\\s]+(?:interaction(?:s)?|coupl(?:e|ed|ing)|system(?:s)?|model(?:s)?))|fluid[-\\s]+rigid[-\\s]+body(?:[-\\s]+(?:interaction|problem|system))?)\\b)(?=.{0,165}\\b(?:solver(?:s)?|(?:semi[-\\s]+implicit[-\\s]+)?(?:partition(?:ed)?[-\\s]+)?algorithm(?:s)?|framework|methodology|(?:mixed[-\\s]+)?formulation(?:s)?|discretization(?:s)?|reduced[-\\s]+order[-\\s]+model|ROM|domain[-\\s]+decomposition|local[-\\s]+time[-\\s]+stepping|low[-\\s]+rank[-\\s]+method|interface[-\\s]+treatment|material[-\\s]+point[-\\s]+method|PFEM[-\\s]*FEM[-\\s]+approach|smoothed[-\\s]+finite[-\\s]+element[-\\s]+method|scaled[-\\s]+boundary[-\\s]+finite[-\\s]+element[-\\s]+method|arbitrary[-\\s]+lagrangian[-\\s]+eulerian[-\\s]+(?:method|approach)|immersed[-\\s]+multi[-\\s]+material.{0,80}\\bfinite[-\\s]+element[-\\s]+method|monolithic.{0,50}\\bmethod|partitioned.{0,50}\\b(?:method|scheme|algorithm)|finite[-\\s]+element[-\\s]+discontinuous[-\\s]+galerkin[-\\s]+method|lattice[-\\s]+boltzmann.{0,50}\\bmethod|parallel|spectral[-\\s]+element[-\\s]+solver|multi[-\\s]+grid.{0,60}\\bmethod|cut[-\\s]+cell.{0,50}\\b(?:method|discrete[-\\s]+velocity)|direct[-\\s]+adjoint.{0,50}\\bsolver|graph[-\\s]+attention[-\\s]+solver|topology[-\\s]+optimization|shape[-\\s]+design|time[-\\s]+integration[-\\s]+schemes?|predictors?.{0,80}\\bconvergence|stabilized.{0,50}\\bmethod|stabilization[-\\s]+free.{0,50}\\bmethod|decoupling[-\\s]+methods?|coupled[-\\s]+stabilized[-\\s]+scheme|periodic[-\\s]+dual[-\\s]+mixing[-\\s]+method|semi[-\\s]+analytical[-\\s]+approach|isogeometric.{0,60}\\bcoupling[-\\s]+methods?|coupling[-\\s]+scheme|partitioned[-\\s]+semi[-\\s]+implicit[-\\s]+coupling[-\\s]+methods?)\\b)"
+      ],
+      "reject_matches": [],
+      "source": "screening",
+      "batch_id": "batch-0016",
+      "attempt": 1,
+      "human_decision": "",
+      "correction_decision": ""
+    },
+    {
+      "doi": "10.1016/j.applthermaleng.2017.11.075",
+      "title": "Performance variation of a transient dynamic fluid-structure interaction system in different life stages and methods for maintaining the performance",
+      "abstract": "",
+      "keywords": [],
+      "work_type": "journal-article",
+      "authors": [
+        "Chaobin Hu",
+        "Xiaobing Zhang"
+      ],
+      "container_title": "Applied Thermal Engineering",
+      "screening_outcome": "review",
+      "accept_matches": [],
+      "reject_matches": [],
+      "source": "screening",
+      "batch_id": "batch-0016",
+      "attempt": 1,
+      "human_decision": "reject",
+      "correction_decision": ""
+    },
+    {
+      "doi": "10.1115/imece2017-70832",
+      "title": "Explicit Finite Element Study of Liquid Sloshing Behavior in Fluid-Structure Interaction Condition",
+      "abstract": "As a common phenomenon in liquid motions, sloshing usually happens in a partially filled liquid tank of moving vehicle or structure. The objectives of this paper are to study sloshing behavior in rigid tank and deformable tank, and to develop a better performance baffle design in the tank under seismic excitations. The tank is surged with a sinusoidal oscillation about horizontal x-direction. The hydro-elasticity effect of sloshing pressure on the tank wall was taken into consideration due to the fluid-structure interaction between impact pressures and tank structures. ABAQUS finite element program using Coupled Eulerian-Lagrangian (CEL) technique was employed to simulate fluid sloshing. The sloshing phenomenon was studied in rigid tank and deformable tank models with three different water levels, and the effect of wall thickness of the deformable tank on sloshing behavior was discussed. One way to minimize the effect of sloshing in a tank, baffles are used and installed in the middle of the tank, and then various heights and material types of baffle were evaluated. The simulation results show that higher water level case creates greater pressure impact on the tank wall than lower water level case, and the elasticity of the tank structure would reduce the impact pressure of the wall. For the simulation tank model with size of 1m (H) × 1m (W) × 0.2m (D), better performance baffle was found to be the one with the height of 0.35m and was made of acrylic material. Moreover, the conclusion of this study can be extrapolated to other dimensions of the model based on similarity theory. This paper also can serve as an aid in further studying sloshing phenomenon. The findings of this study can be applied to restrain or minimize sloshing motions inside a tank.",
+      "keywords": [],
+      "work_type": "proceedings-article",
+      "authors": [
+        "Shuo Yang",
+        "Raymond K. Yee"
+      ],
+      "container_title": "Volume 7: Fluids Engineering",
+      "screening_outcome": "review",
+      "accept_matches": [],
+      "reject_matches": [],
+      "source": "screening",
+      "batch_id": "batch-0016",
+      "attempt": 1,
+      "human_decision": "reject",
+      "correction_decision": ""
+    },
+    {
+      "doi": "10.1007/s12206-017-1043-y",
+      "title": "Finite element analysis of fluid-structure interaction in the hydromechanical deep drawing process",
+      "abstract": "",
+      "keywords": [],
+      "work_type": "journal-article",
+      "authors": [
+        "Mohammed Abbadeni",
+        "Ibrahim Zidane",
+        "Hamou Zahloul",
+        "Aurelian Fatu",
+        "Mohamed Hajjam"
+      ],
+      "container_title": "Journal of Mechanical Science and Technology",
+      "screening_outcome": "review",
+      "accept_matches": [],
+      "reject_matches": [],
+      "source": "screening",
+      "batch_id": "batch-0016",
+      "attempt": 1,
+      "human_decision": "reject",
+      "correction_decision": ""
+    },
+    {
+      "doi": "10.1088/1742-6596/923/1/012026",
+      "title": "An optimal control method for fluid structure interaction systems via adjoint boundary pressure",
+      "abstract": "In recent year, in spite of the computational complexity, Fluid-structure interaction (FSI) problems have been widely studied due to their applicability in science and engineering. Fluid-structure interaction systems consist of one or more solid structures that deform by interacting with a surrounding fluid flow. FSI simulations evaluate the tensional state of the mechanical component and take into account the effects of the solid deformations on the motion of the interior fluids. The inverse FSI problem can be described as the achievement of a certain objective by changing some design parameters such as forces, boundary conditions and geometrical domain shapes. In this paper we would like to study the inverse FSI problem by using an optimal control approach. In particular we propose a pressure boundary optimal control method based on Lagrangian multipliers and adjoint variables. The objective is the minimization of a solid domain displacement matching functional obtained by finding the optimal pressure on the inlet boundary. The optimality system is derived from the first order necessary conditions by taking the Fréchet derivatives of the Lagrangian with respect to all the variables involved. The optimal solution is then obtained through a standard steepest descent algorithm applied to the optimality system. The approach presented in this work is general and could be used to assess other objective functionals and controls. In order to support the proposed approach we perform a few numerical tests where the fluid pressure on the domain inlet controls the displacement that occurs in a well defined region of the solid domain.",
+      "keywords": [],
+      "work_type": "journal-article",
+      "authors": [
+        "L Chirco",
+        "R Da Vià",
+        "S Manservisi"
+      ],
+      "container_title": "Journal of Physics: Conference Series",
+      "screening_outcome": "queued",
+      "accept_matches": [
+        "(?is)(?=.*\\b(?:fluid[-\\s]+(?:structure|solid)(?:s)?(?:[-\\s]+interaction(?:s)?|[-\\s]+system(?:s)?|[-\\s]+model(?:s)?|[-\\s]+coupl(?:e|ed|ing))|fluid[-\\s]+rigid[-\\s]+body(?:[-\\s]+(?:interaction|problem|system))?)\\b)(?=.*\\b(?:well[-\\s]+posed(?:ness)?|existence(?:[-\\s]+for|\\s+(?:and\\s+uniqueness|of\\s+(?:(?:weak|strong|global|local|martingale)\\s+)?solutions?))|uniqueness(?:\\s+of\\s+solutions?)?|weak[-\\s]*strong[-\\s]+uniqueness|regularity(?:\\s+results?)?|gevrey[-\\s]+regularity|(?:weak|strong|martingale)[-\\s]+solutions?|stabili[sz](?:ation|ability)|controllability|feedback[-\\s]+control|optimal[-\\s]+control|energy[-\\s]+estimate|convergence[-\\s]+analysis|error[-\\s]+estimates?|stability[-\\s]+and[-\\s]+error[-\\s]+estimates?|port[-\\s]+Hamiltonian|structure[-\\s]+preserving|energy[-\\s]+preserving)\\b)",
+        "(?is)\\A(?=.{0,165}\\b(?:fluid[-\\s]+(?:structure|solid)(?:s)?(?:[-\\s]+interaction(?:s)?|[-\\s]+coupl(?:e|ed|ing))|fluid[-\\s]+and[-\\s]+structural[-\\s]+dynamics)\\b)(?=.{0,165}\\b(?:model[-\\s]+predictive[-\\s]+control|modeling[-\\s]+and[-\\s]+controls?|active[-\\s]+control|feedback[-\\s]+control|optimal[-\\s]+control)\\b)"
+      ],
+      "reject_matches": [],
+      "source": "screening",
+      "batch_id": "batch-0016",
+      "attempt": 1,
+      "human_decision": "",
+      "correction_decision": ""
+    },
+    {
+      "doi": "10.1016/j.jfluidstructs.2017.09.002",
+      "title": "The Perfectly Matched Layer absorbing boundary for fluid–structure interactions using the Immersed Finite Element Method",
+      "abstract": "",
+      "keywords": [],
+      "work_type": "journal-article",
+      "authors": [
+        "Jubiao Yang",
+        "Feimi Yu",
+        "Michael Krane",
+        "Lucy T. Zhang"
+      ],
+      "container_title": "Journal of Fluids and Structures",
+      "screening_outcome": "review",
+      "accept_matches": [],
+      "reject_matches": [],
+      "source": "screening",
+      "batch_id": "batch-0016",
+      "attempt": 1,
+      "human_decision": "keep",
+      "correction_decision": ""
+    },
+    {
+      "doi": "10.1142/s0219876218400145",
+      "title": "Verifications for Large-Scale Parallel Simulations of 3D Fluid–Structure Interaction Using Moving Particle Simulation (MPS) and Finite Element Method (FEM)",
+      "abstract": "Fluid–Structure Interaction (FSI) is an important phenomenon in many fields. In this study, the Moving Particle Simulation (MPS) along with Finite Element Method (FEM) are coupled together. MPS-FEM coupled method is used as the numerical simulators to estimate the effects for structures by the fluid pressure of the tsunami. This simulator consists of two solvers: fluid analysis and structure analysis. The fluid analysis is based on MPS and the structural part is analyzed by using FEM. In this paper, for verification of the MPS-FEM coupled method, the problem of hydrostatic pressure on a structure is calculated. The results are compared with the theoretical values and the results obtained by the original FEM analysis. We confirmed that the MPS-FEM coupling method can achieve adequate accuracy. Furthermore, the MPS-FEM coupled simulation for the turbine building of Fukushima Dai-ichi Nuclear Power Station Unit 1 has been done.",
+      "keywords": [],
+      "work_type": "journal-article",
+      "authors": [
+        "Hongjie Zheng",
+        "Ryuji Shioya"
+      ],
+      "container_title": "International Journal of Computational Methods",
+      "screening_outcome": "queued",
+      "accept_matches": [
+        "(?is)\\A(?=.{0,165}\\b(?:fluid[-\\s]+(?:structure|solid)(?:s)?(?:[-\\s]+(?:interaction(?:s)?|coupl(?:e|ed|ing)|system(?:s)?|model(?:s)?))|fluid[-\\s]+rigid[-\\s]+body(?:[-\\s]+(?:interaction|problem|system))?)\\b)(?=.{0,165}\\b(?:solver(?:s)?|(?:semi[-\\s]+implicit[-\\s]+)?(?:partition(?:ed)?[-\\s]+)?algorithm(?:s)?|framework|methodology|(?:mixed[-\\s]+)?formulation(?:s)?|discretization(?:s)?|reduced[-\\s]+order[-\\s]+model|ROM|domain[-\\s]+decomposition|local[-\\s]+time[-\\s]+stepping|low[-\\s]+rank[-\\s]+method|interface[-\\s]+treatment|material[-\\s]+point[-\\s]+method|PFEM[-\\s]*FEM[-\\s]+approach|smoothed[-\\s]+finite[-\\s]+element[-\\s]+method|scaled[-\\s]+boundary[-\\s]+finite[-\\s]+element[-\\s]+method|arbitrary[-\\s]+lagrangian[-\\s]+eulerian[-\\s]+(?:method|approach)|immersed[-\\s]+multi[-\\s]+material.{0,80}\\bfinite[-\\s]+element[-\\s]+method|monolithic.{0,50}\\bmethod|partitioned.{0,50}\\b(?:method|scheme|algorithm)|finite[-\\s]+element[-\\s]+discontinuous[-\\s]+galerkin[-\\s]+method|lattice[-\\s]+boltzmann.{0,50}\\bmethod|parallel|spectral[-\\s]+element[-\\s]+solver|multi[-\\s]+grid.{0,60}\\bmethod|cut[-\\s]+cell.{0,50}\\b(?:method|discrete[-\\s]+velocity)|direct[-\\s]+adjoint.{0,50}\\bsolver|graph[-\\s]+attention[-\\s]+solver|topology[-\\s]+optimization|shape[-\\s]+design|time[-\\s]+integration[-\\s]+schemes?|predictors?.{0,80}\\bconvergence|stabilized.{0,50}\\bmethod|stabilization[-\\s]+free.{0,50}\\bmethod|decoupling[-\\s]+methods?|coupled[-\\s]+stabilized[-\\s]+scheme|periodic[-\\s]+dual[-\\s]+mixing[-\\s]+method|semi[-\\s]+analytical[-\\s]+approach|isogeometric.{0,60}\\bcoupling[-\\s]+methods?|coupling[-\\s]+scheme|partitioned[-\\s]+semi[-\\s]+implicit[-\\s]+coupling[-\\s]+methods?)\\b)"
+      ],
+      "reject_matches": [],
+      "source": "screening",
+      "batch_id": "batch-0016",
+      "attempt": 1,
+      "human_decision": "",
+      "correction_decision": ""
+    },
+    {
+      "doi": "10.1115/smasis2017-3859",
+      "title": "Dynamic Finite Element Modelling of a Hydrogel-Based Micro-Valve With 2-Way Fluid Structure Interactions",
+      "abstract": "We propose a finite element model which describes the dynamic behavior of hydrogels for step-responses and quasi-static regimes. The material properties are implemented in a fluid structure interaction (FSI) model which simulates the swelling behavior of hydrogels within a micro-valve. The resulting volume change effects the fluid domain describing the mass-flow behavior of the micro-valve. Furthermore, the concept is implemented in a high-level circuit and flow chart model to efficiently predict the response behavior of hydrogel-based micro-valves. With these tools a foundation is set to efficiently simulate microfluidic systems with the aim to develop a fully computer-aided design process. The presented method will help to better understand, predict and visualize the behavior of hydrogels and support the development of highly integrated hydrogel-based microfluidic circuits.",
+      "keywords": [],
+      "work_type": "proceedings-article",
+      "authors": [
+        "Philipp J. Mehner",
+        "Anthony Beck",
+        "Andreas Voigt",
+        "Uwe Marschner",
+        "Andreas Richter"
+      ],
+      "container_title": "Volume 2: Modeling, Simulation and Control of Adaptive Systems; Integrated System Design and Implementation; Structural Health Monitoring",
+      "screening_outcome": "review",
+      "accept_matches": [],
+      "reject_matches": [],
+      "source": "screening",
+      "batch_id": "batch-0016",
+      "attempt": 1,
+      "human_decision": "reject",
+      "correction_decision": ""
+    },
+    {
+      "doi": "10.1115/smasis2017-3740",
+      "title": "Control Design for High-Fidelity Cyber-Physical Systems With Applications to Experimental Fluid-Structure Interaction Studies",
+      "abstract": "A cyber-physical system (CPS) combines active actuation, sensing, and a control algorithm to virtually replicate a physical structure with desired inertia, stiffness, and damping properties. The interaction of a CPS with a fluid flow can be used to study complex fluid-structure interaction phenomena. This paper highlights some of the control design challenges associated with the design of CPS and elaborates on issues pertaining to performance and lag. A model for including the interaction force and a potential work-around to inertia compensation are presented. Finally, a case study compares classical PID control with H∞ based model-matching control design.",
+      "keywords": [],
+      "work_type": "proceedings-article",
+      "authors": [
+        "Rajmohan Waghela",
+        "Matthew Bryant"
+      ],
+      "container_title": "Volume 2: Modeling, Simulation and Control of Adaptive Systems; Integrated System Design and Implementation; Structural Health Monitoring",
+      "screening_outcome": "review",
+      "accept_matches": [],
+      "reject_matches": [],
+      "source": "screening",
+      "batch_id": "batch-0016",
+      "attempt": 1,
+      "human_decision": "keep",
+      "correction_decision": ""
+    },
+    {
+      "doi": "10.1016/j.egypro.2017.08.123",
+      "title": "Fluid-Structure Interaction Analysis Using Finite Element Methods for IRWST of Reactor Building",
+      "abstract": "Fluid-structure interaction analysis of in-containment refuelling water storage tank (IRWST) of HPR1000, the Chinese 3 rd -generation nuclear reactor type, was performed. During analysis simulation of water was made using three well established methods:1) Dispersed-Mass-Method; 2)Coupled Eulerian-Lagrangian(CEL) method; 3)Smoothed Particle Hydrodynamics(SPH) method. The member forces and required reinforcement of the IRWST walls from different methods were compared and the following conclusions were drawn: 1) CEL is accurate but time-costing when the analysis target has a complex configuration. Also, CEL analysis is often terminated due to intrinsic algorithm. 2) SPH method provides same results accuracy with that of CEL method when SPH method and CEL method have similar mesh size. It can effectively avoid the problem of unexpected termination in CEL method; 3) the stress and required reinforcement obtained from CEL and SPH method are obviously less than those from Dispersed-Mass-Method, which proves that Dispersed-Mass-Method can be used in preliminary design stage for reinforcement amount evaluation.",
+      "keywords": [],
+      "work_type": "journal-article",
+      "authors": [
+        "Sun Xiaoying",
+        "Meng Jian",
+        "Zhang Chunlong"
+      ],
+      "container_title": "Energy Procedia",
+      "screening_outcome": "review",
+      "accept_matches": [],
+      "reject_matches": [],
+      "source": "screening",
+      "batch_id": "batch-0016",
+      "attempt": 1,
+      "human_decision": "reject",
+      "correction_decision": ""
+    },
+    {
+      "doi": "10.1007/978-3-319-59548-1_12",
+      "title": "Preliminary Monolithic Fluid Structure Interaction Model for Ventricle Contraction",
+      "abstract": "",
+      "keywords": [],
+      "work_type": "book-chapter",
+      "authors": [
+        "D. Cerroni",
+        "D. Giommi",
+        "S. Manservisi",
+        "F. Mengini"
+      ],
+      "container_title": "Lecture Notes in Applied and Computational Mechanics",
+      "screening_outcome": "review",
+      "accept_matches": [],
+      "reject_matches": [],
+      "source": "screening",
+      "batch_id": "batch-0016",
+      "attempt": 1,
+      "human_decision": "keep",
+      "correction_decision": ""
+    },
+    {
+      "doi": "10.1016/j.cma.2017.08.014",
+      "title": "A finite element model for fluid–structure interaction problems involving closed membranes, internal and external fluids",
+      "abstract": "",
+      "keywords": [],
+      "work_type": "journal-article",
+      "authors": [
+        "Pavel B. Ryzhakov",
+        "Eugenio Oñate"
+      ],
+      "container_title": "Computer Methods in Applied Mechanics and Engineering",
+      "screening_outcome": "review",
+      "accept_matches": [],
+      "reject_matches": [],
+      "source": "screening",
+      "batch_id": "batch-0016",
+      "attempt": 1,
+      "human_decision": "keep",
+      "correction_decision": ""
+    },
+    {
+      "doi": "10.1007/s10092-017-0234-3",
+      "title": "A fully discrete scheme for the pressure–stress formulation of the time-domain fluid–structure interaction problem",
+      "abstract": "",
+      "keywords": [],
+      "work_type": "journal-article",
+      "authors": [
+        "Carlos García",
+        "Gabriel N. Gatica",
+        "Antonio Márquez",
+        "Salim Meddahi"
+      ],
+      "container_title": "Calcolo",
+      "screening_outcome": "queued",
+      "accept_matches": [
+        "(?is)\\A(?=.{0,165}\\b(?:fluid[-\\s]+(?:structure|solid)(?:s)?(?:[-\\s]+(?:interaction(?:s)?|coupl(?:e|ed|ing)|system(?:s)?|model(?:s)?))|fluid[-\\s]+rigid[-\\s]+body(?:[-\\s]+(?:interaction|problem|system))?)\\b)(?=.{0,165}\\b(?:solver(?:s)?|(?:semi[-\\s]+implicit[-\\s]+)?(?:partition(?:ed)?[-\\s]+)?algorithm(?:s)?|framework|methodology|(?:mixed[-\\s]+)?formulation(?:s)?|discretization(?:s)?|reduced[-\\s]+order[-\\s]+model|ROM|domain[-\\s]+decomposition|local[-\\s]+time[-\\s]+stepping|low[-\\s]+rank[-\\s]+method|interface[-\\s]+treatment|material[-\\s]+point[-\\s]+method|PFEM[-\\s]*FEM[-\\s]+approach|smoothed[-\\s]+finite[-\\s]+element[-\\s]+method|scaled[-\\s]+boundary[-\\s]+finite[-\\s]+element[-\\s]+method|arbitrary[-\\s]+lagrangian[-\\s]+eulerian[-\\s]+(?:method|approach)|immersed[-\\s]+multi[-\\s]+material.{0,80}\\bfinite[-\\s]+element[-\\s]+method|monolithic.{0,50}\\bmethod|partitioned.{0,50}\\b(?:method|scheme|algorithm)|finite[-\\s]+element[-\\s]+discontinuous[-\\s]+galerkin[-\\s]+method|lattice[-\\s]+boltzmann.{0,50}\\bmethod|parallel|spectral[-\\s]+element[-\\s]+solver|multi[-\\s]+grid.{0,60}\\bmethod|cut[-\\s]+cell.{0,50}\\b(?:method|discrete[-\\s]+velocity)|direct[-\\s]+adjoint.{0,50}\\bsolver|graph[-\\s]+attention[-\\s]+solver|topology[-\\s]+optimization|shape[-\\s]+design|time[-\\s]+integration[-\\s]+schemes?|predictors?.{0,80}\\bconvergence|stabilized.{0,50}\\bmethod|stabilization[-\\s]+free.{0,50}\\bmethod|decoupling[-\\s]+methods?|coupled[-\\s]+stabilized[-\\s]+scheme|periodic[-\\s]+dual[-\\s]+mixing[-\\s]+method|semi[-\\s]+analytical[-\\s]+approach|isogeometric.{0,60}\\bcoupling[-\\s]+methods?|coupling[-\\s]+scheme|partitioned[-\\s]+semi[-\\s]+implicit[-\\s]+coupling[-\\s]+methods?)\\b)"
+      ],
+      "reject_matches": [],
+      "source": "screening",
+      "batch_id": "batch-0016",
+      "attempt": 1,
+      "human_decision": "",
+      "correction_decision": ""
+    },
+    {
+      "doi": "10.1115/detc2017-68206",
+      "title": "A Partitioned Lagrangian-Lagrangian Approach for Fluid-Solid Interaction Problems",
+      "abstract": "We present a Lagrangian-Lagrangian method for solving Fluid-Solid Interaction (FSI) problems in which the solid phase is deformable/compliant. The fluid phase is modeled using Smoothed Particles Hydrodynamics (SPH); the deformable bodies are modeled with the Absolute Nodal Coordinate Formulation (ANCF). Each phase is integrated implicitly in time and the solutions are coupled explicitly by a force-displacement coupling in which the fluid-on-solid effect is modeled via forces applied to the solid phase; and, the solid-on-fluid effect is modeled via fluid boundary conditions. We validate the formulation against two experimental tests: dam brake and elastic gate analysis.",
+      "keywords": [],
+      "work_type": "proceedings-article",
+      "authors": [
+        "Milad Rakhsha",
+        "Arman Pazouki",
+        "Radu Serban",
+        "Dan Negrut"
+      ],
+      "container_title": "Volume 6: 13th International Conference on Multibody Systems, Nonlinear Dynamics, and Control",
+      "screening_outcome": "review",
+      "accept_matches": [],
+      "reject_matches": [],
+      "source": "screening",
+      "batch_id": "batch-0016",
+      "attempt": 1,
+      "human_decision": "keep",
+      "correction_decision": ""
+    },
+    {
+      "doi": "10.12783/dtetr/tmcm2017/12680",
+      "title": "Thermo-fluid-solid Coupling Analysis for Helical Transferring Tube of SG in SMART Reactor by Using Finite Element Method",
+      "abstract": "In this paper, finite element software ANSYS is used in thermo-fluid-solid coupling analysis for helical transferring tube of SG in SMART reactor by using finite element method, The resulting heat flux, temperature field, stress and strain of the pipe are calculated, It is found that the stress, the maximum value of strain and deformation produced outside tube depend strongly on the temperature of the system.",
+      "keywords": [],
+      "work_type": "journal-article",
+      "authors": [
+        "Shuang-shuang CUI",
+        "Jun CAI",
+        "Zheng-kang HE",
+        "Bo-wei LIU",
+        "Y.D. WANG"
+      ],
+      "container_title": "DEStech Transactions on Engineering and Technology Research",
+      "screening_outcome": "review",
+      "accept_matches": [],
+      "reject_matches": [],
+      "source": "screening",
+      "batch_id": "batch-0016",
+      "attempt": 1,
+      "human_decision": "reject",
+      "correction_decision": ""
+    },
+    {
+      "doi": "10.1177/0954406217723942",
+      "title": "Benchmark numerical solutions for two-dimensional fluid–structure interaction involving large displacements with the deforming-spatial-domain/stabilized space–time and immersed boundary–lattice Boltzmann methods",
+      "abstract": "Body-fitted and Cartesian grid methods are two typical types of numerical approaches used for modelling fluid–structure interaction problems. Despite their extensive applications, there is a lack of comparing the performance of these two types of approaches. In order to do this, the present paper presents benchmark numerical solutions for two two-dimensional fluid–structure interaction problems: flow-induced vibration of a highly flexible plate in an axial flow and a pitching flexible plate. The solutions are obtained by using two partitioned fluid–structure interaction methods including the deforming-spatial-domain/stabilized space–time fluid–structure interaction solver and the immersed boundary–lattice Boltzmann method. The deforming-spatial-domain/stabilized space–time fluid–structure interaction solver employs the body-fitted-grid deforming-spatial-domain/stabilized space–time method for the fluid motions and the finite-difference method for the structure vibrations. A new mesh update strategy is developed to prevent severe mesh distortion in cases where the boundary does not oscillate periodically or needs a long time to establish a periodic motion. The immersed boundary–lattice Boltzmann method uses lattice Boltzmann method as fluid solver and the same finite-difference method as structure solver. In addition, immersed boundary method is used in the immersed boundary–lattice Boltzmann solver to handle the fluid–structure interaction coupling. Results for the characteristic force coefficients, tail position, plate deformation pattern and the vorticity fields are presented and discussed. The present results will be useful for evaluating the performance and accuracy of existing and new numerical methodologies for fluid–structure interaction.",
+      "keywords": [],
+      "work_type": "journal-article",
+      "authors": [
+        "Yuan-Qing Xu",
+        "Yan-Qun Jiang",
+        "Jie Wu",
+        "Yi Sui",
+        "Fang-Bao Tian"
+      ],
+      "container_title": "Proceedings of the Institution of Mechanical Engineers, Part C: Journal of Mechanical Engineering Science",
+      "screening_outcome": "review",
+      "accept_matches": [],
+      "reject_matches": [],
+      "source": "screening",
+      "batch_id": "batch-0016",
+      "attempt": 1,
+      "human_decision": "keep",
+      "correction_decision": ""
+    },
+    {
+      "doi": "10.1088/1757-899x/232/1/012032",
+      "title": "A fluid-structure interaction solver for the fluid flow through reed type valves",
+      "abstract": "Suction and discharge processes with self actuated valves have a major influence in efficiency and reliability of hermetic reciprocating compressors. Understanding the operation completely in order to enhance compressor's design needs precise prediction of the fluid-structure interaction complexities involved in these processes. This paper presents a comprehensive description of a numerical methodology to account for the coupled behaviour of a reed valve and a turbulent flow. The method is based on a partitioned semi-implicit scheme that only strongly couples the fluid pressure term to the structural solver. A three-dimensional CFD analysis with LES turbulence modelling is used for the flow while a combination of plate theory and mode summation method is used for the solid. The dynamically changing domains are tackled by means of lagrangian and arbitrary lagrangian-eulerian approaches for the solid and the fluid, respectively. The whole model is compared with experimental data at Reynolds number 10, 000, showing good agreement in lift amplitude and deformation fluctuations. Finally, as an illustrative case, results regarding lift, pressures, force and effective areas are compared with those of a valve with wider gland.",
+      "keywords": [],
+      "work_type": "journal-article",
+      "authors": [
+        "I González",
+        "A Naseri",
+        "J Rigola",
+        "C D Pérez-Segarra",
+        "A Oliva"
+      ],
+      "container_title": "IOP Conference Series: Materials Science and Engineering",
+      "screening_outcome": "queued",
+      "accept_matches": [
+        "(?is)\\A(?=.{0,165}\\b(?:fluid[-\\s]+(?:structure|solid)(?:s)?(?:[-\\s]+(?:interaction(?:s)?|coupl(?:e|ed|ing)|system(?:s)?|model(?:s)?))|fluid[-\\s]+rigid[-\\s]+body(?:[-\\s]+(?:interaction|problem|system))?)\\b)(?=.{0,165}\\b(?:solver(?:s)?|(?:semi[-\\s]+implicit[-\\s]+)?(?:partition(?:ed)?[-\\s]+)?algorithm(?:s)?|framework|methodology|(?:mixed[-\\s]+)?formulation(?:s)?|discretization(?:s)?|reduced[-\\s]+order[-\\s]+model|ROM|domain[-\\s]+decomposition|local[-\\s]+time[-\\s]+stepping|low[-\\s]+rank[-\\s]+method|interface[-\\s]+treatment|material[-\\s]+point[-\\s]+method|PFEM[-\\s]*FEM[-\\s]+approach|smoothed[-\\s]+finite[-\\s]+element[-\\s]+method|scaled[-\\s]+boundary[-\\s]+finite[-\\s]+element[-\\s]+method|arbitrary[-\\s]+lagrangian[-\\s]+eulerian[-\\s]+(?:method|approach)|immersed[-\\s]+multi[-\\s]+material.{0,80}\\bfinite[-\\s]+element[-\\s]+method|monolithic.{0,50}\\bmethod|partitioned.{0,50}\\b(?:method|scheme|algorithm)|finite[-\\s]+element[-\\s]+discontinuous[-\\s]+galerkin[-\\s]+method|lattice[-\\s]+boltzmann.{0,50}\\bmethod|parallel|spectral[-\\s]+element[-\\s]+solver|multi[-\\s]+grid.{0,60}\\bmethod|cut[-\\s]+cell.{0,50}\\b(?:method|discrete[-\\s]+velocity)|direct[-\\s]+adjoint.{0,50}\\bsolver|graph[-\\s]+attention[-\\s]+solver|topology[-\\s]+optimization|shape[-\\s]+design|time[-\\s]+integration[-\\s]+schemes?|predictors?.{0,80}\\bconvergence|stabilized.{0,50}\\bmethod|stabilization[-\\s]+free.{0,50}\\bmethod|decoupling[-\\s]+methods?|coupled[-\\s]+stabilized[-\\s]+scheme|periodic[-\\s]+dual[-\\s]+mixing[-\\s]+method|semi[-\\s]+analytical[-\\s]+approach|isogeometric.{0,60}\\bcoupling[-\\s]+methods?|coupling[-\\s]+scheme|partitioned[-\\s]+semi[-\\s]+implicit[-\\s]+coupling[-\\s]+methods?)\\b)"
+      ],
+      "reject_matches": [],
+      "source": "screening",
+      "batch_id": "batch-0016",
+      "attempt": 1,
+      "human_decision": "",
+      "correction_decision": ""
+    },
+    {
+      "doi": "10.1061/9780784480779.015",
+      "title": "On Two-Scale Convergence of Fluid-Structure Interaction Problems with Applications to Poroelasticity",
+      "abstract": "Fluid-structure interaction problems are known to be very difficult to solve due to nonlinear and complex fluid-solid interactions. This complexity is exacerbated by having to simulate these interactions in complex geometries on small scales. However, using homogenization theory it is possible to upscale these complex fluid-solid interactions into effective equations. A classical example of this is supposing an infinitesimal pore-scale deformation, and yielding the classical Biot equations from rock microstructure physics. However, with nonlinear interfacial forces, and thus non-trivial pore-scale deformations, the resulting homogenization problems become highly non-linear and yield, formally, a set of nonlinear Biot equations. This work aims to give better theoretical underpinnings to this idea by applying the homogenization technique of two-scale convergence to domains that have been deformed, e.g. in a previous time-step, and thus are non periodic. Utilizing a mapping technique, we obtain an augmented Stokes equation and two-scale homogenize them rigorously.",
+      "keywords": [],
+      "work_type": "proceedings-article",
+      "authors": [
+        "Jack Fellerman",
+        "Donald L. Brown",
+        "Maria Vasilyeva"
+      ],
+      "container_title": "Poromechanics VI",
+      "screening_outcome": "review",
+      "accept_matches": [],
+      "reject_matches": [],
+      "source": "screening",
+      "batch_id": "batch-0016",
+      "attempt": 1,
+      "human_decision": "reject",
+      "correction_decision": ""
+    },
+    {
+      "doi": "10.1177/1350650117716531",
+      "title": "Finite element analysis of elastohydrodynamic lubrication in an artificial hip joint under squeeze film motion using fluid–structure interaction method",
+      "abstract": "Classical approach for elastohydrodynamic lubrication problems contains solution of Reynolds and elasticity equations simultaneously, where elasticity equation was derived based on semi-infinite solid assumption. Fluid–structure interaction method which uses finite element formulation is another alternative approach for elastohydrodynamic lubrication problems. Present study contains two sections: first finite element method was used to evaluate accuracy of semi-infinite assumption for deformation in an artificial joint cup for a verity of material and geometrical properties. Then fluid–structure interaction method was used to simulate an artificial hip joint lubrication under squeeze film motion and efficiency and accuracy of this method was speculated by comparing the results to a previously done work. In the first section, deformation of a cup under Hertzian contact was calculated by finite element software ADINA. Various combinations of cup thickness, material properties, and dimensions of contact ellipse were modeled and results compared to the answer of semi-infinite assumption and column method for the same problem. Then a ball-in socket configuration for an artificial hip joint was modeled by an ultra-high-molecular-weight polyethylene cup and a Stainless Steel ball in the same software. Fluid film pressure and thickness were extracted from the results and compared to a previous study. Results for deformation of cup show that semi-infinite assumption and column method do not lead to acceptable accuracy for geometrical conditions of artificial hip joint. For fluid–structure interaction analysis of squeeze film motion, at first time steps, pressure distribution shows differences with the previous work, but at last time steps, fluid film pressure matches the previous study. For all time steps, film thickness of fluid–structure interaction method is higher than what was reported by previous work. The main reason is that no mesh independency check was performed for previous work, while for this study mesh independency of answers was analyzed by creating two other models.",
+      "keywords": [],
+      "work_type": "journal-article",
+      "authors": [
+        "Hessam Noori-Dokht",
+        "Hanieh Niroomand-Oscuii",
+        "Davood Jalali-Vahid",
+        "Zhongmin Jin"
+      ],
+      "container_title": "Proceedings of the Institution of Mechanical Engineers, Part J: Journal of Engineering Tribology",
+      "screening_outcome": "review",
+      "accept_matches": [],
+      "reject_matches": [],
+      "source": "screening",
+      "batch_id": "batch-0016",
+      "attempt": 1,
+      "human_decision": "reject",
+      "correction_decision": ""
+    },
+    {
+      "doi": "10.1115/icone25-67136",
+      "title": "Fluid-Structure Interaction Numerical Analysis of the Spent Fuel Pool and Storage Racks Under Earthquake",
+      "abstract": "Spent fuel pool and storage racks are important nuclear security structures and components. In order to prevent it from structural failure, which includes the loss of the structural integrity of the spent fuel pool and stability of the spent fuel storage racks, also includes the possibility of fallen down of storage racks under seismic loading. Besides the necessary static analysis of structures, the influence of seismic loading on the interaction between water and structure should be fully considered, Especially concerned the analysis of the shaking effect of water sloshing on the storage racks, the displacement and the possibility of fallen down of the storage racks. The present paper is concerned with the problem of modeling the fluid-structure interaction (FSI) in filled liquid and filled with spent fuel pool. The study focuses on the sloshing phenomena and on the coupling computational fluid dynamic (CFD) analysis with the finite element stress analysis (FEA) code LS-DYNA. By the results of the response of seismic, such as the displacement of the storage racks, pressure exerted on the plate of racks and the walls of the pool. This paper also evaluates the seismic performance of the structure and the safety margin. Various numerical methods can be used for analysis of liquid storage pools, among these we mention explicit finite element, implicit Lagrangian-Eulerian, hybrid finite element, Smoothed Particle Hydrodynamics volume of fluid. In this article the coupled sloshing dynamics in a rectangle pool were studied using a model developed in LS-DYNA environment. The main solution methodology is based on explicit time integration. In order to demonstrate the FSI results of the FEA models of the spent fuel pool on seismic analysis, a 3D FEA models were developed. The Finite element model composed of the spent fuel pool (steel plate concrete), spent fuel storage racks, cushion block, water and air. Solid element modeling is used in concrete, cushion block, water and air. Steel plate and storage racks employ the shell element. The constitutive model of solid element is linear elastic. And the constitutive model of fluid element is described by the Gruneisen equation. Arbitrary Lagrangian-Eulerian (ALE) formulation is thought of as algorithms that perform automatic rezoning. It realized the advection of water and air in the ALE multi-material group.",
+      "keywords": [],
+      "work_type": "proceedings-article",
+      "authors": [
+        "Ling Yun",
+        "Li Lei",
+        "Xue Rongjun",
+        "Qian Hao",
+        "Ge Honghui",
+        "Shang Ziduan"
+      ],
+      "container_title": "Volume 2: Plant Systems, Structures, Components and Materials",
+      "screening_outcome": "review",
+      "accept_matches": [],
+      "reject_matches": [],
+      "source": "screening",
+      "batch_id": "batch-0016",
+      "attempt": 1,
+      "human_decision": "reject",
+      "correction_decision": ""
+    },
+    {
+      "doi": "10.1016/j.ifacol.2017.08.2478",
+      "title": "Fictitious domain for stabilization of fluid-structure interaction",
+      "abstract": "We study the numerical approximation of the fluid structure interaction for stabilization of the fluid flow around an unstable stationary solution in a two dimensional domain, in the presence of boundary perturbations. We use a feedback control law recently proposed in [Airiau et al. (2017)] which is able to stabilize the nonlinear semi-discrete controlled system and based on the fluid only. Using Dirichlet boundary feedback, we deduce a boundary structure displacement. The fluid structure closed loop feedback is tested numerically using a fictitious domain finite element method based on extended Finite Element.",
+      "keywords": [],
+      "work_type": "journal-article",
+      "authors": [
+        "Michel Fournié",
+        "Jonathan Morrison"
+      ],
+      "container_title": "IFAC-PapersOnLine",
+      "screening_outcome": "queued",
+      "accept_matches": [
+        "(?is)(?=.*\\b(?:fluid[-\\s]+(?:structure|solid)(?:s)?(?:[-\\s]+interaction(?:s)?|[-\\s]+system(?:s)?|[-\\s]+model(?:s)?|[-\\s]+coupl(?:e|ed|ing))|fluid[-\\s]+rigid[-\\s]+body(?:[-\\s]+(?:interaction|problem|system))?)\\b)(?=.*\\b(?:well[-\\s]+posed(?:ness)?|existence(?:[-\\s]+for|\\s+(?:and\\s+uniqueness|of\\s+(?:(?:weak|strong|global|local|martingale)\\s+)?solutions?))|uniqueness(?:\\s+of\\s+solutions?)?|weak[-\\s]*strong[-\\s]+uniqueness|regularity(?:\\s+results?)?|gevrey[-\\s]+regularity|(?:weak|strong|martingale)[-\\s]+solutions?|stabili[sz](?:ation|ability)|controllability|feedback[-\\s]+control|optimal[-\\s]+control|energy[-\\s]+estimate|convergence[-\\s]+analysis|error[-\\s]+estimates?|stability[-\\s]+and[-\\s]+error[-\\s]+estimates?|port[-\\s]+Hamiltonian|structure[-\\s]+preserving|energy[-\\s]+preserving)\\b)"
+      ],
+      "reject_matches": [],
+      "source": "screening",
+      "batch_id": "batch-0016",
+      "attempt": 1,
+      "human_decision": "",
+      "correction_decision": ""
+    },
+    {
+      "doi": "10.1016/j.applthermaleng.2017.07.058",
+      "title": "WITHDRAWN: Thermal analysis on operational reactions inside a novel control valve using thermo-fluid-solid coupling method",
+      "abstract": "",
+      "keywords": [],
+      "work_type": "journal-article",
+      "authors": [
+        "M.M. Sadeghiazad"
+      ],
+      "container_title": "Applied Thermal Engineering",
+      "screening_outcome": "rejected",
+      "accept_matches": [],
+      "reject_matches": [
+        "(?is)\\A(?=.{0,165}\\b(?:control[-\\s]+valves?|bump[-\\s]+foil[-\\s]+bearings?|piezoelectric[-\\s]+micropumps?|vaginal[-\\s]+dilatation|platelet[-\\s]+activation|bioprosthetic[-\\s]+aortic[-\\s]+valve|venous[-\\s]+valve)\\b)"
+      ],
+      "source": "screening",
+      "batch_id": "batch-0016",
+      "attempt": 1,
+      "human_decision": "",
+      "correction_decision": ""
+    },
+    {
+      "doi": "10.1115/omae2017-61136",
+      "title": "Solving 2D Fluid-Structure Interaction Problem by a Coupled Particle Method",
+      "abstract": "It is important to predict wave impact and structural responses of ship and offshore structures in extreme sea conditions. There are advantages to apply Lagrangian particle methods to simulate highly nonlinear breaking free surface flow and fluid-structure interactions (FSI). In this paper, an improved moving particle semi-implicit (MPS) method was developed to solve the FSI problems. At each time step, the fluid motions and the structural responses are solved. For flow computations, a modified mixed source term method and an improved free surface identification method were adopted to suppress pressure oscillations. Moreover, a particle collision model was used to enhance the numerical stability and avoid nonphysical solutions. The discretized Poisson equations for pressure were solved by a parallel version of the bi-conjugate gradient stabilized method based on the message passing interface (MPI) approach. For structural responses, solids were treated as isotropic elastic particles. Validation studies were carried out for cases of 2D dam breaking and its interaction with a rubber gate. The numerical solutions are in good agreement with experimental data and other published numerical results.",
+      "keywords": [],
+      "work_type": "proceedings-article",
+      "authors": [
+        "Ruosi Zha",
+        "Wei Qiu",
+        "Heather Peng"
+      ],
+      "container_title": "Volume 7A: Ocean Engineering",
+      "screening_outcome": "review",
+      "accept_matches": [],
+      "reject_matches": [],
+      "source": "screening",
+      "batch_id": "batch-0016",
+      "attempt": 1,
+      "human_decision": "keep",
+      "correction_decision": ""
+    },
+    {
+      "doi": "10.2514/1.j055627",
+      "title": "Forced Shock Oscillation Control in Supersonic Intake Using Fluid–Structure Interaction",
+      "abstract": "This paper proposes a fluid–structure interaction-based method to restrict the undesirable shock oscillation process due to the downstream pressure perturbation and limit its adverse impact on a two-dimensional supersonic intake. A computational framework is established to illustrate the coupled solutions between the forced shock oscillation and the nonlinear structural vibration. Complex intake aerodynamics are captured with an implicit finite volume method. Finite element code is employed to determine the dynamic response of a flat flexible wall locally installed in a rigid cowl wall. Data transfer between the two physical fields is accomplished with a partitioned coupling scheme. The large-amplitude shock oscillation and poor variation in aerodynamic performance are found in the uncontrolled transient flow solutions of the rigid wall intake model. Conversely, a shock oscillation amplitude reduction of about 50% is achieved by the local flexible wall, and it shows an improvement to the aerodynamic performance of the supersonic intake as well. This paper demonstrates that the dynamic cavity generated by fluid–structure interaction contributes to outstanding performance of this new method. Additionally, the impact of the dynamic cavity is interpreted by two fundamental mechanisms: the local enlarged flowpath with a convergent–divergent shape and energy transfer within the fluid–structure interaction.",
+      "keywords": [],
+      "work_type": "journal-article",
+      "authors": [
+        "Cheng Yao",
+        "Guang-Hui Zhang",
+        "Zhan-Sheng Liu"
+      ],
+      "container_title": "AIAA Journal",
+      "screening_outcome": "review",
+      "accept_matches": [],
+      "reject_matches": [],
+      "source": "screening",
+      "batch_id": "batch-0016",
+      "attempt": 1,
+      "human_decision": "reject",
+      "correction_decision": ""
+    },
+    {
+      "doi": "10.3390/fluids2020034",
+      "title": "Numerical Study of a 3D Eulerian Monolithic Formulation for Incompressible Fluid-Structures Systems",
+      "abstract": "An algorithm is derived for a hyperelastic incompressible solid coupled with a Newtonian fluid. It is based on a Eulerian formulation of the full system in which the main variables are the velocities. After a fully implicit discretization in time it is possible to eliminate the displacements and solve a variational equation for the velocities and pressures only. The stability of the method depends heavily on the use of characteristic-Galerkin discretization of the total derivatives. For comparison with previous works, the method is tested on a three-dimensional (3D) clamped beam in a pipe filled with a fluid. Convergence is studied numerically on an axisymmetric case.",
+      "keywords": [],
+      "work_type": "journal-article",
+      "authors": [
+        "Chen-Yu Chiang",
+        "Olivier Pironneau",
+        "Tony Sheu",
+        "Marc Thiriet"
+      ],
+      "container_title": "Fluids",
+      "screening_outcome": "queued",
+      "accept_matches": [
+        "(?is)\\A(?=.{0,165}\\b(?:fluid[-\\s]+(?:structure|solid)(?:s)?(?:[-\\s]+(?:interaction(?:s)?|coupl(?:e|ed|ing)|system(?:s)?|model(?:s)?))|fluid[-\\s]+rigid[-\\s]+body(?:[-\\s]+(?:interaction|problem|system))?)\\b)(?=.{0,165}\\b(?:solver(?:s)?|(?:semi[-\\s]+implicit[-\\s]+)?(?:partition(?:ed)?[-\\s]+)?algorithm(?:s)?|framework|methodology|(?:mixed[-\\s]+)?formulation(?:s)?|discretization(?:s)?|reduced[-\\s]+order[-\\s]+model|ROM|domain[-\\s]+decomposition|local[-\\s]+time[-\\s]+stepping|low[-\\s]+rank[-\\s]+method|interface[-\\s]+treatment|material[-\\s]+point[-\\s]+method|PFEM[-\\s]*FEM[-\\s]+approach|smoothed[-\\s]+finite[-\\s]+element[-\\s]+method|scaled[-\\s]+boundary[-\\s]+finite[-\\s]+element[-\\s]+method|arbitrary[-\\s]+lagrangian[-\\s]+eulerian[-\\s]+(?:method|approach)|immersed[-\\s]+multi[-\\s]+material.{0,80}\\bfinite[-\\s]+element[-\\s]+method|monolithic.{0,50}\\bmethod|partitioned.{0,50}\\b(?:method|scheme|algorithm)|finite[-\\s]+element[-\\s]+discontinuous[-\\s]+galerkin[-\\s]+method|lattice[-\\s]+boltzmann.{0,50}\\bmethod|parallel|spectral[-\\s]+element[-\\s]+solver|multi[-\\s]+grid.{0,60}\\bmethod|cut[-\\s]+cell.{0,50}\\b(?:method|discrete[-\\s]+velocity)|direct[-\\s]+adjoint.{0,50}\\bsolver|graph[-\\s]+attention[-\\s]+solver|topology[-\\s]+optimization|shape[-\\s]+design|time[-\\s]+integration[-\\s]+schemes?|predictors?.{0,80}\\bconvergence|stabilized.{0,50}\\bmethod|stabilization[-\\s]+free.{0,50}\\bmethod|decoupling[-\\s]+methods?|coupled[-\\s]+stabilized[-\\s]+scheme|periodic[-\\s]+dual[-\\s]+mixing[-\\s]+method|semi[-\\s]+analytical[-\\s]+approach|isogeometric.{0,60}\\bcoupling[-\\s]+methods?|coupling[-\\s]+scheme|partitioned[-\\s]+semi[-\\s]+implicit[-\\s]+coupling[-\\s]+methods?)\\b)"
+      ],
+      "reject_matches": [],
+      "source": "screening",
+      "batch_id": "batch-0016",
+      "attempt": 1,
+      "human_decision": "",
+      "correction_decision": ""
+    },
+    {
+      "doi": "10.1002/nme.5602",
+      "title": "A partitioned fully explicit Lagrangian finite element method for highly nonlinear fluid‐structure interaction problems",
+      "abstract": "<jats:title>Summary</jats:title><jats:p>In this work, a fully explicit partitioned method for the simulation of Fluid Structure Interaction (FSI) problems is presented. The fluid domain is modelled with an explicit Particle Finite Element Method (PFEM) based on the hypothesis of weak compressibility. The Lagrangian description of the fluid is particularly effective in the simulation of FSI problems with free surface flows and large structural displacements, since the fluid boundaries are automatically defined by the position of the mesh nodes. A distinctive feature of the proposed FSI strategy is that the solid domain is modelled using the explicit integration FEM in an off‐the‐shelf commercial software (Abaqus/Explicit). This allows to perform simulations with a complete and advanced description on the structural domain, including advanced structural material models and contact. The structure‐to‐fluid coupling algorithm is based on a technique derived from the Domain Decomposition Methods, namely, the Gravouil and Combescure algorithm. The method allows for arbitrarily large interface displacements using different time incrementation and nonconforming meshes in the different domains, which is an essential feature for the efficiency of an explicit solver involving different materials. The resulting fully explicit and fully lagrangian finite element approach is particularly appealing for the possibility of its efficient application in a large variety of highly non‐linear engineering problems.</jats:p>",
+      "keywords": [],
+      "work_type": "journal-article",
+      "authors": [
+        "S. Meduri",
+        "M. Cremonesi",
+        "U. Perego",
+        "O. Bettinotti",
+        "A. Kurkchubasche",
+        "V. Oancea"
+      ],
+      "container_title": "International Journal for Numerical Methods in Engineering",
+      "screening_outcome": "queued",
+      "accept_matches": [
+        "(?is)\\A(?=.{0,165}\\b(?:fluid[-\\s]+(?:structure|solid)(?:s)?(?:[-\\s]+(?:interaction(?:s)?|coupl(?:e|ed|ing)|system(?:s)?|model(?:s)?))|fluid[-\\s]+rigid[-\\s]+body(?:[-\\s]+(?:interaction|problem|system))?)\\b)(?=.{0,165}\\b(?:solver(?:s)?|(?:semi[-\\s]+implicit[-\\s]+)?(?:partition(?:ed)?[-\\s]+)?algorithm(?:s)?|framework|methodology|(?:mixed[-\\s]+)?formulation(?:s)?|discretization(?:s)?|reduced[-\\s]+order[-\\s]+model|ROM|domain[-\\s]+decomposition|local[-\\s]+time[-\\s]+stepping|low[-\\s]+rank[-\\s]+method|interface[-\\s]+treatment|material[-\\s]+point[-\\s]+method|PFEM[-\\s]*FEM[-\\s]+approach|smoothed[-\\s]+finite[-\\s]+element[-\\s]+method|scaled[-\\s]+boundary[-\\s]+finite[-\\s]+element[-\\s]+method|arbitrary[-\\s]+lagrangian[-\\s]+eulerian[-\\s]+(?:method|approach)|immersed[-\\s]+multi[-\\s]+material.{0,80}\\bfinite[-\\s]+element[-\\s]+method|monolithic.{0,50}\\bmethod|partitioned.{0,50}\\b(?:method|scheme|algorithm)|finite[-\\s]+element[-\\s]+discontinuous[-\\s]+galerkin[-\\s]+method|lattice[-\\s]+boltzmann.{0,50}\\bmethod|parallel|spectral[-\\s]+element[-\\s]+solver|multi[-\\s]+grid.{0,60}\\bmethod|cut[-\\s]+cell.{0,50}\\b(?:method|discrete[-\\s]+velocity)|direct[-\\s]+adjoint.{0,50}\\bsolver|graph[-\\s]+attention[-\\s]+solver|topology[-\\s]+optimization|shape[-\\s]+design|time[-\\s]+integration[-\\s]+schemes?|predictors?.{0,80}\\bconvergence|stabilized.{0,50}\\bmethod|stabilization[-\\s]+free.{0,50}\\bmethod|decoupling[-\\s]+methods?|coupled[-\\s]+stabilized[-\\s]+scheme|periodic[-\\s]+dual[-\\s]+mixing[-\\s]+method|semi[-\\s]+analytical[-\\s]+approach|isogeometric.{0,60}\\bcoupling[-\\s]+methods?|coupling[-\\s]+scheme|partitioned[-\\s]+semi[-\\s]+implicit[-\\s]+coupling[-\\s]+methods?)\\b)"
+      ],
+      "reject_matches": [],
+      "source": "screening",
+      "batch_id": "batch-0016",
+      "attempt": 1,
+      "human_decision": "",
+      "correction_decision": ""
+    },
+    {
+      "doi": "10.2514/6.2017-4458",
+      "title": "Recent Developments on Fluid Structure Interaction Using the Navier Stokes Multi Block (NSMB) CFD Solver",
+      "abstract": "",
+      "keywords": [],
+      "work_type": "proceedings-article",
+      "authors": [
+        "Jan B. Vos",
+        "Dominique Charbonnier",
+        "Thomas Ludwig",
+        "Silvio Merazzi",
+        "Alain Gehri",
+        "Philippe Stephani"
+      ],
+      "container_title": "35th AIAA Applied Aerodynamics Conference",
+      "screening_outcome": "queued",
+      "accept_matches": [
+        "(?is)\\A(?=.{0,165}\\b(?:fluid[-\\s]+(?:structure|solid)(?:s)?(?:[-\\s]+(?:interaction(?:s)?|coupl(?:e|ed|ing)|system(?:s)?|model(?:s)?))|fluid[-\\s]+rigid[-\\s]+body(?:[-\\s]+(?:interaction|problem|system))?)\\b)(?=.{0,165}\\b(?:solver(?:s)?|(?:semi[-\\s]+implicit[-\\s]+)?(?:partition(?:ed)?[-\\s]+)?algorithm(?:s)?|framework|methodology|(?:mixed[-\\s]+)?formulation(?:s)?|discretization(?:s)?|reduced[-\\s]+order[-\\s]+model|ROM|domain[-\\s]+decomposition|local[-\\s]+time[-\\s]+stepping|low[-\\s]+rank[-\\s]+method|interface[-\\s]+treatment|material[-\\s]+point[-\\s]+method|PFEM[-\\s]*FEM[-\\s]+approach|smoothed[-\\s]+finite[-\\s]+element[-\\s]+method|scaled[-\\s]+boundary[-\\s]+finite[-\\s]+element[-\\s]+method|arbitrary[-\\s]+lagrangian[-\\s]+eulerian[-\\s]+(?:method|approach)|immersed[-\\s]+multi[-\\s]+material.{0,80}\\bfinite[-\\s]+element[-\\s]+method|monolithic.{0,50}\\bmethod|partitioned.{0,50}\\b(?:method|scheme|algorithm)|finite[-\\s]+element[-\\s]+discontinuous[-\\s]+galerkin[-\\s]+method|lattice[-\\s]+boltzmann.{0,50}\\bmethod|parallel|spectral[-\\s]+element[-\\s]+solver|multi[-\\s]+grid.{0,60}\\bmethod|cut[-\\s]+cell.{0,50}\\b(?:method|discrete[-\\s]+velocity)|direct[-\\s]+adjoint.{0,50}\\bsolver|graph[-\\s]+attention[-\\s]+solver|topology[-\\s]+optimization|shape[-\\s]+design|time[-\\s]+integration[-\\s]+schemes?|predictors?.{0,80}\\bconvergence|stabilized.{0,50}\\bmethod|stabilization[-\\s]+free.{0,50}\\bmethod|decoupling[-\\s]+methods?|coupled[-\\s]+stabilized[-\\s]+scheme|periodic[-\\s]+dual[-\\s]+mixing[-\\s]+method|semi[-\\s]+analytical[-\\s]+approach|isogeometric.{0,60}\\bcoupling[-\\s]+methods?|coupling[-\\s]+scheme|partitioned[-\\s]+semi[-\\s]+implicit[-\\s]+coupling[-\\s]+methods?)\\b)"
+      ],
+      "reject_matches": [],
+      "source": "screening",
+      "batch_id": "batch-0016",
+      "attempt": 1,
+      "human_decision": "",
+      "correction_decision": ""
+    },
+    {
+      "doi": "10.2514/6.2017-3449",
+      "title": "Accuracy and Performance of Fluid-Structure Interaction Algorithms with Explicit versus Implicit Formulations of the Fluid Solver",
+      "abstract": "",
+      "keywords": [],
+      "work_type": "proceedings-article",
+      "authors": [
+        "YiQin Xu",
+        "Yulia T. Peet"
+      ],
+      "container_title": "23rd AIAA Computational Fluid Dynamics Conference",
+      "screening_outcome": "queued",
+      "accept_matches": [
+        "(?is)\\A(?=.{0,165}\\b(?:fluid[-\\s]+(?:structure|solid)(?:s)?(?:[-\\s]+(?:interaction(?:s)?|coupl(?:e|ed|ing)|system(?:s)?|model(?:s)?))|fluid[-\\s]+rigid[-\\s]+body(?:[-\\s]+(?:interaction|problem|system))?)\\b)(?=.{0,165}\\b(?:solver(?:s)?|(?:semi[-\\s]+implicit[-\\s]+)?(?:partition(?:ed)?[-\\s]+)?algorithm(?:s)?|framework|methodology|(?:mixed[-\\s]+)?formulation(?:s)?|discretization(?:s)?|reduced[-\\s]+order[-\\s]+model|ROM|domain[-\\s]+decomposition|local[-\\s]+time[-\\s]+stepping|low[-\\s]+rank[-\\s]+method|interface[-\\s]+treatment|material[-\\s]+point[-\\s]+method|PFEM[-\\s]*FEM[-\\s]+approach|smoothed[-\\s]+finite[-\\s]+element[-\\s]+method|scaled[-\\s]+boundary[-\\s]+finite[-\\s]+element[-\\s]+method|arbitrary[-\\s]+lagrangian[-\\s]+eulerian[-\\s]+(?:method|approach)|immersed[-\\s]+multi[-\\s]+material.{0,80}\\bfinite[-\\s]+element[-\\s]+method|monolithic.{0,50}\\bmethod|partitioned.{0,50}\\b(?:method|scheme|algorithm)|finite[-\\s]+element[-\\s]+discontinuous[-\\s]+galerkin[-\\s]+method|lattice[-\\s]+boltzmann.{0,50}\\bmethod|parallel|spectral[-\\s]+element[-\\s]+solver|multi[-\\s]+grid.{0,60}\\bmethod|cut[-\\s]+cell.{0,50}\\b(?:method|discrete[-\\s]+velocity)|direct[-\\s]+adjoint.{0,50}\\bsolver|graph[-\\s]+attention[-\\s]+solver|topology[-\\s]+optimization|shape[-\\s]+design|time[-\\s]+integration[-\\s]+schemes?|predictors?.{0,80}\\bconvergence|stabilized.{0,50}\\bmethod|stabilization[-\\s]+free.{0,50}\\bmethod|decoupling[-\\s]+methods?|coupled[-\\s]+stabilized[-\\s]+scheme|periodic[-\\s]+dual[-\\s]+mixing[-\\s]+method|semi[-\\s]+analytical[-\\s]+approach|isogeometric.{0,60}\\bcoupling[-\\s]+methods?|coupling[-\\s]+scheme|partitioned[-\\s]+semi[-\\s]+implicit[-\\s]+coupling[-\\s]+methods?)\\b)"
+      ],
+      "reject_matches": [],
+      "source": "screening",
+      "batch_id": "batch-0016",
+      "attempt": 1,
+      "human_decision": "",
+      "correction_decision": ""
+    },
+    {
+      "doi": "10.2514/6.2017-3620",
+      "title": "Simulation of Fluid-Structure Interaction Using Domain-Free Discretization (DFD) and a Predictor-Corrector Coupling Approach",
+      "abstract": "",
+      "keywords": [],
+      "work_type": "proceedings-article",
+      "authors": [
+        "Yang Zhang",
+        "Chunhua Zhou",
+        "Haoxiang Luo"
+      ],
+      "container_title": "23rd AIAA Computational Fluid Dynamics Conference",
+      "screening_outcome": "queued",
+      "accept_matches": [
+        "(?is)\\A(?=.{0,165}\\b(?:fluid[-\\s]+(?:structure|solid)(?:s)?(?:[-\\s]+(?:interaction(?:s)?|coupl(?:e|ed|ing)|system(?:s)?|model(?:s)?))|fluid[-\\s]+rigid[-\\s]+body(?:[-\\s]+(?:interaction|problem|system))?)\\b)(?=.{0,165}\\b(?:solver(?:s)?|(?:semi[-\\s]+implicit[-\\s]+)?(?:partition(?:ed)?[-\\s]+)?algorithm(?:s)?|framework|methodology|(?:mixed[-\\s]+)?formulation(?:s)?|discretization(?:s)?|reduced[-\\s]+order[-\\s]+model|ROM|domain[-\\s]+decomposition|local[-\\s]+time[-\\s]+stepping|low[-\\s]+rank[-\\s]+method|interface[-\\s]+treatment|material[-\\s]+point[-\\s]+method|PFEM[-\\s]*FEM[-\\s]+approach|smoothed[-\\s]+finite[-\\s]+element[-\\s]+method|scaled[-\\s]+boundary[-\\s]+finite[-\\s]+element[-\\s]+method|arbitrary[-\\s]+lagrangian[-\\s]+eulerian[-\\s]+(?:method|approach)|immersed[-\\s]+multi[-\\s]+material.{0,80}\\bfinite[-\\s]+element[-\\s]+method|monolithic.{0,50}\\bmethod|partitioned.{0,50}\\b(?:method|scheme|algorithm)|finite[-\\s]+element[-\\s]+discontinuous[-\\s]+galerkin[-\\s]+method|lattice[-\\s]+boltzmann.{0,50}\\bmethod|parallel|spectral[-\\s]+element[-\\s]+solver|multi[-\\s]+grid.{0,60}\\bmethod|cut[-\\s]+cell.{0,50}\\b(?:method|discrete[-\\s]+velocity)|direct[-\\s]+adjoint.{0,50}\\bsolver|graph[-\\s]+attention[-\\s]+solver|topology[-\\s]+optimization|shape[-\\s]+design|time[-\\s]+integration[-\\s]+schemes?|predictors?.{0,80}\\bconvergence|stabilized.{0,50}\\bmethod|stabilization[-\\s]+free.{0,50}\\bmethod|decoupling[-\\s]+methods?|coupled[-\\s]+stabilized[-\\s]+scheme|periodic[-\\s]+dual[-\\s]+mixing[-\\s]+method|semi[-\\s]+analytical[-\\s]+approach|isogeometric.{0,60}\\bcoupling[-\\s]+methods?|coupling[-\\s]+scheme|partitioned[-\\s]+semi[-\\s]+implicit[-\\s]+coupling[-\\s]+methods?)\\b)"
+      ],
+      "reject_matches": [],
+      "source": "screening",
+      "batch_id": "batch-0016",
+      "attempt": 1,
+      "human_decision": "",
+      "correction_decision": ""
+    },
+    {
+      "doi": "10.2514/6.2017-3814",
+      "title": "A Monolithic Fluid Structure Interaction Algorithm Applied to Red Blood Cells in a Capillary",
+      "abstract": "https://doi.org/10.2514/6.2017-3814",
+      "keywords": [],
+      "work_type": "proceedings-article",
+      "authors": [
+        "Ayse Cetin",
+        "Mehmet Sahin"
+      ],
+      "container_title": "47th AIAA Fluid Dynamics Conference",
+      "screening_outcome": "queued",
+      "accept_matches": [
+        "(?is)\\A(?=.{0,165}\\b(?:fluid[-\\s]+(?:structure|solid)(?:s)?(?:[-\\s]+(?:interaction(?:s)?|coupl(?:e|ed|ing)|system(?:s)?|model(?:s)?))|fluid[-\\s]+rigid[-\\s]+body(?:[-\\s]+(?:interaction|problem|system))?)\\b)(?=.{0,165}\\b(?:solver(?:s)?|(?:semi[-\\s]+implicit[-\\s]+)?(?:partition(?:ed)?[-\\s]+)?algorithm(?:s)?|framework|methodology|(?:mixed[-\\s]+)?formulation(?:s)?|discretization(?:s)?|reduced[-\\s]+order[-\\s]+model|ROM|domain[-\\s]+decomposition|local[-\\s]+time[-\\s]+stepping|low[-\\s]+rank[-\\s]+method|interface[-\\s]+treatment|material[-\\s]+point[-\\s]+method|PFEM[-\\s]*FEM[-\\s]+approach|smoothed[-\\s]+finite[-\\s]+element[-\\s]+method|scaled[-\\s]+boundary[-\\s]+finite[-\\s]+element[-\\s]+method|arbitrary[-\\s]+lagrangian[-\\s]+eulerian[-\\s]+(?:method|approach)|immersed[-\\s]+multi[-\\s]+material.{0,80}\\bfinite[-\\s]+element[-\\s]+method|monolithic.{0,50}\\bmethod|partitioned.{0,50}\\b(?:method|scheme|algorithm)|finite[-\\s]+element[-\\s]+discontinuous[-\\s]+galerkin[-\\s]+method|lattice[-\\s]+boltzmann.{0,50}\\bmethod|parallel|spectral[-\\s]+element[-\\s]+solver|multi[-\\s]+grid.{0,60}\\bmethod|cut[-\\s]+cell.{0,50}\\b(?:method|discrete[-\\s]+velocity)|direct[-\\s]+adjoint.{0,50}\\bsolver|graph[-\\s]+attention[-\\s]+solver|topology[-\\s]+optimization|shape[-\\s]+design|time[-\\s]+integration[-\\s]+schemes?|predictors?.{0,80}\\bconvergence|stabilized.{0,50}\\bmethod|stabilization[-\\s]+free.{0,50}\\bmethod|decoupling[-\\s]+methods?|coupled[-\\s]+stabilized[-\\s]+scheme|periodic[-\\s]+dual[-\\s]+mixing[-\\s]+method|semi[-\\s]+analytical[-\\s]+approach|isogeometric.{0,60}\\bcoupling[-\\s]+methods?|coupling[-\\s]+scheme|partitioned[-\\s]+semi[-\\s]+implicit[-\\s]+coupling[-\\s]+methods?)\\b)"
+      ],
+      "reject_matches": [],
+      "source": "screening",
+      "batch_id": "batch-0016",
+      "attempt": 1,
+      "human_decision": "",
+      "correction_decision": ""
+    },
+    {
+      "doi": "10.16943/ptinsa/2017/49064",
+      "title": "A Numerical Analysis of a Fluid-Structure Interaction Problem with a Flow Channel Embedded in a Structural Material",
+      "abstract": "In the present work, numerical simulations have been performed on a model problem, representing a class of fluid-structure interaction problems.The model problem consists of a thin plate with a flow channel embedded in it.The governing equations for flow in the channel and displacement in plate structure are discretized using a finite volume procedure on unstructured meshes, and are solved in a one-way coupled manner with the flow in the channel influencing the stress field in the structure.The problem is presented in a generalized manner, in terms of the relevant dimensionless parameters obtained as part of the analysis.A parametric study is performed for the cases of isothermal and with heating of the fluid.The data from the parametric simulations are used to explain the stress field behavior in the solid plate, in response to independent dimensionless parameters.The overall methodology is presented in a manner that will be useful in analyzing any specific case of the class of fluid-structure interaction represented by the model problem.",
+      "keywords": [],
+      "work_type": "journal-article",
+      "authors": [
+        "P. I. Jagad",
+        "B. P. Puranik",
+        "A. W. Date"
+      ],
+      "container_title": "Proceedings of the Indian National Science Academy",
+      "screening_outcome": "review",
+      "accept_matches": [],
+      "reject_matches": [],
+      "source": "screening",
+      "batch_id": "batch-0016",
+      "attempt": 1,
+      "human_decision": "reject",
+      "correction_decision": ""
+    },
+    {
+      "doi": "10.1016/j.apm.2017.05.038",
+      "title": "Fluid–structure interaction solver for compressible flows with applications to blast loading on thin elastic structures",
+      "abstract": "",
+      "keywords": [],
+      "work_type": "journal-article",
+      "authors": [
+        "Shantanu Bailoor",
+        "Aditya Annangi",
+        "Jung Hee Seo",
+        "Rajneesh Bhardwaj"
+      ],
+      "container_title": "Applied Mathematical Modelling",
+      "screening_outcome": "queued",
+      "accept_matches": [
+        "(?is)\\A(?=.{0,165}\\b(?:fluid[-\\s]+(?:structure|solid)(?:s)?(?:[-\\s]+(?:interaction(?:s)?|coupl(?:e|ed|ing)|system(?:s)?|model(?:s)?))|fluid[-\\s]+rigid[-\\s]+body(?:[-\\s]+(?:interaction|problem|system))?)\\b)(?=.{0,165}\\b(?:solver(?:s)?|(?:semi[-\\s]+implicit[-\\s]+)?(?:partition(?:ed)?[-\\s]+)?algorithm(?:s)?|framework|methodology|(?:mixed[-\\s]+)?formulation(?:s)?|discretization(?:s)?|reduced[-\\s]+order[-\\s]+model|ROM|domain[-\\s]+decomposition|local[-\\s]+time[-\\s]+stepping|low[-\\s]+rank[-\\s]+method|interface[-\\s]+treatment|material[-\\s]+point[-\\s]+method|PFEM[-\\s]*FEM[-\\s]+approach|smoothed[-\\s]+finite[-\\s]+element[-\\s]+method|scaled[-\\s]+boundary[-\\s]+finite[-\\s]+element[-\\s]+method|arbitrary[-\\s]+lagrangian[-\\s]+eulerian[-\\s]+(?:method|approach)|immersed[-\\s]+multi[-\\s]+material.{0,80}\\bfinite[-\\s]+element[-\\s]+method|monolithic.{0,50}\\bmethod|partitioned.{0,50}\\b(?:method|scheme|algorithm)|finite[-\\s]+element[-\\s]+discontinuous[-\\s]+galerkin[-\\s]+method|lattice[-\\s]+boltzmann.{0,50}\\bmethod|parallel|spectral[-\\s]+element[-\\s]+solver|multi[-\\s]+grid.{0,60}\\bmethod|cut[-\\s]+cell.{0,50}\\b(?:method|discrete[-\\s]+velocity)|direct[-\\s]+adjoint.{0,50}\\bsolver|graph[-\\s]+attention[-\\s]+solver|topology[-\\s]+optimization|shape[-\\s]+design|time[-\\s]+integration[-\\s]+schemes?|predictors?.{0,80}\\bconvergence|stabilized.{0,50}\\bmethod|stabilization[-\\s]+free.{0,50}\\bmethod|decoupling[-\\s]+methods?|coupled[-\\s]+stabilized[-\\s]+scheme|periodic[-\\s]+dual[-\\s]+mixing[-\\s]+method|semi[-\\s]+analytical[-\\s]+approach|isogeometric.{0,60}\\bcoupling[-\\s]+methods?|coupling[-\\s]+scheme|partitioned[-\\s]+semi[-\\s]+implicit[-\\s]+coupling[-\\s]+methods?)\\b)"
+      ],
+      "reject_matches": [],
+      "source": "screening",
+      "batch_id": "batch-0016",
+      "attempt": 1,
+      "human_decision": "",
+      "correction_decision": ""
+    },
+    {
+      "doi": "10.1007/978-3-030-86351-7_5",
+      "title": "Feedback Stabilization of a Simplified Model of Fluid–Structure Interaction on a Tree",
+      "abstract": "In this chapter, we study the stability of a model of fluid propagating in a 1-d network, under some feedbacks applied at exteriors nodes, with the presence of point mass at inner nodes, see Fig. 5.1.",
+      "keywords": [],
+      "work_type": "book-chapter",
+      "authors": [
+        "Kaïs Ammari",
+        "Farhat Shel"
+      ],
+      "container_title": "SpringerBriefs in Mathematics",
+      "screening_outcome": "queued",
+      "accept_matches": [
+        "(?is)(?=.*\\b(?:fluid[-\\s]+(?:structure|solid)(?:s)?(?:[-\\s]+interaction(?:s)?|[-\\s]+system(?:s)?|[-\\s]+model(?:s)?|[-\\s]+coupl(?:e|ed|ing))|fluid[-\\s]+rigid[-\\s]+body(?:[-\\s]+(?:interaction|problem|system))?)\\b)(?=.*\\b(?:well[-\\s]+posed(?:ness)?|existence(?:[-\\s]+for|\\s+(?:and\\s+uniqueness|of\\s+(?:(?:weak|strong|global|local|martingale)\\s+)?solutions?))|uniqueness(?:\\s+of\\s+solutions?)?|weak[-\\s]*strong[-\\s]+uniqueness|regularity(?:\\s+results?)?|gevrey[-\\s]+regularity|(?:weak|strong|martingale)[-\\s]+solutions?|stabili[sz](?:ation|ability)|controllability|feedback[-\\s]+control|optimal[-\\s]+control|energy[-\\s]+estimate|convergence[-\\s]+analysis|error[-\\s]+estimates?|stability[-\\s]+and[-\\s]+error[-\\s]+estimates?|port[-\\s]+Hamiltonian|structure[-\\s]+preserving|energy[-\\s]+preserving)\\b)"
+      ],
+      "reject_matches": [],
+      "source": "screening",
+      "batch_id": "batch-0016",
+      "attempt": 1,
+      "human_decision": "",
+      "correction_decision": ""
+    },
+    {
+      "doi": "10.1016/j.compfluid.2017.05.005",
+      "title": "A parallel monolithic approach for fluid-structure interaction in a cerebral aneurysm",
+      "abstract": "",
+      "keywords": [],
+      "work_type": "journal-article",
+      "authors": [
+        "Ali Eken",
+        "Mehmet Sahin"
+      ],
+      "container_title": "Computers &amp; Fluids",
+      "screening_outcome": "queued",
+      "accept_matches": [
+        "(?is)\\A(?=.{0,165}\\b(?:fluid[-\\s]+(?:structure|solid)(?:s)?(?:[-\\s]+(?:interaction(?:s)?|coupl(?:e|ed|ing)|system(?:s)?|model(?:s)?))|fluid[-\\s]+rigid[-\\s]+body(?:[-\\s]+(?:interaction|problem|system))?)\\b)(?=.{0,165}\\b(?:solver(?:s)?|(?:semi[-\\s]+implicit[-\\s]+)?(?:partition(?:ed)?[-\\s]+)?algorithm(?:s)?|framework|methodology|(?:mixed[-\\s]+)?formulation(?:s)?|discretization(?:s)?|reduced[-\\s]+order[-\\s]+model|ROM|domain[-\\s]+decomposition|local[-\\s]+time[-\\s]+stepping|low[-\\s]+rank[-\\s]+method|interface[-\\s]+treatment|material[-\\s]+point[-\\s]+method|PFEM[-\\s]*FEM[-\\s]+approach|smoothed[-\\s]+finite[-\\s]+element[-\\s]+method|scaled[-\\s]+boundary[-\\s]+finite[-\\s]+element[-\\s]+method|arbitrary[-\\s]+lagrangian[-\\s]+eulerian[-\\s]+(?:method|approach)|immersed[-\\s]+multi[-\\s]+material.{0,80}\\bfinite[-\\s]+element[-\\s]+method|monolithic.{0,50}\\bmethod|partitioned.{0,50}\\b(?:method|scheme|algorithm)|finite[-\\s]+element[-\\s]+discontinuous[-\\s]+galerkin[-\\s]+method|lattice[-\\s]+boltzmann.{0,50}\\bmethod|parallel|spectral[-\\s]+element[-\\s]+solver|multi[-\\s]+grid.{0,60}\\bmethod|cut[-\\s]+cell.{0,50}\\b(?:method|discrete[-\\s]+velocity)|direct[-\\s]+adjoint.{0,50}\\bsolver|graph[-\\s]+attention[-\\s]+solver|topology[-\\s]+optimization|shape[-\\s]+design|time[-\\s]+integration[-\\s]+schemes?|predictors?.{0,80}\\bconvergence|stabilized.{0,50}\\bmethod|stabilization[-\\s]+free.{0,50}\\bmethod|decoupling[-\\s]+methods?|coupled[-\\s]+stabilized[-\\s]+scheme|periodic[-\\s]+dual[-\\s]+mixing[-\\s]+method|semi[-\\s]+analytical[-\\s]+approach|isogeometric.{0,60}\\bcoupling[-\\s]+methods?|coupling[-\\s]+scheme|partitioned[-\\s]+semi[-\\s]+implicit[-\\s]+coupling[-\\s]+methods?)\\b)"
+      ],
+      "reject_matches": [],
+      "source": "screening",
+      "batch_id": "batch-0016",
+      "attempt": 1,
+      "human_decision": "",
+      "correction_decision": ""
+    },
+    {
+      "doi": "10.1007/s00371-017-1383-8",
+      "title": "Glass half full: sound synthesis for fluid–structure coupling using added mass operator",
+      "abstract": "",
+      "keywords": [],
+      "work_type": "journal-article",
+      "authors": [
+        "Justin Wilson",
+        "Auston Sterling",
+        "Nicholas Rewkowski",
+        "Ming C. Lin"
+      ],
+      "container_title": "The Visual Computer",
+      "screening_outcome": "review",
+      "accept_matches": [],
+      "reject_matches": [],
+      "source": "screening",
+      "batch_id": "batch-0016",
+      "attempt": 1,
+      "human_decision": "reject",
+      "correction_decision": ""
+    },
+    {
+      "doi": "10.12783/dtetr/eeta2017/7727",
+      "title": "Numerical Analysis of Stress and Deformation of Impeller in the Mixed Flow Pump Based on Fluid-structure Interaction",
+      "abstract": "To improve the operational reliability of mixed flow pumps, the two-way coupling fluidstructure interaction method is applied to investigate stresses and deformations of the impeller. The Reynolds-averaged Navier–Stokes equation, coupled with the SST k-ω turbulent model, is solved in the fluid domain by using ANSYS CFX, while transient structure dynamics in the structural domain are calculated with the finite element method. The accuracy of the numerical results has been verified by experimental pump performance. The results show that the flow rate definitely has a noticeable effect on both deformations and stresses. With the flow rate increasing, the impeller deformation decreases, as well as the stress, which is completely different from centrifugal pumps, but similar to axial pumps. Moreover, a local maximum deformation occurs in the middle of blade inlet, and the maximum stress of the entire impeller fluctuates periodically. On the same shroud, the stress on the suction side is higher than the pressure side along the intersection path; and on the same side, the mean stress on the rear shroud is larger than the front shroud. This study can help understand the distribution of both deformations and stresses in the impeller and provide guidance for improving the operation safety of mixed flow pumps.",
+      "keywords": [],
+      "work_type": "journal-article",
+      "authors": [
+        "Yan-dong GU",
+        "Shou-qi YUAN",
+        "Ji PEI",
+        "Fan MENG"
+      ],
+      "container_title": "DEStech Transactions on Engineering and Technology Research",
+      "screening_outcome": "review",
+      "accept_matches": [],
+      "reject_matches": [],
+      "source": "screening",
+      "batch_id": "batch-0016",
+      "attempt": 1,
+      "human_decision": "reject",
+      "correction_decision": ""
+    },
+    {
+      "doi": "10.11159/enfht17.103",
+      "title": "Variational Approach of Constructing Reduced Fluid-Structure\nInteraction Models in Bifurcated Networks",
+      "abstract": "Reduced fluid-structure interaction models have received a considerable attention in recent years being the key component of hemodynamic modeling.A variety of models applying to specific physiological components such as arterial, venous and cerebrospinal fluid (CSF) circulatory systems have been developed based on different approaches.The purpose of this paper is to apply the general approach based on Hamilton's variational principle to create a model for a viscous Newtonian fluid -structure interaction (FSI) in a compliant bifurcated network.This approach provides the background for a correct formulation of reduced FSI models with an account for arbitrary nonlinear visco-elastic properties of compliant boundaries.The correct boundary conditions are specified at junctions, including matching points in a combined 3D/1D approach.The hyperbolic properties of derived mathematical model are analyzed and used, constructing the monotone finite volume numerical scheme, second-order accuracy in time and space.The computational algorithm is validated by comparison of numerical solutions with the exact manufactured solutions for an isolated compliant segment and a bifurcated structure.The accuracy of applied TVD (total variation diminishing) and Lax-Wendroff methods are analyzed by comparison of numerical results to the available analytical smooth and discontinuous solutions.",
+      "keywords": [],
+      "work_type": "proceedings-article",
+      "authors": [
+        "A. S. Liberson",
+        "Y. Seyed Vahedein",
+        "D. A. Borkholder"
+      ],
+      "container_title": "World Congress on Momentum, Heat and Mass Transfer",
+      "screening_outcome": "review",
+      "accept_matches": [],
+      "reject_matches": [],
+      "source": "screening",
+      "batch_id": "batch-0016",
+      "attempt": 1,
+      "human_decision": "keep",
+      "correction_decision": ""
+    },
+    {
+      "doi": "10.4208/cicp.oa-2016-0106",
+      "title": "AC-CBS-Based Partitioned Semi-Implicit Coupling Algorithm for Fluid-Structure Interaction Using Stabilized Second-Order Pressure Scheme",
+      "abstract": "We analyze in this paper the pressure splitting scheme of a partitioned semi-implicit coupling algorithm for fluid-structure interaction (FSI) simulation. The semi-implicit coupling algorithm is developed on the ground of the artificial compressibility characteristic-based split (AC-CBS) scheme that serves not only for the fluid subsystem but also for the global FSI system. As the dual-time stepping procedure recommended for quasi-incompressible flows is incorporated into the implicit coupling stage, the fluctuating pressure may be unusually susceptible to the AC coefficient. Moreover, it is not trivial to devise an optimal AC formulation for pressure estimation. Instead, we consider a stabilized second-order pressure splitting scheme in the AC-CBS-based partitioned semi-implicit coupling algorithm. Computer simulation of a benchmark FSI experiment demonstrates that good agreement is exposed between the available and present data.",
+      "keywords": [],
+      "work_type": "journal-article",
+      "authors": [
+        "Tao He",
+        "Kai Zhang",
+        "Tong Wang"
+      ],
+      "container_title": "Communications in Computational Physics",
+      "screening_outcome": "queued",
+      "accept_matches": [
+        "(?is)\\A(?=.{0,165}\\b(?:fluid[-\\s]+(?:structure|solid)(?:s)?(?:[-\\s]+(?:interaction(?:s)?|coupl(?:e|ed|ing)|system(?:s)?|model(?:s)?))|fluid[-\\s]+rigid[-\\s]+body(?:[-\\s]+(?:interaction|problem|system))?)\\b)(?=.{0,165}\\b(?:solver(?:s)?|(?:semi[-\\s]+implicit[-\\s]+)?(?:partition(?:ed)?[-\\s]+)?algorithm(?:s)?|framework|methodology|(?:mixed[-\\s]+)?formulation(?:s)?|discretization(?:s)?|reduced[-\\s]+order[-\\s]+model|ROM|domain[-\\s]+decomposition|local[-\\s]+time[-\\s]+stepping|low[-\\s]+rank[-\\s]+method|interface[-\\s]+treatment|material[-\\s]+point[-\\s]+method|PFEM[-\\s]*FEM[-\\s]+approach|smoothed[-\\s]+finite[-\\s]+element[-\\s]+method|scaled[-\\s]+boundary[-\\s]+finite[-\\s]+element[-\\s]+method|arbitrary[-\\s]+lagrangian[-\\s]+eulerian[-\\s]+(?:method|approach)|immersed[-\\s]+multi[-\\s]+material.{0,80}\\bfinite[-\\s]+element[-\\s]+method|monolithic.{0,50}\\bmethod|partitioned.{0,50}\\b(?:method|scheme|algorithm)|finite[-\\s]+element[-\\s]+discontinuous[-\\s]+galerkin[-\\s]+method|lattice[-\\s]+boltzmann.{0,50}\\bmethod|parallel|spectral[-\\s]+element[-\\s]+solver|multi[-\\s]+grid.{0,60}\\bmethod|cut[-\\s]+cell.{0,50}\\b(?:method|discrete[-\\s]+velocity)|direct[-\\s]+adjoint.{0,50}\\bsolver|graph[-\\s]+attention[-\\s]+solver|topology[-\\s]+optimization|shape[-\\s]+design|time[-\\s]+integration[-\\s]+schemes?|predictors?.{0,80}\\bconvergence|stabilized.{0,50}\\bmethod|stabilization[-\\s]+free.{0,50}\\bmethod|decoupling[-\\s]+methods?|coupled[-\\s]+stabilized[-\\s]+scheme|periodic[-\\s]+dual[-\\s]+mixing[-\\s]+method|semi[-\\s]+analytical[-\\s]+approach|isogeometric.{0,60}\\bcoupling[-\\s]+methods?|coupling[-\\s]+scheme|partitioned[-\\s]+semi[-\\s]+implicit[-\\s]+coupling[-\\s]+methods?)\\b)"
+      ],
+      "reject_matches": [],
+      "source": "screening",
+      "batch_id": "batch-0016",
+      "attempt": 1,
+      "human_decision": "",
+      "correction_decision": ""
+    },
+    {
+      "doi": "10.1016/j.jcp.2017.03.043",
+      "title": "A scalable nonlinear fluid–structure interaction solver based on a Schwarz preconditioner with isogeometric unstructured coarse spaces in 3D",
+      "abstract": "",
+      "keywords": [],
+      "work_type": "journal-article",
+      "authors": [
+        "Fande Kong",
+        "Xiao-Chuan Cai"
+      ],
+      "container_title": "Journal of Computational Physics",
+      "screening_outcome": "queued",
+      "accept_matches": [
+        "(?is)\\A(?=.{0,165}\\b(?:fluid[-\\s]+(?:structure|solid)(?:s)?(?:[-\\s]+(?:interaction(?:s)?|coupl(?:e|ed|ing)|system(?:s)?|model(?:s)?))|fluid[-\\s]+rigid[-\\s]+body(?:[-\\s]+(?:interaction|problem|system))?)\\b)(?=.{0,165}\\b(?:solver(?:s)?|(?:semi[-\\s]+implicit[-\\s]+)?(?:partition(?:ed)?[-\\s]+)?algorithm(?:s)?|framework|methodology|(?:mixed[-\\s]+)?formulation(?:s)?|discretization(?:s)?|reduced[-\\s]+order[-\\s]+model|ROM|domain[-\\s]+decomposition|local[-\\s]+time[-\\s]+stepping|low[-\\s]+rank[-\\s]+method|interface[-\\s]+treatment|material[-\\s]+point[-\\s]+method|PFEM[-\\s]*FEM[-\\s]+approach|smoothed[-\\s]+finite[-\\s]+element[-\\s]+method|scaled[-\\s]+boundary[-\\s]+finite[-\\s]+element[-\\s]+method|arbitrary[-\\s]+lagrangian[-\\s]+eulerian[-\\s]+(?:method|approach)|immersed[-\\s]+multi[-\\s]+material.{0,80}\\bfinite[-\\s]+element[-\\s]+method|monolithic.{0,50}\\bmethod|partitioned.{0,50}\\b(?:method|scheme|algorithm)|finite[-\\s]+element[-\\s]+discontinuous[-\\s]+galerkin[-\\s]+method|lattice[-\\s]+boltzmann.{0,50}\\bmethod|parallel|spectral[-\\s]+element[-\\s]+solver|multi[-\\s]+grid.{0,60}\\bmethod|cut[-\\s]+cell.{0,50}\\b(?:method|discrete[-\\s]+velocity)|direct[-\\s]+adjoint.{0,50}\\bsolver|graph[-\\s]+attention[-\\s]+solver|topology[-\\s]+optimization|shape[-\\s]+design|time[-\\s]+integration[-\\s]+schemes?|predictors?.{0,80}\\bconvergence|stabilized.{0,50}\\bmethod|stabilization[-\\s]+free.{0,50}\\bmethod|decoupling[-\\s]+methods?|coupled[-\\s]+stabilized[-\\s]+scheme|periodic[-\\s]+dual[-\\s]+mixing[-\\s]+method|semi[-\\s]+analytical[-\\s]+approach|isogeometric.{0,60}\\bcoupling[-\\s]+methods?|coupling[-\\s]+scheme|partitioned[-\\s]+semi[-\\s]+implicit[-\\s]+coupling[-\\s]+methods?)\\b)"
+      ],
+      "reject_matches": [],
+      "source": "screening",
+      "batch_id": "batch-0016",
+      "attempt": 1,
+      "human_decision": "",
+      "correction_decision": ""
+    },
+    {
+      "doi": "10.1007/s00466-017-1395-2",
+      "title": "A new formulation for air-blast fluid–structure interaction using an immersed approach: part II—coupling of IGA and meshfree discretizations",
+      "abstract": "",
+      "keywords": [],
+      "work_type": "journal-article",
+      "authors": [
+        "Y. Bazilevs",
+        "G. Moutsanidis",
+        "J. Bueno",
+        "K. Kamran",
+        "D. Kamensky",
+        "M. C. Hillman",
+        "H. Gomez",
+        "J. S. Chen"
+      ],
+      "container_title": "Computational Mechanics",
+      "screening_outcome": "queued",
+      "accept_matches": [
+        "(?is)\\A(?=.{0,165}\\b(?:fluid[-\\s]+(?:structure|solid)(?:s)?(?:[-\\s]+(?:interaction(?:s)?|coupl(?:e|ed|ing)|system(?:s)?|model(?:s)?))|fluid[-\\s]+rigid[-\\s]+body(?:[-\\s]+(?:interaction|problem|system))?)\\b)(?=.{0,165}\\b(?:solver(?:s)?|(?:semi[-\\s]+implicit[-\\s]+)?(?:partition(?:ed)?[-\\s]+)?algorithm(?:s)?|framework|methodology|(?:mixed[-\\s]+)?formulation(?:s)?|discretization(?:s)?|reduced[-\\s]+order[-\\s]+model|ROM|domain[-\\s]+decomposition|local[-\\s]+time[-\\s]+stepping|low[-\\s]+rank[-\\s]+method|interface[-\\s]+treatment|material[-\\s]+point[-\\s]+method|PFEM[-\\s]*FEM[-\\s]+approach|smoothed[-\\s]+finite[-\\s]+element[-\\s]+method|scaled[-\\s]+boundary[-\\s]+finite[-\\s]+element[-\\s]+method|arbitrary[-\\s]+lagrangian[-\\s]+eulerian[-\\s]+(?:method|approach)|immersed[-\\s]+multi[-\\s]+material.{0,80}\\bfinite[-\\s]+element[-\\s]+method|monolithic.{0,50}\\bmethod|partitioned.{0,50}\\b(?:method|scheme|algorithm)|finite[-\\s]+element[-\\s]+discontinuous[-\\s]+galerkin[-\\s]+method|lattice[-\\s]+boltzmann.{0,50}\\bmethod|parallel|spectral[-\\s]+element[-\\s]+solver|multi[-\\s]+grid.{0,60}\\bmethod|cut[-\\s]+cell.{0,50}\\b(?:method|discrete[-\\s]+velocity)|direct[-\\s]+adjoint.{0,50}\\bsolver|graph[-\\s]+attention[-\\s]+solver|topology[-\\s]+optimization|shape[-\\s]+design|time[-\\s]+integration[-\\s]+schemes?|predictors?.{0,80}\\bconvergence|stabilized.{0,50}\\bmethod|stabilization[-\\s]+free.{0,50}\\bmethod|decoupling[-\\s]+methods?|coupled[-\\s]+stabilized[-\\s]+scheme|periodic[-\\s]+dual[-\\s]+mixing[-\\s]+method|semi[-\\s]+analytical[-\\s]+approach|isogeometric.{0,60}\\bcoupling[-\\s]+methods?|coupling[-\\s]+scheme|partitioned[-\\s]+semi[-\\s]+implicit[-\\s]+coupling[-\\s]+methods?)\\b)"
+      ],
+      "reject_matches": [],
+      "source": "screening",
+      "batch_id": "batch-0016",
+      "attempt": 1,
+      "human_decision": "",
+      "correction_decision": ""
+    },
+    {
+      "doi": "10.1115/1.4036107",
+      "title": "Numerical Investigation of an Elastomer-Piezo-Adaptive Blade for Active Flow Control of a Nonsteady Flow Field Using Fluid–Structure Interaction Simulations",
+      "abstract": "In order to prevent critical effects due to pulsed detonation propulsion, e.g., incidence fluctuations, an elastomer-piezo-adaptive stator blade with a deformable front part is developed. Numerical investigations with respect to the interaction of fluid and structure including the piezoelectric properties and the hyperelastic material behavior of an elastomer membrane are conducted in order to investigate the concept of the elastomer-piezo-adaptive blade for developing the best suitable concept for subsequent experiments with a stator cascade in a wind tunnel. Results of numerical investigations of the structure-dynamic and fluid mechanical behavior of the elastomer-piezo-adaptive blade by using a novel fluid–structure-piezoelectric-elastomer-interaction simulation (FSPEI simulation) show that the latent danger of a laminar flow separation at the leading edge at incidence fluctuations can be prevented by using an adaptive blade. Therefore, the potential of the concept of the elastomer-piezo-adaptive blade for active flow control is verified. Furthermore, it is essential to consider the interactions between fluid and structure of the transient FSPEI simulations, since not only the deformation of the adaptive blade affects the flow around the blade, the flow has a significant effect on the dynamic behavior of the adaptive blade, as well.",
+      "keywords": [],
+      "work_type": "journal-article",
+      "authors": [
+        "Tien Dat Phan",
+        "Patrick Springer",
+        "Robert Liebich"
+      ],
+      "container_title": "Journal of Turbomachinery",
+      "screening_outcome": "review",
+      "accept_matches": [],
+      "reject_matches": [],
+      "source": "screening",
+      "batch_id": "batch-0016",
+      "attempt": 1,
+      "human_decision": "reject",
+      "correction_decision": ""
+    },
+    {
+      "doi": "10.1007/s11012-017-0639-8",
+      "title": "Fluid–structure interaction analysis of free convection in an inclined square cavity partitioned by a flexible impermeable membrane with sinusoidal temperature heating",
+      "abstract": "",
+      "keywords": [],
+      "work_type": "journal-article",
+      "authors": [
+        "S. A. M. Mehryan",
+        "A. J. Chamkha",
+        "M. A. Ismael",
+        "M. Ghalambaz"
+      ],
+      "container_title": "Meccanica",
+      "screening_outcome": "review",
+      "accept_matches": [],
+      "reject_matches": [],
+      "source": "screening",
+      "batch_id": "batch-0016",
+      "attempt": 1,
+      "human_decision": "reject",
+      "correction_decision": ""
+    },
+    {
+      "doi": "10.1016/j.compstruc.2017.01.006",
+      "title": "Polygonal type variable-node elements by means of the smoothed finite element method for analysis of two-dimensional fluid-solid interaction problems in viscous incompressible flows",
+      "abstract": "",
+      "keywords": [],
+      "work_type": "journal-article",
+      "authors": [
+        "Jungdo Kim",
+        "Seyoung Im"
+      ],
+      "container_title": "Computers &amp; Structures",
+      "screening_outcome": "queued",
+      "accept_matches": [
+        "(?is)\\A(?=.{0,165}\\b(?:fluid[-\\s]+(?:structure|solid)(?:s)?(?:[-\\s]+(?:interaction(?:s)?|coupl(?:e|ed|ing)|system(?:s)?|model(?:s)?))|fluid[-\\s]+rigid[-\\s]+body(?:[-\\s]+(?:interaction|problem|system))?)\\b)(?=.{0,165}\\b(?:solver(?:s)?|(?:semi[-\\s]+implicit[-\\s]+)?(?:partition(?:ed)?[-\\s]+)?algorithm(?:s)?|framework|methodology|(?:mixed[-\\s]+)?formulation(?:s)?|discretization(?:s)?|reduced[-\\s]+order[-\\s]+model|ROM|domain[-\\s]+decomposition|local[-\\s]+time[-\\s]+stepping|low[-\\s]+rank[-\\s]+method|interface[-\\s]+treatment|material[-\\s]+point[-\\s]+method|PFEM[-\\s]*FEM[-\\s]+approach|smoothed[-\\s]+finite[-\\s]+element[-\\s]+method|scaled[-\\s]+boundary[-\\s]+finite[-\\s]+element[-\\s]+method|arbitrary[-\\s]+lagrangian[-\\s]+eulerian[-\\s]+(?:method|approach)|immersed[-\\s]+multi[-\\s]+material.{0,80}\\bfinite[-\\s]+element[-\\s]+method|monolithic.{0,50}\\bmethod|partitioned.{0,50}\\b(?:method|scheme|algorithm)|finite[-\\s]+element[-\\s]+discontinuous[-\\s]+galerkin[-\\s]+method|lattice[-\\s]+boltzmann.{0,50}\\bmethod|parallel|spectral[-\\s]+element[-\\s]+solver|multi[-\\s]+grid.{0,60}\\bmethod|cut[-\\s]+cell.{0,50}\\b(?:method|discrete[-\\s]+velocity)|direct[-\\s]+adjoint.{0,50}\\bsolver|graph[-\\s]+attention[-\\s]+solver|topology[-\\s]+optimization|shape[-\\s]+design|time[-\\s]+integration[-\\s]+schemes?|predictors?.{0,80}\\bconvergence|stabilized.{0,50}\\bmethod|stabilization[-\\s]+free.{0,50}\\bmethod|decoupling[-\\s]+methods?|coupled[-\\s]+stabilized[-\\s]+scheme|periodic[-\\s]+dual[-\\s]+mixing[-\\s]+method|semi[-\\s]+analytical[-\\s]+approach|isogeometric.{0,60}\\bcoupling[-\\s]+methods?|coupling[-\\s]+scheme|partitioned[-\\s]+semi[-\\s]+implicit[-\\s]+coupling[-\\s]+methods?)\\b)"
+      ],
+      "reject_matches": [],
+      "source": "screening",
+      "batch_id": "batch-0016",
+      "attempt": 1,
+      "human_decision": "",
+      "correction_decision": ""
+    },
+    {
+      "doi": "10.1016/j.cma.2017.01.024",
+      "title": "A stabilised immersed boundary method on hierarchical b-spline grids for fluid–rigid body interaction with solid–solid contact",
+      "abstract": "",
+      "keywords": [],
+      "work_type": "journal-article",
+      "authors": [
+        "C. Kadapa",
+        "W.G. Dettmer",
+        "D. Perić"
+      ],
+      "container_title": "Computer Methods in Applied Mechanics and Engineering",
+      "screening_outcome": "review",
+      "accept_matches": [],
+      "reject_matches": [],
+      "source": "screening",
+      "batch_id": "batch-0016",
+      "attempt": 1,
+      "human_decision": "keep",
+      "correction_decision": ""
+    },
+    {
+      "doi": "10.1016/j.jfluidstructs.2016.12.007",
+      "title": "A port-Hamiltonian model of liquid sloshing in moving containers and application to a fluid-structure system",
+      "abstract": "",
+      "keywords": [],
+      "work_type": "journal-article",
+      "authors": [
+        "Flávio Luiz Cardoso-Ribeiro",
+        "Denis Matignon",
+        "Valérie Pommier-Budinger"
+      ],
+      "container_title": "Journal of Fluids and Structures",
+      "screening_outcome": "queued",
+      "accept_matches": [
+        "(?is)(?=.*\\b(?:fluid[-\\s]+(?:structure|solid)(?:s)?(?:[-\\s]+interaction(?:s)?|[-\\s]+system(?:s)?|[-\\s]+model(?:s)?|[-\\s]+coupl(?:e|ed|ing))|fluid[-\\s]+rigid[-\\s]+body(?:[-\\s]+(?:interaction|problem|system))?)\\b)(?=.*\\b(?:well[-\\s]+posed(?:ness)?|existence(?:[-\\s]+for|\\s+(?:and\\s+uniqueness|of\\s+(?:(?:weak|strong|global|local|martingale)\\s+)?solutions?))|uniqueness(?:\\s+of\\s+solutions?)?|weak[-\\s]*strong[-\\s]+uniqueness|regularity(?:\\s+results?)?|gevrey[-\\s]+regularity|(?:weak|strong|martingale)[-\\s]+solutions?|stabili[sz](?:ation|ability)|controllability|feedback[-\\s]+control|optimal[-\\s]+control|energy[-\\s]+estimate|convergence[-\\s]+analysis|error[-\\s]+estimates?|stability[-\\s]+and[-\\s]+error[-\\s]+estimates?|port[-\\s]+Hamiltonian|structure[-\\s]+preserving|energy[-\\s]+preserving)\\b)"
+      ],
+      "reject_matches": [],
+      "source": "screening",
+      "batch_id": "batch-0016",
+      "attempt": 1,
+      "human_decision": "",
+      "correction_decision": ""
+    },
+    {
+      "doi": "10.1016/j.cma.2017.01.023",
+      "title": "A one-field monolithic fictitious domain method for fluid–structure interactions",
+      "abstract": "",
+      "keywords": [],
+      "work_type": "journal-article",
+      "authors": [
+        "Yongxing Wang",
+        "Peter K. Jimack",
+        "Mark A. Walkley"
+      ],
+      "container_title": "Computer Methods in Applied Mechanics and Engineering",
+      "screening_outcome": "queued",
+      "accept_matches": [
+        "(?is)\\A(?=.{0,165}\\b(?:fluid[-\\s]+(?:structure|solid)(?:s)?(?:[-\\s]+(?:interaction(?:s)?|coupl(?:e|ed|ing)|system(?:s)?|model(?:s)?))|fluid[-\\s]+rigid[-\\s]+body(?:[-\\s]+(?:interaction|problem|system))?)\\b)(?=.{0,165}\\b(?:solver(?:s)?|(?:semi[-\\s]+implicit[-\\s]+)?(?:partition(?:ed)?[-\\s]+)?algorithm(?:s)?|framework|methodology|(?:mixed[-\\s]+)?formulation(?:s)?|discretization(?:s)?|reduced[-\\s]+order[-\\s]+model|ROM|domain[-\\s]+decomposition|local[-\\s]+time[-\\s]+stepping|low[-\\s]+rank[-\\s]+method|interface[-\\s]+treatment|material[-\\s]+point[-\\s]+method|PFEM[-\\s]*FEM[-\\s]+approach|smoothed[-\\s]+finite[-\\s]+element[-\\s]+method|scaled[-\\s]+boundary[-\\s]+finite[-\\s]+element[-\\s]+method|arbitrary[-\\s]+lagrangian[-\\s]+eulerian[-\\s]+(?:method|approach)|immersed[-\\s]+multi[-\\s]+material.{0,80}\\bfinite[-\\s]+element[-\\s]+method|monolithic.{0,50}\\bmethod|partitioned.{0,50}\\b(?:method|scheme|algorithm)|finite[-\\s]+element[-\\s]+discontinuous[-\\s]+galerkin[-\\s]+method|lattice[-\\s]+boltzmann.{0,50}\\bmethod|parallel|spectral[-\\s]+element[-\\s]+solver|multi[-\\s]+grid.{0,60}\\bmethod|cut[-\\s]+cell.{0,50}\\b(?:method|discrete[-\\s]+velocity)|direct[-\\s]+adjoint.{0,50}\\bsolver|graph[-\\s]+attention[-\\s]+solver|topology[-\\s]+optimization|shape[-\\s]+design|time[-\\s]+integration[-\\s]+schemes?|predictors?.{0,80}\\bconvergence|stabilized.{0,50}\\bmethod|stabilization[-\\s]+free.{0,50}\\bmethod|decoupling[-\\s]+methods?|coupled[-\\s]+stabilized[-\\s]+scheme|periodic[-\\s]+dual[-\\s]+mixing[-\\s]+method|semi[-\\s]+analytical[-\\s]+approach|isogeometric.{0,60}\\bcoupling[-\\s]+methods?|coupling[-\\s]+scheme|partitioned[-\\s]+semi[-\\s]+implicit[-\\s]+coupling[-\\s]+methods?)\\b)"
+      ],
+      "reject_matches": [],
+      "source": "screening",
+      "batch_id": "batch-0016",
+      "attempt": 1,
+      "human_decision": "",
+      "correction_decision": ""
+    },
+    {
+      "doi": "10.1088/1361-6544/aa4ec4",
+      "title": "Small data global existence for a fluid-structure model",
+      "abstract": "<jats:title>Abstract</jats:title>\n                  <jats:p>\n                    We address the system of partial differential equations modeling motion of an elastic body inside an incompressible fluid. The fluid is modeled by the incompressible Navier–Stokes equations while the structure is represented by the damped wave equation with interior damping. The additional boundary stabilization\n                    <jats:italic>γ</jats:italic>\n                    , considered in our previous paper, is no longer necessary. We prove the global existence and exponential decay of solutions for small initial data in a suitable Sobolev space.\n                  </jats:p>",
+      "keywords": [],
+      "work_type": "journal-article",
+      "authors": [
+        "Mihaela Ignatova",
+        "Igor Kukavica",
+        "Irena Lasiecka",
+        "Amjad Tuffaha"
+      ],
+      "container_title": "Nonlinearity",
+      "screening_outcome": "queued",
+      "accept_matches": [
+        "(?is)(?=.*\\b(?:fluid[-\\s]+(?:structure|solid)(?:s)?(?:[-\\s]+interaction(?:s)?|[-\\s]+system(?:s)?|[-\\s]+model(?:s)?|[-\\s]+coupl(?:e|ed|ing))|fluid[-\\s]+rigid[-\\s]+body(?:[-\\s]+(?:interaction|problem|system))?)\\b)(?=.*\\b(?:well[-\\s]+posed(?:ness)?|existence(?:[-\\s]+for|\\s+(?:and\\s+uniqueness|of\\s+(?:(?:weak|strong|global|local|martingale)\\s+)?solutions?))|uniqueness(?:\\s+of\\s+solutions?)?|weak[-\\s]*strong[-\\s]+uniqueness|regularity(?:\\s+results?)?|gevrey[-\\s]+regularity|(?:weak|strong|martingale)[-\\s]+solutions?|stabili[sz](?:ation|ability)|controllability|feedback[-\\s]+control|optimal[-\\s]+control|energy[-\\s]+estimate|convergence[-\\s]+analysis|error[-\\s]+estimates?|stability[-\\s]+and[-\\s]+error[-\\s]+estimates?|port[-\\s]+Hamiltonian|structure[-\\s]+preserving|energy[-\\s]+preserving)\\b)"
+      ],
+      "reject_matches": [],
+      "source": "screening",
+      "batch_id": "batch-0016",
+      "attempt": 1,
+      "human_decision": "",
+      "correction_decision": ""
+    },
+    {
+      "doi": "10.9734/jammr/2017/30457",
+      "title": "The Effect of Fluid-structure Interaction in Finite-element Analysis of Skull Bone on Relieving Cerebral Injury in a Porcine Model",
+      "abstract": "",
+      "keywords": [],
+      "work_type": "journal-article",
+      "authors": [
+        "Xian Yue",
+        "Duncan Shepherd",
+        "Daniel Espino",
+        "Li Wang",
+        "Hongwu Meng"
+      ],
+      "container_title": "Journal of Advances in Medicine and Medical Research",
+      "screening_outcome": "review",
+      "accept_matches": [],
+      "reject_matches": [],
+      "source": "screening",
+      "batch_id": "batch-0016",
+      "attempt": 1,
+      "human_decision": "reject",
+      "correction_decision": ""
+    },
+    {
+      "doi": "10.4273/ijvss.8.4.08",
+      "title": "Numerical Analysis of Hydrodynamic Journal Bearing Lubrication using Computational Fluid Dynamics and Fluid Structure Interaction Approach",
+      "abstract": "Now-a-days, journal bearings are subjected to severe loads and higher operating speeds causing generation of high hydrodynamic pressures which in turn deform the bearing shell thus modifying the lubricating film in the operating region. Hence, there is need for optimized bearing performance parameter estimation considering the realistic change in lubricating film along with less computational time. In this paper, response surface optimization module coupled with static structural and fluent, available in ANSYS workbench is used for analysing the performance of the bearing. The optimization is based on Response Surface evaluations. It has been observed that the computation time is considerably reduced. The bearing is analysed for various rotational speeds and eccentricity ratios to obtain load carrying capacity and pressure distribution. It is observed that the results are following the expected trend i.e. as speed increases the load carrying capacity as well as maximum pressure is increasing.",
+      "keywords": [],
+      "work_type": "journal-article",
+      "authors": [
+        "D.Y. Dhande",
+        "D.W. Pande"
+      ],
+      "container_title": "International Journal of Vehicle Structures and Systems",
+      "screening_outcome": "review",
+      "accept_matches": [],
+      "reject_matches": [],
+      "source": "screening",
+      "batch_id": "batch-0016",
+      "attempt": 1,
+      "human_decision": "reject",
+      "correction_decision": ""
+    },
+    {
+      "doi": "10.2514/6.2017-0868",
+      "title": "Finite Volume Based Fluid-Structure Interaction Solver",
+      "abstract": "",
+      "keywords": [],
+      "work_type": "proceedings-article",
+      "authors": [
+        "Mohamed M. Selim",
+        "Roy Koomullil",
+        "David R. McDaniel"
+      ],
+      "container_title": "58th AIAA/ASCE/AHS/ASC Structures, Structural Dynamics, and Materials Conference",
+      "screening_outcome": "queued",
+      "accept_matches": [
+        "(?is)\\A(?=.{0,165}\\b(?:fluid[-\\s]+(?:structure|solid)(?:s)?(?:[-\\s]+(?:interaction(?:s)?|coupl(?:e|ed|ing)|system(?:s)?|model(?:s)?))|fluid[-\\s]+rigid[-\\s]+body(?:[-\\s]+(?:interaction|problem|system))?)\\b)(?=.{0,165}\\b(?:solver(?:s)?|(?:semi[-\\s]+implicit[-\\s]+)?(?:partition(?:ed)?[-\\s]+)?algorithm(?:s)?|framework|methodology|(?:mixed[-\\s]+)?formulation(?:s)?|discretization(?:s)?|reduced[-\\s]+order[-\\s]+model|ROM|domain[-\\s]+decomposition|local[-\\s]+time[-\\s]+stepping|low[-\\s]+rank[-\\s]+method|interface[-\\s]+treatment|material[-\\s]+point[-\\s]+method|PFEM[-\\s]*FEM[-\\s]+approach|smoothed[-\\s]+finite[-\\s]+element[-\\s]+method|scaled[-\\s]+boundary[-\\s]+finite[-\\s]+element[-\\s]+method|arbitrary[-\\s]+lagrangian[-\\s]+eulerian[-\\s]+(?:method|approach)|immersed[-\\s]+multi[-\\s]+material.{0,80}\\bfinite[-\\s]+element[-\\s]+method|monolithic.{0,50}\\bmethod|partitioned.{0,50}\\b(?:method|scheme|algorithm)|finite[-\\s]+element[-\\s]+discontinuous[-\\s]+galerkin[-\\s]+method|lattice[-\\s]+boltzmann.{0,50}\\bmethod|parallel|spectral[-\\s]+element[-\\s]+solver|multi[-\\s]+grid.{0,60}\\bmethod|cut[-\\s]+cell.{0,50}\\b(?:method|discrete[-\\s]+velocity)|direct[-\\s]+adjoint.{0,50}\\bsolver|graph[-\\s]+attention[-\\s]+solver|topology[-\\s]+optimization|shape[-\\s]+design|time[-\\s]+integration[-\\s]+schemes?|predictors?.{0,80}\\bconvergence|stabilized.{0,50}\\bmethod|stabilization[-\\s]+free.{0,50}\\bmethod|decoupling[-\\s]+methods?|coupled[-\\s]+stabilized[-\\s]+scheme|periodic[-\\s]+dual[-\\s]+mixing[-\\s]+method|semi[-\\s]+analytical[-\\s]+approach|isogeometric.{0,60}\\bcoupling[-\\s]+methods?|coupling[-\\s]+scheme|partitioned[-\\s]+semi[-\\s]+implicit[-\\s]+coupling[-\\s]+methods?)\\b)"
+      ],
+      "reject_matches": [],
+      "source": "screening",
+      "batch_id": "batch-0016",
+      "attempt": 1,
+      "human_decision": "",
+      "correction_decision": ""
+    },
+    {
+      "doi": "10.1007/s12206-016-1230-2",
+      "title": "A comparative study between partitioned and monolithic methods for the problems with 3D fluid-structure interaction of blood vessels",
+      "abstract": "",
+      "keywords": [],
+      "work_type": "journal-article",
+      "authors": [
+        "Sang Truong Ha",
+        "Long Cu Ngo",
+        "Muhammad Saeed",
+        "Byoung Jin Jeon",
+        "Hyounggwon Choi"
+      ],
+      "container_title": "Journal of Mechanical Science and Technology",
+      "screening_outcome": "review",
+      "accept_matches": [],
+      "reject_matches": [],
+      "source": "screening",
+      "batch_id": "batch-0016",
+      "attempt": 1,
+      "human_decision": "keep",
+      "correction_decision": ""
+    },
+    {
+      "doi": "10.3934/dcds.2017102",
+      "title": "Feedback boundary stabilization of 2d fluid-structure interaction systems",
+      "abstract": "We study the feedback stabilization of a system composed by an incompressible viscous fluid and a deformable structure located at the boundary of the fluid domain. We stabilize the position and the velocity of the structure and the velocity of the fluid around a stationary state by means of a Dirichlet control, localized on the exterior boundary of the fluid domain and with values in a finite dimensional space. Our result concerns weak solutions for initial data close to the stationary state. Our method is based on general arguments for stabilization of nonlinear parabolic systems combined with a change of variables to handle the fact that the fluid domain of the stationary state and of the stabilized solution are different. We prove that for initial data close to the stationary state, we can stabilize the position and the velocity of the deformable structure and the velocity of the fluid.",
+      "keywords": [],
+      "work_type": "journal-article",
+      "authors": [
+        "Mehdi Badra",
+        "Takéo Takahashi"
+      ],
+      "container_title": "Discrete and Continuous Dynamical Systems",
+      "screening_outcome": "queued",
+      "accept_matches": [
+        "(?is)(?=.*\\b(?:fluid[-\\s]+(?:structure|solid)(?:s)?(?:[-\\s]+interaction(?:s)?|[-\\s]+system(?:s)?|[-\\s]+model(?:s)?|[-\\s]+coupl(?:e|ed|ing))|fluid[-\\s]+rigid[-\\s]+body(?:[-\\s]+(?:interaction|problem|system))?)\\b)(?=.*\\b(?:well[-\\s]+posed(?:ness)?|existence(?:[-\\s]+for|\\s+(?:and\\s+uniqueness|of\\s+(?:(?:weak|strong|global|local|martingale)\\s+)?solutions?))|uniqueness(?:\\s+of\\s+solutions?)?|weak[-\\s]*strong[-\\s]+uniqueness|regularity(?:\\s+results?)?|gevrey[-\\s]+regularity|(?:weak|strong|martingale)[-\\s]+solutions?|stabili[sz](?:ation|ability)|controllability|feedback[-\\s]+control|optimal[-\\s]+control|energy[-\\s]+estimate|convergence[-\\s]+analysis|error[-\\s]+estimates?|stability[-\\s]+and[-\\s]+error[-\\s]+estimates?|port[-\\s]+Hamiltonian|structure[-\\s]+preserving|energy[-\\s]+preserving)\\b)"
+      ],
+      "reject_matches": [],
+      "source": "screening",
+      "batch_id": "batch-0016",
+      "attempt": 1,
+      "human_decision": "",
+      "correction_decision": ""
+    },
+    {
+      "doi": "10.1051/matecconf/201711101005",
+      "title": "Fluid-Structure Interaction (FSI) of Damped Oil Conveying Pipeline System by Finite Element Method",
+      "abstract": "The vibration of damped pipeline conveying fluid with the effect of fluid-structure interaction is known to pose challenging problems in oil and gas industry. In this study, the natural frequency of fluid-structure interaction in pipeline conveying fluid set on viscoelastic foundation is investigated by using finite element method. The governing partial differential equation is modelled based on Euler-Bernoulli beam theory. By applying Galerkin weighted residual method, the stiffness, damping, and mass matrices are obtained. For a given boundary condition which is simply supported, two components of the foundation (foundation stiffness and damping) which are influencing the damped natural frequency of the pipeline are studied for different fluid velocity. The results indicate that increasing the foundation stiffness from 10 kN/m3 to 30 kN/m3 increases the natural frequency of the pipeline, while increasing the foundation damping from 1 kN.s/m3 to 3 kN.s/m3 and fluid velocity decrease the natural frequency of the pipeline. The accuracy of the results obtained is validated against data from literature.",
+      "keywords": [],
+      "work_type": "journal-article",
+      "authors": [
+        "Kah Soon Fong",
+        "Airil Yasreen Mohd Yassin"
+      ],
+      "container_title": "MATEC Web of Conferences",
+      "screening_outcome": "review",
+      "accept_matches": [],
+      "reject_matches": [],
+      "source": "screening",
+      "batch_id": "batch-0016",
+      "attempt": 1,
+      "human_decision": "keep",
+      "correction_decision": ""
+    },
+    {
+      "doi": "10.7498/aps.66.224702",
+      "title": "A method combined immersed boundary with multi-relaxation-time lattice Boltzmann flux solver for fluid-structure interaction",
+      "abstract": "This paper performs a newly developed method, which combines the immersed boundary method (IBM) with multi-relaxation-time lattice Boltzmann flux solver (MRT-LBFS), for solving fluid-structure interaction problems. Finite volume discretization is used to solve the macroscopic governing equations with the flow variables defined at cell centers. Based on the multi-scale Chapman-Enskog expansion analysis, LBFS builds a relationship between the variables and fluxes in incompressible Navier-Stokes equations and density distribution functions in lattice Boltzmann equation. In order to ensure no-slip boundary condition, boundary condition-enforced immersed boundary method is used to treat the fluid-structure interface. The restoring force can be resolved by making a velocity correction in the flow field. The four-stage RungeKutta scheme is used to solve the motion equation of structure. Using the lattice model and immersed boundary method, fluid-structure coupling calculation can be implemented in a Cartesian grid, without generating the body-fitted mesh and using moving mesh technique. Therefore, the computational process is considerably simplified. In order to verify the validity and feasibility of IB-MRT-LBFS to solve fluid-structure interaction problems, both one-and two-degree of freedom vortex-induced vibrations (VIV) of a circular cylinder and two-degree of freedom VIV of two cylinders in a tandem arrangement are simulated by this proposal method. For a VIV cylinder system, the transverse vibration response is much stronger than the axial response. When the vibration occurs in the range of lock-in regime, the shedding vortex frequency of the wake is close to natural frequency of the cylinder so that resonance appears, consequently causing larger amplitude. For two VIV cylinders in a tandem arrangement, the dynamic behavior of each cylinder is significantly different from that of a single cylinder. The gap spacing between the two cylinder centers is a significant parameter which effects vibration characteristics and the spacing is fixed in the simulations of two tandem cylinders. With the effects of upstream cylinder wake, the axial and transverse amplitudes of downstream cylinder obviously increase with adding the reduced velocity. The downstream cylinder is delayed, coming into lock-in regime, and the range of lock-in regime is expanded under the effects of the wake of the upstream cylinder. As the reduced velocity is relatively large, the vibration response of the upstream cylinder is close to a single cylinder and the vibration response of the downstream cylinder is more intense than the upstream cylinder. Compared with the existing literature results, our result illustrates that IB-MRT-LBFS owns the ability to correctly predict the lock-in regime, dynamic response and the forces of vortex-induced vibrations of cylinders. And this method can accurately capture the wake structures.",
+      "keywords": [],
+      "work_type": "journal-article",
+      "authors": [
+        "Wu Xiao-Di",
+        "Liu Hua-Ping",
+        "Chen Fu",
+        "School of Energy Science and Engineering, Harbin Institute of Technology, Harbin 150001, China"
+      ],
+      "container_title": "Acta Physica Sinica",
+      "screening_outcome": "queued",
+      "accept_matches": [
+        "(?is)\\A(?=.{0,165}\\b(?:fluid[-\\s]+(?:structure|solid)(?:s)?(?:[-\\s]+(?:interaction(?:s)?|coupl(?:e|ed|ing)|system(?:s)?|model(?:s)?))|fluid[-\\s]+rigid[-\\s]+body(?:[-\\s]+(?:interaction|problem|system))?)\\b)(?=.{0,165}\\b(?:solver(?:s)?|(?:semi[-\\s]+implicit[-\\s]+)?(?:partition(?:ed)?[-\\s]+)?algorithm(?:s)?|framework|methodology|(?:mixed[-\\s]+)?formulation(?:s)?|discretization(?:s)?|reduced[-\\s]+order[-\\s]+model|ROM|domain[-\\s]+decomposition|local[-\\s]+time[-\\s]+stepping|low[-\\s]+rank[-\\s]+method|interface[-\\s]+treatment|material[-\\s]+point[-\\s]+method|PFEM[-\\s]*FEM[-\\s]+approach|smoothed[-\\s]+finite[-\\s]+element[-\\s]+method|scaled[-\\s]+boundary[-\\s]+finite[-\\s]+element[-\\s]+method|arbitrary[-\\s]+lagrangian[-\\s]+eulerian[-\\s]+(?:method|approach)|immersed[-\\s]+multi[-\\s]+material.{0,80}\\bfinite[-\\s]+element[-\\s]+method|monolithic.{0,50}\\bmethod|partitioned.{0,50}\\b(?:method|scheme|algorithm)|finite[-\\s]+element[-\\s]+discontinuous[-\\s]+galerkin[-\\s]+method|lattice[-\\s]+boltzmann.{0,50}\\bmethod|parallel|spectral[-\\s]+element[-\\s]+solver|multi[-\\s]+grid.{0,60}\\bmethod|cut[-\\s]+cell.{0,50}\\b(?:method|discrete[-\\s]+velocity)|direct[-\\s]+adjoint.{0,50}\\bsolver|graph[-\\s]+attention[-\\s]+solver|topology[-\\s]+optimization|shape[-\\s]+design|time[-\\s]+integration[-\\s]+schemes?|predictors?.{0,80}\\bconvergence|stabilized.{0,50}\\bmethod|stabilization[-\\s]+free.{0,50}\\bmethod|decoupling[-\\s]+methods?|coupled[-\\s]+stabilized[-\\s]+scheme|periodic[-\\s]+dual[-\\s]+mixing[-\\s]+method|semi[-\\s]+analytical[-\\s]+approach|isogeometric.{0,60}\\bcoupling[-\\s]+methods?|coupling[-\\s]+scheme|partitioned[-\\s]+semi[-\\s]+implicit[-\\s]+coupling[-\\s]+methods?)\\b)"
+      ],
+      "reject_matches": [],
+      "source": "screening",
+      "batch_id": "batch-0016",
+      "attempt": 1,
+      "human_decision": "",
+      "correction_decision": ""
+    },
+    {
+      "doi": "10.11159/jffhmt.2017.001",
+      "title": "Application of Variational Principle to Form Reduced Fluid-Structure Interaction Models in Bifurcated Networks",
+      "abstract": "Reduced fluid-structure interaction models have received a considerable attention in recent years being the key component of hemodynamic modeling.A variety of models applying to specific physiological components such as arterial, venous and cerebrospinal fluid (CSF) circulatory systems have been developed based on different approaches.The purpose of this paper is to apply the general approach based on Hamilton's variational principle to create a model for a viscous Newtonian Fluid -Structure Interaction (FSI) in a compliant bifurcated network.This approach provides the background for a correct formulation of reduced FSI models with an account for arbitrary nonlinear visco-elastic properties of compliant boundaries.The correct boundary conditions are specified at junctions, including the interface between 3D and 1D models.The hyperbolic properties of the derived mathematical model are analyzed and used, constructing a monotone finite volume numerical scheme, second-order accuracy in time and space.The computational algorithm is validated by comparison of numerical solutions with the exact manufactured solutions for an isolated compliant segment and a bifurcated structure.The accuracy of applied total variation diminishing (TVD) and Lax-Wendroff schemes are analyzed by comparison of numerical results to the available analytical smooth and discontinuous solutions, demonstrating a superior performance from the TVD algorithm.",
+      "keywords": [],
+      "work_type": "journal-article",
+      "authors": [
+        "A.S. Liberson",
+        "Y. Seyed Vahedein",
+        "D. A. Borkholder"
+      ],
+      "container_title": "Journal of Fluid Flow, Heat and Mass Transfer",
+      "screening_outcome": "review",
+      "accept_matches": [],
+      "reject_matches": [],
+      "source": "screening",
+      "batch_id": "batch-0016",
+      "attempt": 1,
+      "human_decision": "keep",
+      "correction_decision": ""
+    },
+    {
+      "doi": "10.1007/978-981-10-3764-1_9",
+      "title": "Monolithic Algorithm for Dynamic Fluid-Structure Interaction Problem",
+      "abstract": "",
+      "keywords": [],
+      "work_type": "book-chapter",
+      "authors": [
+        "Cornel Marius Murea"
+      ],
+      "container_title": "Advanced Structured Materials",
+      "screening_outcome": "queued",
+      "accept_matches": [
+        "(?is)\\A(?=.{0,165}\\b(?:fluid[-\\s]+(?:structure|solid)(?:s)?(?:[-\\s]+(?:interaction(?:s)?|coupl(?:e|ed|ing)|system(?:s)?|model(?:s)?))|fluid[-\\s]+rigid[-\\s]+body(?:[-\\s]+(?:interaction|problem|system))?)\\b)(?=.{0,165}\\b(?:solver(?:s)?|(?:semi[-\\s]+implicit[-\\s]+)?(?:partition(?:ed)?[-\\s]+)?algorithm(?:s)?|framework|methodology|(?:mixed[-\\s]+)?formulation(?:s)?|discretization(?:s)?|reduced[-\\s]+order[-\\s]+model|ROM|domain[-\\s]+decomposition|local[-\\s]+time[-\\s]+stepping|low[-\\s]+rank[-\\s]+method|interface[-\\s]+treatment|material[-\\s]+point[-\\s]+method|PFEM[-\\s]*FEM[-\\s]+approach|smoothed[-\\s]+finite[-\\s]+element[-\\s]+method|scaled[-\\s]+boundary[-\\s]+finite[-\\s]+element[-\\s]+method|arbitrary[-\\s]+lagrangian[-\\s]+eulerian[-\\s]+(?:method|approach)|immersed[-\\s]+multi[-\\s]+material.{0,80}\\bfinite[-\\s]+element[-\\s]+method|monolithic.{0,50}\\bmethod|partitioned.{0,50}\\b(?:method|scheme|algorithm)|finite[-\\s]+element[-\\s]+discontinuous[-\\s]+galerkin[-\\s]+method|lattice[-\\s]+boltzmann.{0,50}\\bmethod|parallel|spectral[-\\s]+element[-\\s]+solver|multi[-\\s]+grid.{0,60}\\bmethod|cut[-\\s]+cell.{0,50}\\b(?:method|discrete[-\\s]+velocity)|direct[-\\s]+adjoint.{0,50}\\bsolver|graph[-\\s]+attention[-\\s]+solver|topology[-\\s]+optimization|shape[-\\s]+design|time[-\\s]+integration[-\\s]+schemes?|predictors?.{0,80}\\bconvergence|stabilized.{0,50}\\bmethod|stabilization[-\\s]+free.{0,50}\\bmethod|decoupling[-\\s]+methods?|coupled[-\\s]+stabilized[-\\s]+scheme|periodic[-\\s]+dual[-\\s]+mixing[-\\s]+method|semi[-\\s]+analytical[-\\s]+approach|isogeometric.{0,60}\\bcoupling[-\\s]+methods?|coupling[-\\s]+scheme|partitioned[-\\s]+semi[-\\s]+implicit[-\\s]+coupling[-\\s]+methods?)\\b)"
+      ],
+      "reject_matches": [],
+      "source": "screening",
+      "batch_id": "batch-0016",
+      "attempt": 1,
+      "human_decision": "",
+      "correction_decision": ""
+    },
+    {
+      "doi": "10.1155/2017/4512497",
+      "title": "Finite Element Analysis of Mechanical Characteristics of Dropped Eggs Based on Fluid-Solid Coupling Theory",
+      "abstract": "It is important to study the properties and mechanics of egg drop impacts in order to reduce egg loss during processing and logistics and to provide a basis for the protective packaging of egg products. In this paper, we present the results of our study of the effects of the structural parameters on the mechanical properties of an egg using a finite element model of the egg. Based on Fluid-Solid coupling theory, a finite element model of an egg was constructed using ADINA, a finite element calculation and analysis software package. To simplify the model, the internal fluid of the egg was considered to be a homogeneous substance. The egg drop impact was simulated by the coupling solution, and the feasibility of the model was verified by comparison with the experimental results of a drop test. In summary, the modeling scheme was shown to be feasible and the simulation results provide a theoretical basis for the optimum design of egg packaging and egg processing equipment.",
+      "keywords": [],
+      "work_type": "journal-article",
+      "authors": [
+        "Song Haiyan",
+        "Wang Fang",
+        "Zhang Jianguo",
+        "Zhang Yinong",
+        "Yang Shugang"
+      ],
+      "container_title": "Shock and Vibration",
+      "screening_outcome": "review",
+      "accept_matches": [],
+      "reject_matches": [],
+      "source": "screening",
+      "batch_id": "batch-0016",
+      "attempt": 1,
+      "human_decision": "reject",
+      "correction_decision": ""
+    },
+    {
+      "doi": "10.1063/1.4974572",
+      "title": "Acoustic guided waves in cylindrical solid-fluid structures: Modeling with a sweeping frequency finite element method and experimental validation",
+      "abstract": "Modeling and understanding the complex elastic-wave physics prevalent in solid-fluid cylindrically-layered structures is of importance in many NDE fields, and most pertinently in the domain of well integrity evaluation of cased holes in the oil and gas industry. Current sonic measurements provide viable techniques for well integrity evaluation yet their practical effectiveness is hampered by the current lack of knowledge of acoustic wave fields particularly in complicated cased-hole geometry where for instance two or more nested steel strings are present in the borehole. In this article, we propose and implement a Sweeping Frequency Finite Element Method (SFFEM) for acoustic guided waves simulation in complex geometries that include double steel strings cemented to each other and to the formation and where the strings may be non-concentric. Transient dynamic finite element models are constructed with sweeping frequency signals being applied as the excitation sources. The sources and receivers disposition simulate current sonic measurement tools deployed in the oilfield. Synthetic wavetrains are recorded and processed with modified matrix pencil method to isolate both the dispersive and non-dispersive propagating guided wave modes. Scaled experiments of fluid-filled double strings with dimensions mimicking the real ones encountered in the field have also been carried out to generate reference data. A comparison of the experimental and numerical results indicates that the SFFEM is capable of accurately reproducing the rich and intricate higher-order multiple wave fields observed experimentally in the fluid-filled double string geometries.",
+      "keywords": [],
+      "work_type": "proceedings-article",
+      "authors": [
+        "Yang Liu",
+        "Ralph M. D’Angelo",
+        "Bikash K. Sinha",
+        "Smaine Zeroug"
+      ],
+      "container_title": "AIP Conference Proceedings",
+      "screening_outcome": "review",
+      "accept_matches": [],
+      "reject_matches": [],
+      "source": "screening",
+      "batch_id": "batch-0016",
+      "attempt": 1,
+      "human_decision": "reject",
+      "correction_decision": ""
+    },
+    {
+      "doi": "10.1007/978-3-319-67168-0_21",
+      "title": "Variational-Monolithic ALE Fluid-Structure Interaction: Comparison of Computational Cost and Mesh Regularity Using Different Mesh Motion Techniques",
+      "abstract": "",
+      "keywords": [],
+      "work_type": "book-chapter",
+      "authors": [
+        "Thomas Wick"
+      ],
+      "container_title": "Modeling, Simulation and Optimization of Complex Processes HPSC 2015",
+      "screening_outcome": "queued",
+      "accept_matches": [
+        "(?is)(?=.*\\b(?:fluid[-\\s]+(?:structure|solid)(?:s)?(?:[-\\s]+interaction(?:s)?|[-\\s]+system(?:s)?|[-\\s]+model(?:s)?|[-\\s]+coupl(?:e|ed|ing))|fluid[-\\s]+rigid[-\\s]+body(?:[-\\s]+(?:interaction|problem|system))?)\\b)(?=.*\\b(?:well[-\\s]+posed(?:ness)?|existence(?:[-\\s]+for|\\s+(?:and\\s+uniqueness|of\\s+(?:(?:weak|strong|global|local|martingale)\\s+)?solutions?))|uniqueness(?:\\s+of\\s+solutions?)?|weak[-\\s]*strong[-\\s]+uniqueness|regularity(?:\\s+results?)?|gevrey[-\\s]+regularity|(?:weak|strong|martingale)[-\\s]+solutions?|stabili[sz](?:ation|ability)|controllability|feedback[-\\s]+control|optimal[-\\s]+control|energy[-\\s]+estimate|convergence[-\\s]+analysis|error[-\\s]+estimates?|stability[-\\s]+and[-\\s]+error[-\\s]+estimates?|port[-\\s]+Hamiltonian|structure[-\\s]+preserving|energy[-\\s]+preserving)\\b)"
+      ],
+      "reject_matches": [],
+      "source": "screening",
+      "batch_id": "batch-0016",
+      "attempt": 1,
+      "human_decision": "",
+      "correction_decision": ""
+    },
+    {
+      "doi": "10.4236/am.2017.84036",
+      "title": "Conjugate Gradient Method to Solve Fluid Structure Interaction Problem",
+      "abstract": "In this paper, we propose a method to solve coupled problem. Our computational method is mainly based on conjugate gradient algorithm. We use finite difference method for the structure and finite element method for the fluid. Conjugate gradient method gives suitable numerical results according to some papers.",
+      "keywords": [],
+      "work_type": "journal-article",
+      "authors": [
+        "Mamadou Diop",
+        "Ibrahima Mbaye"
+      ],
+      "container_title": "Applied Mathematics",
+      "screening_outcome": "review",
+      "accept_matches": [],
+      "reject_matches": [],
+      "source": "screening",
+      "batch_id": "batch-0016",
+      "attempt": 1,
+      "human_decision": "keep",
+      "correction_decision": ""
+    },
+    {
+      "doi": "10.2991/mme-16.2017.127",
+      "title": "Numerical Calculation for Effect of Fluid-structure Interaction on Flow Field Pressure in High-Flow Control Valve",
+      "abstract": "According to the actual structure and working condition of a high-flow gas pressure control valve in cycle power generation project, 3-D model based on Fluid-structure Interaction (FSI) is set up.A combined calculation for turbulent flow and structure response of high-flow control valve was established, using two-way coupling method to study the effect of FSI of valve on flow field pressure.The results of flow field pressure and pressure drop are analysed, comparing with the calculated results without FSI.The analysis results indicate that, FSI has a significant effect on the flow field pressure and pressure drop of position on valve core.It cannot be ignored when studying a high-flow control valve.The 3-D simulation model and flow field pressure analysis based on FSI can provide an effective method for high-flow control valve research and design optimization.",
+      "keywords": [],
+      "work_type": "proceedings-article",
+      "authors": [
+        "Fang Cao"
+      ],
+      "container_title": "Proceedings of the 3rd Annual International Conference on Mechanics and Mechanical Engineering (MME 2016)",
+      "screening_outcome": "rejected",
+      "accept_matches": [],
+      "reject_matches": [
+        "(?is)\\A(?=.{0,165}\\b(?:control[-\\s]+valves?|bump[-\\s]+foil[-\\s]+bearings?|piezoelectric[-\\s]+micropumps?|vaginal[-\\s]+dilatation|platelet[-\\s]+activation|bioprosthetic[-\\s]+aortic[-\\s]+valve|venous[-\\s]+valve)\\b)"
+      ],
+      "source": "screening",
+      "batch_id": "batch-0016",
+      "attempt": 1,
+      "human_decision": "",
+      "correction_decision": ""
+    },
+    {
+      "doi": "10.1007/978-3-319-63970-3_7",
+      "title": "Linear Solvers for Fluid-structure Interactions",
+      "abstract": "",
+      "keywords": [],
+      "work_type": "book-chapter",
+      "authors": [
+        "Thomas Richter"
+      ],
+      "container_title": "Lecture Notes in Computational Science and Engineering",
+      "screening_outcome": "queued",
+      "accept_matches": [
+        "(?is)\\A(?=.{0,165}\\b(?:fluid[-\\s]+(?:structure|solid)(?:s)?(?:[-\\s]+(?:interaction(?:s)?|coupl(?:e|ed|ing)|system(?:s)?|model(?:s)?))|fluid[-\\s]+rigid[-\\s]+body(?:[-\\s]+(?:interaction|problem|system))?)\\b)(?=.{0,165}\\b(?:solver(?:s)?|(?:semi[-\\s]+implicit[-\\s]+)?(?:partition(?:ed)?[-\\s]+)?algorithm(?:s)?|framework|methodology|(?:mixed[-\\s]+)?formulation(?:s)?|discretization(?:s)?|reduced[-\\s]+order[-\\s]+model|ROM|domain[-\\s]+decomposition|local[-\\s]+time[-\\s]+stepping|low[-\\s]+rank[-\\s]+method|interface[-\\s]+treatment|material[-\\s]+point[-\\s]+method|PFEM[-\\s]*FEM[-\\s]+approach|smoothed[-\\s]+finite[-\\s]+element[-\\s]+method|scaled[-\\s]+boundary[-\\s]+finite[-\\s]+element[-\\s]+method|arbitrary[-\\s]+lagrangian[-\\s]+eulerian[-\\s]+(?:method|approach)|immersed[-\\s]+multi[-\\s]+material.{0,80}\\bfinite[-\\s]+element[-\\s]+method|monolithic.{0,50}\\bmethod|partitioned.{0,50}\\b(?:method|scheme|algorithm)|finite[-\\s]+element[-\\s]+discontinuous[-\\s]+galerkin[-\\s]+method|lattice[-\\s]+boltzmann.{0,50}\\bmethod|parallel|spectral[-\\s]+element[-\\s]+solver|multi[-\\s]+grid.{0,60}\\bmethod|cut[-\\s]+cell.{0,50}\\b(?:method|discrete[-\\s]+velocity)|direct[-\\s]+adjoint.{0,50}\\bsolver|graph[-\\s]+attention[-\\s]+solver|topology[-\\s]+optimization|shape[-\\s]+design|time[-\\s]+integration[-\\s]+schemes?|predictors?.{0,80}\\bconvergence|stabilized.{0,50}\\bmethod|stabilization[-\\s]+free.{0,50}\\bmethod|decoupling[-\\s]+methods?|coupled[-\\s]+stabilized[-\\s]+scheme|periodic[-\\s]+dual[-\\s]+mixing[-\\s]+method|semi[-\\s]+analytical[-\\s]+approach|isogeometric.{0,60}\\bcoupling[-\\s]+methods?|coupling[-\\s]+scheme|partitioned[-\\s]+semi[-\\s]+implicit[-\\s]+coupling[-\\s]+methods?)\\b)"
+      ],
+      "reject_matches": [],
+      "source": "screening",
+      "batch_id": "batch-0016",
+      "attempt": 1,
+      "human_decision": "",
+      "correction_decision": ""
+    },
+    {
+      "doi": "10.22405/2226-8383-2017-18-3-28-43",
+      "title": "SOLVING FLUID-STRUCTURE INTERACTION PROBLEMS USING THE FLOWVISION AND CAE FIDESYS SOFTWARE PACKAGES",
+      "abstract": "The paper considers the numerical method of solving problems of strong interaction between a liquid (gas) and a deformed body: the fluid exerts a force on the body, the body changes its shape, the altered shape of the body changes the flow. The developed method is demonstrated on the test problem of air flow around the valve. The problem is solved in a three-dimensional formulation. The deformable body flows around an unlimited airflow at right angles. The authors consider the body deformation dependence in the presence of a defect (hole) in it located in different positions. The air flow is calculated in the FlowVision software package. FlowVision uses the finite volume method for approximation of the fluid motion equations. It implements an explicit and implicit methods of integrating these equations. FlowVision can solve interdisciplinary problems: simulate multiphase flows using the VOF method, set the motion of bodies (movement of impermeable boundaries) along a fixed computational grid, simulate flows in rotating machines using the sliding grid method, solve fluid-body interaction problems using two-way coupling between FlowVision and FEM software. The body deformation is calculated in the CAE Fidesys software package. CAE Fidesys allows to conduct various types of full-cycle strength engineering analysis from the construction of a mesh to the visualization of calculation results. For the numerical solution of solid mechanics problems CAE Fidesys uses the finite element method and the spectral elements method. CAE Fidesys allows to solve both linear and non-linear, static and dynamic strength problems. For joint calculation, a two-way coupling technology was developed that performs two-way communication between the CAE Fidesys and FlowVision systems. With the use of this technology, a numerical investigation of the problem of flow past a valve carried out. The behavior of the valve is compared with various variations in the location of the elliptical hole in it. The results lead to the conclusion that the associated FlowVision- CAE Fidesys software package calculates valve characteristics on meshes of moderate dimension with reasonable accuracy.",
+      "keywords": [],
+      "work_type": "journal-article",
+      "authors": [
+        "Andrey Alexandrovich Aksenov",
+        "Sergey Vasilievich Zhluktov",
+        "Eduard Evgenevich Son",
+        "Anton Alexandrovich Tokar",
+        "Vitaly Sergeevich Karpenko"
+      ],
+      "container_title": "Chebyshevskii sbornik",
+      "screening_outcome": "review",
+      "accept_matches": [],
+      "reject_matches": [],
+      "source": "screening",
+      "batch_id": "batch-0016",
+      "attempt": 1,
+      "human_decision": "keep",
+      "correction_decision": ""
+    },
+    {
+      "doi": "10.1299/jsmecmd.2017.30.112",
+      "title": "Integration of Fluid-Structure Interaction Simulation and Finite Element Model of Piezoelectric Element Model",
+      "abstract": "",
+      "keywords": [],
+      "work_type": "journal-article",
+      "authors": [
+        "Kaneko Shigeki",
+        "Hong Giwon",
+        "Mitsume Naoto",
+        "Yamada Tomonori",
+        "Yoshimura Shinobu"
+      ],
+      "container_title": "The Proceedings of The Computational Mechanics Conference",
+      "screening_outcome": "review",
+      "accept_matches": [],
+      "reject_matches": [],
+      "source": "screening",
+      "batch_id": "batch-0016",
+      "attempt": 1,
+      "human_decision": "keep",
+      "correction_decision": ""
+    },
+    {
+      "doi": "10.1002/nme.5495",
+      "title": "Local active control for an exterior fluid‐structure interaction problem",
+      "abstract": "<jats:title>Summary</jats:title><jats:p>In this paper, we propose a numerical method based on an active structural control to dampen the discrete critical frequencies from a fe/be coupled system, which models a time‐harmonic fluid‐structure interaction problem. The active structural acoustic control used consists of applying external forces directly on the structure, so that in the presence of critical frequencies, the linear system remains stable and, in turn, in the presence of non‐critical frequencies, the active control does not alter the system. We consider the problem in the framework of the theory of optimal control and present bi‐dimensional numerical simulations to show the behavior of the scheme in some vibro‐acoustic structures. Copyright © 2016 John Wiley &amp; Sons, Ltd.</jats:p>",
+      "keywords": [],
+      "work_type": "journal-article",
+      "authors": [
+        "Catalina Domínguez",
+        "Erwin Hernández",
+        "Ricardo Prato Torres"
+      ],
+      "container_title": "International Journal for Numerical Methods in Engineering",
+      "screening_outcome": "queued",
+      "accept_matches": [
+        "(?is)(?=.*\\b(?:fluid[-\\s]+(?:structure|solid)(?:s)?(?:[-\\s]+interaction(?:s)?|[-\\s]+system(?:s)?|[-\\s]+model(?:s)?|[-\\s]+coupl(?:e|ed|ing))|fluid[-\\s]+rigid[-\\s]+body(?:[-\\s]+(?:interaction|problem|system))?)\\b)(?=.*\\b(?:well[-\\s]+posed(?:ness)?|existence(?:[-\\s]+for|\\s+(?:and\\s+uniqueness|of\\s+(?:(?:weak|strong|global|local|martingale)\\s+)?solutions?))|uniqueness(?:\\s+of\\s+solutions?)?|weak[-\\s]*strong[-\\s]+uniqueness|regularity(?:\\s+results?)?|gevrey[-\\s]+regularity|(?:weak|strong|martingale)[-\\s]+solutions?|stabili[sz](?:ation|ability)|controllability|feedback[-\\s]+control|optimal[-\\s]+control|energy[-\\s]+estimate|convergence[-\\s]+analysis|error[-\\s]+estimates?|stability[-\\s]+and[-\\s]+error[-\\s]+estimates?|port[-\\s]+Hamiltonian|structure[-\\s]+preserving|energy[-\\s]+preserving)\\b)",
+        "(?is)\\A(?=.{0,165}\\b(?:fluid[-\\s]+(?:structure|solid)(?:s)?(?:[-\\s]+interaction(?:s)?|[-\\s]+coupl(?:e|ed|ing))|fluid[-\\s]+and[-\\s]+structural[-\\s]+dynamics)\\b)(?=.{0,165}\\b(?:model[-\\s]+predictive[-\\s]+control|modeling[-\\s]+and[-\\s]+controls?|active[-\\s]+control|feedback[-\\s]+control|optimal[-\\s]+control)\\b)"
+      ],
+      "reject_matches": [],
+      "source": "screening",
+      "batch_id": "batch-0016",
+      "attempt": 1,
+      "human_decision": "",
+      "correction_decision": ""
+    },
+    {
+      "doi": "10.1016/j.cma.2016.12.003",
+      "title": "Fast fluid–structure interaction simulations using a displacement-based finite element model equipped with an explicit streamline integration prediction",
+      "abstract": "",
+      "keywords": [],
+      "work_type": "journal-article",
+      "authors": [
+        "P.B. Ryzhakov",
+        "J. Marti",
+        "S.R. Idelsohn",
+        "E. Oñate"
+      ],
+      "container_title": "Computer Methods in Applied Mechanics and Engineering",
+      "screening_outcome": "review",
+      "accept_matches": [],
+      "reject_matches": [],
+      "source": "screening",
+      "batch_id": "batch-0016",
+      "attempt": 1,
+      "human_decision": "keep",
+      "correction_decision": ""
+    },
+    {
+      "doi": "10.70675/a8987960z298az449cz9a07z91a36e53be28",
+      "title": "Stabilisation and simulation of fluid-structure interaction models",
+      "abstract": "<jats:title>Stabilisation et simulation de modèles d'interaction fluide-structure</jats:title>\n                <jats:p xml:lang=\"fr\">L'objet de cette thèse est l'étude de la stabilisation de modèles d'interaction fluide-structure par des contrôles de dimension finie agissant sur la frontière du domaine fluide. L'écoulement du fluide est décrit par les équations de Navier-Stokes incompressibles tandis que l'évolution de la structure, située à la frontière du domaine fluide, satisfait une équation d'Euler-Bernoulli avec amortissement. Dans le chapitre 1, nous étudions le cas où le contrôle est une condition aux limites de Dirichlet sur les équations du fluide (contrôle par soufflage/aspiration). Nous obtenons des résultats de stabilisation locale du système non-linéaire autour d'une solution stationnaire instable de ce système. Dans les chapitres 2 et 3, nous nous intéressons au cas où le contrôle est une force appliquée sur la structure (contrôle par déformation de paroi). Dans le chapitre 2, nous considérons un modèle simplifié, où l'équation d'Euler-Bernoulli pour la structure est remplacée par un système de dimension finie. Nous construisons des lois de contrôle pour les systèmes de dimension infinie, ou pour leurs approximations semi-discrètes, capables de stabiliser les systèmes linéarisés avec un taux de décroissance exponentielle prescrit, et localement les systèmes non-linéaires. Nous présenterons des résultats numériques permettant de vérifier l'efficacité de ces lois de contrôles.</jats:p>",
+      "keywords": [],
+      "work_type": "dissertation",
+      "authors": [
+        "Moctar Ndiaye"
+      ],
+      "container_title": "",
+      "screening_outcome": "queued",
+      "accept_matches": [
+        "(?is)(?=.*\\b(?:fluid[-\\s]+(?:structure|solid)(?:s)?(?:[-\\s]+interaction(?:s)?|[-\\s]+system(?:s)?|[-\\s]+model(?:s)?|[-\\s]+coupl(?:e|ed|ing))|fluid[-\\s]+rigid[-\\s]+body(?:[-\\s]+(?:interaction|problem|system))?)\\b)(?=.*\\b(?:well[-\\s]+posed(?:ness)?|existence(?:[-\\s]+for|\\s+(?:and\\s+uniqueness|of\\s+(?:(?:weak|strong|global|local|martingale)\\s+)?solutions?))|uniqueness(?:\\s+of\\s+solutions?)?|weak[-\\s]*strong[-\\s]+uniqueness|regularity(?:\\s+results?)?|gevrey[-\\s]+regularity|(?:weak|strong|martingale)[-\\s]+solutions?|stabili[sz](?:ation|ability)|controllability|feedback[-\\s]+control|optimal[-\\s]+control|energy[-\\s]+estimate|convergence[-\\s]+analysis|error[-\\s]+estimates?|stability[-\\s]+and[-\\s]+error[-\\s]+estimates?|port[-\\s]+Hamiltonian|structure[-\\s]+preserving|energy[-\\s]+preserving)\\b)"
+      ],
+      "reject_matches": [],
+      "source": "screening",
+      "batch_id": "batch-0016",
+      "attempt": 1,
+      "human_decision": "",
+      "correction_decision": ""
+    },
+    {
+      "doi": "10.70675/e8b30a87z570fz429fz8596z2e7a25ae6145",
+      "title": "Port-Hamiltonian modeling and control of a fluid-structure system : Application to sloshing phenomena in a moving container coupled to a flexible structure",
+      "abstract": "<jats:title>Modélisation et commande d’interaction fluide-structure sous forme de système Hamiltonien à ports : Application au ballottement dans un réservoir en mouvement couplé à une structure flexible</jats:title>\n                <jats:p xml:lang=\"fr\">Cette thèse est motivée par un problème aéronautique: le ballottement du carburantdans des réservoirs d’ailes d’avion très flexibles. Les vibrations induites par le couplagedu fluide avec la structure peuvent conduire à des problèmes tels que l’inconfort des passagers,une manoeuvrabilité réduite, voire même provoquer un comportement instable. Cette thèse apour objectif de développer de nouveaux modèles d’interaction fluide-structure, en mettant enoeuvre la théorie des systèmes Hamiltoniens à ports d’interaction (pHs). Le formalisme pHsfournit d’une part un cadre unifié pour la description des systèmes multi-physiques complexeset d’autre part une approche modulaire pour l’interconnexion des sous-systèmes grâce auxports d’interaction. Cette thèse s’intéresse aussi à la conception de contrôleurs à partir desmodèles pHs. Des modèles pHs sont proposés pour les équations de ballottement du liquide en partantdes équations de Saint Venant en 1D et 2D. L’originalité du travail est de donner des modèlespHs pour le ballottement dans des réservoirs en mouvement. Les ports d’interaction sont utiliséspour coupler la dynamique du ballottement à la dynamique d’une poutre contrôlée par desactionneurs piézo-électriques, celle-ci étant préalablement modélisée sous forme pHs. Aprèsl’écriture des équations aux dérivées partielles dans le formalisme pHs, une approximation endimension finie est obtenue en utilisant une méthode pseudo-spectrale géométrique qui conservela structure pHs du modèle continu au niveau discret. La thèse propose plusieurs extensionsde la méthode pseudo-spectrale géométrique, permettant la discrétisation des systèmesavec des opérateurs différentiels du second ordre d’une part et avec un opérateur d’entrée nonborné d’autre part. Des essais expérimentaux ont été effectués sur une structure constituéed’une poutre liée à un réservoir afin d’assurer la validité du modèle pHs du ballottementdu liquide couplé à la poutre flexible, et de valider la méthode pseudo-spectrale de semi-discrétisation.Le modèle pHs a finalement été utilisé pour concevoir un contrôleur basé surla passivité pour réduire les vibrations du système couplé.</jats:p>",
+      "keywords": [],
+      "work_type": "dissertation",
+      "authors": [
+        "Flávio Luiz Cardoso-Ribeiro"
+      ],
+      "container_title": "",
+      "screening_outcome": "queued",
+      "accept_matches": [
+        "(?is)(?=.*\\b(?:fluid[-\\s]+(?:structure|solid)(?:s)?(?:[-\\s]+interaction(?:s)?|[-\\s]+system(?:s)?|[-\\s]+model(?:s)?|[-\\s]+coupl(?:e|ed|ing))|fluid[-\\s]+rigid[-\\s]+body(?:[-\\s]+(?:interaction|problem|system))?)\\b)(?=.*\\b(?:well[-\\s]+posed(?:ness)?|existence(?:[-\\s]+for|\\s+(?:and\\s+uniqueness|of\\s+(?:(?:weak|strong|global|local|martingale)\\s+)?solutions?))|uniqueness(?:\\s+of\\s+solutions?)?|weak[-\\s]*strong[-\\s]+uniqueness|regularity(?:\\s+results?)?|gevrey[-\\s]+regularity|(?:weak|strong|martingale)[-\\s]+solutions?|stabili[sz](?:ation|ability)|controllability|feedback[-\\s]+control|optimal[-\\s]+control|energy[-\\s]+estimate|convergence[-\\s]+analysis|error[-\\s]+estimates?|stability[-\\s]+and[-\\s]+error[-\\s]+estimates?|port[-\\s]+Hamiltonian|structure[-\\s]+preserving|energy[-\\s]+preserving)\\b)"
+      ],
+      "reject_matches": [],
+      "source": "screening",
+      "batch_id": "batch-0016",
+      "attempt": 1,
+      "human_decision": "",
+      "correction_decision": ""
+    },
+    {
+      "doi": "10.4208/cicp.080815.090516a",
+      "title": "Computing Fluid-Structure Interaction by the Partitioned Approach with Direct Forcing",
+      "abstract": "In this paper, we propose a new partitioned approach to compute fluid-structure interaction (FSI) by extending the original direct-forcing technique and integrating it with the immersed boundary method. The fluid and structural equations are calculated separately via their respective disciplinary algorithms, with the fluid motion solved by the immersed boundary method on a uniform Cartesian mesh and the structural motion solved by a finite element method, and their solution data only communicate at the fluid-structure interface. This computational framework is capable of handling FSI problems with sophisticated structures described by detailed constitutive laws. The proposed methods are thoroughly tested through numerical simulations involving viscous fluid flow interacting with rigid, elastic solid, and elastic thin-walled structures.",
+      "keywords": [],
+      "work_type": "journal-article",
+      "authors": [
+        "Asim Timalsina",
+        "Gene Hou",
+        "Jin Wang"
+      ],
+      "container_title": "Communications in Computational Physics",
+      "screening_outcome": "review",
+      "accept_matches": [],
+      "reject_matches": [],
+      "source": "screening",
+      "batch_id": "batch-0016",
+      "attempt": 1,
+      "human_decision": "keep",
+      "correction_decision": ""
+    },
+    {
+      "doi": "10.1016/j.compfluid.2016.11.008",
+      "title": "A non-staggered coupling of finite element and lattice Boltzmann methods via an immersed boundary scheme for fluid-structure interaction",
+      "abstract": "",
+      "keywords": [],
+      "work_type": "journal-article",
+      "authors": [
+        "Zhe Li",
+        "Julien Favier"
+      ],
+      "container_title": "Computers &amp; Fluids",
+      "screening_outcome": "review",
+      "accept_matches": [],
+      "reject_matches": [],
+      "source": "screening",
+      "batch_id": "batch-0016",
+      "attempt": 1,
+      "human_decision": "keep",
+      "correction_decision": ""
+    },
+    {
+      "doi": "10.1002/cnm.2845",
+      "title": "Validation of a non‐conforming monolithic fluid‐structure interaction method using phase‐contrast MRI",
+      "abstract": "<jats:title>Abstract</jats:title><jats:p>This paper details the validation of a non‐conforming arbitrary Lagrangian‐Eulerian fluid‐structure interaction technique using a recently developed experimental 3D fluid‐structure interaction benchmark problem. Numerical experiments for steady and transient test cases of the benchmark were conducted employing an inf‐sup stable and a general Galerkin scheme. The performance of both schemes is assessed. Spatial refinement with three mesh refinement levels and fluid domain truncation with two fluid domain lengths are studied as well as employing a sequence of increasing time step sizes for steady‐state cases. How quickly an approximate steady‐state or periodic steady‐state is reached is investigated and quantified based on error norm computations. Comparison of numerical results with experimental phase‐contrast magnetic resonance imaging data shows very good overall agreement including governing of flow patterns observed in the experiment.</jats:p>",
+      "keywords": [],
+      "work_type": "journal-article",
+      "authors": [
+        "Andreas Hessenthaler",
+        "Oliver Röhrle",
+        "David Nordsletten"
+      ],
+      "container_title": "International Journal for Numerical Methods in Biomedical Engineering",
+      "screening_outcome": "queued",
+      "accept_matches": [
+        "(?is)\\A(?=.{0,165}\\b(?:fluid[-\\s]+(?:structure|solid)(?:s)?(?:[-\\s]+(?:interaction(?:s)?|coupl(?:e|ed|ing)|system(?:s)?|model(?:s)?))|fluid[-\\s]+rigid[-\\s]+body(?:[-\\s]+(?:interaction|problem|system))?)\\b)(?=.{0,165}\\b(?:solver(?:s)?|(?:semi[-\\s]+implicit[-\\s]+)?(?:partition(?:ed)?[-\\s]+)?algorithm(?:s)?|framework|methodology|(?:mixed[-\\s]+)?formulation(?:s)?|discretization(?:s)?|reduced[-\\s]+order[-\\s]+model|ROM|domain[-\\s]+decomposition|local[-\\s]+time[-\\s]+stepping|low[-\\s]+rank[-\\s]+method|interface[-\\s]+treatment|material[-\\s]+point[-\\s]+method|PFEM[-\\s]*FEM[-\\s]+approach|smoothed[-\\s]+finite[-\\s]+element[-\\s]+method|scaled[-\\s]+boundary[-\\s]+finite[-\\s]+element[-\\s]+method|arbitrary[-\\s]+lagrangian[-\\s]+eulerian[-\\s]+(?:method|approach)|immersed[-\\s]+multi[-\\s]+material.{0,80}\\bfinite[-\\s]+element[-\\s]+method|monolithic.{0,50}\\bmethod|partitioned.{0,50}\\b(?:method|scheme|algorithm)|finite[-\\s]+element[-\\s]+discontinuous[-\\s]+galerkin[-\\s]+method|lattice[-\\s]+boltzmann.{0,50}\\bmethod|parallel|spectral[-\\s]+element[-\\s]+solver|multi[-\\s]+grid.{0,60}\\bmethod|cut[-\\s]+cell.{0,50}\\b(?:method|discrete[-\\s]+velocity)|direct[-\\s]+adjoint.{0,50}\\bsolver|graph[-\\s]+attention[-\\s]+solver|topology[-\\s]+optimization|shape[-\\s]+design|time[-\\s]+integration[-\\s]+schemes?|predictors?.{0,80}\\bconvergence|stabilized.{0,50}\\bmethod|stabilization[-\\s]+free.{0,50}\\bmethod|decoupling[-\\s]+methods?|coupled[-\\s]+stabilized[-\\s]+scheme|periodic[-\\s]+dual[-\\s]+mixing[-\\s]+method|semi[-\\s]+analytical[-\\s]+approach|isogeometric.{0,60}\\bcoupling[-\\s]+methods?|coupling[-\\s]+scheme|partitioned[-\\s]+semi[-\\s]+implicit[-\\s]+coupling[-\\s]+methods?)\\b)"
+      ],
+      "reject_matches": [],
+      "source": "screening",
+      "batch_id": "batch-0016",
+      "attempt": 1,
+      "human_decision": "",
+      "correction_decision": ""
+    },
+    {
+      "doi": "10.1115/1.4035113",
+      "title": "Numerical Simulation of Added Mass Effects on a Hydrofoil in Cavitating Flow Using Acoustic Fluid–Structure Interaction",
+      "abstract": "A fluid–structure interaction (FSI) system has been solved using the coupled acoustic structural finite element method (FEM) to simplify the cavitating flow conditions around a hydrofoil. The modes of vibration and the added mass effects have been numerically simulated for various flow conditions including leading edge attached partial cavitation on a two-dimensional NACA0009 hydrofoil. The hydrofoil has been first simulated surrounded by only air and by only water. Then, partial cavities with different lengths have been modeled as pure vapor fluid domains surrounded by the corresponding water and solid domains. The obtained numerical added mass coefficients and mode shapes are in good agreement with the experimental data available for the same conditions. The study confirms that the fluid added mass effect decreases with the cavitation surface ratio (CSR) and with the thickness of the cavitation sheet. Moreover, the simulations also predict slight mode shape variations due to cavitation that have also been detected in the experiments. Finally, the effects of changes in cavity location have been evaluated with the previously validated model.",
+      "keywords": [],
+      "work_type": "journal-article",
+      "authors": [
+        "Xin Liu",
+        "Lingjiu Zhou",
+        "Xavier Escaler",
+        "Zhengwei Wang",
+        "Yongyao Luo",
+        "Oscar De La Torre"
+      ],
+      "container_title": "Journal of Fluids Engineering",
+      "screening_outcome": "review",
+      "accept_matches": [],
+      "reject_matches": [],
+      "source": "screening",
+      "batch_id": "batch-0016",
+      "attempt": 1,
+      "human_decision": "reject",
+      "correction_decision": ""
+    },
+    {
+      "doi": "10.1109/m2vip.2016.7827261",
+      "title": "Mechanism analysis and experiment on the garlic directional control based on fluid solid coupling",
+      "abstract": "How to realize the garlic seed direction control is the bottleneck problem of the garlic mechanical sowing in our country. Proposed garlic direction control method by using water based on the theory of fluid coupling, and its controlling mechanism is analyzed and tested. Through theory analysis, suitable water control rules to the body shape is on the tip of a coarse, left and right side symmetry, dorsal flap is lanceolate; Design test device, test the performances of the water control method, 98.5% rule body can erect in control the direction cup, satisfy the garlic planting requirements. This study provides reference for the design of the garlic direction controller.",
+      "keywords": [],
+      "work_type": "proceedings-article",
+      "authors": [
+        "Rongjiang Cui",
+        "Mingxing Yang",
+        "Shichun Jian",
+        "Xiaoyu Wang"
+      ],
+      "container_title": "2016 23rd International Conference on Mechatronics and Machine Vision in Practice (M2VIP)",
+      "screening_outcome": "review",
+      "accept_matches": [],
+      "reject_matches": [],
+      "source": "screening",
+      "batch_id": "batch-0016",
+      "attempt": 1,
+      "human_decision": "reject",
+      "correction_decision": ""
+    },
+    {
+      "doi": "10.1016/j.jmmm.2016.09.123",
+      "title": "Analysis of fluid-solid interaction in MHD natural convection in a square cavity equally partitioned by a vertical flexible membrane",
+      "abstract": "",
+      "keywords": [],
+      "work_type": "journal-article",
+      "authors": [
+        "S.A.M. Mehryan",
+        "Mohammad Ghalambaz",
+        "Muneer A. Ismael",
+        "Ali J. Chamkha"
+      ],
+      "container_title": "Journal of Magnetism and Magnetic Materials",
+      "screening_outcome": "review",
+      "accept_matches": [],
+      "reject_matches": [],
+      "source": "screening",
+      "batch_id": "batch-0016",
+      "attempt": 1,
+      "human_decision": "reject",
+      "correction_decision": ""
+    },
+    {
+      "doi": "10.24200/sci.2016.3969",
+      "title": "Comparison of ISPH and WCSPH methods to solve fluid-structure interaction problems",
+      "abstract": "In this paper, the in-house code based on the smoothed particle hydrodynamics is proposed to simulate a fluid-solid interaction (FSI) problem. This method is a Lagrangian, mesh-free method and it has a high ability to capture the free surface in two phase flows and also the interface in FSI problems. To compare ofweakly compressible SPH (WCSPH) and incompressible SPH (ISPH) schemes, fluid flow under a hypo-elastic gate is simulated in solid and fluid domains with both methods. At first fluid domain is simulated with ISPH method and solid domain is solved with WCSPH scheme. Another simulation is done with both fluid and solid parts solved with WCSPH method. The results of both methods are in a good agreement with each other and also with other researcher’s results. So it is concluded that it is easier to model the fluid flow with ISPH scheme and the solid part with WCSPH in coupling fluid-solid interaction problems with a good accuracy.",
+      "keywords": [],
+      "work_type": "journal-article",
+      "authors": [
+        "Houshang Sabahi",
+        "Amir Nikseresht"
+      ],
+      "container_title": "Scientia Iranica",
+      "screening_outcome": "review",
+      "accept_matches": [],
+      "reject_matches": [],
+      "source": "screening",
+      "batch_id": "batch-0016",
+      "attempt": 1,
+      "human_decision": "keep",
+      "correction_decision": ""
+    },
+    {
+      "doi": "10.1002/pamm.201610005",
+      "title": "Computational Closed‐Loop Control of Fluid‐structure Interaction (FSCI) for Lightweight Structures",
+      "abstract": "<jats:title>Abstract</jats:title><jats:p>This contribution gives a short introduction into the topic of fluid‐structure‐control interaction (FSCI). This is a multi‐field problem, where three fields are coupled, namely a fluid‐flow, structural dynamics and closed‐loop control of structures. The interactions are identified as surface‐coupling of fluid flow and structural dynamics as well as signal‐coupling of structural dynamics and closed‐loop control.</jats:p><jats:p>At first a simple model problem is introduced, which allows an efficient investigation of the convergence behavior and stability of such kind of problem. In this context an iterative partitioned approach, using a serial Gauß‐Seidel scheme, is presented. Finally, the insights gained by the model problem are used to set up a multi‐dimensional numerical experiment. (© 2016 Wiley‐VCH Verlag GmbH &amp; Co. KGaA, Weinheim)</jats:p>",
+      "keywords": [],
+      "work_type": "journal-article",
+      "authors": [
+        "Andreas Mini",
+        "Christopher Lerch",
+        "Roland Wüchner",
+        "Kai‐Uwe Bletzinger"
+      ],
+      "container_title": "PAMM",
+      "screening_outcome": "review",
+      "accept_matches": [],
+      "reject_matches": [],
+      "source": "screening",
+      "batch_id": "batch-0016",
+      "attempt": 1,
+      "human_decision": "keep",
+      "correction_decision": ""
     }
   ]
 }
