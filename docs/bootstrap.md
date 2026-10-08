@@ -1940,3 +1940,310 @@ relevance rule was changed from this analysis.
 
 Final validation reported a valid configuration, no unresolved author identity,
 and clean diff whitespace checks.
+
+#### Batch 0013 — 150-candidate production batch and audited relevance corrections
+
+Batch 0013 increased the initialization batch size to 150 candidates.
+
+Initial screening produced:
+
+- pending: 81;
+- manual review: 56;
+- automatic rejections: 13.
+
+The 56 manual-review cases were resolved to:
+
+- human KEEP: 35;
+- human REJECT: 21;
+- deferred: 0.
+
+The batch therefore contributed 116 new canonical publications and 34 new
+rejections before the independent historical relevance audit.
+
+At this stage Offsider was repinned to BibReview commit
+`16234dd523de43495489654cbe623bbbd63344d7`, which introduces the audited
+`bibreview correct` workflow. A second-pass relevance audit identified 18
+historical decisions that should be reversed:
+
+- 11 REJECT -> KEEP corrections;
+- 7 KEEP -> REJECT corrections.
+
+These corrections were applied through BibReview rather than by editing
+canonical or queue files manually. The original screening outcome and any
+original human decision remain in the relevance evidence ledger; the explicit
+correction is stored separately and becomes the current effective label.
+
+The 11 restored KEEP publications were recollected and merged through the
+ordinary collection boundary. The 7 corrected REJECT publications were removed
+from canonical state with their previous state archived by the correction
+workflow.
+
+The net project state moved from the end-of-batch-0012 state to:
+
+- canonical publications: 388;
+- rejected initialization candidates: 197.
+
+Author maintenance resolved 30 identities after the batch: 29 safe mappings and
+one explicit human decision for `Yi Li`. Pull request #35 records the complete
+batch and correction campaign.
+
+This batch is the first large-scale validation of an important curation
+principle: terminal relevance state is not immutable, but corrections must be
+explicit, auditable, and must not erase the historical decision that they
+supersede.
+
+#### Batch 0014 — small post-correction validation batch
+
+After the large batch-0013 campaign and correction audit, batch 0014 deliberately
+returned to 10 candidates to validate the corrected workflow on a small sample.
+
+Initial screening produced:
+
+- pending: 4;
+- manual review: 6;
+- automatic rejections: 0.
+
+Human review resolved the six ambiguous candidates to:
+
+- human KEEP: 4;
+- human REJECT: 2.
+
+Final batch result:
+
+- screened: 10;
+- accepted and merged: 8;
+- rejected: 2;
+- canonical corpus: 388 -> 396;
+- rejected project state: 197 -> 199;
+- deferred: 0.
+
+No new automatic rejection rule was introduced from this small batch.
+
+#### Historical correction of the batch-0004 controllability paper
+
+The post-batch-0014 audit revisited
+`10.1007/s00498-026-00446-y`,
+*Controllability of a fluid–structure interaction system governed by the heat
+and damped beam equations*.
+
+Batch 0004 had recorded this publication as REJECT because its fluid-side model
+was represented by a heat equation. A later scope audit concluded that the
+paper nevertheless belongs to Offsider's mathematical/control FSI corpus.
+
+The historical section above is intentionally left unchanged. Instead, the
+later correction is recorded here:
+
+~~~bash
+bibreview correct 10.1007/s00498-026-00446-y --keep
+~~~
+
+The DOI returned to the ordinary pending collection workflow, was recollected,
+and was merged canonically. Project state therefore changed:
+
+- canonical publications: 396 -> 397;
+- rejected candidates: 199 -> 198.
+
+This is a concrete acceptance case for the `bibreview correct` contract:
+historical evidence is preserved while the current curation decision is changed
+explicitly.
+
+The subsequent offline relevance analysis contained 533 evidence-backed labels:
+
+- KEEP: 397;
+- REJECT: 136;
+- human/corrected labels: 132;
+- corrected labels: 19;
+- unresolved evidence: 0;
+- batches represented: 14.
+
+The evidence-backed REJECT count is intentionally not the same quantity as the
+198 DOI values in terminal rejected project state. Older initialization history
+does not have complete relevance evidence for every terminal candidate, so
+offline rule analysis and project queue totals must not be conflated.
+
+Current-rule replay at that point reported:
+
+- automatic accept: 277;
+- automatic reject: 46;
+- manual review: 210;
+- accept false positives: 3;
+- reject false negatives: 0;
+- automatic coverage: 60.60%;
+- accept precision: approximately 98.92%;
+- reject precision: 100%.
+
+The three automatic-accept disagreements and four rule conflicts were
+independently inspected. Apart from the corrected controllability paper, the
+audited disagreements were confirmed to be genuine application/scope
+rejections. No generic reject signal was promoted.
+
+#### Batch 0015 — 100-candidate batch and conservative rule promotion
+
+Batch 0015 returned to a 100-candidate production size.
+
+Initial screening produced:
+
+- pending: 47;
+- manual review: 45;
+- automatic rejections: 8;
+- skipped: 0;
+- retryable: 0.
+
+The 45 human-review cases were resolved through `bibreview review`:
+
+- human KEEP: 32;
+- human REJECT: 13;
+- deferred: 0.
+
+The complete batch therefore contained:
+
+- accepted: 79;
+- rejected: 21.
+
+Collection was clean:
+
+~~~text
+submitted: 79; candidates: 79; collected: 79; unavailable: 0; invalid: 0; existing: 397
+~~~
+
+CrossRef structured-abstract markup warnings occurred for several DOI values.
+As designed, BibReview ignored only unsupported abstract candidates; all 79
+publications remained collectable.
+
+The merge preview and real merge agreed:
+
+~~~text
+incoming: 79; added: 79; updated: 0; unchanged: 0; rejected: 0; retained: 476
+~~~
+
+Author maintenance then applied 165 safe mappings and exposed 27 ambiguous
+identities. All 27 were resolved through the first-class
+`bibreview authors --review` workflow, with no deferred identity remaining.
+
+Final author state:
+
+- known name variants: 1242;
+- unresolved author names: 0.
+
+Final initialization status was:
+
+~~~text
+Initialization campaign
+  Total         : 1535
+  Unscreened    : 840
+  Pending       : 0
+  Manual review : 0
+  Staged        : 0
+  Merged        : 476
+  Rejected      : 219
+  Skipped       : 0
+  Retryable     : 0
+  Failed        : 0
+  Batches       : 14/15
+~~~
+
+The campaign has therefore processed 695 of the 1535 frozen candidates, leaving
+840 unscreened.
+
+After batch 0015, offline relevance analysis contained 626 evidence-backed
+labels:
+
+- KEEP: 476;
+- REJECT: 150;
+- human-labeled: 177;
+- corrected: 19;
+- unresolved evidence: 0;
+- batches represented: 15.
+
+Before any rule change, current-rule replay reported:
+
+- automatic accept: 324;
+- automatic reject: 47;
+- manual review: 255;
+- automatic coverage: 59.27%;
+- accept precision: 99.07%;
+- reject precision: 100%;
+- accept false positives: 3;
+- reject false negatives: 0;
+- conflicts: 4.
+
+The false-accept set remained exactly:
+
+~~~text
+10.1016/j.ijthermalsci.2026.111221
+10.1016/j.rineng.2026.110807
+10.1016/j.oceaneng.2026.125353
+~~~
+
+All three had already been audited as genuine scope/application rejections.
+
+The analysis suggested `parallel` as a particularly strong methodological
+signal: 23/23 labeled occurrences were KEEP, spanning seven batches, including
+9/9 reviewed cases and no known contradiction. Rather than creating a broad
+standalone rule, `parallel` was added only to the existing second
+precision-first acceptance pattern. That rule already requires an explicit FSI
+phrase near the beginning of the relevance text, so the promotion preserves the
+scientific context gate.
+
+A complete offline replay after the change reported:
+
+- automatic accept: 327;
+- automatic reject: 47;
+- manual review: 252;
+- automatic coverage: 59.74%;
+- accept precision: 99.08%;
+- reject precision: 100%;
+- accept false positives: unchanged at 3;
+- reject false negatives: unchanged at 0;
+- conflicts: unchanged at 4.
+
+The modified second accept rule itself moved from 243 to 246 matches, with the
+three additional matches all labeled KEEP. The rule promotion is therefore
+retained.
+
+No reject pattern was added. Statistical signals such as `heat`,
+`heat transfer`, `numerical analysis`, and `coupling method` continue to
+have scientifically meaningful counterexamples and are not safe deterministic
+scope rules despite high precision on some reviewed subsets.
+
+#### Status completeness feedback
+
+Batch 0015 also exposed a CLI observability gap. A clean
+`bibreview init --status` can report no pending/manual/staged initialization
+work while unresolved author identities still remain and require a separate
+`bibreview authors` check.
+
+BibReview issue #169 therefore proposes that command status output, at minimum
+`bibreview init --status`, include a compact read-only author-identity summary.
+This should make the operational status view reflect both publication and author
+maintenance without mutating either state.
+
+#### Continuation policy after batch 0015
+
+The initial Offsider corpus remains the current priority.
+
+The intended sequence is:
+
+~~~text
+complete initialization batches
+        ↓
+periodically replay offline relevance analysis
+        ↓
+promote only deterministic, independently safe rules
+        ↓
+finish all 1535 frozen initialization candidates
+        ↓
+only then start Hugo/render publication work
+~~~
+
+`site.enabled: false` therefore remains intentional. Hugo issue #141 is still
+the planned publication backend, but the renderer is explicitly deferred until
+the initialization corpus is complete and canonical author state is stable.
+
+The next initialization step, after this repository update is reviewed and
+merged, is another bounded batch:
+
+~~~bash
+bibreview init --batch-size 100
+~~~
+
