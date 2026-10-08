@@ -2247,3 +2247,110 @@ merged, is another bounded batch:
 bibreview init --batch-size 100
 ~~~
 
+
+#### Batch 0016 — 100-candidate batch and relevance replay
+
+Batch 0016 continued the initialization campaign with another 100 candidates.
+
+Initial screening produced:
+
+- pending: 38;
+- manual review: 53;
+- automatic rejections: 9;
+- skipped: 0;
+- retryable: 0.
+
+The 53 human-review cases were resolved through `bibreview review`:
+
+- human KEEP: 27;
+- human REJECT: 26;
+- deferred: 0.
+
+The complete batch therefore contained:
+
+- accepted: 65;
+- rejected: 35.
+
+After transient provider-side HTTP 500 errors disappeared on retry, collection
+completed cleanly:
+
+~~~text
+submitted: 65; candidates: 65; collected: 65; unavailable: 0; invalid: 0; existing: 476
+~~~
+
+The merge preview and real merge agreed:
+
+~~~text
+incoming: 65; added: 65; updated: 0; unchanged: 0; rejected: 0; retained: 541
+~~~
+
+Author maintenance applied 101 safe mappings and initially exposed 44 unknown
+author names requiring explicit review. All 44 manual author decisions were
+resolved through `bibreview authors --review`, with no deferred identity
+remaining.
+
+Final initialization status was:
+
+~~~text
+Initialization campaign
+  Total         : 1535
+  Unscreened    : 740
+  Pending       : 0
+  Manual review : 0
+  Staged        : 0
+  Merged        : 541
+  Rejected      : 254
+  Skipped       : 0
+  Retryable     : 0
+  Failed        : 0
+  Batches       : 15/16
+~~~
+
+The campaign has therefore processed 795 of the 1535 frozen candidates, leaving
+740 unscreened.
+
+After batch 0016, offline relevance analysis contained 719 evidence-backed
+labels:
+
+- KEEP: 541;
+- REJECT: 178;
+- human-labeled: 230;
+- corrected: 19;
+- unresolved evidence: 0;
+- batches represented: 16.
+
+Current-rule replay reported:
+
+- automatic accept: 365;
+- automatic reject: 49;
+- manual review: 305;
+- automatic coverage: 57.58%;
+- accept precision: 99.18%;
+- reject precision: 100%;
+- accept false positives: 3;
+- reject false negatives: 0;
+- conflicts: 4.
+
+The false-accept and conflict sets remained unchanged from the previous audit.
+
+The analysis identified `interacting` as a statistically clean acceptance
+signal: 25/25 labeled occurrences were KEEP, including 8/8 reviewed cases.
+It was tested inside the existing context-gated methodological acceptance rule.
+
+The replay with `interacting` changed only:
+
+- automatic accept: 365 -> 366;
+- manual review: 305 -> 304;
+- automatic coverage: 57.58% -> 57.72%.
+
+Precision, false positives, false negatives, and conflicts were unchanged.
+More importantly, the human-reviewed replay was completely unchanged: the new
+signal would not have eliminated any historical human review decision.
+
+Because `interacting` is semantically broad and its practical gain is only one
+already-labeled publication, the experimental rule change was reverted.
+No new relevance rule is retained from batch 0016.
+
+The precision-first policy therefore remains unchanged: statistical
+`promotion_ready` status is evidence for inspection, not sufficient justification
+for a deterministic scope rule.
