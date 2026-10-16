@@ -1,0 +1,10 @@
+{
+  "schema_version": 1,
+  "doi_aliases": [
+    {
+      "doi": "10.17485/ijst/2015/v8i1/84240",
+      "replacement": "10.17485/ijst/2015/v8i30/84240",
+      "reason": "superseded"
+    }
+  ]
+}

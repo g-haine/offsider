@@ -2354,3 +2354,163 @@ No new relevance rule is retained from batch 0016.
 The precision-first policy therefore remains unchanged: statistical
 `promotion_ready` status is evidence for inspection, not sufficient justification
 for a deterministic scope rule.
+
+
+#### Batch 0017 — DOI alias resolution and immersed-boundary rule promotion
+
+Batch 0017 continued the initialization campaign with another 100 candidates.
+
+Initial screening produced:
+
+- pending: 50;
+- manual review: 45;
+- automatic rejections: 5;
+- skipped: 0;
+- retryable: 0.
+
+The 45 human-review cases were resolved through `bibreview review`:
+
+- human KEEP: 30;
+- human REJECT: 15;
+- deferred: 0.
+
+The relevance decisions therefore contained:
+
+- accepted: 80;
+- rejected: 20.
+
+One accepted candidate exposed an identifier-identity problem rather than a
+relevance problem. The same relevant publication appeared under both:
+
+~~~text
+10.17485/ijst/2015/v8i1/84240
+10.17485/ijst/2015/v8i30/84240
+~~~
+
+The second DOI is the canonical identity. This real-world case motivated
+BibReview issue #170 and PR #171, adding an explicit DOI-replacement workflow
+that preserves relevance evidence while marking the obsolete identity as a
+superseded alias rather than falsely rejecting it.
+
+Offsider was therefore repinned to BibReview commit:
+
+~~~text
+b93bf2348adaf50215515edd5059b53191e66c9c
+~~~
+
+The alias transition was then applied with:
+
+~~~bash
+bibreview correct 10.17485/ijst/2015/v8i1/84240 \
+  --replace-doi 10.17485/ijst/2015/v8i30/84240
+~~~
+
+This preserved the human KEEP evidence for the old identifier while removing it
+from the active initialization path. The frozen campaign size remained
+unchanged, and the superseded candidate became `Skipped` rather than
+`Rejected`.
+
+Collection therefore processed 79 unique canonical DOI candidates:
+
+~~~text
+submitted: 79; candidates: 79; collected: 79; unavailable: 0; invalid: 0; existing: 541
+~~~
+
+The merge preview and real merge agreed:
+
+~~~text
+incoming: 79; added: 79; updated: 0; unchanged: 0; rejected: 0; retained: 620
+~~~
+
+Author maintenance applied 145 safe mappings and then exposed 20 unresolved
+exact author names requiring explicit review. All 20 manual author decisions
+were resolved through `bibreview authors --review`, with no deferred identity
+remaining.
+
+Final initialization status was:
+
+~~~text
+Initialization campaign
+  Total         : 1535
+  Unscreened    : 640
+  Pending       : 0
+  Manual review : 0
+  Staged        : 0
+  Merged        : 620
+  Rejected      : 274
+  Skipped       : 1
+  Retryable     : 0
+  Failed        : 0
+  Batches       : 16/17
+~~~
+
+The campaign has therefore processed 895 of the 1535 frozen candidates, leaving
+640 unscreened.
+
+After batch 0017, offline relevance analysis contained 815 evidence-backed
+labels:
+
+- KEEP: 621;
+- REJECT: 194;
+- human-labeled: 275;
+- corrected: 19;
+- unresolved evidence: 0;
+- batches represented: 17.
+
+The KEEP evidence count is one higher than the 620 canonical publications
+because relevance evidence for the superseded DOI alias is intentionally
+preserved.
+
+Before changing the rules, current-rule replay reported:
+
+- automatic accept: 415;
+- automatic reject: 50;
+- manual review: 350;
+- automatic coverage: 57.06%;
+- accept precision: 99.28%;
+- reject precision: 100%;
+- accept false positives: 3;
+- reject false negatives: 0;
+- conflicts: 4.
+
+The false-accept and conflict sets remained unchanged from the previous audit.
+
+Among the acceptance candidates, generic signals such as `benchmark`,
+`immersed`, and `immersed boundary` still had labeled counterexamples and were
+therefore not promoted.
+
+A narrower signal, `immersed boundary method`, was substantially cleaner:
+
+- labeled support: 17;
+- KEEP: 17;
+- REJECT: 0;
+- reviewed support: 9;
+- reviewed KEEP: 9;
+- reviewed REJECT: 0;
+- batches represented: 8.
+
+It was added only inside the existing context-gated methodological acceptance
+rule as:
+
+~~~text
+immersed[-\s]+boundary[-\s]+method
+~~~
+
+The resulting replay reported:
+
+- automatic accept: 420;
+- automatic reject: 50;
+- manual review: 345;
+- automatic coverage: 57.67%;
+- accept precision: 99.29%;
+- reject precision: 100%;
+- accept false positives: 3;
+- reject false negatives: 0;
+- conflicts: 4.
+
+The rule therefore removed five historical manual-review cases without
+introducing any new disagreement. Unlike the broader candidate phrases, this
+specific methodological signal is retained.
+
+The precision-first policy remains unchanged: only deterministic signals with
+strong corpus evidence and no observed scope error are promoted.
