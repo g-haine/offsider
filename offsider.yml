@@ -5,4 +5,4 @@ dependencies:
   - python=3.12
   - pip
   - pip:
-      - git+https://github.com/g-haine/bibreview.git@16234dd523de43495489654cbe623bbbd63344d7
+      - git+https://github.com/g-haine/bibreview.git@b93bf2348adaf50215515edd5059b53191e66c9c
