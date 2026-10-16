@@ -106,6 +106,7 @@ relevance:
     - '(?is)\A(?=.{0,165}\b(?:fluid[-\s]+(?:structure|solid)(?:s)?(?:[-\s]+interaction(?:s)?|[-\s]+coupl(?:e|ed|ing))|fluid[-\s]+and[-\s]+structural[-\s]+dynamics)\b)(?=.{0,165}\b(?:model[-\s]+predictive[-\s]+control|modeling[-\s]+and[-\s]+controls?|active[-\s]+control|feedback[-\s]+control|optimal[-\s]+control)\b)'
     - '(?is)(?=.*\bfluid[-\s]+structure[-\s]+model\b)(?=.*\bNavier[-\s]+Stokes\b)(?=.*\bLam(?:e|é)\b)'
     - '(?is)(?=.*\bpiston[-\s]+problem\b)(?=.*\b(?:fluid[-\s]+structure|moving[-\s]+piston|mass[-\s]+spring)\b)'
+    - '(?is)\bFSI[-\s]+problems?\b'
   reject_patterns:
     - '(?is)\bsoil[-\s]+fluid[-\s]+structure\b'
     - '(?is)\A(?=.{0,220}\bhigh[-\s]+arch[-\s]+dam\b)'

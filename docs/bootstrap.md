@@ -2514,3 +2514,165 @@ specific methodological signal is retained.
 
 The precision-first policy remains unchanged: only deterministic signals with
 strong corpus evidence and no observed scope error are promoted.
+
+### Initialization batch 0018
+
+Batch 0018 was intentionally run with a larger batch size:
+
+~~~bash
+bibreview init --batch-size 140
+~~~
+
+Starting state was:
+
+~~~text
+Total         : 1535
+Unscreened    : 640
+Merged        : 620
+Rejected      : 274
+Skipped       : 1
+~~~
+
+The 140 screened candidates were initially classified as:
+
+~~~text
+Pending       : 40
+Manual review : 80
+Rejected      : 20
+~~~
+
+The 80 manual-review cases were reviewed explicitly with
+`bibreview review`:
+
+- KEEP: 50;
+- REJECT: 30.
+
+Together with the 40 automatically accepted candidates and 20 automatically
+rejected candidates, batch 0018 therefore produced:
+
+- accepted for collection: 90;
+- rejected: 50.
+
+Collection completed without unavailable or invalid candidates:
+
+~~~text
+submitted: 90; candidates: 90; collected: 90; unavailable: 0; invalid: 0; existing: 620
+~~~
+
+The merge preview and real merge agreed:
+
+~~~text
+incoming: 90; added: 90; updated: 0; unchanged: 0; rejected: 0; retained: 710
+~~~
+
+Author maintenance first applied 116 safe mappings:
+
+~~~text
+Applied 116 safe author mapping(s).
+Known name variants: 1668
+Unknown author names: 35
+~~~
+
+The remaining 35 exact author names were then resolved explicitly with
+`bibreview authors --review`. All 35 manual decisions were applied, with no
+deferred or unresolved identity remaining.
+
+Final initialization status was:
+
+~~~text
+Initialization campaign
+  Total         : 1535
+  Unscreened    : 500
+  Pending       : 0
+  Manual review : 0
+  Staged        : 0
+  Merged        : 710
+  Rejected      : 324
+  Skipped       : 1
+  Retryable     : 0
+  Failed        : 0
+  Batches       : 17/18
+~~~
+
+The campaign has therefore processed 1035 of the 1535 frozen candidates,
+leaving 500 unscreened.
+
+After batch 0018, offline relevance analysis contained 937 evidence-backed
+labels:
+
+- KEEP: 711;
+- REJECT: 226;
+- human-reviewed: 355;
+- corrected: 19;
+- unresolved evidence: 0;
+- batches represented: 18.
+
+As in batch 0017, the KEEP evidence count is one higher than the 710 canonical
+publications because relevance evidence for the superseded DOI alias is
+intentionally preserved.
+
+Before changing the rules, current-rule replay reported:
+
+- automatic accept: 460;
+- automatic reject: 52;
+- manual review: 425;
+- automatic coverage: 54.64%;
+- accept precision: 99.35%;
+- reject precision: 100%;
+- accept false positives: 3;
+- reject false negatives: 0;
+- conflicts: 4.
+
+The three false accepts remained the same historical cases:
+
+~~~text
+10.1016/j.ijthermalsci.2026.111221
+10.1016/j.rineng.2026.110807
+10.1016/j.oceaneng.2026.125353
+~~~
+
+The strongest new conservative acceptance signal was the explicit phrase
+`FSI problem` / `FSI problems`:
+
+- labeled support: 28;
+- KEEP: 28;
+- REJECT: 0;
+- reviewed support: 12;
+- reviewed KEEP: 12;
+- reviewed REJECT: 0;
+- human KEEP: 11;
+- batches represented: 10.
+
+It was therefore promoted as a narrow standalone acceptance rule:
+
+~~~text
+(?is)\bFSI[-\s]+problems?\b
+~~~
+
+After adding the rule, replay reported:
+
+- automatic accept: 479;
+- automatic reject: 51;
+- manual review: 407;
+- automatic coverage: 56.56%;
+- accept precision: 99.37%;
+- reject precision: 100%;
+- accept false positives: 3;
+- reject false negatives: 0.
+
+The rule added 19 automatic accepts and removed 18 historical manual-review
+cases without introducing any new false positive. On the human-reviewed subset,
+automatic coverage increased from 2.25% to 7.04% while accept precision
+remained 100%.
+
+A second candidate, `approach fluid-structure`, was tested because its observed
+support was also perfectly KEEP. It produced no change at all in replay
+metrics, showing that it was fully redundant with existing rules, and was
+therefore removed.
+
+No reject rule was promoted. In particular, contextual candidates such as
+`analysis` AND `stress` were perfectly consistent inside the reviewed subset
+but still matched historical KEEP evidence outside that subset. The
+precision-first policy therefore remains unchanged: only deterministic signals
+with strong corpus evidence, measurable additional coverage, and no observed
+scope error are retained.
