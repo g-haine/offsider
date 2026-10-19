@@ -2,6 +2,16 @@
   "schema_version": 1,
   "doi_aliases": [
     {
+      "doi": "10.1007/978-1-4020-4979-8_3",
+      "replacement": "10.1007/1-4020-5370-3_3",
+      "reason": "superseded"
+    },
+    {
+      "doi": "10.1201/9780203874981-17",
+      "replacement": "10.1201/9780203874981.ch9",
+      "reason": "superseded"
+    },
+    {
       "doi": "10.17485/ijst/2015/v8i1/84240",
       "replacement": "10.17485/ijst/2015/v8i30/84240",
       "reason": "superseded"
