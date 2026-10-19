@@ -49243,39 +49243,9 @@
           }
         },
         {
-          "given": null,
-          "family": null,
-          "literal": "TIFR Centre for Applicable Mathematics, Sharadanagar, Bangalore-560065, India",
-          "source_fields": {
-            "sequence": "first",
-            "affiliation": [],
-            "role": [
-              {
-                "role": "author",
-                "vocabulary": "crossref"
-              }
-            ]
-          }
-        },
-        {
           "given": "Takéo",
           "family": "Takahashi",
           "literal": null,
-          "source_fields": {
-            "sequence": "additional",
-            "affiliation": [],
-            "role": [
-              {
-                "role": "author",
-                "vocabulary": "crossref"
-              }
-            ]
-          }
-        },
-        {
-          "given": null,
-          "family": null,
-          "literal": "Université de Lorraine, CNRS, Inria, IECL, F-54000 Nancy, France",
           "source_fields": {
             "sequence": "additional",
             "affiliation": [],
@@ -110304,21 +110274,6 @@
           }
         },
         {
-          "given": null,
-          "family": null,
-          "literal": "1 Department of Geographical Science and Environment Engineering, Key Laboratory of Disaster Monitoring and Mechanism Simulation of Shaanxi Province, Baoji University of Arts and Sciences, Baoji 721013, P. R. China",
-          "source_fields": {
-            "sequence": "first",
-            "affiliation": [],
-            "role": [
-              {
-                "role": "author",
-                "vocabulary": "crossref"
-              }
-            ]
-          }
-        },
-        {
           "given": "Xin",
           "family": "Liu",
           "literal": null,
@@ -110337,36 +110292,6 @@
           "given": "Jian",
           "family": "Li",
           "literal": null,
-          "source_fields": {
-            "sequence": "additional",
-            "affiliation": [],
-            "role": [
-              {
-                "role": "author",
-                "vocabulary": "crossref"
-              }
-            ]
-          }
-        },
-        {
-          "given": null,
-          "family": null,
-          "literal": "2 School of Mathematics and Statistics, Northwestern Polytechnical University, Xi’an 710129, P. R. China",
-          "source_fields": {
-            "sequence": "additional",
-            "affiliation": [],
-            "role": [
-              {
-                "role": "author",
-                "vocabulary": "crossref"
-              }
-            ]
-          }
-        },
-        {
-          "given": null,
-          "family": null,
-          "literal": "3 Department of Mathematics, School of Arts and Sciences, Shaanxi University of Science and Technology, Xi’an 710021, P. R. China",
           "source_fields": {
             "sequence": "additional",
             "affiliation": [],
@@ -151331,21 +151256,6 @@
       "title": "Radial basis function for parallel mesh-to-mesh interpolation in solving fluid-structure interaction problem",
       "authors": [
         {
-          "given": null,
-          "family": null,
-          "literal": "Udmurt Federal Research Center of the Ural Branch of the Russian Academy of Sciences",
-          "source_fields": {
-            "sequence": "first",
-            "affiliation": [],
-            "role": [
-              {
-                "role": "author",
-                "vocabulary": "crossref"
-              }
-            ]
-          }
-        },
-        {
           "given": "S.P.",
           "family": "Kopysov",
           "literal": null,
@@ -151361,39 +151271,9 @@
           }
         },
         {
-          "given": null,
-          "family": null,
-          "literal": "Udmurt State University",
-          "source_fields": {
-            "sequence": "additional",
-            "affiliation": [],
-            "role": [
-              {
-                "role": "author",
-                "vocabulary": "crossref"
-              }
-            ]
-          }
-        },
-        {
           "given": "I.M.",
           "family": "Kuz'min",
           "literal": null,
-          "source_fields": {
-            "sequence": "additional",
-            "affiliation": [],
-            "role": [
-              {
-                "role": "author",
-                "vocabulary": "crossref"
-              }
-            ]
-          }
-        },
-        {
-          "given": null,
-          "family": null,
-          "literal": "Udmurt Federal Research Center of the Ural Branch of the Russian Academy of Sciences",
           "source_fields": {
             "sequence": "additional",
             "affiliation": [],
@@ -151421,21 +151301,6 @@
           }
         },
         {
-          "given": null,
-          "family": null,
-          "literal": "Udmurt Federal Research Center of the Ural Branch of the Russian Academy of Sciences",
-          "source_fields": {
-            "sequence": "additional",
-            "affiliation": [],
-            "role": [
-              {
-                "role": "author",
-                "vocabulary": "crossref"
-              }
-            ]
-          }
-        },
-        {
           "given": "A.K.",
           "family": "Novikov",
           "literal": null,
@@ -151451,39 +151316,9 @@
           }
         },
         {
-          "given": null,
-          "family": null,
-          "literal": "Udmurt Federal Research Center of the Ural Branch of the Russian Academy of Sciences",
-          "source_fields": {
-            "sequence": "additional",
-            "affiliation": [],
-            "role": [
-              {
-                "role": "author",
-                "vocabulary": "crossref"
-              }
-            ]
-          }
-        },
-        {
           "given": "L.E.",
           "family": "Tonkov",
           "literal": null,
-          "source_fields": {
-            "sequence": "additional",
-            "affiliation": [],
-            "role": [
-              {
-                "role": "author",
-                "vocabulary": "crossref"
-              }
-            ]
-          }
-        },
-        {
-          "given": null,
-          "family": null,
-          "literal": "Udmurt Federal Research Center of the Ural Branch of the Russian Academy of Sciences",
           "source_fields": {
             "sequence": "additional",
             "affiliation": [],
@@ -154670,21 +154505,6 @@
       "title": "Partitioned Computation for Fluid-structure Interaction with Rigid Body Motion",
       "authors": [
         {
-          "given": null,
-          "family": null,
-          "literal": "Department of Mathematics and Statistics, Old Dominion University, Norfolk, VA 23529",
-          "source_fields": {
-            "sequence": "first",
-            "affiliation": [],
-            "role": [
-              {
-                "role": "author",
-                "vocabulary": "crossref"
-              }
-            ]
-          }
-        },
-        {
           "given": "Asim",
           "family": "Timalsina",
           "literal": null,
@@ -154715,39 +154535,9 @@
           }
         },
         {
-          "given": null,
-          "family": null,
-          "literal": "Department of Mechanical and Aerospace Engineering, Old Dominion University, Norfolk, VA 23529",
-          "source_fields": {
-            "sequence": "additional",
-            "affiliation": [],
-            "role": [
-              {
-                "role": "author",
-                "vocabulary": "crossref"
-              }
-            ]
-          }
-        },
-        {
           "given": "Jin",
           "family": "Wang",
           "literal": null,
-          "source_fields": {
-            "sequence": "additional",
-            "affiliation": [],
-            "role": [
-              {
-                "role": "author",
-                "vocabulary": "crossref"
-              }
-            ]
-          }
-        },
-        {
-          "given": null,
-          "family": null,
-          "literal": "Department of Mathematics, University of Tennessee at Chattanooga, Chattanooga, TN 37403",
           "source_fields": {
             "sequence": "additional",
             "affiliation": [],
@@ -161685,21 +161475,6 @@
           "given": null,
           "family": "Chen Fu",
           "literal": null,
-          "source_fields": {
-            "sequence": "additional",
-            "affiliation": [],
-            "role": [
-              {
-                "role": "author",
-                "vocabulary": "crossref"
-              }
-            ]
-          }
-        },
-        {
-          "given": null,
-          "family": null,
-          "literal": "School of Energy Science and Engineering, Harbin Institute of Technology, Harbin 150001, China",
           "source_fields": {
             "sequence": "additional",
             "affiliation": [],
