@@ -1,0 +1,50 @@
+{
+  "schema_version": 1,
+  "repairs": [
+    {
+      "doi": "10.5139/jksas.2008.36.6.532",
+      "evidence_fingerprint": "eee29d74a59a310135392a99863f457b22b76d89ce5f4c74e46d8da0756b3df9",
+      "reason": "publication must contain at least one author or editor",
+      "provenance": "human-reviewed",
+      "authors": [
+        {
+          "given": "Sung-Ki",
+          "family": "Jung",
+          "literal": null,
+          "source_fields": {}
+        },
+        {
+          "given": "Hoang Anh",
+          "family": "Duong",
+          "literal": null,
+          "source_fields": {}
+        },
+        {
+          "given": "Young-Min",
+          "family": "Lee",
+          "literal": null,
+          "source_fields": {}
+        },
+        {
+          "given": "Jin Hee",
+          "family": "Lee",
+          "literal": null,
+          "source_fields": {}
+        },
+        {
+          "given": "Rho-Shin",
+          "family": "Myong",
+          "literal": null,
+          "source_fields": {}
+        },
+        {
+          "given": "Tae-Hwan",
+          "family": "Cho",
+          "literal": null,
+          "source_fields": {}
+        }
+      ],
+      "editors": []
+    }
+  ]
+}
