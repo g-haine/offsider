@@ -26,7 +26,7 @@ jobs:
 
       - name: Verify pinned BibReview
         run: |
-          test "$(bibreview --version)" = "bibreview 1.7.1"
+          test "$(bibreview --version)" = "bibreview 1.7.2"
           python - <<'PY'
           import importlib.metadata
           import json
