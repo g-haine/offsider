@@ -22,7 +22,7 @@ jobs:
       - name: Install pinned BibReview
         run: |
           python -m pip install --upgrade pip
-          python -m pip install "git+https://github.com/g-haine/bibreview.git@c3bd7db44967b32f0a29baa7ceba911860db13d3"
+          python -m pip install "git+https://github.com/g-haine/bibreview.git@de48a0c6c31d0409b6526047da225bf2774822df"
 
       - name: Verify pinned BibReview
         run: |
@@ -31,7 +31,7 @@ jobs:
           import importlib.metadata
           import json
 
-          expected = "c3bd7db44967b32f0a29baa7ceba911860db13d3"
+          expected = "de48a0c6c31d0409b6526047da225bf2774822df"
           distribution = importlib.metadata.distribution("bibreview")
           raw = distribution.read_text("direct_url.json")
           if not raw:
