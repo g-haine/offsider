@@ -1,7 +1,7 @@
 {
   "metadata": {
     "schema_version": 2,
-    "last_update": "2026-10-19"
+    "last_update": "2026-10-20"
   },
   "publications": [
     {
@@ -49310,9 +49310,9 @@
           }
         },
         {
-          "given": "Y.",
-          "family": "Wang",
-          "literal": null,
+          "given": null,
+          "family": null,
+          "literal": "Yongxing Wang",
           "source_fields": {
             "sequence": "additional",
             "affiliation": [],
@@ -112764,9 +112764,9 @@
       "title": "A generalized minimal residual method-based immersed boundary-lattice Boltzmann flux solver coupled with finite element method for non-linear fluid-structure interaction problems",
       "authors": [
         {
-          "given": "Y.",
-          "family": "Wang",
-          "literal": null,
+          "given": null,
+          "family": null,
+          "literal": "Yan Wang",
           "source_fields": {
             "ORCID": "https://orcid.org/0000-0002-4352-1450",
             "authenticated-orcid": false,
@@ -182139,9 +182139,9 @@
       "title": "An immersed boundary-lattice Boltzmann flux solver and its applications to fluid–structure interaction problems",
       "authors": [
         {
-          "given": "Y.",
-          "family": "Wang",
-          "literal": null,
+          "given": null,
+          "family": null,
+          "literal": "Yan Wang",
           "source_fields": {
             "sequence": "first",
             "affiliation": [],

@@ -1,0 +1,117 @@
+{
+  "schema_version": 1,
+  "decisions": [
+    {
+      "slugs": [
+        "a-zhang",
+        "alvin-zhang"
+      ],
+      "fingerprint": "sha256:d75adca7a0a01ccd9ffee0c4547a49a1dbd0a3a5d5242757e901c50252c844a8"
+    },
+    {
+      "slugs": [
+        "a-zhang",
+        "aobo-zhang"
+      ],
+      "fingerprint": "sha256:0606bc427653b3aa5bfe45e7e10065281c982bf49616a8d0c1a8d909a795be04"
+    },
+    {
+      "slugs": [
+        "baoyu-liu",
+        "bin-liu"
+      ],
+      "fingerprint": "sha256:971cec3f1ce6628cd632aeaab52b642a13027f2b43595333d150c6c6e405c045"
+    },
+    {
+      "slugs": [
+        "hsuchew-lee",
+        "hyesuk-lee"
+      ],
+      "fingerprint": "sha256:da6e931d8d643820f237f9170e2bc7acb4e4bcb137370b27ef1d2fc5d6ba861e"
+    },
+    {
+      "slugs": [
+        "in-lee",
+        "injae-lee"
+      ],
+      "fingerprint": "sha256:d716ec2a7e0a0467d0b0153a85efc9acf64550471a4f680978f418892c337da5"
+    },
+    {
+      "slugs": [
+        "jae-kwan-kim",
+        "jeonghyun-kim"
+      ],
+      "fingerprint": "sha256:69661c8d705df6889ea53e9c1e2608a3a54707e9117d8d32b02cbee3ad944448"
+    },
+    {
+      "slugs": [
+        "jae-kwan-kim",
+        "jungdo-kim"
+      ],
+      "fingerprint": "sha256:1f4d8833d829987268f76481e1352d60c3dc495a4bbd597332e606b7de3b9586"
+    },
+    {
+      "slugs": [
+        "jie-wu",
+        "jinxin-wu"
+      ],
+      "fingerprint": "sha256:e9f564cdca9dc0e44864b3f0a9b9ab839d10112c70963e13ea8a74c91c529187"
+    },
+    {
+      "slugs": [
+        "keita-hara",
+        "kensuke-hara"
+      ],
+      "fingerprint": "sha256:4831cba64d277e2396aa2e0d894759157720a45ab07683812b78c066df2322af"
+    },
+    {
+      "slugs": [
+        "lei-cheng",
+        "li-cheng"
+      ],
+      "fingerprint": "sha256:5a6fec1775147c0685f5b4cc116bc8eb270594302970b2717011cf1d04cc5d7a"
+    },
+    {
+      "slugs": [
+        "li-cheng",
+        "lu-cheng"
+      ],
+      "fingerprint": "sha256:22a3fadb121935f9490c962e72e7ba47e18b2018cef06bb5cf25e32620718b07"
+    },
+    {
+      "slugs": [
+        "qiang-chen",
+        "qixing-chen"
+      ],
+      "fingerprint": "sha256:f9ca979ecf2f6df3cd3e1139073ed41f85cf40694a75b9c421d3eee7ef1b7c6e"
+    },
+    {
+      "slugs": [
+        "shivangi-mitra",
+        "sourav-mitra"
+      ],
+      "fingerprint": "sha256:77f0c1ed1454cf681fc3532e5849b6be63b5906f39d85abb47e48c9e711e96da"
+    },
+    {
+      "slugs": [
+        "wei-wang",
+        "wenyan-wang"
+      ],
+      "fingerprint": "sha256:031e3887b8c8df88a9744d0882fabf481f284bc19a12fbda5c5079b9cccca36c"
+    },
+    {
+      "slugs": [
+        "xiaodong-wang",
+        "xingshi-wang"
+      ],
+      "fingerprint": "sha256:960855edeaa6adbc9ac6b7d50711d4936dadc0d2816651edb5ef4c4a8b60128f"
+    },
+    {
+      "slugs": [
+        "xiaodong-wang",
+        "xudong-wang"
+      ],
+      "fingerprint": "sha256:2c122622e52f7a9d7ae4df1a5127060d0c486ec424d7eababaa83867d5f8cb29"
+    }
+  ]
+}
