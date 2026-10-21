@@ -1,0 +1,15 @@
+---
+title: "Thomas Wick"
+---
+
+- **2022 — D. Jodlbauer, U. Langer, T. Wick.** [Efficient Monolithic Solvers for Fluid-Structure Interaction Applied to Flapping Membranes](../../publications/efficient-monolithic-solvers-for-fluid-structure-interaction-applied-to-flapping-membranes/)
+- **2022 — D. Khimin, J. Roth, T. Wick.** [Space-time fluid-structure interaction:  formulation and dG(0) time discretization](../../publications/space-time-fluid-structure-interaction-formulation-and-dg-0-time-discretization/)
+- **2022 — Thomas Wick.** [Adjoint-based methods for optimization and goal-oriented error control applied to fluid-structure interaction: implementation of a partition-of-unity dual-weighted residual estimator for stationary forward FSI problems in deal.II](../../publications/adjoint-based-methods-for-optimization-and-goal-oriented-error-control-applied-to-fluid-structure-interaction-implementation-of-a-partition-of-unity-dual-weighted-residual-estimator-for-stationary-forward-fsi-problems-in-deal-ii/)
+- **2021 — Thomas Wick, Winnifried Wollner.** [Optimization with nonstationary, nonlinear monolithic fluid‐structure interaction](../../publications/optimization-with-nonstationary-nonlinear-monolithic-fluid-structure-interaction/)
+- **2019 — D. Jodlbauer, U. Langer, T. Wick.** [Parallel block‐preconditioned monolithic solvers for fluid‐structure interaction problems](../../publications/parallel-block-preconditioned-monolithic-solvers-for-fluid-structure-interaction-problems/)
+- **2018 — Lukas Failer, Thomas Wick.** [Adaptive time-step control for nonlinear fluid–structure interaction](../../publications/adaptive-time-step-control-for-nonlinear-fluid-structure-interaction/)
+- **2017 — Thomas Wick.** [Variational-Monolithic ALE Fluid-Structure Interaction: Comparison of Computational Cost and Mesh Regularity Using Different Mesh Motion Techniques](../../publications/variational-monolithic-ale-fluid-structure-interaction-comparison-of-computational-cost-and-mesh-regularity-using-different-mesh-motion-techniques/)
+- **2015 — Thomas Richter, Thomas Wick.** [On Time Discretizations of Fluid-Structure Interactions](../../publications/on-time-discretizations-of-fluid-structure-interactions/)
+- **2013 — T. Richter, T. Wick.** [Optimal Control and Parameter Estimation for Stationary Fluid-Structure Interaction Problems](../../publications/optimal-control-and-parameter-estimation-for-stationary-fluid-structure-interaction-problems/)
+- **2013 — Thomas Wick.** [Coupling of fully Eulerian and arbitrary Lagrangian–Eulerian methods for fluid-structure interaction computations](../../publications/coupling-of-fully-eulerian-and-arbitrary-lagrangian-eulerian-methods-for-fluid-structure-interaction-computations/)
+- **2013 — T. Wick.** [Stability Estimates and Numerical Comparison of Second Order Time-Stepping Schemes for Fluid-Structure Interactions](../../publications/stability-estimates-and-numerical-comparison-of-second-order-time-stepping-schemes-for-fluid-structure-interactions/)

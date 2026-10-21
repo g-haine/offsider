@@ -3,3 +3,10 @@ __pycache__/
 .env
 audit/
 archive/
+
+# Hugo build artifacts
+site/public/
+site/resources/
+
+# Hugo runtime lock
+site/.hugo_build.lock

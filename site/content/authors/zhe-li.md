@@ -1,0 +1,10 @@
+---
+title: "Zhe Li"
+---
+
+- **2025 — Jolan Lopez, Zhe Li, Guillaume Oger.** [An LBM-FEM robust and efficient fluid–structure coupling scheme for partitioned numerical simulation of blood flow-aortic valve interaction](../../publications/an-lbm-fem-robust-and-efficient-fluid-structure-coupling-scheme-for-partitioned-numerical-simulation-of-blood-flow-aortic-valve-interaction/)
+- **2022 — Zhe Li, Guillaume Oger, David Le Touzé.** [A partitioned framework for coupling LBM and FEM through an implicit IBM allowing non-conforming time-steps: Application to fluid-structure interaction in biomechanics](../../publications/a-partitioned-framework-for-coupling-lbm-and-fem-through-an-implicit-ibm-allowing-non-conforming-time-steps-application-to-fluid-structure-interaction-in-biomechanics/)
+- **2018 — Zhe Li, Julien Favier.** [Fluid-Structure Interaction Using Lattice Boltzmann Method Coupled With Finite Element Method](../../publications/fluid-structure-interaction-using-lattice-boltzmann-method-coupled-with-finite-element-method/)
+- **2017 — Zhe Li, Julien Favier.** [A non-staggered coupling of finite element and lattice Boltzmann methods via an immersed boundary scheme for fluid-structure interaction](../../publications/a-non-staggered-coupling-of-finite-element-and-lattice-boltzmann-methods-via-an-immersed-boundary-scheme-for-fluid-structure-interaction/)
+- **2015 — Zhe Li, Julien Leduc, Jorge Nunez-Ramirez, Alain Combescure, Jean-Christophe Marongiu.** [A non-intrusive partitioned approach to couple smoothed particle hydrodynamics and finite element methods for transient fluid-structure interaction problems with large interface motion](../../publications/a-non-intrusive-partitioned-approach-to-couple-smoothed-particle-hydrodynamics-and-finite-element-methods-for-transient-fluid-structure-interaction-problems-with-large-interface-motion/)
+- **2014 — Zhe Li, Julien Leduc, Alain Combescure, Francis Leboeuf.** [Coupling of SPH-ALE method and finite element method for transient fluid–structure interaction](../../publications/coupling-of-sph-ale-method-and-finite-element-method-for-transient-fluid-structure-interaction/)

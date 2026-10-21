@@ -1,0 +1,56 @@
+{{ $groups := .GroupByParam "year" "desc" }}
+
+<div id="publications">
+  {{ range $groups }}
+    {{ $year := .Key }}
+
+    <section class="year-block">
+      <h3 id="year-{{ $year }}" class="publication-year-heading">
+        → <strong>In {{ $year }}</strong> ({{ len .Pages }} items)
+      </h3>
+
+      <nav class="publication-year-jump" aria-label="Publication year">
+        <label for="publication-year-select-{{ $year }}">Jump to another year</label>
+        <select id="publication-year-select-{{ $year }}"
+                class="publication-year-select">
+          <option value="" selected>Select a year</option>
+          {{ range $groups }}
+            <option value="#year-{{ .Key }}">
+              {{ .Key }} ({{ len .Pages }})
+            </option>
+          {{ end }}
+        </select>
+      </nav>
+
+      <ul class="post-list">
+        {{ range .Pages.ByDate.Reverse }}
+          <li>
+            <span class="post-meta">
+              {{ .Params.year }} --
+              {{ if .Params.authors }}
+                {{ delimit .Params.authors ", " }}
+              {{ else if .Params.editors }}
+                {{ delimit .Params.editors ", " }}
+              {{ end }}
+            </span>
+            <h3>
+              <a class="post-link" href="{{ .RelPermalink }}">
+                {{ .Title }}
+              </a>
+            </h3>
+          </li>
+        {{ end }}
+      </ul>
+    </section>
+  {{ end }}
+</div>
+
+<script>
+  document.querySelectorAll(".publication-year-select").forEach(function (select) {
+    select.addEventListener("change", function () {
+      if (this.value) {
+        window.location.hash = this.value;
+      }
+    });
+  });
+</script>

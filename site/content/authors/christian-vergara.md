@@ -1,0 +1,12 @@
+---
+title: "Christian Vergara"
+---
+
+- **2026 — Francesca Renzi, Christian Vergara.** [A Stable Loosely-Coupled Dirichlet-Neumann Scheme for Fluid-Structure Interaction with Large Added-Mass](../../publications/a-stable-loosely-coupled-dirichlet-neumann-scheme-for-fluid-structure-interaction-with-large-added-mass/)
+- **2023 — Michele Bucelli, Luca Dede, Alfio Quarteroni, Christian Vergara.** [Partitioned and Monolithic Algorithms for the Numerical Solution of Cardiac Fluid-Structure Interaction](../../publications/partitioned-and-monolithic-algorithms-for-the-numerical-solution-of-cardiac-fluid-structure-interaction/)
+- **2021 — Marco Martinolli, Jacopo Biasetti, Stefano Zonca, Luc Polverelli, Christian Vergara.** [Extended finite element method for fluid‐structure interaction in wave membrane blood pump](../../publications/extended-finite-element-method-for-fluid-structure-interaction-in-wave-membrane-blood-pump/)
+- **2014 — Fabio Nobile, Matteo Pozzoli, Christian Vergara.** [Inexact accurate partitioned algorithms for fluid–structure interaction problems with finite elasticity in haemodynamics](../../publications/inexact-accurate-partitioned-algorithms-for-fluid-structure-interaction-problems-with-finite-elasticity-in-haemodynamics/)
+- **2013 — Fabio Nobile, Matteo Pozzoli, Christian Vergara.** [Time accurate partitioned algorithms for the solution of fluid–structure interaction problems in haemodynamics](../../publications/time-accurate-partitioned-algorithms-for-the-solution-of-fluid-structure-interaction-problems-in-haemodynamics/)
+- **2012 — Fabio Nobile, Christian Vergara.** [Partitioned Algorithms for Fluid-Structure Interaction Problems in Haemodynamics](../../publications/partitioned-algorithms-for-fluid-structure-interaction-problems-in-haemodynamics/)
+- **2011 — Mauro Perego, Alessandro Veneziani, Christian Vergara.** [A Variational Approach for Estimating the Compliance of the Cardiovascular Tissue: An Inverse Fluid-Structure Interaction Problem](../../publications/a-variational-approach-for-estimating-the-compliance-of-the-cardiovascular-tissue-an-inverse-fluid-structure-interaction-problem/)
+- **2010 — Luca Gerardo-Giorda, Fabio Nobile, Christian Vergara.** [Analysis and Optimization of Robin–Robin Partitioned Procedures in Fluid-Structure Interaction Problems](../../publications/analysis-and-optimization-of-robin-robin-partitioned-procedures-in-fluid-structure-interaction-problems/)

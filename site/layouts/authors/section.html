@@ -1,0 +1,58 @@
+{{ define "main" }}
+<h1>Authors</h1>
+
+{{ $authors := slice }}
+{{ range .RegularPages }}
+  {{ $words := split .Title " " }}
+  {{ $last := index $words (sub (len $words) 1) }}
+  {{ $letter := upper (substr $last 0 1) }}
+  {{ $key := printf "%s|%s" (lower $last) (lower .Title) }}
+  {{ $authors = $authors | append (dict
+      "page" .
+      "letter" $letter
+      "key" $key
+  ) }}
+{{ end }}
+
+{{ $authors = sort $authors "key" }}
+
+<h3>There are {{ len $authors }} authors referenced.</h3>
+
+<p id="info-authors">
+  For simplicity, the authors are sorted using the last word of their name.<br>
+  For example, <i>Arjan van der Schaft</i> appears under the letter
+  <strong>S</strong>, and <i>Yann Le Gorrec</i> under the letter
+  <strong>G</strong>.
+</p>
+
+<p>
+  You may want to look at
+  <a href="{{ "data/bibreview/author_mappings.json" | relURL }}">
+    the array managing name variations
+  </a>
+  (a JSON file) for verification/correction.
+</p>
+
+<hr>
+
+<p id="links-letters">
+  {{ range $i, $letter := split "ABCDEFGHIJKLMNOPQRSTUVWXYZ" "" }}
+    {{ if $i }} - {{ end }}
+    <a href="#{{ lower $letter }}">{{ $letter }}</a>
+  {{ end }}
+</p>
+
+{{ range $letter := split "ABCDEFGHIJKLMNOPQRSTUVWXYZ" "" }}
+  {{ $group := where $authors "letter" $letter }}
+  {{ if $group }}
+    <h2 id="{{ lower $letter }}">{{ $letter }}</h2>
+
+    <div class="author-grid">
+      {{ range $group }}
+        <a href="{{ .page.RelPermalink }}">{{ .page.Title }}</a>
+      {{ end }}
+    </div>
+  {{ end }}
+{{ end }}
+
+{{ end }}

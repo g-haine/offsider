@@ -1,0 +1,27 @@
+{{ define "main" }}
+  {{ if .IsHome }}
+    <h1>{{ site.Title }}</h1>
+    <p>A curated bibliography on mathematical fluid-structure interaction.</p>
+    <ul>
+      <li><a href="{{ "/publications/" | relURL }}">Browse publications</a></li>
+      <li><a href="{{ "/authors/" | relURL }}">Browse authors</a></li>
+      <li><a href="{{ "/years/" | relURL }}">Browse years</a></li>
+    </ul>
+  {{ else if .IsPage }}
+    <article>
+      <h1>{{ .Title }}</h1>
+      {{ .Content }}
+    </article>
+  {{ else }}
+    <section>
+      <h1>{{ .Title }}</h1>
+      {{ with .Content }}{{ . }}{{ else }}
+        <ul>
+          {{ range .Pages.ByTitle }}
+            <li><a href="{{ .RelPermalink }}">{{ .LinkTitle }}</a></li>
+          {{ end }}
+        </ul>
+      {{ end }}
+    </section>
+  {{ end }}
+{{ end }}

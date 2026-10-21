@@ -1,0 +1,17 @@
+---
+title: "Irena Lasiecka"
+---
+
+- **2018 — Irena Lasiecka, Katarzyna Szulc, Antoni Żochowski.** [Boundary control of small solutions to fluid–structure interactions arising in coupling of elasticity with Navier–Stokes equation under mixed boundary conditions](../../publications/boundary-control-of-small-solutions-to-fluid-structure-interactions-arising-in-coupling-of-elasticity-with-navier-stokes-equation-under-mixed-boundary-conditions/)
+- **2017 — Mihaela Ignatova, Igor Kukavica, Irena Lasiecka, Amjad Tuffaha.** [Small data global existence for a fluid-structure model](../../publications/small-data-global-existence-for-a-fluid-structure-model/)
+- **2014 — Mihaela Ignatova, Igor Kukavica, Irena Lasiecka, Amjad Tuffaha.** [On well-posedness and small data global existence for an interface damped free boundary fluid–structure model](../../publications/on-well-posedness-and-small-data-global-existence-for-an-interface-damped-free-boundary-fluid-structure-model/)
+- **2012 — Irena Lasiecka, Yongjin Lu.** [Interface feedback control stabilization of a nonlinear fluid–structure interaction](../../publications/interface-feedback-control-stabilization-of-a-nonlinear-fluid-structure-interaction/)
+- **2011 — Irena Lasiecka, Roberto Triggiani, Jing Zhang.** [The fluid-structure interaction model with both control and disturbance at the interface: a game theory problem via an abstract approach](../../publications/the-fluid-structure-interaction-model-with-both-control-and-disturbance-at-the-interface-a-game-theory-problem-via-an-abstract-approach/)
+- **2010 — Irena Lasiecka, Yongjin Lu.** [Boundary asymptotic stabilizability of a nonlinear fluid structure interaction](../../publications/boundary-asymptotic-stabilizability-of-a-nonlinear-fluid-structure-interaction/)
+- **2011 — Francesca Bucci, Irena Lasiecka.** [Regularity of boundary traces for a fluid-solid interaction model](../../publications/regularity-of-boundary-traces-for-a-fluid-solid-interaction-model/)
+- **2009 — Irena Lasiecka, Amjad Tuffaha.** [Optimal Feedback Synthesis for Bolza Control Problem Arising in Linearized Fluid Structure Interaction](../../publications/optimal-feedback-synthesis-for-bolza-control-problem-arising-in-linearized-fluid-structure-interaction/)
+- **2010 — Francesca Bucci, Irena Lasiecka.** [Optimal boundary control with critical penalization for a PDE model of fluid–solid interactions](../../publications/optimal-boundary-control-with-critical-penalization-for-a-pde-model-of-fluid-solid-interactions/)
+- **2009 — Irena Lasiecka, Amjad Tuffaha.** [Riccati theory and singular estimates for a Bolza control problem arising in linearized fluid–structure interaction](../../publications/riccati-theory-and-singular-estimates-for-a-bolza-control-problem-arising-in-linearized-fluid-structure-interaction/)
+- **2008 — Irena Lasiecka, Amjad Tuffaha.** [Boundary feedback control in Fluid-Structure Interactions](../../publications/boundary-feedback-control-in-fluid-structure-interactions/)
+- **2008 — Viorel Barbu, Zoran Grujic, Irena Lasiecka, Amjad Tuffaha.** [Smoothness of weak solutions to a nonlinear fluid-structure interaction model](../../publications/smoothness-of-weak-solutions-to-a-nonlinear-fluid-structure-interaction-model/)
+- **2007 — I. Lasiecka, A. Tuffaha.** [Riccati equations arising in boundary control of fluid structure interactions](../../publications/riccati-equations-arising-in-boundary-control-of-fluid-structure-interactions/)
