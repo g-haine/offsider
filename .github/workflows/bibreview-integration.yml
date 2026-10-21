@@ -12,17 +12,17 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - name: Check out repository
-        uses: actions/checkout@v4
+        uses: actions/checkout@v7
 
       - name: Set up Python
-        uses: actions/setup-python@v5
+        uses: actions/setup-python@v7
         with:
           python-version: "3.12"
 
       - name: Install pinned BibReview
         run: |
           python -m pip install --upgrade pip
-          python -m pip install "git+https://github.com/g-haine/bibreview.git@de48a0c6c31d0409b6526047da225bf2774822df"
+          python -m pip install "git+https://github.com/g-haine/bibreview.git@89e9c616962d42565e35c2f82ec8ba7c2568085d"
 
       - name: Verify pinned BibReview
         run: |
@@ -31,7 +31,7 @@ jobs:
           import importlib.metadata
           import json
 
-          expected = "de48a0c6c31d0409b6526047da225bf2774822df"
+          expected = "89e9c616962d42565e35c2f82ec8ba7c2568085d"
           distribution = importlib.metadata.distribution("bibreview")
           raw = distribution.read_text("direct_url.json")
           if not raw:

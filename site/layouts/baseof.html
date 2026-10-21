@@ -1,0 +1,56 @@
+<!doctype html>
+<html lang="{{ site.Language.Locale }}">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>{{ if .IsHome }}{{ site.Title }}{{ else }}{{ .Title }} · {{ site.Title }}{{ end }}</title>
+  <link rel="stylesheet" href="{{ "assets/css/style.css" | relURL }}">
+</head>
+<body>
+
+<header class="site-header">
+  <div class="wrapper">
+    <a class="site-title" href="{{ site.Home.RelPermalink }}">{{ site.Title }}</a>
+    <nav class="site-nav">
+      <a href="{{ "search/" | relURL }}">Search</a>
+      <a href="{{ "categories/articles/" | relURL }}">Articles</a>
+      <a href="{{ "categories/books/" | relURL }}">Books</a>
+      <a href="{{ "categories/chapters/" | relURL }}">Chapters</a>
+      <a href="{{ "categories/proceedings/" | relURL }}">Proceedings</a>
+      <a href="{{ "categories/dissertations/" | relURL }}">Dissertations</a>
+      <a href="{{ "authors/" | relURL }}">Authors</a>
+      <a href="{{ "years/" | relURL }}">Years</a>
+      <a href="{{ "about/" | relURL }}">About</a>
+    </nav>
+  </div>
+</header>
+
+<main class="page-content">
+  <div class="wrapper">
+    {{ block "main" . }}{{ end }}
+  </div>
+</main>
+
+<footer class="site-footer">
+  <div class="wrapper">
+    <p>A curated bibliography on mathematical fluid-structure interaction.</p>
+    <p>Powered by <a href="https://github.com/g-haine/bibreview">BibReview</a>.</p>
+  </div>
+</footer>
+
+<script>
+  window.MathJax = {
+    tex: {
+      inlineMath: [['$', '$'], ['\\(', '\\)']],
+      displayMath: [['$$', '$$'], ['\\[', '\\]']]
+    }
+  };
+</script>
+<script id="MathJax-script" async
+        src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+
+<script src="{{ "assets/js/copy-to-clipboard.js" | relURL }}"></script>
+<script src="{{ "assets/js/scroll-to-top.js" | relURL }}"></script>
+
+</body>
+</html>

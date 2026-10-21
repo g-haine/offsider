@@ -1,0 +1,25 @@
+{{ define "main" }}
+<div class="home">
+  <h1>of.FSI.der</h1>
+  <p>A curated bibliography on mathematical fluid-structure interaction.</p>
+
+  {{ $publications := site.GetPage "/publications" }}
+  {{ $lastUpdate := time.AsTime hugo.Data.bibreview.metadata.last_update }}
+
+  <hr>
+
+  <h3>
+    Last update:
+    <strong>{{ $lastUpdate.Format "the 02 of January (2006)" }}</strong>;
+    <strong>{{ len $publications.RegularPages }}</strong> items have been referenced.
+  </h3>
+
+  <hr>
+
+  <h2 class="post-list-heading">Publications</h2>
+
+  {{ with site.GetPage "/publications" }}
+    {{ partial "publication-list.html" .RegularPages }}
+  {{ end }}
+</div>
+{{ end }}

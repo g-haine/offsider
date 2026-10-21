@@ -1,0 +1,9 @@
+---
+title: "K.-U. Bletzinger"
+---
+
+- **2022 — A.K. Birjandi, Sh. Shayegan, K.-U. Bletzinger, R. Wüchner.** [Development of a high-fidelity partitioned Fluid–Structure Interaction model of an Omega-shaped Coriolis Mass Meter and comparison with experimental data](../../publications/development-of-a-high-fidelity-partitioned-fluid-structure-interaction-model-of-an-omega-shaped-coriolis-mass-meter-and-comparison-with-experimental-data/)
+- **2021 — I. López, J. Piquee, P. Bucher, K.-U. Bletzinger, C. Breitsamter, R. Wüchner.** [Numerical analysis of an elasto-flexible membrane blade using steady-state fluid–structure interaction simulations](../../publications/numerical-analysis-of-an-elasto-flexible-membrane-blade-using-steady-state-fluid-structure-interaction-simulations/)
+- **2022 — Reza Najian Asl, Ihar Antonau, Aditya Ghantasala, Wulf G. Dettmer, Roland Wüchner, Kai-Uwe Bletzinger.** [A partitioned scheme for adjoint shape sensitivity analysis of fluid–structure interactions involving non-matching meshes](../../publications/a-partitioned-scheme-for-adjoint-shape-sensitivity-analysis-of-fluid-structure-interactions-involving-non-matching-meshes/)
+- **2016 — Andreas Mini, Christopher Lerch, Roland Wüchner, Kai‐Uwe Bletzinger.** [Computational Closed‐Loop Control of Fluid‐structure Interaction (FSCI) for Lightweight Structures](../../publications/computational-closed-loop-control-of-fluid-structure-interaction-fsci-for-lightweight-structures/)
+- **2013 — Joris Degroote, Majid Hojjat, Electra Stavropoulou, Roland Wüchner, Kai-Uwe Bletzinger.** [Partitioned solution of an unsteady adjoint for strongly coupled fluid-structure interactions and application to parameter identification of a one-dimensional problem](../../publications/partitioned-solution-of-an-unsteady-adjoint-for-strongly-coupled-fluid-structure-interactions-and-application-to-parameter-identification-of-a-one-dimensional-problem/)

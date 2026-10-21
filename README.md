@@ -1,97 +1,124 @@
 # of.FSI.der
 
-**of.FSI.der** is a curated scientific bibliography managed with
+**of.FSI.der** is a curated scientific bibliography for mathematical
+fluid-structure interaction, managed with
 [BibReview](https://github.com/g-haine/bibreview).
 
 Repository slug: `offsider`.
 
-This repository is also the second real-world validation project for BibReview's
-resumable `bibreview init` workflow. Its creation is documented step by step in
-[`docs/bootstrap.md`](docs/bootstrap.md) so the experience can be turned into
-generic BibReview onboarding documentation.
+The repository also serves as a real-world integration project for BibReview.
+Its initial construction and the validation of the resumable
+`bibreview init` workflow are documented in
+[`docs/bootstrap.md`](docs/bootstrap.md).
 
 ## Current status
 
-The repository has completed bootstrap, scientific-scope definition, seed-query
-acceptance, and the first four real initialization batches.
+The initial discovery and curation campaign is complete.
 
-The accepted title-only OpenAlex seed query produced a complete, non-truncated
-1535-candidate DOI campaign.
+Starting from a title-only OpenAlex discovery query, BibReview built a stable
+campaign of 1535 candidate DOI records. The complete initialization workflow
+was then carried out through bounded, resumable batches with explicit human
+review.
 
-Batch `batch-0001` was processed end to end:
-8 publications were reviewed, collected, and merged into the canonical
-bibliography; 2 candidates were deliberately rejected.
+Final campaign state:
 
-Batch `batch-0002` repeated the same explicit
-screening → human review → collect → merge workflow:
-6 publications were merged and 4 candidates were rejected.
+- 1535 candidates;
+- 1125 publications merged into the canonical bibliography;
+- 402 rejected candidates;
+- 8 skipped candidates;
+- no pending, review, staged, retryable, or failed items.
 
-Batch `batch-0003` then produced 3 automatic pending candidates and 7 manual
-review candidates. Human review resolved the batch to 6 accepted and 4
-rejected publications; all 6 accepted records were collected and merged
-successfully.
+Author identity hygiene has also been completed. The current author mapping
+contains 2133 canonical identities and 2439 known name variants, with the
+remaining ambiguous pairs explicitly reviewed.
 
-Batch `batch-0004` produced 4 automatic pending candidates, 5 manual-review
-candidates, and 1 automatic rejection. Human review resolved the batch to 6
-accepted and 4 rejected publications. All 6 accepted records were collected
-and merged successfully.
+The canonical bibliography is therefore the human-validated source of truth
+for the project.
 
-The canonical bibliography therefore currently contains 26 publications, with
-14 rejected initialization candidates. All 81 current author name variants are
-mapped explicitly.
+## Website
 
-The persisted initialization status remains read-only at `3/4` closed batches;
-the next real `bibreview init` planning step will reconcile the completed
-`batch-0004`, close it, and open `batch-0005`.
+of.FSI.der is the first real-world project using BibReview's Hugo renderer.
 
-Site publication remains disabled. Once the canonical bibliography and author
-mappings are stable, of.FSI.der will be used to validate BibReview's planned
-**Hugo** renderer and GitHub Pages publication workflow.
+BibReview generates the publication, author, year, metadata, BibTeX, and
+optional public-data artifacts. The repository itself owns the presentation:
+Hugo layouts, CSS, navigation, category pages, search, and deployment.
+
+The site currently provides:
+
+- the complete bibliography grouped by year;
+- publication pages with abstracts, metadata, references, and BibTeX downloads;
+- author indexes and author publication pages;
+- year indexes;
+- publication-type views for articles, books, chapters, proceedings, and
+  dissertations;
+- full-text local search powered by Pagefind;
+- light and dark presentation modes;
+- public bibliography and author-mapping snapshots.
+
+The production render has been validated locally with Hugo 0.168.0 and
+Pagefind 1.5.2. Pagefind indexes exactly the 1125 publication pages.
 
 ## Local environment
 
 Create or update the reproducible Conda environment:
 
-~~~bash
+```bash
 bash install.sh
 conda activate offsider
-~~~
+```
 
 Then validate the project:
 
-~~~bash
+```bash
 bibreview --version
 bibreview validate
 bibreview status
-~~~
+```
 
-The environment is pinned to the exact unreleased BibReview commit used by this
-pilot. The current pin includes the stabilized `bibreview init` dry-run
-reporting and candidate-local invalid-metadata isolation in `collect` validated
-after `batch-0002`.
+The environment is pinned to an exact BibReview commit so local development and
+continuous integration use the same implementation.
 
-## Next step
+## Rendering the site
 
-The first four batches confirm that a batch size of 10 keeps the human-review
-burden manageable and that the end-to-end initialization workflow is resumable.
+Regenerate BibReview-owned site artifacts with:
 
-The next real initialization step will reconcile the completed `batch-0004`
-and open `batch-0005`:
+```bash
+bibreview render
+```
 
-~~~bash
-git pull
-bibreview init --batch-size 10
-~~~
+A non-mutating preview is available with:
 
-The batch size remains deliberately fixed at 10 until a later decision is made
-to increase it.
+```bash
+bibreview --dry-run render
+```
+
+Build the Hugo site locally with:
+
+```bash
+hugo --source site --minify
+```
+
+Build the Pagefind search index after Hugo:
+
+```bash
+npx --yes pagefind@1.5.2 --site site/public
+```
+
+For local interactive preview:
+
+```bash
+hugo server --source site
+```
+
+The generated `site/public/` tree is a build artifact and is not committed.
 
 ## Project principles
 
 - provider data is evidence, not canonical authority;
-- every canonical change remains explicit and reviewable;
-- initialization proceeds through bounded resumable batches;
-- `collect` and `merge` remain explicit;
-- presentation is downstream of canonical bibliography state;
-- Hugo support will be implemented generically in BibReview, not specifically in
-  this repository.
+- canonical changes remain explicit and reviewable;
+- DOI-less publications are supported when sufficient evidence exists;
+- author identities are curated explicitly rather than inferred silently;
+- rendering never changes canonical bibliographic data;
+- BibReview owns reproducible bibliographic artifacts;
+- of.FSI.der owns presentation, navigation, search, and deployment;
+- the guiding rule remains: **provider = evidence; canon = human-validated**.

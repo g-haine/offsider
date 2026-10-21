@@ -1,0 +1,136 @@
+---
+title: "Isogeometric fluid–structure interaction analysis with emphasis on non-matching discretizations, and with application to wind turbines"
+date: 2012-04-20
+year: "2012"
+publication_type: "journal-article"
+authors:
+  - "Y. Bazilevs"
+  - "M.-C. Hsu"
+  - "M.A. Scott"
+author_slugs:
+  - "yuri-bazilevs"
+  - "ming-chen-hsu"
+  - "michael-a-scott"
+---
+
+## Authors
+[Y. Bazilevs](../../authors/yuri-bazilevs/), [M.-C. Hsu](../../authors/ming-chen-hsu/), [M.A. Scott](../../authors/michael-a-scott/)
+
+## Abstract
+
+
+## Citation
+- **Journal:** Computer Methods in Applied Mechanics and Engineering
+- **Year:** 2012
+- **Volume:** 249-252
+- **Issue:**
+- **Pages:** 28--41
+- **Publisher:** Elsevier BV
+- **DOI:** [10.1016/j.cma.2012.03.028](https://doi.org/10.1016/j.cma.2012.03.028)
+
+## BibTeX
+~~~bibtex
+@article{Bazilevs_2012,
+  title={{Isogeometric fluid–structure interaction analysis with emphasis on non-matching discretizations, and with application to wind turbines}},
+  volume={249-252},
+  ISSN={0045-7825},
+  DOI={10.1016/j.cma.2012.03.028},
+  journal={Computer Methods in Applied Mechanics and Engineering},
+  publisher={Elsevier BV},
+  author={Bazilevs, Y. and Hsu, M.-C. and Scott, M.A.},
+  year={2012},
+  pages={28--41}
+}
+~~~
+
+[Download the bib file](../../bib/isogeometric-fluid-structure-interaction-analysis-with-emphasis-on-non-matching-discretizations-and-with-application-to-wind-turbines.bib)
+
+## References
+- Akkerman I, Bazilevs Y, Calo VM, Hughes TJR, Hulshoff S (2007) The role of continuity in residual-based variational multiscale modeling of turbulence. Comput Mech 41(3):371–378. https://doi.org/10.1007/s00466-007-0193-7 -- [10.1007/s00466-007-0193-7](https://doi.org/10.1007/s00466-007-0193-7)
+- Arnold DN, Brezzi F, Cockburn B, Marini LD (2002) Unified Analysis of Discontinuous Galerkin Methods for Elliptic Problems. SIAM J Numer Anal 39(5):1749–1779. https://doi.org/10.1137/s0036142901384162 -- [10.1137/s0036142901384162](https://doi.org/10.1137/s0036142901384162)
+- Auricchio F, Beirão da Veiga L, Lovadina C, Reali A (2010) The importance of the exact satisfaction of the incompressibility constraint in nonlinear elasticity: mixed FEMs versus NURBS-based approximations. Computer Methods in Applied Mechanics and Engineering 199(5–8):314–323. https://doi.org/10.1016/j.cma.2008.06.004 -- [10.1016/j.cma.2008.06.004](https://doi.org/10.1016/j.cma.2008.06.004)
+- Bazilevs Y, Akkerman I (2010) Large eddy simulation of turbulent Taylor–Couette flow using isogeometric analysis and the residual-based variational multiscale method. Journal of Computational Physics 229(9):3402–3414. https://doi.org/10.1016/j.jcp.2010.01.008 -- [10.1016/j.jcp.2010.01.008](https://doi.org/10.1016/j.jcp.2010.01.008)
+- Bazilevs Y, Calo VM, Cottrell JA, Hughes TJR, Reali A, Scovazzi G (2007) Variational multiscale residual-based turbulence modeling for large eddy simulation of incompressible flows. Computer Methods in Applied Mechanics and Engineering 197(1–4):173–201. https://doi.org/10.1016/j.cma.2007.07.016 -- [10.1016/j.cma.2007.07.016](https://doi.org/10.1016/j.cma.2007.07.016)
+- Bazilevs Y, Calo VM, Cottrell JA, Evans JA, Hughes TJR, Lipton S, Scott MA, Sederberg TW (2010) Isogeometric analysis using T-splines. Computer Methods in Applied Mechanics and Engineering 199(5–8):229–263. https://doi.org/10.1016/j.cma.2009.02.036 -- [10.1016/j.cma.2009.02.036](https://doi.org/10.1016/j.cma.2009.02.036)
+- Bazilevs Y, Calo VM, Hughes TJR, Zhang Y (2008) Isogeometric fluid-structure interaction: theory, algorithms, and computations. Comput Mech 43(1):3–37. https://doi.org/10.1007/s00466-008-0315-x -- [10.1007/s00466-008-0315-x](https://doi.org/10.1007/s00466-008-0315-x)
+- Bazilevs Y, Calo VM, Zhang Y, Hughes TJR (2006) Isogeometric Fluid–structure Interaction Analysis with Applications to Arterial Blood Flow. Comput Mech 38(4–5):310–322. https://doi.org/10.1007/s00466-006-0084-3 -- [10.1007/s00466-006-0084-3](https://doi.org/10.1007/s00466-006-0084-3)
+- Bazilevs Y, Gohean JR, Hughes TJR, Moser RD, Zhang Y (2009) Patient-specific isogeometric fluid–structure interaction analysis of thoracic aortic blood flow due to implantation of the Jarvik 2000 left ventricular assist device. Computer Methods in Applied Mechanics and Engineering 198(45–46):3534–3550. https://doi.org/10.1016/j.cma.2009.04.015 -- [10.1016/j.cma.2009.04.015](https://doi.org/10.1016/j.cma.2009.04.015)
+- Bazilevs Y, Hsu M ‐C., Akkerman I, Wright S, Takizawa K, Henicke B, Spielman T, Tezduyar TE (2010) 3D simulation of wind turbine rotors at full scale. Part I: Geometry modeling and aerodynamics. Numerical Methods in Fluids 65(1–3):207–235. https://doi.org/10.1002/fld.2400 -- [10.1002/fld.2400](https://doi.org/10.1002/fld.2400)
+- Bazilevs Y, Hsu M-C, Benson DJ, Sankaran S, Marsden AL (2009) Computational fluid–structure interaction: methods and application to a total cavopulmonary connection. Comput Mech 45(1):77–89. https://doi.org/10.1007/s00466-009-0419-y -- [10.1007/s00466-009-0419-y](https://doi.org/10.1007/s00466-009-0419-y)
+- Bazilevs Y, Hsu M ‐C., Kiendl J, Benson DJ (2011) A computational procedure for prebending of wind turbine blades. Numerical Meth Engineering 89(3):323–336. https://doi.org/10.1002/nme.3244 -- [10.1002/nme.3244](https://doi.org/10.1002/nme.3244)
+- Bazilevs Y, Hsu M ‐C., Kiendl J, Wüchner R, Bletzinger K ‐U. (2010) 3D simulation of wind turbine rotors at full scale. Part II: Fluid–structure interaction modeling with composite blades. Numerical Methods in Fluids 65(1–3):236–253. https://doi.org/10.1002/fld.2454 -- [10.1002/fld.2454](https://doi.org/10.1002/fld.2454)
+- Bazilevs Y, Hsu M-C, Zhang Y, Wang W, Kvamsdal T, Hentschel S, Isaksen JG (2010) Computational vascular fluid–structure interaction: methodology and application to cerebral aneurysms. Biomech Model Mechanobiol 9(4):481–498. https://doi.org/10.1007/s10237-010-0189-7 -- [10.1007/s10237-010-0189-7](https://doi.org/10.1007/s10237-010-0189-7)
+- Bazilevs Y, Hsu M-C, Zhang Y, Wang W, Liang X, Kvamsdal T, Brekken R, Isaksen JG (2009) A fully-coupled fluid-structure interaction simulation of cerebral aneurysms. Comput Mech 46(1):3–16. https://doi.org/10.1007/s00466-009-0421-4 -- [10.1007/s00466-009-0421-4](https://doi.org/10.1007/s00466-009-0421-4)
+- Bazilevs Y, Hughes TJR (2007) Weak imposition of Dirichlet boundary conditions in fluid mechanics. Computers & Fluids 36(1):12–26. https://doi.org/10.1016/j.compfluid.2005.07.012 -- [10.1016/j.compfluid.2005.07.012](https://doi.org/10.1016/j.compfluid.2005.07.012)
+- Bazilevs Y, Michler C, Calo VM, Hughes TJR (2007) Weak Dirichlet boundary conditions for wall-bounded turbulent flows. Computer Methods in Applied Mechanics and Engineering 196(49–52):4853–4862. https://doi.org/10.1016/j.cma.2007.06.026 -- [10.1016/j.cma.2007.06.026](https://doi.org/10.1016/j.cma.2007.06.026)
+- Bazilevs Y, Michler C, Calo VM, Hughes TJR (2010) Isogeometric variational multiscale modeling of wall-bounded turbulent flows with weakly enforced boundary conditions on unstretched meshes. Computer Methods in Applied Mechanics and Engineering 199(13–16):780–790. https://doi.org/10.1016/j.cma.2008.11.020 -- [10.1016/j.cma.2008.11.020](https://doi.org/10.1016/j.cma.2008.11.020)
+- Benson DJ, Bazilevs Y, De Luycker E, Hsu M ‐C., Scott M, Hughes TJR, Belytschko T (2010) A generalized finite element formulation for arbitrary basis functions: From isogeometric analysis to XFEM. Numerical Meth Engineering 83(6):765–785. https://doi.org/10.1002/nme.2864 -- [10.1002/nme.2864](https://doi.org/10.1002/nme.2864)
+- Benson DJ, Bazilevs Y, Hsu MC, Hughes TJR (2010) Isogeometric shell analysis: The Reissner–Mindlin shell. Computer Methods in Applied Mechanics and Engineering 199(5–8):276–289. https://doi.org/10.1016/j.cma.2009.05.011 -- [10.1016/j.cma.2009.05.011](https://doi.org/10.1016/j.cma.2009.05.011)
+- Benson DJ, Bazilevs Y, Hsu M-C, Hughes TJR (2011) A large deformation, rotation-free, isogeometric shell. Computer Methods in Applied Mechanics and Engineering 200(13–16):1367–1378. https://doi.org/10.1016/j.cma.2010.12.003 -- [10.1016/j.cma.2010.12.003](https://doi.org/10.1016/j.cma.2010.12.003)
+- Borden MJ, Scott MA, Evans JA, Hughes TJR (2010) Isogeometric finite element data structures based on Bézier extraction of NURBS. Numerical Meth Engineering 87(1–5):15–47. https://doi.org/10.1002/nme.2968 -- [10.1002/nme.2968](https://doi.org/10.1002/nme.2968)
+- Borden MJ, Verhoosel CV, Scott MA, Hughes TJR, Landis CM (2012) A phase-field description of dynamic brittle fracture. Computer Methods in Applied Mechanics and Engineering 217–220:77–95. https://doi.org/10.1016/j.cma.2012.01.008 -- [10.1016/j.cma.2012.01.008](https://doi.org/10.1016/j.cma.2012.01.008)
+- Brenner, (2002)
+- Brooks AN, Hughes TJR (1982) Streamline upwind/Petrov-Galerkin formulations for convection dominated flows with particular emphasis on the incompressible Navier-Stokes equations. Computer Methods in Applied Mechanics and Engineering 32(1–3):199–259. https://doi.org/10.1016/0045-7825(82)90071-8 -- [10.1016/0045-7825(82)90071-8](https://doi.org/10.1016/0045-7825(82)90071-8)
+- Chung J, Hulbert GM (1993) A Time Integration Algorithm for Structural Dynamics With Improved Numerical Dissipation: The Generalized-α Method. Journal of Applied Mechanics 60(2):371–375. https://doi.org/10.1115/1.2900803 -- [10.1115/1.2900803](https://doi.org/10.1115/1.2900803)
+- Cirak F, Ortiz M (2001) Fully C1‐conforming subdivision elements for finite deformation thin‐shell analysis. Numerical Meth Engineering 51(7):813–833. https://doi.org/10.1002/nme.182 -- [10.1002/nme.182](https://doi.org/10.1002/nme.182)
+- Cirak, Subdivision surfaces: a new paradigm for thin shell analysis. Int. J. Numer. Methods Engrg. (2000) -- [10.1002/(sici)1097-0207(20000430)47:12<2039::aid-nme872>3.0.co;2-1](https://doi.org/10.1002/(sici)1097-0207(20000430)47:12<2039::aid-nme872>3.0.co;2-1)
+- Cirak F, Scott MJ, Antonsson EK, Ortiz M, Schröder P (2002) Integrated modeling, finite-element analysis, and engineering design for thin-shell structures using subdivision. Computer-Aided Design 34(2):137–148. https://doi.org/10.1016/s0010-4485(01)00061-6 -- [10.1016/s0010-4485(01)00061-6](https://doi.org/10.1016/s0010-4485(01)00061-6)
+- Cohen E, Martin T, Kirby RM, Lyche T, Riesenfeld RF (2010) Analysis-aware modeling: Understanding quality considerations in modeling for isogeometric analysis. Computer Methods in Applied Mechanics and Engineering 199(5–8):334–356. https://doi.org/10.1016/j.cma.2009.09.010 -- [10.1016/j.cma.2009.09.010](https://doi.org/10.1016/j.cma.2009.09.010)
+- Cottrell, (2009)
+- Cottrell JA, Reali A, Bazilevs Y, Hughes TJR (2006) Isogeometric analysis of structural vibrations. Computer Methods in Applied Mechanics and Engineering 195(41–43):5257–5296. https://doi.org/10.1016/j.cma.2005.09.027 -- [10.1016/j.cma.2005.09.027](https://doi.org/10.1016/j.cma.2005.09.027)
+- Dörfel MR, Jüttler B, Simeon B (2010) Adaptive isogeometric analysis by local h-refinement with T-splines. Computer Methods in Applied Mechanics and Engineering 199(5–8):264–275. https://doi.org/10.1016/j.cma.2008.07.012 -- [10.1016/j.cma.2008.07.012](https://doi.org/10.1016/j.cma.2008.07.012)
+- Elguedj T, Bazilevs Y, Calo VM, Hughes TJR (2008) and projection methods for nearly incompressible linear and non-linear elasticity and plasticity using higher-order NURBS elements. Computer Methods in Applied Mechanics and Engineering 197(33–40):2732–2762. https://doi.org/10.1016/j.cma.2008.01.012 -- [10.1016/j.cma.2008.01.012](https://doi.org/10.1016/j.cma.2008.01.012)
+- Ern, (2004)
+- [Farhat C, Lesoinne M, Le Tallec P (1998) Load and motion transfer algorithms for fluid/structure interaction problems with non-matching discrete interfaces: Momentum and energy conservation, optimal discretization and application to aeroelasticity. Computer Methods in Applied Mechanics and Engineering 157(1–2):95–114. https://doi.org/10.1016/s0045-7825(97)00216-8](../load-and-motion-transfer-algorithms-for-fluid-structure-interaction-problems-with-non-matching-discrete-interfaces-momentum-and-energy-conservation-optimal-discretization-and-application-to-aeroelasticity/) -- [10.1016/s0045-7825(97)00216-8](https://doi.org/10.1016/s0045-7825(97)00216-8)
+- Gómez H, Calo VM, Bazilevs Y, Hughes TJR (2008) Isogeometric analysis of the Cahn–Hilliard phase-field model. Computer Methods in Applied Mechanics and Engineering 197(49–50):4333–4352. https://doi.org/10.1016/j.cma.2008.05.003 -- [10.1016/j.cma.2008.05.003](https://doi.org/10.1016/j.cma.2008.05.003)
+- Gomez H, Hughes TJR, Nogueira X, Calo VM (2010) Isogeometric analysis of the isothermal Navier–Stokes–Korteweg equations. Computer Methods in Applied Mechanics and Engineering 199(25–28):1828–1840. https://doi.org/10.1016/j.cma.2010.02.010 -- [10.1016/j.cma.2010.02.010](https://doi.org/10.1016/j.cma.2010.02.010)
+- Hand MM, Simms DA, Fingersh LJ, Jager DW, Cotrell JR, Schreck S, Larwood SM (2001) Unsteady Aerodynamics Experiment Phase VI: Wind Tunnel Test Configurations and Available Data Campaigns. Office of Scientific and Technical Information (OSTI) -- [10.2172/15000240](https://doi.org/10.2172/15000240)
+- Hansbo P, Hermansson J (2003) Nitsche’s method for coupling non-matching meshes in fluid-structure vibration problems. Computational Mechanics 32(1–2):134–139. https://doi.org/10.1007/s00466-003-0467-7 -- [10.1007/s00466-003-0467-7](https://doi.org/10.1007/s00466-003-0467-7)
+- Hsu M-C, Akkerman I, Bazilevs Y (2011) High-performance computing of wind turbine aerodynamics using isogeometric analysis. Computers & Fluids 49(1):93–100. https://doi.org/10.1016/j.compfluid.2011.05.002 -- [10.1016/j.compfluid.2011.05.002](https://doi.org/10.1016/j.compfluid.2011.05.002)
+- Hsu M-C, Akkerman I, Bazilevs Y (2012) Wind turbine aerodynamics using ALE–VMS: validation and the role of weakly enforced boundary conditions. Comput Mech 50(4):499–511. https://doi.org/10.1007/s00466-012-0686-x -- [10.1007/s00466-012-0686-x](https://doi.org/10.1007/s00466-012-0686-x)
+- Hsu M-C, Bazilevs Y, Calo VM, Tezduyar TE, Hughes TJR (2010) Improving stability of stabilized and multiscale formulations in flow simulations at small time steps. Computer Methods in Applied Mechanics and Engineering 199(13–16):828–840. https://doi.org/10.1016/j.cma.2009.06.019 -- [10.1016/j.cma.2009.06.019](https://doi.org/10.1016/j.cma.2009.06.019)
+- Hughes TJR (1995) Multiscale phenomena: Green’s functions, the Dirichlet-to-Neumann formulation, subgrid scale models, bubbles and the origins of stabilized methods. Computer Methods in Applied Mechanics and Engineering 127(1–4):387–401. https://doi.org/10.1016/0045-7825(95)00844-9 -- [10.1016/0045-7825(95)00844-9](https://doi.org/10.1016/0045-7825(95)00844-9)
+- Hughes TJR, Cottrell JA, Bazilevs Y (2005) Isogeometric analysis: CAD, finite elements, NURBS, exact geometry and mesh refinement. Computer Methods in Applied Mechanics and Engineering 194(39–41):4135–4195. https://doi.org/10.1016/j.cma.2004.10.008 -- [10.1016/j.cma.2004.10.008](https://doi.org/10.1016/j.cma.2004.10.008)
+- Hughes TJR, Feijóo GR, Mazzei L, Quincy J-B (1998) The variational multiscale method—a paradigm for computational mechanics. Computer Methods in Applied Mechanics and Engineering 166(1–2):3–24. https://doi.org/10.1016/s0045-7825(98)00079-6 -- [10.1016/s0045-7825(98)00079-6](https://doi.org/10.1016/s0045-7825(98)00079-6)
+- Hughes TJR, Franca LP, Balestra M (1986) A new finite element formulation for computational fluid dynamics: V. Circumventing the babuška-brezzi condition: a stable Petrov-Galerkin formulation of the stokes problem accommodating equal-order interpolations. Computer Methods in Applied Mechanics and Engineering 59(1):85–99. https://doi.org/10.1016/0045-7825(86)90025-3 -- [10.1016/0045-7825(86)90025-3](https://doi.org/10.1016/0045-7825(86)90025-3)
+- Hughes TJR, Sangalli G (2007) Variational Multiscale Analysis: the Fine‐scale Green’s Function, Projection, Optimization, Localization, and Stabilized Methods. SIAM J Numer Anal 45(2):539–557. https://doi.org/10.1137/050645646 -- [10.1137/050645646](https://doi.org/10.1137/050645646)
+- Hughes, Multiscale and stabilized methods. (2004)
+- Hughes TJR, Tezduyar TE (1984) Finite element methods for first-order hyperbolic systems with particular emphasis on the compressible euler equations. Computer Methods in Applied Mechanics and Engineering 45(1–3):217–284. https://doi.org/10.1016/0045-7825(84)90157-9 -- [10.1016/0045-7825(84)90157-9](https://doi.org/10.1016/0045-7825(84)90157-9)
+- Jansen KE, Whiting CH, Hulbert GM (2000) A generalized-α method for integrating the filtered Navier–Stokes equations with a stabilized finite element method. Computer Methods in Applied Mechanics and Engineering 190(3–4):305–319. https://doi.org/10.1016/s0045-7825(00)00203-6 -- [10.1016/s0045-7825(00)00203-6](https://doi.org/10.1016/s0045-7825(00)00203-6)
+- Johnson AA, Tezduyar TE (1994) Mesh update strategies in parallel finite element computations of flow problems with moving boundaries and interfaces. Computer Methods in Applied Mechanics and Engineering 119(1–2):73–94. https://doi.org/10.1016/0045-7825(94)00077-8 -- [10.1016/0045-7825(94)00077-8](https://doi.org/10.1016/0045-7825(94)00077-8)
+- Johnson, (1987)
+- Jonkman J, Butterfield S, Musial W, Scott G (2009) Definition of a 5-MW Reference Wind Turbine for Offshore System Development. Office of Scientific and Technical Information (OSTI) -- [10.2172/947422](https://doi.org/10.2172/947422)
+- Kiendl J, Bazilevs Y, Hsu M-C, Wüchner R, Bletzinger K-U (2010) The bending strip method for isogeometric analysis of Kirchhoff–Love shell structures comprised of multiple patches. Computer Methods in Applied Mechanics and Engineering 199(37–40):2403–2416. https://doi.org/10.1016/j.cma.2010.03.029 -- [10.1016/j.cma.2010.03.029](https://doi.org/10.1016/j.cma.2010.03.029)
+- Kiendl J, Bletzinger K-U, Linhard J, Wüchner R (2009) Isogeometric shell analysis with Kirchhoff–Love elements. Computer Methods in Applied Mechanics and Engineering 198(49–52):3902–3914. https://doi.org/10.1016/j.cma.2009.08.013 -- [10.1016/j.cma.2009.08.013](https://doi.org/10.1016/j.cma.2009.08.013)
+- [Küttler U, Förster C, Wall WA (2006) A Solution for the Incompressibility Dilemma in Partitioned Fluid–Structure Interaction with Pure Dirichlet Fluid Domains. Comput Mech 38(4–5):417–429. https://doi.org/10.1007/s00466-006-0066-5](../a-solution-for-the-incompressibility-dilemma-in-partitioned-fluid-structure-interaction-with-pure-dirichlet-fluid-domains/) -- [10.1007/s00466-006-0066-5](https://doi.org/10.1007/s00466-006-0066-5)
+- Li X, Zheng J, Sederberg TW, Hughes TJR, Scott MA (2012) On linear independence of T-spline blending functions. Computer Aided Geometric Design 29(1):63–76. https://doi.org/10.1016/j.cagd.2011.08.005 -- [10.1016/j.cagd.2011.08.005](https://doi.org/10.1016/j.cagd.2011.08.005)
+- Melbø H, Kvamsdal T (2003) Goal oriented error estimators for Stokes equations based on variationally consistent postprocessing. Computer Methods in Applied Mechanics and Engineering 192(5–6):613–633. https://doi.org/10.1016/s0045-7825(02)00575-3 -- [10.1016/s0045-7825(02)00575-3](https://doi.org/10.1016/s0045-7825(02)00575-3)
+- Nguyen-Thanh N, Kiendl J, Nguyen-Xuan H, Wüchner R, Bletzinger KU, Bazilevs Y, Rabczuk T (2011) Rotation free isogeometric thin shell analysis using PHT-splines. Computer Methods in Applied Mechanics and Engineering 200(47–48):3410–3424. https://doi.org/10.1016/j.cma.2011.08.014 -- [10.1016/j.cma.2011.08.014](https://doi.org/10.1016/j.cma.2011.08.014)
+- Nitsche J (1971) Über ein Variationsprinzip zur Lösung von Dirichlet-Problemen bei Verwendung von Teilräumen, die keinen Randbedingungen unterworfen sind. AbhMathSeminUnivHambg 36(1):9–15. https://doi.org/10.1007/bf02995904 -- [10.1007/bf02995904](https://doi.org/10.1007/bf02995904)
+- Oñate E, Flores FG (2005) Advances in the formulation of the rotation-free basic shell triangle. Computer Methods in Applied Mechanics and Engineering 194(21–24):2406–2443. https://doi.org/10.1016/j.cma.2004.07.039 -- [10.1016/j.cma.2004.07.039](https://doi.org/10.1016/j.cma.2004.07.039)
+- Oñate, Rotation-free triangular plate and shell elements. Int. J. Numer. Methods Engrg. (2000) -- [10.1002/(sici)1097-0207(20000110/30)47:1/3<557::aid-nme784>3.0.co;2-9](https://doi.org/10.1002/(sici)1097-0207(20000110/30)47:1/3<557::aid-nme784>3.0.co;2-9)
+- M.A. Scott, T-splines as a design-through-analysis technology. PhD thesis, The University of Texas at Austin, August 2011.
+- Scott MA, Borden MJ, Verhoosel CV, Sederberg TW, Hughes TJR (2011) Isogeometric finite element data structures based on Bézier extraction of T‐splines. Numerical Meth Engineering 88(2):126–156. https://doi.org/10.1002/nme.3167 -- [10.1002/nme.3167](https://doi.org/10.1002/nme.3167)
+- Scott MA, Li X, Sederberg TW, Hughes TJR (2012) Local refinement of analysis-suitable T-splines. Computer Methods in Applied Mechanics and Engineering 213–216:206–222. https://doi.org/10.1016/j.cma.2011.11.022 -- [10.1016/j.cma.2011.11.022](https://doi.org/10.1016/j.cma.2011.11.022)
+- Sederberg TW, Cardon DL, Finnigan GT, North NS, Zheng J, Lyche T (2004) T-spline simplification and local refinement. ACM Trans Graph 23(3):276–283. https://doi.org/10.1145/1015706.1015715 -- [10.1145/1015706.1015715](https://doi.org/10.1145/1015706.1015715)
+- Sederberg TW, Zheng J, Bakenov A, Nasri A (2003) T-splines and T-NURCCs. ACM Trans Graph 22(3):477–484. https://doi.org/10.1145/882262.882295 -- [10.1145/882262.882295](https://doi.org/10.1145/882262.882295)
+- Takizawa K, Henicke B, Montes D, Tezduyar TE, Hsu M-C, Bazilevs Y (2011) Numerical-performance studies for the stabilized space–time computation of wind-turbine rotor aerodynamics. Comput Mech 48(6):647–657. https://doi.org/10.1007/s00466-011-0614-5 -- [10.1007/s00466-011-0614-5](https://doi.org/10.1007/s00466-011-0614-5)
+- Takizawa K, Henicke B, Tezduyar TE, Hsu M-C, Bazilevs Y (2011) Stabilized space–time computation of wind-turbine rotor aerodynamics. Comput Mech 48(3):333–344. https://doi.org/10.1007/s00466-011-0589-2 -- [10.1007/s00466-011-0589-2](https://doi.org/10.1007/s00466-011-0589-2)
+- Takizawa K, Moorman C, Wright S, Spielman T, Tezduyar TE (2010) Fluid–structure interaction modeling and performance analysis of the Orion spacecraft parachutes. Numerical Methods in Fluids 65(1–3):271–285. https://doi.org/10.1002/fld.2348 -- [10.1002/fld.2348](https://doi.org/10.1002/fld.2348)
+- Takizawa K, Tezduyar TE (2011) Multiscale space–time fluid–structure interaction techniques. Comput Mech 48(3):247–267. https://doi.org/10.1007/s00466-011-0571-z -- [10.1007/s00466-011-0571-z](https://doi.org/10.1007/s00466-011-0571-z)
+- Takizawa K, Wright S, Moorman C, Tezduyar TE (2010) Fluid–structure interaction modeling of parachute clusters. Numerical Methods in Fluids 65(1–3):286–307. https://doi.org/10.1002/fld.2359 -- [10.1002/fld.2359](https://doi.org/10.1002/fld.2359)
+- Tezduyar T, Aliabadi S, Behr M, Johnson A, Mittal S (1993) Parallel finite-element computation of 3D flows. Computer 26(10):27–36. https://doi.org/10.1109/2.237441 -- [10.1109/2.237441](https://doi.org/10.1109/2.237441)
+- Tezduyar TE (2001) Finite element methods for flow problems with moving boundaries and interfaces. Arch Computat Methods Eng 8(2):83–130. https://doi.org/10.1007/bf02897870 -- [10.1007/bf02897870](https://doi.org/10.1007/bf02897870)
+- Tezduyar TE (2003) Computation of moving boundaries and interfaces and stabilization parameters. Numerical Methods in Fluids 43(5):555–575. https://doi.org/10.1002/fld.505 -- [10.1002/fld.505](https://doi.org/10.1002/fld.505)
+- Tezduyar, Computation of unsteady incompressible flows with the finite element methods – space–time formulations iterative strategies and massively parallel implementations. (1992)
+- Tezduyar TE, Osawa Y (2000) Finite element stabilization parameters computed from element matrices and vectors. Computer Methods in Applied Mechanics and Engineering 190(3–4):411–430. https://doi.org/10.1016/s0045-7825(00)00211-5 -- [10.1016/s0045-7825(00)00211-5](https://doi.org/10.1016/s0045-7825(00)00211-5)
+- Tezduyar TE, Park YJ (1986) Discontinuity-capturing finite element formulations for nonlinear convection-diffusion-reaction equations. Computer Methods in Applied Mechanics and Engineering 59(3):307–325. https://doi.org/10.1016/0045-7825(86)90003-4 -- [10.1016/0045-7825(86)90003-4](https://doi.org/10.1016/0045-7825(86)90003-4)
+- Tezduyar TE, Sathe S (2007) Modelling of fluid–structure interactions with the space–time finite elements: Solution techniques. Numerical Methods in Fluids 54(6–8):855–900. https://doi.org/10.1002/fld.1430 -- [10.1002/fld.1430](https://doi.org/10.1002/fld.1430)
+- [Tezduyar TE, Sathe S, Keedy R, Stein K (2006) Space–time finite element techniques for computation of fluid–structure interactions. Computer Methods in Applied Mechanics and Engineering 195(17–18):2002–2027. https://doi.org/10.1016/j.cma.2004.09.014](../space-time-finite-element-techniques-for-computation-of-fluid-structure-interactions/) -- [10.1016/j.cma.2004.09.014](https://doi.org/10.1016/j.cma.2004.09.014)
+- [Tezduyar TE, Sathe S, Stein K (2006) Solution techniques for the fully discretized equations in computation of fluid–structure interactions with the space–time formulations. Computer Methods in Applied Mechanics and Engineering 195(41–43):5743–5753. https://doi.org/10.1016/j.cma.2005.08.023](../solution-techniques-for-the-fully-discretized-equations-in-computation-of-fluid-structure-interactions-with-the-space-time-formulations/) -- [10.1016/j.cma.2005.08.023](https://doi.org/10.1016/j.cma.2005.08.023)
+- van Brummelen EH, van der Zee KG, Garg VV, Prudhomme S (2011) Flux Evaluation in Primal and Dual Boundary-Coupled Problems. Journal of Applied Mechanics 79(1). https://doi.org/10.1115/1.4005187 -- [10.1115/1.4005187](https://doi.org/10.1115/1.4005187)
+- Verhoosel, An isogeometric analysis approach to gradient damage models. Int. J. Numer. Methods Engrg. (2011) -- [10.1002/nme.3150](https://doi.org/10.1002/nme.3150)
+- Wang W, Zhang Y (2010) Wavelets-based NURBS simplification and fairing. Computer Methods in Applied Mechanics and Engineering 199(5–8):290–300. https://doi.org/10.1016/j.cma.2009.04.003 -- [10.1016/j.cma.2009.04.003](https://doi.org/10.1016/j.cma.2009.04.003)
+- Wang W, Zhang Y, Scott MA, Hughes TJR (2011) Converting an unstructured quadrilateral mesh to a standard T-spline surface. Comput Mech 48(4):477–498. https://doi.org/10.1007/s00466-011-0598-1 -- [10.1007/s00466-011-0598-1](https://doi.org/10.1007/s00466-011-0598-1)
+- Wang W, Zhang Y, Xu G, Hughes TJR (2011) Converting an unstructured quadrilateral/hexahedral mesh to a rational T-spline. Comput Mech 50(1):65–84. https://doi.org/10.1007/s00466-011-0674-6 -- [10.1007/s00466-011-0674-6](https://doi.org/10.1007/s00466-011-0674-6)
+- Zhang Y, Bazilevs Y, Goswami S, Bajaj CL, Hughes TJR (2007) Patient-specific vascular NURBS modeling for isogeometric analysis of blood flow. Computer Methods in Applied Mechanics and Engineering 196(29–30):2943–2959. https://doi.org/10.1016/j.cma.2007.02.009 -- [10.1016/j.cma.2007.02.009](https://doi.org/10.1016/j.cma.2007.02.009)

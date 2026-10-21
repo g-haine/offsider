@@ -1,0 +1,10 @@
+---
+title: "Hyoung Gwon Choi"
+---
+
+- **2023 — Sang Truong Ha, Hyoung Gwon Choi, Ngo Cu Long, Sang-Wook Lee.** [A semi-implicit finite element formulation of the partitioned method for fluid-structure interaction based on a flux boundary condition of pressure equation](../../publications/a-semi-implicit-finite-element-formulation-of-the-partitioned-method-for-fluid-structure-interaction-based-on-a-flux-boundary-condition-of-pressure-equation/)
+- **2023 — Sang Truong Ha, Hyoung Gwon Choi.** [Semi-monolithic formulation based on a projection method for simulating fluid–structure interaction problems](../../publications/semi-monolithic-formulation-based-on-a-projection-method-for-simulating-fluid-structure-interaction-problems/)
+- **2020 — Sang Truong Ha, Hyoung Gwon Choi.** [Investigation on the effect of density ratio on the convergence behavior of partitioned method for fluid–structure interaction simulation](../../publications/investigation-on-the-effect-of-density-ratio-on-the-convergence-behavior-of-partitioned-method-for-fluid-structure-interaction-simulation/)
+- **2017 — Sang Truong Ha, Long Cu Ngo, Muhammad Saeed, Byoung Jin Jeon, Hyounggwon Choi.** [A comparative study between partitioned and monolithic methods for the problems with 3D fluid-structure interaction of blood vessels](../../publications/a-comparative-study-between-partitioned-and-monolithic-methods-for-the-problems-with-3d-fluid-structure-interaction-of-blood-vessels/)
+- **2012 — S. Kang, H.G. Choi, J.Y. Yoo.** [Investigation of fluid–structure interactions using a velocity‐linked P2/P1 finite element method and the generalized‐ α method](../../publications/investigation-of-fluid-structure-interactions-using-a-velocity-linked-p2-p1-finite-element-method-and-the-generalized-a-method/)
+- **2009 — Hyoung-Gwon Choi.** [Preconditioning Method of a Finite Element Combined Formulation for Fluid-Structure Interaction](../../publications/preconditioning-method-of-a-finite-element-combined-formulation-for-fluid-structure-interaction/)

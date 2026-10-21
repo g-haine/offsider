@@ -1,0 +1,13 @@
+---
+title: "Hermann G. Matthies"
+---
+
+- **2000 — J. Steindorf, H. G. Matthies.** [Numerical Efficiency of Different Partitioned Methods for Fluid‐Structure Interaction](../../publications/numerical-efficiency-of-different-partitioned-methods-for-fluid-structure-interaction/)
+- **2011 — Christophe Kassiotis, Adnan Ibrahimbegovic, Rainer Niekamp, Hermann G. Matthies.** [Nonlinear fluid–structure interaction problem. Part II: space discretization, implementation aspects, nested parallelization and application examples](../../publications/nonlinear-fluid-structure-interaction-problem-part-ii-space-discretization-implementation-aspects-nested-parallelization-and-application-examples/)
+- **2011 — Christophe Kassiotis, Adnan Ibrahimbegovic, Rainer Niekamp, Hermann G. Matthies.** [Nonlinear fluid–structure interaction problem. Part I: implicit partitioned algorithm, nonlinear stability proof and validation examples](../../publications/nonlinear-fluid-structure-interaction-problem-part-i-implicit-partitioned-algorithm-nonlinear-stability-proof-and-validation-examples/)
+- **2009 — J. Steindorf, H.G. Matthies.** [Efficient Partitioned Methods for the Computation of Fluid-Structure Interaction on Parallel Computers](../../publications/efficient-partitioned-methods-for-the-computation-of-fluid-structure-interaction-on-parallel-computers/)
+- **2009 — C. Kassiotis, A. Ibrahimbegovic, H.G. Matthies.** [A Partitioned Strategy for Fluid Structure Interaction Applied to Model Waves Impact on Submerged Structures](../../publications/a-partitioned-strategy-for-fluid-structure-interaction-applied-to-model-waves-impact-on-submerged-structures/)
+- **2008 — Joachim Rang, Martin Krosche, R. Niekamp, Hermann G. Matthies.** [Solving fluid‐structure interaction problems using strong coupling algorithms with the component template library (CTL)](../../publications/solving-fluid-structure-interaction-problems-using-strong-coupling-algorithms-with-the-component-template-library-ctl/)
+- **2005 — Oliver Kayser-Herold, Hermann G. Matthies.** [Least squares finite element methods for fluid-structure interaction problems](../../publications/least-squares-finite-element-methods-for-fluid-structure-interaction-problems/)
+- **2003 — Hermann G. Matthies, Jan Steindorf.** [Partitioned strong coupling algorithms for fluid–structure interaction](../../publications/partitioned-strong-coupling-algorithms-for-fluid-structure-interaction/)
+- **2002 — Hermann G. Matthies, Jan Steindorf.** [Partitioned but strongly coupled iteration schemes for nonlinear fluid–structure interaction](../../publications/partitioned-but-strongly-coupled-iteration-schemes-for-nonlinear-fluid-structure-interaction/)

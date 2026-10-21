@@ -1,0 +1,5 @@
+---
+title: "Ye Ji"
+---
+
+- **2027 — Jingya Li, Ye Ji, Hugo Verhelst, Henk den Besten, Matthias Möller.** [Parameterization-driven arbitrary Lagrangian–Eulerian method for large-deformation isogeometric fluid–structure interaction](../../publications/parameterization-driven-arbitrary-lagrangian-eulerian-method-for-large-deformation-isogeometric-fluid-structure-interaction/)

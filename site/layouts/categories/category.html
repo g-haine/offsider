@@ -1,0 +1,14 @@
+{{ define "main" }}
+  {{ $publications := site.GetPage "/publications" }}
+  {{ $pages := where $publications.RegularPages "Params.publication_type" "in" .Params.types }}
+
+  <div class="home">
+    <h1>{{ .Title }}</h1>
+
+    <h3>
+      There are {{ len $pages }} items referenced in this category.
+    </h3>
+
+    {{ partial "publication-list.html" $pages }}
+  </div>
+{{ end }}

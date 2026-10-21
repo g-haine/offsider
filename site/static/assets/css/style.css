@@ -1,0 +1,373 @@
+:root {
+  color-scheme: light dark;
+  --background: #ffffff;
+  --text: #111111;
+  --brand: #828282;
+  --link: #2a7ae2;
+  --link-visited: #1756a9;
+  --link-hover: #111111;
+  --border: #e8e8e8;
+  --code-background: #eef;
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    --background: #181a1b;
+    --text: #e8e6e3;
+    --brand: #aaa49b;
+    --link: #8ab4f8;
+    --link-visited: #c58af9;
+    --link-hover: #ffffff;
+    --border: #3a3d3f;
+    --code-background: #25282a;
+  }
+}
+
+* {
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  margin: 0;
+  background: var(--background);
+  color: var(--text);
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
+               Helvetica, Arial, sans-serif;
+  font-size: 16px;
+  line-height: 1.5;
+  text-align: justify;
+  text-justify: inter-character;
+}
+
+.wrapper {
+  max-width: 1000px;
+  margin: 0 auto;
+  padding: 0 15px;
+}
+
+a {
+  color: var(--link);
+  text-decoration: none;
+}
+
+a:visited {
+  color: var(--link-visited);
+}
+
+a:hover {
+  color: var(--link-hover);
+  text-decoration: underline;
+}
+
+.site-header {
+  min-height: 55px;
+  border-top: 5px solid #424242;
+  border-bottom: 1px solid var(--border);
+}
+
+.site-header .wrapper {
+  min-height: 54px;
+  display: flex;
+  align-items: center;
+  gap: 1.5rem;
+}
+
+.site-title {
+  color: var(--brand) !important;
+  font-size: 26px;
+  font-weight: 300;
+  letter-spacing: -1px;
+  white-space: nowrap;
+}
+
+.site-nav {
+  margin-left: auto;
+  display: flex;
+  gap: 20px;
+}
+
+.site-nav a {
+  color: var(--text);
+  line-height: 54px;
+}
+
+.page-content {
+  padding: 30px 0;
+  min-height: 60vh;
+}
+
+h1, h2, h3 {
+  font-weight: 400;
+  line-height: 1.25;
+  text-align: left;
+}
+
+h1 {
+  font-size: 32px;
+}
+
+h2 {
+  font-size: 26px;
+}
+
+h3 {
+  font-size: 20px;
+}
+
+.post-list {
+  margin-left: 0;
+  padding-left: 0;
+  list-style: none;
+}
+
+.post-list > li {
+  margin-bottom: 30px;
+}
+
+.post-meta {
+  display: block;
+  color: var(--brand);
+  font-size: 14px;
+  text-align: left;
+}
+
+.post-link {
+  display: block;
+  font-size: 24px;
+  line-height: 1.2;
+}
+
+.publication-year-heading {
+  margin-top: 2rem;
+  scroll-margin-top: 1rem;
+}
+
+.publication-year-jump {
+  align-items: center;
+  display: flex;
+  gap: 0.5rem;
+  margin: 0.75rem 0 1.5rem;
+  text-align: left;
+}
+
+.publication-year-jump select {
+  background: var(--background);
+  border: 1px solid var(--border);
+  border-radius: 3px;
+  color: var(--text);
+  font: inherit;
+  padding: 0.3rem 0.5rem;
+}
+
+.year-block {
+  border-bottom: 1px solid var(--border);
+  margin-bottom: 2rem;
+  padding-bottom: 0.5rem;
+}
+
+.post-header {
+  margin-bottom: 30px;
+}
+
+.post-title {
+  font-size: 42px;
+  letter-spacing: -1px;
+  line-height: 1.15;
+}
+
+.post-content h2 {
+  margin-top: 30px;
+}
+
+pre, code {
+  background: var(--code-background);
+  border-radius: 3px;
+}
+
+pre {
+  overflow-x: auto;
+  padding: 10px 12px;
+}
+
+code {
+  padding: 1px 4px;
+}
+
+pre code {
+  padding: 0;
+}
+
+.site-footer {
+  border-top: 1px solid var(--border);
+  padding: 30px 0;
+  color: var(--brand);
+  font-size: 14px;
+}
+
+.site-footer p {
+  margin: 0.35rem 0;
+  text-align: center;
+}
+
+@media screen and (max-width: 600px) {
+  .site-header .wrapper {
+    align-items: flex-start;
+    flex-direction: column;
+    gap: 0;
+    padding-top: 8px;
+    padding-bottom: 8px;
+  }
+
+  .site-nav {
+    margin-left: 0;
+    flex-wrap: wrap;
+    gap: 15px;
+  }
+
+  .site-nav a {
+    line-height: 32px;
+  }
+
+  .post-title {
+    font-size: 34px;
+  }
+
+  .publication-year-jump {
+    align-items: flex-start;
+    flex-direction: column;
+  }
+}
+
+.author-grid {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 5px 15px;
+  margin-bottom: 1.5rem;
+  text-align: left;
+}
+
+#links-letters {
+  text-align: left;
+}
+
+@media screen and (max-width: 600px) {
+  .author-grid {
+    grid-template-columns: 1fr;
+  }
+}
+
+:root {
+  --pagefind-ui-scale: 0.8;
+  --pagefind-ui-primary: var(--text);
+  --pagefind-ui-text: var(--text);
+  --pagefind-ui-background: var(--background);
+  --pagefind-ui-border: var(--border);
+  --pagefind-ui-tag: var(--code-background);
+}
+
+pagefind-input {
+  display: block;
+  margin: 1rem 0 0.25rem;
+}
+
+pagefind-summary {
+  color: var(--brand) !important;
+  display: block;
+}
+
+.phraise-search-results .pf-results {
+  list-style: none;
+  margin: 1rem 0;
+  padding: 0;
+}
+
+.phraise-search-results .phraise-search-result {
+  border-bottom: 1px solid var(--border);
+  color: var(--text) !important;
+  list-style: none;
+  margin: 0;
+  padding: 0.9rem 0;
+  text-align: justify;
+  text-justify: inter-character;
+}
+
+.phraise-search-results .phraise-search-result:first-child {
+  border-top: 1px solid var(--border);
+}
+
+.phraise-search-results .phraise-search-result h3 {
+  font-size: 1.125rem;
+  margin-bottom: 0.15rem;
+}
+
+.phraise-search-results .phraise-search-result .post-meta {
+  color: var(--brand) !important;
+  margin-bottom: 0.35rem;
+}
+
+.phraise-search-results .phraise-search-excerpt {
+  color: var(--text) !important;
+  margin-bottom: 0;
+}
+
+.phraise-search-results mark {
+  background: transparent;
+  color: var(--text) !important;
+  font-weight: 700;
+}
+
+#backToTop {
+  position: fixed;
+  right: 20px;
+  bottom: 20px;
+  width: 50px;
+  height: 50px;
+  display: none;
+  align-items: center;
+  justify-content: center;
+  border: 0;
+  border-radius: 50%;
+  background: rgba(0, 0, 0, 0.6);
+  color: white;
+  font-size: 24px;
+  cursor: pointer;
+  z-index: 1000;
+  transition: opacity 0.3s, background 0.3s;
+}
+
+#backToTop:hover {
+  background: rgba(0, 0, 0, 0.8);
+}
+
+/* BibTeX copy button */
+.post-content h2#bibtex + .highlight {
+  position: relative;
+}
+
+.post-content h2#bibtex + .highlight pre {
+  padding-top: 2.75rem;
+}
+
+.copy-bibtex {
+  position: absolute;
+  top: 0.5rem;
+  right: 0.5rem;
+  z-index: 1;
+  padding: 0.3rem 0.65rem;
+  border: 1px solid var(--border);
+  border-radius: 3px;
+  background: var(--background);
+  color: var(--text);
+  font: inherit;
+  font-size: 0.8rem;
+  cursor: pointer;
+}
+
+.copy-bibtex:hover,
+.copy-bibtex:focus-visible {
+  border-color: var(--brand);
+}
